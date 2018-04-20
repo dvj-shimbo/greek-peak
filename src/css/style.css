@@ -2076,17 +2076,298 @@ html {
   }
 }
 
-/*************************** Base Styles ****************************/
-/* line 2, src/sass/common/_base.scss */
-body {
-  background: pink;
-  overflow-x: hidden;
+/*************************** Open-Sans Font ****************************/
+@font-face {
+  font-family: "Open-Sans";
+  src: url("../fonts/open-sans/Regular/OpenSans-Regular.eot");
+  src: url("../fonts/open-sans/Regular/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/Regular/OpenSans-Regular.woff2") format("woff2"), url("../fonts/open-sans/Regular/OpenSans-Regular.woff") format("woff"), url("../fonts/open-sans/Regular/OpenSans-Regular.ttf") format("truetype"), url("../fonts/open-sans/Regular/OpenSans-Regular.svg#OpenSansRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* line 8, src/sass/common/_base.scss */
-[class*="col"] {
-  border: solid 1px;
-  background: red;
+@font-face {
+  font-family: "Open-Sans";
+  src: url("../fonts/open-sans/Bold/OpenSans-Bold.eot");
+  src: url("../fonts/open-sans/Bold/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/Bold/OpenSans-Bold.woff2") format("woff2"), url("../fonts/open-sans/Bold/OpenSans-Bold.woff") format("woff"), url("../fonts/open-sans/Bold/OpenSans-Bold.ttf") format("truetype"), url("../fonts/open-sans/Bold/OpenSans-Bold.svg#OpenSansBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("../fonts/open-sans/Italic/OpenSans-Italic.eot");
+  src: url("../fonts/open-sans/Italic/OpenSans-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/Italic/OpenSans-Italic.woff2") format("woff2"), url("../fonts/open-sans/Italic/OpenSans-Italic.woff") format("woff"), url("../fonts/open-sans/Italic/OpenSans-Italic.ttf") format("truetype"), url("../fonts/open-sans/Italic/OpenSans-Italic.svg#OpenSansItalic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("../fonts/open-sans/BoldItalic/OpenSans-BoldItalic.eot");
+  src: url("../fonts/open-sans/BoldItalic/OpenSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/BoldItalic/OpenSans-BoldItalic.woff2") format("woff2"), url("../fonts/open-sans/BoldItalic/OpenSans-BoldItalic.woff") format("woff"), url("../fonts/open-sans/BoldItalic/OpenSans-BoldItalic.ttf") format("truetype"), url("../fonts/open-sans/BoldItalic/OpenSans-BoldItalic.svg#OpenSansBoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+
+/**************************** Icon Font *****************************/
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons/icons.eot?73b544c60ccbba254ccbd8f1e34bdcc3?#iefix") format("embedded-opentype"), url("../fonts/icons/icons.woff2?73b544c60ccbba254ccbd8f1e34bdcc3") format("woff2"), url("../fonts/icons/icons.woff?73b544c60ccbba254ccbd8f1e34bdcc3") format("woff"), url("../fonts/icons/icons.ttf?73b544c60ccbba254ccbd8f1e34bdcc3") format("truetype"), url("../fonts/icons/icons.svg?73b544c60ccbba254ccbd8f1e34bdcc3#icons") format("svg");
+}
+
+/* line 11, src/icon-font-generator/_icons.scss */
+[class*="icon-"]:before {
+  font-family: icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  vertical-align: top;
+  line-height: 1;
+}
+
+/* line 19, src/icon-font-generator/_icons.scss */
+.icon-cart:before {
+  content: "\f101";
+}
+
+/* line 22, src/icon-font-generator/_icons.scss */
+.icon-search:before {
+  content: "\f102";
+}
+
+/*************************** Base Styles ****************************/
+/* line 18, src/sass/common/_base.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 52, src/sass/common/_base.scss */
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  color: red;
+  font-family: "Open-Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 66, src/sass/common/_base.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 68, src/sass/common/_base.scss */
+i, em {
+  font-style: italic;
+}
+
+/* line 117, src/sass/common/_base.scss */
+::-webkit-search-decoration,
+::-webkit-search-cancel-button,
+::-webkit-search-results-button,
+::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* line 122, src/sass/common/_base.scss */
+::-ms-clear,
+::-ms-reveal {
+  display: none;
+}
+
+/*************************** Button Styles ****************************/
+/* line 3, src/sass/components/_button.scss */
+.button {
+  background-color: rgba(255, 0, 0, 0.3);
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/*************************** Header Styles ****************************/
+/* line 3, src/sass/_header.scss */
+header {
+  background-color: rgba(255, 0, 0, 0.4);
+  height: 120px;
+}
+
+/* line 10, src/sass/_header.scss */
+header:before {
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 255, 0.4);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  height: 4.8rem;
+  z-index: -1;
+}
+
+/* line 24, src/sass/_header.scss */
+header .logo {
+  position: absolute;
+  top: 56px;
+  top: 5.6rem;
+  left: 50%;
+  margin-left: -611px;
+  margin-left: -61.1rem;
+  width: 146px;
+  width: 14.6rem;
+}
+
+/* line 40, src/sass/_header.scss */
+header .logo + .button {
+  position: absolute;
+  top: 20px;
+  top: 2rem;
+  left: 50%;
+  margin-left: -30px;
+  margin-left: -3rem;
+}
+
+/* line 60, src/sass/_header.scss */
+header [class*="icon-"], header form:after {
+  color: blue;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+/* line 68, src/sass/_header.scss */
+header .icon-cart {
+  background: rgba(255, 255, 0, 0.6);
+  position: absolute;
+  top: 16px;
+  top: 1.6rem;
+  left: 50%;
+  margin-left: 590px;
+  margin-left: 59rem;
+  height: 22px;
+  height: 2.2rem;
+  z-index: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+/* line 88, src/sass/_header.scss */
+header .icon-cart:hover {
+  opacity: 0.75;
+}
+
+/* line 95, src/sass/_header.scss */
+header form {
+  position: absolute;
+  left: 50%;
+}
+
+/* line 106, src/sass/_header.scss */
+header form:after {
+  background: rgba(255, 255, 0, 0.6);
+  content: "\f102";
+  position: absolute;
+  top: 16px;
+  top: 1.6rem;
+  left: 542px;
+  left: 54.2rem;
+  width: 18px;
+  width: 1.8rem;
+  height: 22px;
+  height: 2.2rem;
+  font-family: icons;
+  font-style: normal;
+  font-weight: normal;
+  vertical-align: top;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+/* line 146, src/sass/_header.scss */
+header form:hover:after {
+  opacity: 0.75;
+}
+
+/* line 152, src/sass/_header.scss */
+header form input {
+  position: absolute;
+  top: 16px;
+  top: 1.6rem;
+  left: 320px;
+  left: 32rem;
+  width: 240px;
+  width: 24rem;
+  height: 22px;
+  height: 2.2rem;
+  padding-left: 8px;
+  padding-left: 0.8rem;
+  padding-right: 24px;
+  padding-right: 2.4rem;
+  border: 0;
+  border-bottom: 1px solid red;
+  outline: 0;
+  background: rgba(0, 255, 255, 0.6);
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #fff;
+  -webkit-appearance: none;
+}
+
+/* line 188, src/sass/_header.scss */
+header form button {
+  position: absolute;
+  top: 16px;
+  top: 1.6rem;
+  left: 542px;
+  left: 54.2rem;
+  width: 18px;
+  width: 1.8rem;
+  height: 22px;
+  height: 2.2rem;
+  background: rgba(255, 0, 0, 0.3);
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+/* line 218, src/sass/_header.scss */
+header form button:hover {
+  opacity: 0.75;
+}
+
+/* line 227, src/sass/_header.scss */
+header form.displayed:after {
+  display: none;
+}
+
+/* line 233, src/sass/_header.scss */
+header form:not(.displayed) input,
+header form:not(.displayed) button {
+  display: none;
+}
+
+/* line 246, src/sass/_header.scss */
+header nav {
+  background-color: rgba(255, 255, 0, 0.6);
+  background-image: url("../img/!/Greek-Peak_home-page-_ready_a.png");
+  background-repeat: no-repeat;
+  background-position: -34px 0;
+  margin: 0 auto;
+  max-width: 1300px;
+  max-width: 130rem;
+  height: 120px;
+  height: 12rem;
 }
 
 /*# sourceMappingURL=style.css.map */

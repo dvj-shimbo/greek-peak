@@ -1,11 +1,123 @@
 /*************************** Base Styles ****************************/
+
+//body {
+//	background: pink;
+//	overflow-x: hidden;
+//}
+//
+//
+//[class*="col"] {
+//	border: solid 1px;
+//	background: red;
+//}
+
+
+
+
+
+html {
+	font-size: 62.5%;
+}
+
+
+//@include media('>=desktop-wide', 'screen') {
+//	background: pink;
+//}
+//@include media('>=desktop', '<desktop-wide') { 
+//	background: yellow;
+//}
+//@include media('>=tablet-wide', '<desktop') { 
+//	background: pink;
+//}
+//@include media('>=tablet', '<tablet-wide') { 
+//	background: yellow;
+//}
+//@include media('>=tablet-small', '<tablet') { 
+//	background: pink;
+//}
+//@include media('>=phablet', '<tablet-small') { 
+//	background: yellow;
+//}
+//@include media('>=phone-wide', '<phablet') { 
+//	background: pink;
+//}
+//@include media('>=phone', '<phone-wide') { 
+//	background: yellow;
+//}
+//@include media('<phone', 'screen') {
+//	background: pink;
+//}
+
+
 body {
-	background: pink;
+	background-color: $background-color;
 	overflow-x: hidden;
+	overflow-y: scroll;
+	color: $font-color;
+//}
+//
+//body {
+	font-family: "Open-Sans", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 
-[class*="col"] {
-	border: solid 1px;
-	background: red;
-}
+b, strong { font-weight: bold; }
+
+i, em { font-style: italic; }
+
+
+
+////h1, h2, h3, h4, h5, h6 {
+//////	line-height: 1.4em;
+//////	@include rem(line-height, 1.4rem);
+////	@include line-height(16);
+////}
+//
+//h1 {
+////	font-size: 3em;
+////	@include rem(font-size, 3rem);
+////	@include rem(line-height, 4.5rem);
+//	@include rem(font-size, 48px);
+//	@include rem(line-height, 72px);
+//}
+//
+//h2 {
+//	@include rem(font-size, 36px);
+//	@include rem(line-height, 52px);
+//}
+//
+//h3 {
+//	@include rem(font-size, 24px);
+//	@include rem(line-height, 38px);
+//}
+//
+//h4 {
+//	@include rem(font-size, 18px);
+//	@include rem(line-height, 28px);
+//}
+//
+//h5 {
+//	@include rem(font-size, 14px);
+//	@include rem(line-height, 24px);
+//}
+//
+//h6 {
+//	@include rem(font-size, 12px);
+//	@include rem(line-height, 20px);
+//}
+//p {
+//	@include rem(font-size, 16px);
+//	@include rem(line-height, 26px);
+//}
+
+
+
+::-webkit-search-decoration,
+::-webkit-search-cancel-button,
+::-webkit-search-results-button,
+::-webkit-search-results-decoration { display: none; }
+
+::-ms-clear,
+::-ms-reveal { display: none; }

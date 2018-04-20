@@ -1,0 +1,29 @@
+// Variables
+
+
+//$baseFontSize: 10; // Based on HTML reset html { font-size: 62.5%; }
+//$baseFontSize: 16;
+
+
+$breakpoints: (
+    "phone":        400px,
+    "phone-wide":   480px,
+    "phablet":      560px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);
+
+
+//$background-color: pink;
+$background-color: #fff;
+
+
+$font-color: red;
+//$font-color: #666666;
+
+
+//$header-icons-color: blue;
+//$header-icons-color: #fff;

@@ -1,0 +1,24 @@
+/**************************** Icon Font *****************************/
+@font-face {
+    font-family: "icons";
+    src: url("../fonts/icons/icons.eot?73b544c60ccbba254ccbd8f1e34bdcc3?#iefix") format("embedded-opentype"),
+url("../fonts/icons/icons.woff2?73b544c60ccbba254ccbd8f1e34bdcc3") format("woff2"),
+url("../fonts/icons/icons.woff?73b544c60ccbba254ccbd8f1e34bdcc3") format("woff"),
+url("../fonts/icons/icons.ttf?73b544c60ccbba254ccbd8f1e34bdcc3") format("truetype"),
+url("../fonts/icons/icons.svg?73b544c60ccbba254ccbd8f1e34bdcc3#icons") format("svg");
+}
+
+[class*="icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    vertical-align: top;
+    line-height: 1;
+}
+
+.icon-cart:before {
+    content: "\f101";
+}
+.icon-search:before {
+    content: "\f102";
+}

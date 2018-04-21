@@ -2,15 +2,20 @@
 
 header {
 
-	background-color: rgba(255,0,0,0.4);
+	background-color: rgba(255,0,0,0.2);
 	height: 120px;
+
+	position: relative;
+	z-index: 0;
 
 
 
 	&:before {
 		content: "";
 		display: block;
-		background-color: rgba(0,0,255,0.4);
+//		background-color: rgba(0,0,255,0.6);
+//		background-color: #00303c;
+		background-color: $dark-blue;
 
 		position: absolute;
 		left: 0;
@@ -37,14 +42,48 @@ header {
 		@include rem(width, 146px);
 
 
-		& + .button {
+
+
+		& + .button,
+		& + .button + .button {
 			position: absolute;
 
-			@include rem(top, 20px);
+			@include rem(top, 8px);
 			left: 50%;
 
+			@include rem(padding, 11px 0 8px);
+			@include rem(width, 144px);			
 
-			@include rem(margin-left, -30px);
+		}
+
+		& + .button { @include rem(margin-left, -36px); }
+		& + .button + .button { @include rem(margin-left, 132px); }
+
+
+		& + .button + .button + a {
+
+//			color: rgba(255,0,0,0.6);
+			color: #2bc1f6;
+
+
+			position: absolute;
+
+			@include rem(top, 19px);
+			left: 50%;
+			@include rem(margin-left, 332px);
+
+			font-weight: bold;
+			font-style: italic;
+			text-transform: uppercase;
+			text-decoration: none;		
+
+			@include rem(font-size, 14px);
+
+			&:hover {
+				color: lighten(#2bc1f6, 10%);
+			}
+
+
 		}
 
 
@@ -83,7 +122,7 @@ header {
 
 		z-index: 0;
 
-		@include transition(all 0.25s ease-in-out);
+		@include transition(all 0.2s ease-in-out);
 
 		&:hover {
 			opacity: 0.75;
@@ -138,7 +177,7 @@ header {
 
 			cursor: pointer;
 
-			@include transition(all 0.25s ease-in-out);
+			@include transition(all 0.2s ease-in-out);
 
 		}
 
@@ -213,7 +252,7 @@ header {
 
 			cursor: pointer;
 
-			@include transition(all 0.25s ease-in-out);
+			@include transition(all 0.2s ease-in-out);
 
 			&:hover {
 				opacity: 0.75;
@@ -244,10 +283,12 @@ header {
 
 
 	nav {
-		background-color: rgba(255,255,0,0.6);
+//		background-color: rgba(255,255,0,0.6);
 		background-image: url("../img/!/Greek-Peak_home-page-_ready_a.png");
 		background-repeat: no-repeat;
 		background-position: -34px 0;
+
+
 
 
 

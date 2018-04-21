@@ -47,3 +47,27 @@
 	font-weight: bold;
 	font-style: italic;
 }
+
+@font-face {
+	font-family: "Open-Sans-Semibold";
+	src: 	url("../fonts/open-sans/Semibold/OpenSans-Semibold.eot");
+	src: 	url("../fonts/open-sans/Semibold/OpenSans-Semibold.eot?#iefix") format("embedded-opentype"),
+			url("../fonts/open-sans/Semibold/OpenSans-Semibold.woff2") format("woff2"),
+			url("../fonts/open-sans/Semibold/OpenSans-Semibold.woff") format("woff"),
+			url("../fonts/open-sans/Semibold/OpenSans-Semibold.ttf") format("truetype"),
+			url("../fonts/open-sans/Semibold/OpenSans-Semibold.svg#OpenSansSemibold") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Open-Sans-SemiboldItalic";
+	src: 	url("../fonts/open-sans/SemiboldItalic/OpenSans-SemiboldItalic.eot");
+	src: 	url("../fonts/open-sans/SemiboldItalic/OpenSans-SemiboldItalic.eot?#iefix") format("embedded-opentype"),
+			url("../fonts/open-sans/SemiboldItalic/OpenSans-SemiboldItalic.woff2") format("woff2"),
+			url("../fonts/open-sans/SemiboldItalic/OpenSans-SemiboldItalic.woff") format("woff"),
+			url("../fonts/open-sans/SemiboldItalic/OpenSans-SemiboldItalic.ttf") format("truetype"),
+			url("../fonts/open-sans/SemiboldItalic/OpenSans-SemiboldItalic.svg#OpenSansSemiboldItalic") format("svg");
+	font-weight: normal;
+	font-style: italic;
+}

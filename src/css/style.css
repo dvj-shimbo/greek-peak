@@ -2109,6 +2109,22 @@ html {
   font-style: italic;
 }
 
+@font-face {
+  font-family: "Open-Sans-Semibold";
+  src: url("../fonts/open-sans/Semibold/OpenSans-Semibold.eot");
+  src: url("../fonts/open-sans/Semibold/OpenSans-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/Semibold/OpenSans-Semibold.woff2") format("woff2"), url("../fonts/open-sans/Semibold/OpenSans-Semibold.woff") format("woff"), url("../fonts/open-sans/Semibold/OpenSans-Semibold.ttf") format("truetype"), url("../fonts/open-sans/Semibold/OpenSans-Semibold.svg#OpenSansSemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open-Sans-SemiboldItalic";
+  src: url("../fonts/open-sans/SemiboldItalic/OpenSans-SemiboldItalic.eot");
+  src: url("../fonts/open-sans/SemiboldItalic/OpenSans-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/SemiboldItalic/OpenSans-SemiboldItalic.woff2") format("woff2"), url("../fonts/open-sans/SemiboldItalic/OpenSans-SemiboldItalic.woff") format("woff"), url("../fonts/open-sans/SemiboldItalic/OpenSans-SemiboldItalic.ttf") format("truetype"), url("../fonts/open-sans/SemiboldItalic/OpenSans-SemiboldItalic.svg#OpenSansSemiboldItalic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
 /**************************** Icon Font *****************************/
 @font-face {
   font-family: "icons";
@@ -2142,26 +2158,26 @@ html {
 
 /* line 52, src/sass/common/_base.scss */
 body {
-  background-color: #fff;
   overflow-x: hidden;
   overflow-y: scroll;
+  background-color: #fff;
   color: red;
   font-family: "Open-Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 66, src/sass/common/_base.scss */
+/* line 67, src/sass/common/_base.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 68, src/sass/common/_base.scss */
+/* line 69, src/sass/common/_base.scss */
 i, em {
   font-style: italic;
 }
 
-/* line 117, src/sass/common/_base.scss */
+/* line 118, src/sass/common/_base.scss */
 ::-webkit-search-decoration,
 ::-webkit-search-cancel-button,
 ::-webkit-search-results-button,
@@ -2169,7 +2185,7 @@ i, em {
   display: none;
 }
 
-/* line 122, src/sass/common/_base.scss */
+/* line 123, src/sass/common/_base.scss */
 ::-ms-clear,
 ::-ms-reveal {
   display: none;
@@ -2178,24 +2194,68 @@ i, em {
 /*************************** Button Styles ****************************/
 /* line 3, src/sass/components/_button.scss */
 .button {
-  background-color: rgba(255, 0, 0, 0.3);
-  display: block;
+  display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Open-Sans-Semibold", sans-serif;
+  font-size: 12px;
+  font-size: 1.2rem;
+  color: white;
+  position: relative;
+}
+
+/* line 34, src/sass/components/_button.scss */
+.button:after {
+  background-color: rgba(0, 255, 0, 0.9);
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+/* line 51, src/sass/components/_button.scss */
+.button:hover {
+  color: rgba(255, 0, 255, 0.6);
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+/* line 55, src/sass/components/_button.scss */
+.button:hover:after {
+  background-color: rgba(77, 255, 77, 0.9);
 }
 
 /*************************** Header Styles ****************************/
 /* line 3, src/sass/_header.scss */
 header {
-  background-color: rgba(255, 0, 0, 0.4);
+  background-color: rgba(255, 0, 0, 0.2);
   height: 120px;
+  position: relative;
+  z-index: 0;
 }
 
-/* line 10, src/sass/_header.scss */
+/* line 13, src/sass/_header.scss */
 header:before {
   content: "";
   display: block;
-  background-color: rgba(0, 0, 255, 0.4);
+  background-color: rgba(255, 0, 255, 0.6);
   position: absolute;
   left: 0;
   width: 100%;
@@ -2204,7 +2264,7 @@ header:before {
   z-index: -1;
 }
 
-/* line 24, src/sass/_header.scss */
+/* line 29, src/sass/_header.scss */
 header .logo {
   position: absolute;
   top: 56px;
@@ -2216,24 +2276,61 @@ header .logo {
   width: 14.6rem;
 }
 
-/* line 40, src/sass/_header.scss */
-header .logo + .button {
+/* line 47, src/sass/_header.scss */
+header .logo + .button,
+header .logo + .button + .button {
   position: absolute;
-  top: 20px;
-  top: 2rem;
+  top: 8px;
+  top: 0.8rem;
   left: 50%;
-  margin-left: -30px;
-  margin-left: -3rem;
+  padding: 11px 0 8px;
+  padding: 1.1rem 0 0.8rem;
+  width: 144px;
+  width: 14.4rem;
+}
+
+/* line 59, src/sass/_header.scss */
+header .logo + .button {
+  margin-left: -36px;
+  margin-left: -3.6rem;
 }
 
 /* line 60, src/sass/_header.scss */
+header .logo + .button + .button {
+  margin-left: 132px;
+  margin-left: 13.2rem;
+}
+
+/* line 63, src/sass/_header.scss */
+header .logo + .button + .button + a {
+  color: #2bc1f6;
+  position: absolute;
+  top: 19px;
+  top: 1.9rem;
+  left: 50%;
+  margin-left: 332px;
+  margin-left: 33.2rem;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+
+/* line 82, src/sass/_header.scss */
+header .logo + .button + .button + a:hover {
+  color: #5ccff8;
+}
+
+/* line 99, src/sass/_header.scss */
 header [class*="icon-"], header form:after {
   color: blue;
   font-size: 18px;
   font-size: 1.8rem;
 }
 
-/* line 68, src/sass/_header.scss */
+/* line 107, src/sass/_header.scss */
 header .icon-cart {
   background: rgba(255, 255, 0, 0.6);
   position: absolute;
@@ -2245,25 +2342,25 @@ header .icon-cart {
   height: 22px;
   height: 2.2rem;
   z-index: 0;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-/* line 88, src/sass/_header.scss */
+/* line 127, src/sass/_header.scss */
 header .icon-cart:hover {
   opacity: 0.75;
 }
 
-/* line 95, src/sass/_header.scss */
+/* line 134, src/sass/_header.scss */
 header form {
   position: absolute;
   left: 50%;
 }
 
-/* line 106, src/sass/_header.scss */
+/* line 145, src/sass/_header.scss */
 header form:after {
   background: rgba(255, 255, 0, 0.6);
   content: "\f102";
@@ -2282,19 +2379,19 @@ header form:after {
   vertical-align: top;
   line-height: 1;
   cursor: pointer;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-/* line 146, src/sass/_header.scss */
+/* line 185, src/sass/_header.scss */
 header form:hover:after {
   opacity: 0.75;
 }
 
-/* line 152, src/sass/_header.scss */
+/* line 191, src/sass/_header.scss */
 header form input {
   position: absolute;
   top: 16px;
@@ -2319,7 +2416,7 @@ header form input {
   -webkit-appearance: none;
 }
 
-/* line 188, src/sass/_header.scss */
+/* line 227, src/sass/_header.scss */
 header form button {
   position: absolute;
   top: 16px;
@@ -2334,32 +2431,31 @@ header form button {
   border: 0;
   padding: 0;
   cursor: pointer;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-/* line 218, src/sass/_header.scss */
+/* line 257, src/sass/_header.scss */
 header form button:hover {
   opacity: 0.75;
 }
 
-/* line 227, src/sass/_header.scss */
+/* line 266, src/sass/_header.scss */
 header form.displayed:after {
   display: none;
 }
 
-/* line 233, src/sass/_header.scss */
+/* line 272, src/sass/_header.scss */
 header form:not(.displayed) input,
 header form:not(.displayed) button {
   display: none;
 }
 
-/* line 246, src/sass/_header.scss */
+/* line 285, src/sass/_header.scss */
 header nav {
-  background-color: rgba(255, 255, 0, 0.6);
   background-image: url("../img/!/Greek-Peak_home-page-_ready_a.png");
   background-repeat: no-repeat;
   background-position: -34px 0;

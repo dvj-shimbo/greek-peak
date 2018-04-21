@@ -1,11 +1,63 @@
 /*************************** Button Styles ****************************/
 
 .button {
-	background-color: rgba(255,0,0,0.3);
+//	background-color: rgba(255,0,0,0.6);
+//	background-color: $blue-color;
 
-	display: block;
+	display: inline-block;
 
 	text-transform: uppercase;
 	text-decoration: none;
+	text-align: center;
+
+	cursor: pointer;
+
+
+	font-family: "Open-Sans-Semibold", sans-serif;
+
+
+	@include rem(font-size, 12px);
+
+//	@include border-radius(2px);
+
+	color: white;
+
+
+	position: relative;
+//	z-index: 10;
+
+//	* {
+//		position: relative;
+//		z-index: 10;
+//	}
+//
+	&:after {
+
+		background-color: $blue;
+
+		content: "";
+
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+
+		@include border-radius(2px);
+		@include transition(all 0.25s ease-in-out);
+	}
+
+	&:hover {
+//		color: $blue-color;
+		color: $dark-blue;
+		@include transition(all 0.25s ease-in-out);
+		&:after {
+//			background-color: #fff;
+			background-color: lighten($blue, 15%);
+		}
+	}
+
+	
 
 }

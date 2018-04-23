@@ -93,28 +93,28 @@ html {
 @media (min-width: 576px) {
   /* line 6, node_modules/bootstrap/scss/_grid.scss */
   .container {
-    max-width: 540px;
+    max-width: 768px;
   }
 }
 
 @media (min-width: 768px) {
   /* line 6, node_modules/bootstrap/scss/_grid.scss */
   .container {
-    max-width: 720px;
+    max-width: 992px;
   }
 }
 
 @media (min-width: 992px) {
   /* line 6, node_modules/bootstrap/scss/_grid.scss */
   .container {
-    max-width: 960px;
+    max-width: 1200px;
   }
 }
 
 @media (min-width: 1200px) {
   /* line 6, node_modules/bootstrap/scss/_grid.scss */
   .container {
-    max-width: 1140px;
+    max-width: 1300px;
   }
 }
 
@@ -2151,7 +2151,17 @@ html {
 }
 
 /*************************** Base Styles ****************************/
-/* line 52, src/sass/common/_base.scss */
+/* line 9, src/sass/common/_base.scss */
+[class*="col"] {
+  border: solid 1px;
+}
+
+/* line 16, src/sass/common/_base.scss */
+.container {
+  padding: 0 2.9%;
+}
+
+/* line 56, src/sass/common/_base.scss */
 body {
   overflow-x: hidden;
   overflow-y: scroll;
@@ -2162,17 +2172,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 67, src/sass/common/_base.scss */
+/* line 71, src/sass/common/_base.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 69, src/sass/common/_base.scss */
+/* line 73, src/sass/common/_base.scss */
 i, em {
   font-style: italic;
 }
 
-/* line 118, src/sass/common/_base.scss */
+/* line 122, src/sass/common/_base.scss */
 ::-webkit-search-decoration,
 ::-webkit-search-cancel-button,
 ::-webkit-search-results-button,
@@ -2180,7 +2190,7 @@ i, em {
   display: none;
 }
 
-/* line 123, src/sass/common/_base.scss */
+/* line 127, src/sass/common/_base.scss */
 ::-ms-clear,
 ::-ms-reveal {
   display: none;
@@ -2253,59 +2263,131 @@ header {
   cursor: default;
 }
 
-/* line 35, src/sass/_header.scss */
-header:before {
+/* line 36, src/sass/_header.scss */
+header:before, header:after {
   content: "";
   display: block;
-  background-color: rgba(255, 0, 255, 0.6);
   position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
+}
+
+/* line 52, src/sass/_header.scss */
+header:before {
+  background-color: rgba(255, 0, 255, 0.6);
+  top: 0;
   height: 48px;
   height: 3rem;
   z-index: -1;
 }
 
-/* line 50, src/sass/_header.scss */
+/* line 59, src/sass/_header.scss */
+header:after {
+  background: linear-gradient(#333333, rgba(51, 51, 51, 0));
+  top: 120px;
+  top: 7.5rem;
+  height: 4px;
+  height: 0.25rem;
+  z-index: 0;
+}
+
+/* line 73, src/sass/_header.scss */
 header ul {
-  background-color: rgba(255, 255, 0, 0.3);
   float: left;
-  display: inline-block;
+  text-align: left;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+/* line 89, src/sass/_header.scss */
+header ul li {
+  text-transform: uppercase;
+}
+
+/* line 118, src/sass/_header.scss */
+header ul:first-child {
+  background-color: rgba(255, 255, 0, 0.3);
   margin-left: 2.9%;
   margin-right: 2%;
 }
 
-/* line 65, src/sass/_header.scss */
-header ul li {
+/* line 130, src/sass/_header.scss */
+header ul:first-child li {
   display: inline-block;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-size: 0.75rem;
+  line-height: 12px;
+  line-height: 0.75rem;
   margin-top: 20px;
   margin-top: 1.25rem;
   margin-bottom: 16px;
   margin-bottom: 1rem;
 }
 
-/* line 77, src/sass/_header.scss */
-header ul li:not(:last-child) {
-  margin-right: 23px;
-  margin-right: 1.4375rem;
+/* line 139, src/sass/_header.scss */
+header ul:first-child li:not(:last-child) {
+  margin-right: 24px;
+  margin-right: 1.5rem;
 }
 
-/* line 82, src/sass/_header.scss */
-header ul li a {
+/* line 144, src/sass/_header.scss */
+header ul:first-child li a {
   color: red;
   text-decoration: none;
 }
 
-/* line 86, src/sass/_header.scss */
-header ul li a:hover {
+/* line 148, src/sass/_header.scss */
+header ul:first-child li a:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* line 94, src/sass/_header.scss */
+/* line 156, src/sass/_header.scss */
+header ul:last-child {
+  background-color: rgba(0, 255, 255, 0.3);
+  font-family: "Open-Sans-Semibold", sans-serif;
+  margin-left: 3.4%;
+  display: inline-table;
+  width: 80%;
+}
+
+/* line 171, src/sass/_header.scss */
+header ul:last-child li {
+  display: table-cell;
+  padding-top: 21px;
+  padding-top: 1.3125rem;
+  padding-bottom: 15px;
+  padding-bottom: 0.9375rem;
+  line-height: 18px;
+  line-height: 1.125rem;
+  letter-spacing: 0.8px;
+  letter-spacing: 0.05rem;
+}
+
+/* line 180, src/sass/_header.scss */
+header ul:last-child li:not(:last-child) {
+  padding-right: 28px;
+  padding-right: 1.75rem;
+}
+
+/* line 187, src/sass/_header.scss */
+header ul:last-child li .container-fluid {
+  background-color: rgba(255, 255, 0, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 120px;
+  z-index: 1;
+}
+
+/* line 211, src/sass/_header.scss */
+header ul:last-child li .container-fluid:before {
+  content: "";
+  background-color: red;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+}
+
+/* line 232, src/sass/_header.scss */
 header ul:first-child ~ .button {
   width: 11.1%;
   padding: 10px 0;
@@ -2316,12 +2398,12 @@ header ul:first-child ~ .button {
   float: left;
 }
 
-/* line 108, src/sass/_header.scss */
+/* line 246, src/sass/_header.scss */
 header ul:first-child ~ a:not(.button) {
   text-decoration: none;
 }
 
-/* line 113, src/sass/_header.scss */
+/* line 251, src/sass/_header.scss */
 header ul:first-child + .button + .button + a {
   float: left;
   color: #2bc1f6;
@@ -2335,19 +2417,19 @@ header ul:first-child + .button + .button + a {
   margin-left: 4.2%;
 }
 
-/* line 153, src/sass/_header.scss */
+/* line 291, src/sass/_header.scss */
 header ul:first-child + .button + .button + a:hover {
   color: #5ccff8;
 }
 
-/* line 158, src/sass/_header.scss */
+/* line 296, src/sass/_header.scss */
 header [class*="icon-"], header form:after {
   color: red;
   font-size: 18px;
   font-size: 1.125rem;
 }
 
-/* line 164, src/sass/_header.scss */
+/* line 302, src/sass/_header.scss */
 header form {
   display: inline-block;
   position: relative;
@@ -2359,7 +2441,7 @@ header form {
   height: 1.375rem;
 }
 
-/* line 181, src/sass/_header.scss */
+/* line 319, src/sass/_header.scss */
 header form:after {
   background: rgba(255, 255, 0, 0.4);
   content: "\f102";
@@ -2381,17 +2463,17 @@ header form:after {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 220, src/sass/_header.scss */
+/* line 358, src/sass/_header.scss */
 header form:hover {
   cursor: pointer;
 }
 
-/* line 222, src/sass/_header.scss */
+/* line 360, src/sass/_header.scss */
 header form:hover:after {
   opacity: 0.75;
 }
 
-/* line 229, src/sass/_header.scss */
+/* line 367, src/sass/_header.scss */
 header form input {
   position: absolute;
   right: 0;
@@ -2413,7 +2495,7 @@ header form input {
   -webkit-appearance: none;
 }
 
-/* line 261, src/sass/_header.scss */
+/* line 399, src/sass/_header.scss */
 header form button {
   position: absolute;
   right: 0;
@@ -2432,23 +2514,23 @@ header form button {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 282, src/sass/_header.scss */
+/* line 420, src/sass/_header.scss */
 header form button:hover {
   opacity: 0.75;
 }
 
-/* line 289, src/sass/_header.scss */
+/* line 427, src/sass/_header.scss */
 header form.displayed:after {
   display: none;
 }
 
-/* line 294, src/sass/_header.scss */
+/* line 432, src/sass/_header.scss */
 header form:not(.displayed) input,
 header form:not(.displayed) button {
   display: none;
 }
 
-/* line 303, src/sass/_header.scss */
+/* line 441, src/sass/_header.scss */
 header form + a {
   float: right;
   margin-left: 2.4%;
@@ -2459,7 +2541,7 @@ header form + a {
   height: 1.375rem;
 }
 
-/* line 312, src/sass/_header.scss */
+/* line 450, src/sass/_header.scss */
 header form + a .icon-cart {
   background: rgba(255, 255, 0, 0.4);
   -webkit-transition: all 0.2s ease-in-out;
@@ -2469,331 +2551,20 @@ header form + a .icon-cart {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 318, src/sass/_header.scss */
+/* line 456, src/sass/_header.scss */
 header form + a:hover .icon-cart {
   opacity: 0.75;
 }
 
-/* line 327, src/sass/_header.scss */
+/* line 465, src/sass/_header.scss */
 header .logo {
   clear: both;
   float: left;
   display: inline-block;
   margin-left: 3%;
-  margin-right: 2%;
   margin-top: 8px;
   margin-top: 0.5rem;
-  width: 146px;
-  width: 9.125rem;
+  width: 11.2%;
 }
-
-/*
-header {
-
-	background-color: rgba(255,0,0,0.2);
-	height: 120px;
-
-	position: relative;
-	z-index: 0;
-
-
-
-	&:before {
-		content: "";
-		display: block;
-//		background-color: rgba(0,0,255,0.6);
-//		background-color: #00303c;
-		background-color: $dark-blue;
-
-		position: absolute;
-		left: 0;
-		width: 100%;
-//		height: 48px;
-		@include rem(height, 48px);
-		z-index: -1;
-
-	}
-
-	.logo {
-
-		position: absolute;
-
-//		top: 56px;
-		@include rem(top, 56px);
-
-		left: 50%;
-
-//		margin-left: -611px;
-		@include rem(margin-left, -611px);
-
-//		width: 146px;
-		@include rem(width, 146px);
-
-
-
-
-		& + .button,
-		& + .button + .button {
-			position: absolute;
-
-			@include rem(top, 8px);
-			left: 50%;
-
-			@include rem(padding, 11px 0 8px);
-			@include rem(width, 144px);			
-
-		}
-
-		& + .button { @include rem(margin-left, -36px); }
-		& + .button + .button { @include rem(margin-left, 132px); }
-
-
-		& + .button + .button + a {
-
-//			color: rgba(255,0,0,0.6);
-			color: #2bc1f6;
-
-
-			position: absolute;
-
-			@include rem(top, 19px);
-			left: 50%;
-			@include rem(margin-left, 332px);
-
-			font-weight: bold;
-			font-style: italic;
-			text-transform: uppercase;
-			text-decoration: none;		
-
-			@include rem(font-size, 14px);
-
-			&:hover {
-				color: lighten(#2bc1f6, 10%);
-			}
-
-
-		}
-
-
-
-	}
-
-//	.button {
-//		position: absolute;
-//	}
-
-
-
-	[class*="icon-"] {
-		color: blue;
-//		color: #fff;
-
-//		font-size: 18px;
-		@include rem(font-size, 18px);
-	}
-
-	.icon-cart {
-
-		background: rgba(255,255,0,0.6);
-
-		position: absolute;
-
-//		top: 16px;
-		@include rem(top, 16px);
-
-		left: 50%;
-
-//		margin-left: 590px;
-		@include rem(margin-left , 590px);
-
-		@include rem(height, 22px);
-
-		z-index: 0;
-
-		@include transition(all 0.2s ease-in-out);
-
-		&:hover {
-			opacity: 0.75;
-		}
-
-	}
-
-
-	form {
-
-//		background: rgba(0,255,0,0.5);
-//		width: 50px;
-//		height: 50px;
-
-
-		position: absolute;
-
-		left: 50%;
-
-		&:after {
-
-//			display: none;
-
-			@extend [class*="icon-"];
-
-			background: rgba(255,255,0,0.6);
-
-			content: "\f102";
-
-//			display: block;
-
-			position: absolute;
-
-
-			@include rem(top, 16px);
-			@include rem(left, 542px);
-			@include rem(width, 18px);
-			@include rem(height, 22px);
-
-
-
-//			margin-left: 590px;
-
-			font-family: icons;
-			font-style: normal;
-			font-weight: normal;
-			vertical-align: top;
-			line-height: 1;
-
-//			color: #00f;
-//			font-size: 18px;
-
-			cursor: pointer;
-
-			@include transition(all 0.2s ease-in-out);
-
-		}
-
-		&:hover {
-			&:after {
-				opacity: 0.75;
-			}
-		}
-		
-
-		input {
-//			display: none;
-
-			position: absolute;
-
-//			top: 16px;
-//			left: 320px;
-//			width: 222px;
-//			height: 20px;
-
-			@include rem(top, 16px);
-			@include rem(left, 320px);
-			@include rem(width, 240px);
-			@include rem(height, 22px);
-
-			@include rem(padding-left, 8px);
-			@include rem(padding-right, 24px);
-
-
-
-			border: 0;
-			border-bottom: 1px solid red;
-			outline: 0;
-//			background: transparent;
-			background: rgba(0,255,255,0.6);
-
-			@include rem(font-size, 14px);
-			color: #fff;
-
-			-webkit-appearance: none;
-
-
-
-
-		}
-
-		button {
-//			display: none;
-
-			position: absolute;
-
-//			top: 16px;
-//			left: 542px;
-//			width: 18px;
-//			height: 20px;
-
-			@include rem(top, 16px);
-			@include rem(left, 542px);
-			@include rem(width, 18px);
-			@include rem(height, 22px);
-
-
-
-
-//			background: transparent;
-			background: rgba(255,0,0,0.3);
-
-			border: 0;
-			padding: 0;
-
-//			border-bottom: 1px solid red;
-
-			cursor: pointer;
-
-			@include transition(all 0.2s ease-in-out);
-
-			&:hover {
-				opacity: 0.75;
-			}
-
-
-
-		}
-
-		&.displayed {
-			&:after {
-				display: none;
-			}
-		}
-		&:not(.displayed) {
-
-			& input,
-			& button {
-				display: none;
-			}
-		}
-
-
-	}
-	
-	
-
-
-
-	nav {
-//		background-color: rgba(255,255,0,0.6);
-		background-image: url("../img/!/Greek-Peak_home-page-_ready_a.png");
-		background-repeat: no-repeat;
-		background-position: -34px 0;
-
-
-
-
-
-		margin: 0 auto;
-//		max-width: 1300px;
-		@include rem(max-width, 1300px);
-
-//		height: 48px;
-//		height: 120px;
-		@include rem(height, 120px);
-
-	}
-
-
-
-}
-
-*/
 
 /*# sourceMappingURL=style.css.map */

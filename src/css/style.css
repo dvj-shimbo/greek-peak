@@ -2151,11 +2151,6 @@ html {
 }
 
 /*************************** Base Styles ****************************/
-/* line 18, src/sass/common/_base.scss */
-html {
-  font-size: 62.5%;
-}
-
 /* line 52, src/sass/common/_base.scss */
 body {
   overflow-x: hidden;
@@ -2201,7 +2196,7 @@ i, em {
   cursor: pointer;
   font-family: "Open-Sans-Semibold", sans-serif;
   font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 0.75rem;
   color: white;
   position: relative;
 }
@@ -2251,14 +2246,14 @@ header {
   background-position: -33px 0;
   margin: 0 auto;
   max-width: 1300px;
-  max-width: 130rem;
+  max-width: 81.25rem;
   height: 120px;
-  height: 12rem;
+  height: 7.5rem;
   text-align: right;
   cursor: default;
 }
 
-/* line 30, src/sass/_header.scss */
+/* line 35, src/sass/_header.scss */
 header:before {
   content: "";
   display: block;
@@ -2268,11 +2263,11 @@ header:before {
   left: 0;
   width: 100%;
   height: 48px;
-  height: 4.8rem;
+  height: 3rem;
   z-index: -1;
 }
 
-/* line 45, src/sass/_header.scss */
+/* line 50, src/sass/_header.scss */
 header ul {
   background-color: rgba(255, 255, 0, 0.3);
   float: left;
@@ -2281,52 +2276,52 @@ header ul {
   margin-right: 2%;
 }
 
-/* line 60, src/sass/_header.scss */
+/* line 65, src/sass/_header.scss */
 header ul li {
   display: inline-block;
   text-transform: uppercase;
   font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 0.75rem;
   margin-top: 20px;
-  margin-top: 2rem;
+  margin-top: 1.25rem;
   margin-bottom: 16px;
-  margin-bottom: 1.6rem;
-}
-
-/* line 72, src/sass/_header.scss */
-header ul li:not(:last-child) {
-  margin-right: 24px;
-  margin-right: 2.4rem;
+  margin-bottom: 1rem;
 }
 
 /* line 77, src/sass/_header.scss */
+header ul li:not(:last-child) {
+  margin-right: 23px;
+  margin-right: 1.4375rem;
+}
+
+/* line 82, src/sass/_header.scss */
 header ul li a {
   color: red;
   text-decoration: none;
 }
 
-/* line 81, src/sass/_header.scss */
+/* line 86, src/sass/_header.scss */
 header ul li a:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* line 89, src/sass/_header.scss */
+/* line 94, src/sass/_header.scss */
 header ul:first-child ~ .button {
   width: 11.1%;
-  padding: 12px 0 8px;
-  padding: 1.2rem 0 0.8rem;
+  padding: 10px 0;
+  padding: 0.625rem 0;
   margin-top: 8px;
-  margin-top: 0.8rem;
-  margin-left: 2%;
+  margin-top: 0.5rem;
+  margin-left: 1.9%;
   float: left;
 }
 
-/* line 103, src/sass/_header.scss */
+/* line 108, src/sass/_header.scss */
 header ul:first-child ~ a:not(.button) {
   text-decoration: none;
 }
 
-/* line 108, src/sass/_header.scss */
+/* line 113, src/sass/_header.scss */
 header ul:first-child + .button + .button + a {
   float: left;
   color: #2bc1f6;
@@ -2334,79 +2329,51 @@ header ul:first-child + .button + .button + a {
   font-style: italic;
   text-transform: uppercase;
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   margin-top: 19px;
-  margin-top: 1.9rem;
+  margin-top: 1.1875rem;
   margin-left: 4.2%;
 }
 
-/* line 148, src/sass/_header.scss */
+/* line 153, src/sass/_header.scss */
 header ul:first-child + .button + .button + a:hover {
   color: #5ccff8;
 }
 
-/* line 153, src/sass/_header.scss */
+/* line 158, src/sass/_header.scss */
 header [class*="icon-"], header form:after {
   color: red;
   font-size: 18px;
-  font-size: 1.8rem;
+  font-size: 1.125rem;
 }
 
-/* line 158, src/sass/_header.scss */
-header .icon-cart {
-  background: rgba(255, 255, 0, 0.2);
-  display: inline-block;
-  margin-left: 2.1%;
-  margin-right: 2.9%;
-  margin-top: 16px;
-  margin-top: 1.6rem;
-  height: 22px;
-  height: 2.2rem;
-}
-
-/* line 172, src/sass/_header.scss */
-header .icon-cart:before {
-  background: rgba(255, 255, 0, 0.2);
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-/* line 180, src/sass/_header.scss */
-header .icon-cart:hover:before {
-  opacity: 0.75;
-}
-
-/* line 187, src/sass/_header.scss */
+/* line 164, src/sass/_header.scss */
 header form {
   display: inline-block;
   position: relative;
-  top: 6px;
-  top: 0.6rem;
+  margin-top: 16px;
+  margin-top: 1rem;
   width: 18px;
-  width: 1.8rem;
+  width: 1.125rem;
   height: 22px;
-  height: 2.2rem;
+  height: 1.375rem;
 }
 
-/* line 202, src/sass/_header.scss */
+/* line 181, src/sass/_header.scss */
 header form:after {
   background: rgba(255, 255, 0, 0.4);
   content: "\f102";
   display: block;
   position: absolute;
   width: 18px;
-  width: 1.8rem;
+  width: 1.125rem;
   height: 22px;
-  height: 2.2rem;
+  height: 1.375rem;
   font-family: icons;
   font-style: normal;
   font-weight: normal;
   vertical-align: top;
   line-height: 1;
-  cursor: pointer;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -2414,36 +2381,46 @@ header form:after {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 242, src/sass/_header.scss */
+/* line 220, src/sass/_header.scss */
+header form:hover {
+  cursor: pointer;
+}
+
+/* line 222, src/sass/_header.scss */
 header form:hover:after {
   opacity: 0.75;
 }
 
-/* line 249, src/sass/_header.scss */
+/* line 229, src/sass/_header.scss */
 header form input {
   position: absolute;
   right: 0;
-  width: 0;
+  width: 240px;
+  width: 15rem;
   height: 22px;
-  height: 2.2rem;
+  height: 1.375rem;
+  padding-left: 8px;
+  padding-left: 0.5rem;
+  padding-right: 24px;
+  padding-right: 1.5rem;
   border: 0;
   border-bottom: 1px solid red;
   outline: 0;
   background: rgba(0, 255, 255, 0.6);
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   color: #fff;
   -webkit-appearance: none;
 }
 
-/* line 280, src/sass/_header.scss */
+/* line 261, src/sass/_header.scss */
 header form button {
   position: absolute;
   right: 0;
   width: 18px;
-  width: 1.8rem;
+  width: 1.125rem;
   height: 22px;
-  height: 2.2rem;
+  height: 1.375rem;
   background: rgba(255, 255, 0, 0.4);
   border: 0;
   padding: 0;
@@ -2455,20 +2432,59 @@ header form button {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 301, src/sass/_header.scss */
+/* line 282, src/sass/_header.scss */
 header form button:hover {
   opacity: 0.75;
 }
 
-/* line 308, src/sass/_header.scss */
+/* line 289, src/sass/_header.scss */
 header form.displayed:after {
   display: none;
 }
 
-/* line 313, src/sass/_header.scss */
+/* line 294, src/sass/_header.scss */
 header form:not(.displayed) input,
 header form:not(.displayed) button {
   display: none;
+}
+
+/* line 303, src/sass/_header.scss */
+header form + a {
+  float: right;
+  margin-left: 2.4%;
+  margin-right: 2.9%;
+  margin-top: 16px;
+  margin-top: 1rem;
+  height: 22px;
+  height: 1.375rem;
+}
+
+/* line 312, src/sass/_header.scss */
+header form + a .icon-cart {
+  background: rgba(255, 255, 0, 0.4);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 318, src/sass/_header.scss */
+header form + a:hover .icon-cart {
+  opacity: 0.75;
+}
+
+/* line 327, src/sass/_header.scss */
+header .logo {
+  clear: both;
+  float: left;
+  display: inline-block;
+  margin-left: 3%;
+  margin-right: 2%;
+  margin-top: 8px;
+  margin-top: 0.5rem;
+  width: 146px;
+  width: 9.125rem;
 }
 
 /*

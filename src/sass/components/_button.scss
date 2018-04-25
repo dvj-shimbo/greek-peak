@@ -24,7 +24,11 @@
 
 
 	position: relative;
-//	z-index: 10;
+	z-index: 0;
+
+	@include rem(padding, 15px 0);
+
+
 
 //	* {
 //		position: relative;
@@ -43,6 +47,7 @@
 		top: 0;
 		bottom: 0;
 		z-index: -1;
+
 
 		@include border-radius(2px);
 		@include transition(all 0.25s ease-in-out);

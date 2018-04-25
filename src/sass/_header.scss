@@ -269,24 +269,25 @@ header {
 //					}
 
 					.container {
+
 						.row {
+
+//							@include rem(min-height, 97px);
+
 							&.vdivide {
 								[class*="col"] {
 									&:not(:last-child) {
 										&:after {
 											background-color: red;
 //											background-color: #e4e4e5;
-//											width: 1px;
-											@include rem(width, 1px);
+
 											content: "";
 											display: block;
 											position: absolute;
-//											top: 16px;
-//											bottom: 16px;
 											right: 0;
-//											min-height: 70px;
 											@include rem(top, 16px);
 											@include rem(bottom, 16px);
+											@include rem(width, 1px);
 										}
 									}
 								}
@@ -296,11 +297,25 @@ header {
 							[class*="col"] {
 								background: rgba(255,0,0,0.2);
 //								border: solid 1px;
+
+								@include rem(min-height, 97px);
+
 								h5 {
 									font-weight: bold;
 									color: rgba(255,0,255,0.9);
 //									color: #abb8bc;
+									a {
+										color: $blue;
+										text-decoration: none;
+									}
 								}
+
+								.button {
+									width: 100%;
+									@include rem(max-width, 200px);
+								}
+
+
 							}
 						}
 					}

@@ -175,16 +175,31 @@ header {
 				p {
 					font-family: "Open-Sans-Semibold", sans-serif;
 					cursor: pointer;
+
+//					&:hover {
+//						color: darken($blue, 15%);
+//					}
 					
 //					br { display: none; }					
 				}
 
 
 				&.selected {
-					color: $blue;
+					p {
+						color: $blue;
+//						cursor: default;
+						&:hover {
+							color: darken($blue, 15%);
+						}
+					}
 				}
 
 				&:not(.selected) {
+					p {
+						&:hover {
+							color: darken($blue, 15%);
+						}
+					}
 					.container-fluid {
 						display: none;
 					}
@@ -272,9 +287,9 @@ header {
 
 						.row {
 
-//							@include rem(min-height, 97px);
+							@include rem(min-height, 97px);
 
-							&.vdivide {
+							&.v-divide {
 								[class*="col"] {
 									&:not(:last-child) {
 										&:after {
@@ -290,6 +305,15 @@ header {
 											@include rem(width, 1px);
 										}
 									}
+
+//									.row {
+//										[class*="col"] {
+//											&:after {
+//												display: none;
+//											}
+//										}
+//									}
+
 								}
 
 							}
@@ -298,16 +322,80 @@ header {
 								background: rgba(255,0,0,0.2);
 //								border: solid 1px;
 
-								@include rem(min-height, 97px);
+//								@include rem(min-height, 97px);
+								
+								@include rem(font-size, 14px);
+								@include rem(letter-spacing, 0.1px);
+									
+								
+								.row {
+
+//									@include rem(margin-top, 16px);
+
+									[class*="col"] {
+										&:after {
+											display: none;
+										}
+
+//										p {
+//											font-family: "Open-Sans-Light", sans-serif;
+//											color: $font-color;
+//											text-transform: none;
+//											@include rem(font-size, 14px);
+//											@include rem(line-height, 30px);
+//											@include rem(letter-spacing, 0.1px);
+//										}
+									}
+								}
 
 								h5 {
 									font-weight: bold;
 									color: rgba(255,0,255,0.9);
 //									color: #abb8bc;
+
+//									@include rem(font-size, 14px);
+//									@include rem(letter-spacing, 0.1px);
+
+									@include rem(margin-top, 35px);
+
 									a {
 										color: $blue;
 										text-decoration: none;
+										&:hover {
+											color: darken($blue, 15%);
+										}
 									}
+								}
+
+								p {
+									font-family: "Open-Sans-Light", sans-serif;
+									color: $font-color;
+									text-transform: none;
+//									@include rem(font-size, 14px);
+									@include rem(line-height, 30px);
+//									@include rem(letter-spacing, 0.1px);
+
+									&:first-child {
+										@include rem(margin-top, 16px);
+									}
+
+									&:last-child {
+										@include rem(margin-bottom, 16px);
+									}
+
+
+									b, strong {
+										font-family: "Open-Sans-Semibold", sans-serif;
+									}
+									a {
+										color: $font-color;
+										text-decoration: none;
+
+										&:hover {
+											color: lighten($font-color, 15%);
+										}
+									}
+
 								}
 
 								.button {

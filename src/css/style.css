@@ -3995,9 +3995,25 @@ table {
 }
 
 @font-face {
-  font-family: "Open-Sans-SemiboldItalic";
+  font-family: "Open-Sans-Semibold";
   src: url("../fonts/open-sans/SemiboldItalic/OpenSans-SemiboldItalic.eot");
   src: url("../fonts/open-sans/SemiboldItalic/OpenSans-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/SemiboldItalic/OpenSans-SemiboldItalic.woff2") format("woff2"), url("../fonts/open-sans/SemiboldItalic/OpenSans-SemiboldItalic.woff") format("woff"), url("../fonts/open-sans/SemiboldItalic/OpenSans-SemiboldItalic.ttf") format("truetype"), url("../fonts/open-sans/SemiboldItalic/OpenSans-SemiboldItalic.svg#OpenSansSemiboldItalic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Open-Sans-Light";
+  src: url("../fonts/open-sans/Light/OpenSans-Light.eot");
+  src: url("../fonts/open-sans/Light/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/Light/OpenSans-Light.woff2") format("woff2"), url("../fonts/open-sans/Light/OpenSans-Light.woff") format("woff"), url("../fonts/open-sans/Light/OpenSans-Light.ttf") format("truetype"), url("../fonts/open-sans/Light/OpenSans-Light.svg#OpenSansLight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open-Sans-Light";
+  src: url("../fonts/open-sans/LightItalic/OpenSans-LightItalic.eot");
+  src: url("../fonts/open-sans/LightItalic/OpenSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/LightItalic/OpenSans-LightItalic.woff2") format("woff2"), url("../fonts/open-sans/LightItalic/OpenSans-LightItalic.woff") format("woff"), url("../fonts/open-sans/LightItalic/OpenSans-LightItalic.ttf") format("truetype"), url("../fonts/open-sans/LightItalic/OpenSans-LightItalic.svg#OpenSansSemiboldItalic") format("svg");
   font-weight: normal;
   font-style: italic;
 }
@@ -4247,17 +4263,27 @@ header ul:last-child li p {
   cursor: pointer;
 }
 
-/* line 183, src/sass/_header.scss */
-header ul:last-child li.selected {
+/* line 188, src/sass/_header.scss */
+header ul:last-child li.selected p {
   color: rgba(0, 255, 0, 0.5);
 }
 
-/* line 188, src/sass/_header.scss */
+/* line 191, src/sass/_header.scss */
+header ul:last-child li.selected p:hover {
+  color: rgba(0, 179, 0, 0.5);
+}
+
+/* line 199, src/sass/_header.scss */
+header ul:last-child li:not(.selected) p:hover {
+  color: rgba(0, 179, 0, 0.5);
+}
+
+/* line 203, src/sass/_header.scss */
 header ul:last-child li:not(.selected) .container-fluid {
   display: none;
 }
 
-/* line 196, src/sass/_header.scss */
+/* line 211, src/sass/_header.scss */
 header ul:last-child li .container-fluid {
   background-color: rgba(255, 255, 0, 0.5);
   position: absolute;
@@ -4268,7 +4294,7 @@ header ul:last-child li .container-fluid {
   z-index: 1;
 }
 
-/* line 222, src/sass/_header.scss */
+/* line 237, src/sass/_header.scss */
 header ul:last-child li .container-fluid:before, header ul:last-child li .container-fluid:after {
   content: "";
   position: absolute;
@@ -4276,14 +4302,14 @@ header ul:last-child li .container-fluid:before, header ul:last-child li .contai
   right: 0;
 }
 
-/* line 230, src/sass/_header.scss */
+/* line 245, src/sass/_header.scss */
 header ul:last-child li .container-fluid:before {
   height: 1px;
   height: 0.0625rem;
   background-color: #0498cd;
 }
 
-/* line 247, src/sass/_header.scss */
+/* line 262, src/sass/_header.scss */
 header ul:last-child li .container-fluid:after {
   height: 4px;
   height: 0.25rem;
@@ -4293,8 +4319,14 @@ header ul:last-child li .container-fluid:after {
   background-image: linear-gradient(red, yellow);
 }
 
-/* line 280, src/sass/_header.scss */
-header ul:last-child li .container-fluid .container .row.vdivide [class*="col"]:not(:last-child):after {
+/* line 288, src/sass/_header.scss */
+header ul:last-child li .container-fluid .container .row {
+  min-height: 97px;
+  min-height: 6.0625rem;
+}
+
+/* line 295, src/sass/_header.scss */
+header ul:last-child li .container-fluid .container .row.v-divide [class*="col"]:not(:last-child):after {
   background-color: red;
   content: "";
   display: block;
@@ -4308,33 +4340,84 @@ header ul:last-child li .container-fluid .container .row.vdivide [class*="col"]:
   width: 0.0625rem;
 }
 
-/* line 297, src/sass/_header.scss */
+/* line 321, src/sass/_header.scss */
 header ul:last-child li .container-fluid .container .row [class*="col"] {
   background: rgba(255, 0, 0, 0.2);
-  min-height: 97px;
-  min-height: 6.0625rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  letter-spacing: 0.1px;
+  letter-spacing: 0.00625rem;
 }
 
-/* line 303, src/sass/_header.scss */
+/* line 336, src/sass/_header.scss */
+header ul:last-child li .container-fluid .container .row [class*="col"] .row [class*="col"]:after {
+  display: none;
+}
+
+/* line 351, src/sass/_header.scss */
 header ul:last-child li .container-fluid .container .row [class*="col"] h5 {
   font-weight: bold;
   color: rgba(255, 0, 255, 0.9);
+  margin-top: 35px;
+  margin-top: 2.1875rem;
 }
 
-/* line 307, src/sass/_header.scss */
+/* line 361, src/sass/_header.scss */
 header ul:last-child li .container-fluid .container .row [class*="col"] h5 a {
   color: rgba(0, 255, 0, 0.5);
   text-decoration: none;
 }
 
-/* line 313, src/sass/_header.scss */
+/* line 364, src/sass/_header.scss */
+header ul:last-child li .container-fluid .container .row [class*="col"] h5 a:hover {
+  color: rgba(0, 179, 0, 0.5);
+}
+
+/* line 370, src/sass/_header.scss */
+header ul:last-child li .container-fluid .container .row [class*="col"] p {
+  font-family: "Open-Sans-Light", sans-serif;
+  color: red;
+  text-transform: none;
+  line-height: 30px;
+  line-height: 1.875rem;
+}
+
+/* line 378, src/sass/_header.scss */
+header ul:last-child li .container-fluid .container .row [class*="col"] p:first-child {
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+
+/* line 382, src/sass/_header.scss */
+header ul:last-child li .container-fluid .container .row [class*="col"] p:last-child {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
+
+/* line 387, src/sass/_header.scss */
+header ul:last-child li .container-fluid .container .row [class*="col"] p b, header ul:last-child li .container-fluid .container .row [class*="col"] p strong {
+  font-family: "Open-Sans-Semibold", sans-serif;
+}
+
+/* line 390, src/sass/_header.scss */
+header ul:last-child li .container-fluid .container .row [class*="col"] p a {
+  color: red;
+  text-decoration: none;
+}
+
+/* line 394, src/sass/_header.scss */
+header ul:last-child li .container-fluid .container .row [class*="col"] p a:hover {
+  color: #ff4d4d;
+}
+
+/* line 401, src/sass/_header.scss */
 header ul:last-child li .container-fluid .container .row [class*="col"] .button {
   width: 100%;
   max-width: 200px;
   max-width: 12.5rem;
 }
 
-/* line 334, src/sass/_header.scss */
+/* line 422, src/sass/_header.scss */
 header ul:first-child ~ .button {
   width: 11.1%;
   padding: 10px 0;
@@ -4345,12 +4428,12 @@ header ul:first-child ~ .button {
   float: left;
 }
 
-/* line 348, src/sass/_header.scss */
+/* line 436, src/sass/_header.scss */
 header ul:first-child ~ a:not(.button) {
   text-decoration: none;
 }
 
-/* line 353, src/sass/_header.scss */
+/* line 441, src/sass/_header.scss */
 header ul:first-child + .button + .button + a {
   float: left;
   color: rgba(0, 255, 0, 0.5);
@@ -4364,19 +4447,19 @@ header ul:first-child + .button + .button + a {
   margin-left: 4.2%;
 }
 
-/* line 393, src/sass/_header.scss */
+/* line 481, src/sass/_header.scss */
 header ul:first-child + .button + .button + a:hover {
   color: red;
 }
 
-/* line 399, src/sass/_header.scss */
+/* line 487, src/sass/_header.scss */
 header [class*="icon-"], header form:after {
   color: rgba(0, 0, 255, 0.8);
   font-size: 18px;
   font-size: 1.125rem;
 }
 
-/* line 405, src/sass/_header.scss */
+/* line 493, src/sass/_header.scss */
 header form {
   display: inline-block;
   position: relative;
@@ -4388,7 +4471,7 @@ header form {
   height: 1.375rem;
 }
 
-/* line 422, src/sass/_header.scss */
+/* line 510, src/sass/_header.scss */
 header form:after {
   background: rgba(255, 255, 0, 0.4);
   content: "\f102";
@@ -4410,17 +4493,17 @@ header form:after {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 461, src/sass/_header.scss */
+/* line 549, src/sass/_header.scss */
 header form:hover {
   cursor: pointer;
 }
 
-/* line 463, src/sass/_header.scss */
+/* line 551, src/sass/_header.scss */
 header form:hover:after {
   opacity: 0.75;
 }
 
-/* line 470, src/sass/_header.scss */
+/* line 558, src/sass/_header.scss */
 header form input {
   position: absolute;
   right: 0;
@@ -4442,7 +4525,7 @@ header form input {
   -webkit-appearance: none;
 }
 
-/* line 502, src/sass/_header.scss */
+/* line 590, src/sass/_header.scss */
 header form button {
   position: absolute;
   right: 0;
@@ -4461,23 +4544,23 @@ header form button {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 523, src/sass/_header.scss */
+/* line 611, src/sass/_header.scss */
 header form button:hover {
   opacity: 0.75;
 }
 
-/* line 530, src/sass/_header.scss */
+/* line 618, src/sass/_header.scss */
 header form.displayed:after {
   display: none;
 }
 
-/* line 535, src/sass/_header.scss */
+/* line 623, src/sass/_header.scss */
 header form:not(.displayed) input,
 header form:not(.displayed) button {
   display: none;
 }
 
-/* line 544, src/sass/_header.scss */
+/* line 632, src/sass/_header.scss */
 header form + a {
   float: right;
   margin-left: 2.3%;
@@ -4489,7 +4572,7 @@ header form + a {
   height: 1.375rem;
 }
 
-/* line 554, src/sass/_header.scss */
+/* line 642, src/sass/_header.scss */
 header form + a .icon-cart {
   background: rgba(255, 255, 0, 0.4);
   -webkit-transition: all 0.2s ease-in-out;
@@ -4499,12 +4582,12 @@ header form + a .icon-cart {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 560, src/sass/_header.scss */
+/* line 648, src/sass/_header.scss */
 header form + a:hover .icon-cart {
   opacity: 0.75;
 }
 
-/* line 569, src/sass/_header.scss */
+/* line 657, src/sass/_header.scss */
 header .logo {
   clear: both;
   float: left;

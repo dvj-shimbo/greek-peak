@@ -1,80 +1,14 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-/* line 6, node_modules/reset-css/_reset.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-main, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-/* line 27, node_modules/reset-css/_reset.scss */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, main, menu, nav, section {
-  display: block;
-}
-
-/* line 31, node_modules/reset-css/_reset.scss */
-body {
-  line-height: 1;
-}
-
-/* line 34, node_modules/reset-css/_reset.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 37, node_modules/reset-css/_reset.scss */
-blockquote, q {
-  quotes: none;
-}
-
-/* line 39, node_modules/reset-css/_reset.scss */
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none;
-}
-
-/* line 44, node_modules/reset-css/_reset.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/*!
- * Bootstrap Grid v4.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2018 The Bootstrap Authors
- * Copyright 2011-2018 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 @-ms-viewport {
   width: device-width;
 }
 
-/* line 12, src/sass/vendor/bootstrap/4.1.0/_bootstrap-grid.scss */
+/* line 41, src/sass/style.scss */
 html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
 }
 
-/* line 17, src/sass/vendor/bootstrap/4.1.0/_bootstrap-grid.scss */
+/* line 46, src/sass/style.scss */
 *,
 *::before,
 *::after {
@@ -111,10 +45,10 @@ html {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1248px) {
   /* line 6, node_modules/bootstrap/scss/_grid.scss */
   .container {
-    max-width: 1300px;
+    max-width: 1248px;
   }
 }
 
@@ -927,7 +861,7 @@ html {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1248px) {
   /* line 32, node_modules/bootstrap/scss/mixins/_grid-framework.scss */
   .col-xl {
     flex-basis: 0;
@@ -1272,7 +1206,7 @@ html {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1248px) {
   /* line 11, node_modules/bootstrap/scss/utilities/_display.scss */
   .d-xl-none {
     display: none !important;
@@ -1937,7 +1871,7 @@ html {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1248px) {
   /* line 11, node_modules/bootstrap/scss/utilities/_flex.scss */
   .flex-xl-row {
     flex-direction: row !important;
@@ -2076,6 +2010,1949 @@ html {
   }
 }
 
+/* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.m-0 {
+  margin: 0 !important;
+}
+
+/* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.mt-0,
+.my-0 {
+  margin-top: 0 !important;
+}
+
+/* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.mr-0,
+.mx-0 {
+  margin-right: 0 !important;
+}
+
+/* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.mb-0,
+.my-0 {
+  margin-bottom: 0 !important;
+}
+
+/* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.ml-0,
+.mx-0 {
+  margin-left: 0 !important;
+}
+
+/* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.m-1 {
+  margin: 0.25rem !important;
+}
+
+/* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.mt-1,
+.my-1 {
+  margin-top: 0.25rem !important;
+}
+
+/* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.mr-1,
+.mx-1 {
+  margin-right: 0.25rem !important;
+}
+
+/* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.mb-1,
+.my-1 {
+  margin-bottom: 0.25rem !important;
+}
+
+/* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.ml-1,
+.mx-1 {
+  margin-left: 0.25rem !important;
+}
+
+/* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.m-2 {
+  margin: 0.5rem !important;
+}
+
+/* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.mt-2,
+.my-2 {
+  margin-top: 0.5rem !important;
+}
+
+/* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.mr-2,
+.mx-2 {
+  margin-right: 0.5rem !important;
+}
+
+/* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.mb-2,
+.my-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+/* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.ml-2,
+.mx-2 {
+  margin-left: 0.5rem !important;
+}
+
+/* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.m-3 {
+  margin: 1rem !important;
+}
+
+/* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.mt-3,
+.my-3 {
+  margin-top: 1rem !important;
+}
+
+/* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.mr-3,
+.mx-3 {
+  margin-right: 1rem !important;
+}
+
+/* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.mb-3,
+.my-3 {
+  margin-bottom: 1rem !important;
+}
+
+/* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.ml-3,
+.mx-3 {
+  margin-left: 1rem !important;
+}
+
+/* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.m-4 {
+  margin: 1.5rem !important;
+}
+
+/* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.mt-4,
+.my-4 {
+  margin-top: 1.5rem !important;
+}
+
+/* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.mr-4,
+.mx-4 {
+  margin-right: 1.5rem !important;
+}
+
+/* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.mb-4,
+.my-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+/* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.ml-4,
+.mx-4 {
+  margin-left: 1.5rem !important;
+}
+
+/* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.m-5 {
+  margin: 3rem !important;
+}
+
+/* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.mt-5,
+.my-5 {
+  margin-top: 3rem !important;
+}
+
+/* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.mr-5,
+.mx-5 {
+  margin-right: 3rem !important;
+}
+
+/* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.mb-5,
+.my-5 {
+  margin-bottom: 3rem !important;
+}
+
+/* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.ml-5,
+.mx-5 {
+  margin-left: 3rem !important;
+}
+
+/* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.p-0 {
+  padding: 0 !important;
+}
+
+/* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pt-0,
+.py-0 {
+  padding-top: 0 !important;
+}
+
+/* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pr-0,
+.px-0 {
+  padding-right: 0 !important;
+}
+
+/* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pb-0,
+.py-0 {
+  padding-bottom: 0 !important;
+}
+
+/* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pl-0,
+.px-0 {
+  padding-left: 0 !important;
+}
+
+/* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.p-1 {
+  padding: 0.25rem !important;
+}
+
+/* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pt-1,
+.py-1 {
+  padding-top: 0.25rem !important;
+}
+
+/* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pr-1,
+.px-1 {
+  padding-right: 0.25rem !important;
+}
+
+/* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pb-1,
+.py-1 {
+  padding-bottom: 0.25rem !important;
+}
+
+/* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pl-1,
+.px-1 {
+  padding-left: 0.25rem !important;
+}
+
+/* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.p-2 {
+  padding: 0.5rem !important;
+}
+
+/* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pt-2,
+.py-2 {
+  padding-top: 0.5rem !important;
+}
+
+/* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pr-2,
+.px-2 {
+  padding-right: 0.5rem !important;
+}
+
+/* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pb-2,
+.py-2 {
+  padding-bottom: 0.5rem !important;
+}
+
+/* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pl-2,
+.px-2 {
+  padding-left: 0.5rem !important;
+}
+
+/* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.p-3 {
+  padding: 1rem !important;
+}
+
+/* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pt-3,
+.py-3 {
+  padding-top: 1rem !important;
+}
+
+/* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pr-3,
+.px-3 {
+  padding-right: 1rem !important;
+}
+
+/* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pb-3,
+.py-3 {
+  padding-bottom: 1rem !important;
+}
+
+/* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pl-3,
+.px-3 {
+  padding-left: 1rem !important;
+}
+
+/* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.p-4 {
+  padding: 1.5rem !important;
+}
+
+/* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pt-4,
+.py-4 {
+  padding-top: 1.5rem !important;
+}
+
+/* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pr-4,
+.px-4 {
+  padding-right: 1.5rem !important;
+}
+
+/* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pb-4,
+.py-4 {
+  padding-bottom: 1.5rem !important;
+}
+
+/* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pl-4,
+.px-4 {
+  padding-left: 1.5rem !important;
+}
+
+/* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.p-5 {
+  padding: 3rem !important;
+}
+
+/* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pt-5,
+.py-5 {
+  padding-top: 3rem !important;
+}
+
+/* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pr-5,
+.px-5 {
+  padding-right: 3rem !important;
+}
+
+/* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pb-5,
+.py-5 {
+  padding-bottom: 3rem !important;
+}
+
+/* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.pl-5,
+.px-5 {
+  padding-left: 3rem !important;
+}
+
+/* line 33, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.m-auto {
+  margin: auto !important;
+}
+
+/* line 34, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.mt-auto,
+.my-auto {
+  margin-top: auto !important;
+}
+
+/* line 38, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.mr-auto,
+.mx-auto {
+  margin-right: auto !important;
+}
+
+/* line 42, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.mb-auto,
+.my-auto {
+  margin-bottom: auto !important;
+}
+
+/* line 46, node_modules/bootstrap/scss/utilities/_spacing.scss */
+.ml-auto,
+.mx-auto {
+  margin-left: auto !important;
+}
+
+@media (min-width: 576px) {
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-sm-0 {
+    margin: 0 !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-sm-0,
+  .my-sm-0 {
+    margin-top: 0 !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-sm-0,
+  .mx-sm-0 {
+    margin-right: 0 !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-sm-0,
+  .my-sm-0 {
+    margin-bottom: 0 !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-sm-0,
+  .mx-sm-0 {
+    margin-left: 0 !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-sm-1 {
+    margin: 0.25rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-sm-1,
+  .my-sm-1 {
+    margin-top: 0.25rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-sm-1,
+  .mx-sm-1 {
+    margin-right: 0.25rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-sm-1,
+  .my-sm-1 {
+    margin-bottom: 0.25rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-sm-1,
+  .mx-sm-1 {
+    margin-left: 0.25rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-sm-2 {
+    margin: 0.5rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-sm-2,
+  .my-sm-2 {
+    margin-top: 0.5rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-sm-2,
+  .mx-sm-2 {
+    margin-right: 0.5rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-sm-2,
+  .my-sm-2 {
+    margin-bottom: 0.5rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-sm-2,
+  .mx-sm-2 {
+    margin-left: 0.5rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-sm-3 {
+    margin: 1rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-sm-3,
+  .my-sm-3 {
+    margin-top: 1rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-sm-3,
+  .mx-sm-3 {
+    margin-right: 1rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-sm-3,
+  .my-sm-3 {
+    margin-bottom: 1rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-sm-3,
+  .mx-sm-3 {
+    margin-left: 1rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-sm-4 {
+    margin: 1.5rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-sm-4,
+  .my-sm-4 {
+    margin-top: 1.5rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-sm-4,
+  .mx-sm-4 {
+    margin-right: 1.5rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-sm-4,
+  .my-sm-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-sm-4,
+  .mx-sm-4 {
+    margin-left: 1.5rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-sm-5 {
+    margin: 3rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-sm-5,
+  .my-sm-5 {
+    margin-top: 3rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-sm-5,
+  .mx-sm-5 {
+    margin-right: 3rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-sm-5,
+  .my-sm-5 {
+    margin-bottom: 3rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-sm-5,
+  .mx-sm-5 {
+    margin-left: 3rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-sm-0 {
+    padding: 0 !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-sm-0,
+  .py-sm-0 {
+    padding-top: 0 !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-sm-0,
+  .px-sm-0 {
+    padding-right: 0 !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-sm-0,
+  .py-sm-0 {
+    padding-bottom: 0 !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-sm-0,
+  .px-sm-0 {
+    padding-left: 0 !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-sm-1 {
+    padding: 0.25rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-sm-1,
+  .py-sm-1 {
+    padding-top: 0.25rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-sm-1,
+  .px-sm-1 {
+    padding-right: 0.25rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-sm-1,
+  .py-sm-1 {
+    padding-bottom: 0.25rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-sm-1,
+  .px-sm-1 {
+    padding-left: 0.25rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-sm-2 {
+    padding: 0.5rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-sm-2,
+  .py-sm-2 {
+    padding-top: 0.5rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-sm-2,
+  .px-sm-2 {
+    padding-right: 0.5rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-sm-2,
+  .py-sm-2 {
+    padding-bottom: 0.5rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-sm-2,
+  .px-sm-2 {
+    padding-left: 0.5rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-sm-3 {
+    padding: 1rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-sm-3,
+  .py-sm-3 {
+    padding-top: 1rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-sm-3,
+  .px-sm-3 {
+    padding-right: 1rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-sm-3,
+  .py-sm-3 {
+    padding-bottom: 1rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-sm-3,
+  .px-sm-3 {
+    padding-left: 1rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-sm-4 {
+    padding: 1.5rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-sm-4,
+  .py-sm-4 {
+    padding-top: 1.5rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-sm-4,
+  .px-sm-4 {
+    padding-right: 1.5rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-sm-4,
+  .py-sm-4 {
+    padding-bottom: 1.5rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-sm-4,
+  .px-sm-4 {
+    padding-left: 1.5rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-sm-5 {
+    padding: 3rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-sm-5,
+  .py-sm-5 {
+    padding-top: 3rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-sm-5,
+  .px-sm-5 {
+    padding-right: 3rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-sm-5,
+  .py-sm-5 {
+    padding-bottom: 3rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-sm-5,
+  .px-sm-5 {
+    padding-left: 3rem !important;
+  }
+  /* line 33, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-sm-auto {
+    margin: auto !important;
+  }
+  /* line 34, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-sm-auto,
+  .my-sm-auto {
+    margin-top: auto !important;
+  }
+  /* line 38, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-sm-auto,
+  .mx-sm-auto {
+    margin-right: auto !important;
+  }
+  /* line 42, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-sm-auto,
+  .my-sm-auto {
+    margin-bottom: auto !important;
+  }
+  /* line 46, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-sm-auto,
+  .mx-sm-auto {
+    margin-left: auto !important;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-md-0 {
+    margin: 0 !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-md-0,
+  .my-md-0 {
+    margin-top: 0 !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-md-0,
+  .mx-md-0 {
+    margin-right: 0 !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-md-0,
+  .my-md-0 {
+    margin-bottom: 0 !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-md-0,
+  .mx-md-0 {
+    margin-left: 0 !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-md-1 {
+    margin: 0.25rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-md-1,
+  .my-md-1 {
+    margin-top: 0.25rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-md-1,
+  .mx-md-1 {
+    margin-right: 0.25rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-md-1,
+  .my-md-1 {
+    margin-bottom: 0.25rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-md-1,
+  .mx-md-1 {
+    margin-left: 0.25rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-md-2 {
+    margin: 0.5rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-md-2,
+  .my-md-2 {
+    margin-top: 0.5rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-md-2,
+  .mx-md-2 {
+    margin-right: 0.5rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-md-2,
+  .my-md-2 {
+    margin-bottom: 0.5rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-md-2,
+  .mx-md-2 {
+    margin-left: 0.5rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-md-3 {
+    margin: 1rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-md-3,
+  .my-md-3 {
+    margin-top: 1rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-md-3,
+  .mx-md-3 {
+    margin-right: 1rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-md-3,
+  .my-md-3 {
+    margin-bottom: 1rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-md-3,
+  .mx-md-3 {
+    margin-left: 1rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-md-4 {
+    margin: 1.5rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-md-4,
+  .my-md-4 {
+    margin-top: 1.5rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-md-4,
+  .mx-md-4 {
+    margin-right: 1.5rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-md-4,
+  .my-md-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-md-4,
+  .mx-md-4 {
+    margin-left: 1.5rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-md-5 {
+    margin: 3rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-md-5,
+  .my-md-5 {
+    margin-top: 3rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-md-5,
+  .mx-md-5 {
+    margin-right: 3rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-md-5,
+  .my-md-5 {
+    margin-bottom: 3rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-md-5,
+  .mx-md-5 {
+    margin-left: 3rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-md-0 {
+    padding: 0 !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-md-0,
+  .py-md-0 {
+    padding-top: 0 !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-md-0,
+  .px-md-0 {
+    padding-right: 0 !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-md-0,
+  .py-md-0 {
+    padding-bottom: 0 !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-md-0,
+  .px-md-0 {
+    padding-left: 0 !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-md-1 {
+    padding: 0.25rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-md-1,
+  .py-md-1 {
+    padding-top: 0.25rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-md-1,
+  .px-md-1 {
+    padding-right: 0.25rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-md-1,
+  .py-md-1 {
+    padding-bottom: 0.25rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-md-1,
+  .px-md-1 {
+    padding-left: 0.25rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-md-2 {
+    padding: 0.5rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-md-2,
+  .py-md-2 {
+    padding-top: 0.5rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-md-2,
+  .px-md-2 {
+    padding-right: 0.5rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-md-2,
+  .py-md-2 {
+    padding-bottom: 0.5rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-md-2,
+  .px-md-2 {
+    padding-left: 0.5rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-md-3 {
+    padding: 1rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-md-3,
+  .py-md-3 {
+    padding-top: 1rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-md-3,
+  .px-md-3 {
+    padding-right: 1rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-md-3,
+  .py-md-3 {
+    padding-bottom: 1rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-md-3,
+  .px-md-3 {
+    padding-left: 1rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-md-4 {
+    padding: 1.5rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-md-4,
+  .py-md-4 {
+    padding-top: 1.5rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-md-4,
+  .px-md-4 {
+    padding-right: 1.5rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-md-4,
+  .py-md-4 {
+    padding-bottom: 1.5rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-md-4,
+  .px-md-4 {
+    padding-left: 1.5rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-md-5 {
+    padding: 3rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-md-5,
+  .py-md-5 {
+    padding-top: 3rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-md-5,
+  .px-md-5 {
+    padding-right: 3rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-md-5,
+  .py-md-5 {
+    padding-bottom: 3rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-md-5,
+  .px-md-5 {
+    padding-left: 3rem !important;
+  }
+  /* line 33, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-md-auto {
+    margin: auto !important;
+  }
+  /* line 34, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-md-auto,
+  .my-md-auto {
+    margin-top: auto !important;
+  }
+  /* line 38, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-md-auto,
+  .mx-md-auto {
+    margin-right: auto !important;
+  }
+  /* line 42, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-md-auto,
+  .my-md-auto {
+    margin-bottom: auto !important;
+  }
+  /* line 46, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-md-auto,
+  .mx-md-auto {
+    margin-left: auto !important;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-lg-0 {
+    margin: 0 !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-lg-0,
+  .my-lg-0 {
+    margin-top: 0 !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-lg-0,
+  .mx-lg-0 {
+    margin-right: 0 !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-lg-0,
+  .my-lg-0 {
+    margin-bottom: 0 !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-lg-0,
+  .mx-lg-0 {
+    margin-left: 0 !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-lg-1 {
+    margin: 0.25rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-lg-1,
+  .my-lg-1 {
+    margin-top: 0.25rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-lg-1,
+  .mx-lg-1 {
+    margin-right: 0.25rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-lg-1,
+  .my-lg-1 {
+    margin-bottom: 0.25rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-lg-1,
+  .mx-lg-1 {
+    margin-left: 0.25rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-lg-2 {
+    margin: 0.5rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-lg-2,
+  .my-lg-2 {
+    margin-top: 0.5rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-lg-2,
+  .mx-lg-2 {
+    margin-right: 0.5rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-lg-2,
+  .my-lg-2 {
+    margin-bottom: 0.5rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-lg-2,
+  .mx-lg-2 {
+    margin-left: 0.5rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-lg-3 {
+    margin: 1rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-lg-3,
+  .my-lg-3 {
+    margin-top: 1rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-lg-3,
+  .mx-lg-3 {
+    margin-right: 1rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-lg-3,
+  .my-lg-3 {
+    margin-bottom: 1rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-lg-3,
+  .mx-lg-3 {
+    margin-left: 1rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-lg-4 {
+    margin: 1.5rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-lg-4,
+  .my-lg-4 {
+    margin-top: 1.5rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-lg-4,
+  .mx-lg-4 {
+    margin-right: 1.5rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-lg-4,
+  .my-lg-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-lg-4,
+  .mx-lg-4 {
+    margin-left: 1.5rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-lg-5 {
+    margin: 3rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-lg-5,
+  .my-lg-5 {
+    margin-top: 3rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-lg-5,
+  .mx-lg-5 {
+    margin-right: 3rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-lg-5,
+  .my-lg-5 {
+    margin-bottom: 3rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-lg-5,
+  .mx-lg-5 {
+    margin-left: 3rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-lg-0 {
+    padding: 0 !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-lg-0,
+  .py-lg-0 {
+    padding-top: 0 !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-lg-0,
+  .px-lg-0 {
+    padding-right: 0 !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-lg-0,
+  .py-lg-0 {
+    padding-bottom: 0 !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-lg-0,
+  .px-lg-0 {
+    padding-left: 0 !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-lg-1 {
+    padding: 0.25rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-lg-1,
+  .py-lg-1 {
+    padding-top: 0.25rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-lg-1,
+  .px-lg-1 {
+    padding-right: 0.25rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-lg-1,
+  .py-lg-1 {
+    padding-bottom: 0.25rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-lg-1,
+  .px-lg-1 {
+    padding-left: 0.25rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-lg-2 {
+    padding: 0.5rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-lg-2,
+  .py-lg-2 {
+    padding-top: 0.5rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-lg-2,
+  .px-lg-2 {
+    padding-right: 0.5rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-lg-2,
+  .py-lg-2 {
+    padding-bottom: 0.5rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-lg-2,
+  .px-lg-2 {
+    padding-left: 0.5rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-lg-3 {
+    padding: 1rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-lg-3,
+  .py-lg-3 {
+    padding-top: 1rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-lg-3,
+  .px-lg-3 {
+    padding-right: 1rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-lg-3,
+  .py-lg-3 {
+    padding-bottom: 1rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-lg-3,
+  .px-lg-3 {
+    padding-left: 1rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-lg-4 {
+    padding: 1.5rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-lg-4,
+  .py-lg-4 {
+    padding-top: 1.5rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-lg-4,
+  .px-lg-4 {
+    padding-right: 1.5rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-lg-4,
+  .py-lg-4 {
+    padding-bottom: 1.5rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-lg-4,
+  .px-lg-4 {
+    padding-left: 1.5rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-lg-5 {
+    padding: 3rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-lg-5,
+  .py-lg-5 {
+    padding-top: 3rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-lg-5,
+  .px-lg-5 {
+    padding-right: 3rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-lg-5,
+  .py-lg-5 {
+    padding-bottom: 3rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-lg-5,
+  .px-lg-5 {
+    padding-left: 3rem !important;
+  }
+  /* line 33, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-lg-auto {
+    margin: auto !important;
+  }
+  /* line 34, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-lg-auto,
+  .my-lg-auto {
+    margin-top: auto !important;
+  }
+  /* line 38, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-lg-auto,
+  .mx-lg-auto {
+    margin-right: auto !important;
+  }
+  /* line 42, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-lg-auto,
+  .my-lg-auto {
+    margin-bottom: auto !important;
+  }
+  /* line 46, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-lg-auto,
+  .mx-lg-auto {
+    margin-left: auto !important;
+  }
+}
+
+@media (min-width: 1248px) {
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-xl-0 {
+    margin: 0 !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-xl-0,
+  .my-xl-0 {
+    margin-top: 0 !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-xl-0,
+  .mx-xl-0 {
+    margin-right: 0 !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-xl-0,
+  .my-xl-0 {
+    margin-bottom: 0 !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-xl-0,
+  .mx-xl-0 {
+    margin-left: 0 !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-xl-1 {
+    margin: 0.25rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-xl-1,
+  .my-xl-1 {
+    margin-top: 0.25rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-xl-1,
+  .mx-xl-1 {
+    margin-right: 0.25rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-xl-1,
+  .my-xl-1 {
+    margin-bottom: 0.25rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-xl-1,
+  .mx-xl-1 {
+    margin-left: 0.25rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-xl-2 {
+    margin: 0.5rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-xl-2,
+  .my-xl-2 {
+    margin-top: 0.5rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-xl-2,
+  .mx-xl-2 {
+    margin-right: 0.5rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-xl-2,
+  .my-xl-2 {
+    margin-bottom: 0.5rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-xl-2,
+  .mx-xl-2 {
+    margin-left: 0.5rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-xl-3 {
+    margin: 1rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-xl-3,
+  .my-xl-3 {
+    margin-top: 1rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-xl-3,
+  .mx-xl-3 {
+    margin-right: 1rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-xl-3,
+  .my-xl-3 {
+    margin-bottom: 1rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-xl-3,
+  .mx-xl-3 {
+    margin-left: 1rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-xl-4 {
+    margin: 1.5rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-xl-4,
+  .my-xl-4 {
+    margin-top: 1.5rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-xl-4,
+  .mx-xl-4 {
+    margin-right: 1.5rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-xl-4,
+  .my-xl-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-xl-4,
+  .mx-xl-4 {
+    margin-left: 1.5rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-xl-5 {
+    margin: 3rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-xl-5,
+  .my-xl-5 {
+    margin-top: 3rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-xl-5,
+  .mx-xl-5 {
+    margin-right: 3rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-xl-5,
+  .my-xl-5 {
+    margin-bottom: 3rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-xl-5,
+  .mx-xl-5 {
+    margin-left: 3rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-xl-0 {
+    padding: 0 !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-xl-0,
+  .py-xl-0 {
+    padding-top: 0 !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-xl-0,
+  .px-xl-0 {
+    padding-right: 0 !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-xl-0,
+  .py-xl-0 {
+    padding-bottom: 0 !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-xl-0,
+  .px-xl-0 {
+    padding-left: 0 !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-xl-1 {
+    padding: 0.25rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-xl-1,
+  .py-xl-1 {
+    padding-top: 0.25rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-xl-1,
+  .px-xl-1 {
+    padding-right: 0.25rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-xl-1,
+  .py-xl-1 {
+    padding-bottom: 0.25rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-xl-1,
+  .px-xl-1 {
+    padding-left: 0.25rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-xl-2 {
+    padding: 0.5rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-xl-2,
+  .py-xl-2 {
+    padding-top: 0.5rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-xl-2,
+  .px-xl-2 {
+    padding-right: 0.5rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-xl-2,
+  .py-xl-2 {
+    padding-bottom: 0.5rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-xl-2,
+  .px-xl-2 {
+    padding-left: 0.5rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-xl-3 {
+    padding: 1rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-xl-3,
+  .py-xl-3 {
+    padding-top: 1rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-xl-3,
+  .px-xl-3 {
+    padding-right: 1rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-xl-3,
+  .py-xl-3 {
+    padding-bottom: 1rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-xl-3,
+  .px-xl-3 {
+    padding-left: 1rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-xl-4 {
+    padding: 1.5rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-xl-4,
+  .py-xl-4 {
+    padding-top: 1.5rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-xl-4,
+  .px-xl-4 {
+    padding-right: 1.5rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-xl-4,
+  .py-xl-4 {
+    padding-bottom: 1.5rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-xl-4,
+  .px-xl-4 {
+    padding-left: 1.5rem !important;
+  }
+  /* line 12, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .p-xl-5 {
+    padding: 3rem !important;
+  }
+  /* line 13, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pt-xl-5,
+  .py-xl-5 {
+    padding-top: 3rem !important;
+  }
+  /* line 17, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pr-xl-5,
+  .px-xl-5 {
+    padding-right: 3rem !important;
+  }
+  /* line 21, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pb-xl-5,
+  .py-xl-5 {
+    padding-bottom: 3rem !important;
+  }
+  /* line 25, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .pl-xl-5,
+  .px-xl-5 {
+    padding-left: 3rem !important;
+  }
+  /* line 33, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .m-xl-auto {
+    margin: auto !important;
+  }
+  /* line 34, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mt-xl-auto,
+  .my-xl-auto {
+    margin-top: auto !important;
+  }
+  /* line 38, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mr-xl-auto,
+  .mx-xl-auto {
+    margin-right: auto !important;
+  }
+  /* line 42, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .mb-xl-auto,
+  .my-xl-auto {
+    margin-bottom: auto !important;
+  }
+  /* line 46, node_modules/bootstrap/scss/utilities/_spacing.scss */
+  .ml-xl-auto,
+  .mx-xl-auto {
+    margin-left: auto !important;
+  }
+}
+
+/* line 7, node_modules/bootstrap/scss/utilities/_text.scss */
+.text-monospace {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* line 11, node_modules/bootstrap/scss/utilities/_text.scss */
+.text-justify {
+  text-align: justify !important;
+}
+
+/* line 12, node_modules/bootstrap/scss/utilities/_text.scss */
+.text-nowrap {
+  white-space: nowrap !important;
+}
+
+/* line 13, node_modules/bootstrap/scss/utilities/_text.scss */
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* line 21, node_modules/bootstrap/scss/utilities/_text.scss */
+.text-left {
+  text-align: left !important;
+}
+
+/* line 22, node_modules/bootstrap/scss/utilities/_text.scss */
+.text-right {
+  text-align: right !important;
+}
+
+/* line 23, node_modules/bootstrap/scss/utilities/_text.scss */
+.text-center {
+  text-align: center !important;
+}
+
+@media (min-width: 576px) {
+  /* line 21, node_modules/bootstrap/scss/utilities/_text.scss */
+  .text-sm-left {
+    text-align: left !important;
+  }
+  /* line 22, node_modules/bootstrap/scss/utilities/_text.scss */
+  .text-sm-right {
+    text-align: right !important;
+  }
+  /* line 23, node_modules/bootstrap/scss/utilities/_text.scss */
+  .text-sm-center {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 21, node_modules/bootstrap/scss/utilities/_text.scss */
+  .text-md-left {
+    text-align: left !important;
+  }
+  /* line 22, node_modules/bootstrap/scss/utilities/_text.scss */
+  .text-md-right {
+    text-align: right !important;
+  }
+  /* line 23, node_modules/bootstrap/scss/utilities/_text.scss */
+  .text-md-center {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 21, node_modules/bootstrap/scss/utilities/_text.scss */
+  .text-lg-left {
+    text-align: left !important;
+  }
+  /* line 22, node_modules/bootstrap/scss/utilities/_text.scss */
+  .text-lg-right {
+    text-align: right !important;
+  }
+  /* line 23, node_modules/bootstrap/scss/utilities/_text.scss */
+  .text-lg-center {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 1248px) {
+  /* line 21, node_modules/bootstrap/scss/utilities/_text.scss */
+  .text-xl-left {
+    text-align: left !important;
+  }
+  /* line 22, node_modules/bootstrap/scss/utilities/_text.scss */
+  .text-xl-right {
+    text-align: right !important;
+  }
+  /* line 23, node_modules/bootstrap/scss/utilities/_text.scss */
+  .text-xl-center {
+    text-align: center !important;
+  }
+}
+
+/* line 29, node_modules/bootstrap/scss/utilities/_text.scss */
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+/* line 30, node_modules/bootstrap/scss/utilities/_text.scss */
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+/* line 31, node_modules/bootstrap/scss/utilities/_text.scss */
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+/* line 35, node_modules/bootstrap/scss/utilities/_text.scss */
+.font-weight-light {
+  font-weight: 300 !important;
+}
+
+/* line 36, node_modules/bootstrap/scss/utilities/_text.scss */
+.font-weight-normal {
+  font-weight: 400 !important;
+}
+
+/* line 37, node_modules/bootstrap/scss/utilities/_text.scss */
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+/* line 38, node_modules/bootstrap/scss/utilities/_text.scss */
+.font-italic {
+  font-style: italic !important;
+}
+
+/* line 42, node_modules/bootstrap/scss/utilities/_text.scss */
+.text-white {
+  color: #fff !important;
+}
+
+/* line 6, node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
+.text-primary {
+  color: #007bff !important;
+}
+
+/* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
+a.text-primary:hover, a.text-primary:focus {
+  color: #0062cc !important;
+}
+
+/* line 6, node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
+.text-secondary {
+  color: #6c757d !important;
+}
+
+/* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
+a.text-secondary:hover, a.text-secondary:focus {
+  color: #545b62 !important;
+}
+
+/* line 6, node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
+.text-success {
+  color: #28a745 !important;
+}
+
+/* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
+a.text-success:hover, a.text-success:focus {
+  color: #1e7e34 !important;
+}
+
+/* line 6, node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
+.text-info {
+  color: #17a2b8 !important;
+}
+
+/* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
+a.text-info:hover, a.text-info:focus {
+  color: #117a8b !important;
+}
+
+/* line 6, node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
+.text-warning {
+  color: #ffc107 !important;
+}
+
+/* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
+a.text-warning:hover, a.text-warning:focus {
+  color: #d39e00 !important;
+}
+
+/* line 6, node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
+.text-danger {
+  color: #dc3545 !important;
+}
+
+/* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
+a.text-danger:hover, a.text-danger:focus {
+  color: #bd2130 !important;
+}
+
+/* line 6, node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
+.text-light {
+  color: #f8f9fa !important;
+}
+
+/* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
+a.text-light:hover, a.text-light:focus {
+  color: #dae0e5 !important;
+}
+
+/* line 6, node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
+.text-dark {
+  color: #343a40 !important;
+}
+
+/* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
+a.text-dark:hover, a.text-dark:focus {
+  color: #1d2124 !important;
+}
+
+/* line 48, node_modules/bootstrap/scss/utilities/_text.scss */
+.text-body {
+  color: #212529 !important;
+}
+
+/* line 49, node_modules/bootstrap/scss/utilities/_text.scss */
+.text-muted {
+  color: #6c757d !important;
+}
+
+/* line 51, node_modules/bootstrap/scss/utilities/_text.scss */
+.text-black-50 {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* line 52, node_modules/bootstrap/scss/utilities/_text.scss */
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* line 56, node_modules/bootstrap/scss/utilities/_text.scss */
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, node_modules/reset-css/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, node_modules/reset-css/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* line 31, node_modules/reset-css/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, node_modules/reset-css/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, node_modules/reset-css/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 39, node_modules/reset-css/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 44, node_modules/reset-css/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 /*************************** Open-Sans Font ****************************/
 @font-face {
   font-family: "Open-Sans";
@@ -2151,17 +4028,7 @@ html {
 }
 
 /*************************** Base Styles ****************************/
-/* line 9, src/sass/common/_base.scss */
-[class*="col"] {
-  border: solid 1px;
-}
-
-/* line 16, src/sass/common/_base.scss */
-.container {
-  padding: 0 2.9%;
-}
-
-/* line 56, src/sass/common/_base.scss */
+/* line 63, src/sass/common/_base.scss */
 body {
   overflow-x: hidden;
   overflow-y: scroll;
@@ -2172,17 +4039,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 71, src/sass/common/_base.scss */
+/* line 78, src/sass/common/_base.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 73, src/sass/common/_base.scss */
+/* line 80, src/sass/common/_base.scss */
 i, em {
   font-style: italic;
 }
 
-/* line 122, src/sass/common/_base.scss */
+/* line 129, src/sass/common/_base.scss */
 ::-webkit-search-decoration,
 ::-webkit-search-cancel-button,
 ::-webkit-search-results-button,
@@ -2190,7 +4057,7 @@ i, em {
   display: none;
 }
 
-/* line 127, src/sass/common/_base.scss */
+/* line 134, src/sass/common/_base.scss */
 ::-ms-clear,
 ::-ms-reveal {
   display: none;
@@ -2207,7 +4074,7 @@ i, em {
   font-family: "Open-Sans-Semibold", sans-serif;
   font-size: 12px;
   font-size: 0.75rem;
-  color: white;
+  color: rgba(0, 0, 255, 0.8);
   position: relative;
 }
 
@@ -2283,7 +4150,10 @@ header:before {
 
 /* line 59, src/sass/_header.scss */
 header:after {
-  background: linear-gradient(#333333, rgba(51, 51, 51, 0));
+  background-image: -o-linear-gradient(red, yellow);
+  background-image: -moz-linear-gradient(red, yellow);
+  background-image: -webkit-linear-gradient(red, yellow);
+  background-image: linear-gradient(red, yellow);
   top: 120px;
   top: 7.5rem;
   height: 4px;
@@ -2291,7 +4161,7 @@ header:after {
   z-index: 0;
 }
 
-/* line 73, src/sass/_header.scss */
+/* line 76, src/sass/_header.scss */
 header ul {
   float: left;
   text-align: left;
@@ -2299,19 +4169,20 @@ header ul {
   font-size: 0.75rem;
 }
 
-/* line 89, src/sass/_header.scss */
+/* line 92, src/sass/_header.scss */
 header ul li {
   text-transform: uppercase;
 }
 
-/* line 118, src/sass/_header.scss */
+/* line 102, src/sass/_header.scss */
 header ul:first-child {
   background-color: rgba(255, 255, 0, 0.3);
-  margin-left: 2.9%;
+  margin-left: 38px;
+  margin-left: 2.375rem;
   margin-right: 2%;
 }
 
-/* line 130, src/sass/_header.scss */
+/* line 115, src/sass/_header.scss */
 header ul:first-child li {
   display: inline-block;
   line-height: 12px;
@@ -2320,35 +4191,35 @@ header ul:first-child li {
   margin-top: 1.25rem;
   margin-bottom: 16px;
   margin-bottom: 1rem;
+  color: rgba(0, 0, 255, 0.8);
 }
 
-/* line 139, src/sass/_header.scss */
+/* line 124, src/sass/_header.scss */
 header ul:first-child li:not(:last-child) {
   margin-right: 24px;
   margin-right: 1.5rem;
 }
 
-/* line 144, src/sass/_header.scss */
+/* line 131, src/sass/_header.scss */
 header ul:first-child li a {
-  color: red;
+  color: rgba(0, 0, 255, 0.8);
   text-decoration: none;
 }
 
-/* line 148, src/sass/_header.scss */
+/* line 135, src/sass/_header.scss */
 header ul:first-child li a:hover {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* line 156, src/sass/_header.scss */
+/* line 143, src/sass/_header.scss */
 header ul:last-child {
   background-color: rgba(0, 255, 255, 0.3);
-  font-family: "Open-Sans-Semibold", sans-serif;
   margin-left: 3.4%;
   display: inline-table;
   width: 80%;
 }
 
-/* line 171, src/sass/_header.scss */
+/* line 158, src/sass/_header.scss */
 header ul:last-child li {
   display: table-cell;
   padding-top: 21px;
@@ -2361,33 +4232,91 @@ header ul:last-child li {
   letter-spacing: 0.05rem;
 }
 
-/* line 180, src/sass/_header.scss */
+/* line 171, src/sass/_header.scss */
 header ul:last-child li:not(:last-child) {
   padding-right: 28px;
   padding-right: 1.75rem;
 }
 
-/* line 187, src/sass/_header.scss */
+/* line 175, src/sass/_header.scss */
+header ul:last-child li p {
+  font-family: "Open-Sans-Semibold", sans-serif;
+  cursor: pointer;
+}
+
+/* line 183, src/sass/_header.scss */
+header ul:last-child li.selected {
+  color: rgba(0, 255, 0, 0.9);
+}
+
+/* line 188, src/sass/_header.scss */
+header ul:last-child li:not(.selected) .container-fluid {
+  display: none;
+}
+
+/* line 196, src/sass/_header.scss */
 header ul:last-child li .container-fluid {
   background-color: rgba(255, 255, 0, 0.5);
   position: absolute;
   left: 0;
   right: 0;
   top: 120px;
+  top: 7.5rem;
   z-index: 1;
 }
 
-/* line 211, src/sass/_header.scss */
-header ul:last-child li .container-fluid:before {
+/* line 222, src/sass/_header.scss */
+header ul:last-child li .container-fluid:before, header ul:last-child li .container-fluid:after {
   content: "";
-  background-color: red;
   position: absolute;
   left: 0;
   right: 0;
-  height: 1px;
 }
 
-/* line 232, src/sass/_header.scss */
+/* line 230, src/sass/_header.scss */
+header ul:last-child li .container-fluid:before {
+  height: 1px;
+  height: 0.0625rem;
+  background-color: #0498cd;
+}
+
+/* line 247, src/sass/_header.scss */
+header ul:last-child li .container-fluid:after {
+  height: 4px;
+  height: 0.25rem;
+  background-image: -o-linear-gradient(red, yellow);
+  background-image: -moz-linear-gradient(red, yellow);
+  background-image: -webkit-linear-gradient(red, yellow);
+  background-image: linear-gradient(red, yellow);
+}
+
+/* line 276, src/sass/_header.scss */
+header ul:last-child li .container-fluid .container .row.vdivide [class*="col"]:not(:last-child):after {
+  background-color: red;
+  width: 1px;
+  width: 0.0625rem;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 16px;
+  top: 1rem;
+  bottom: 16px;
+  bottom: 1rem;
+}
+
+/* line 296, src/sass/_header.scss */
+header ul:last-child li .container-fluid .container .row [class*="col"] {
+  background: rgba(255, 0, 0, 0.2);
+}
+
+/* line 299, src/sass/_header.scss */
+header ul:last-child li .container-fluid .container .row [class*="col"] h5 {
+  font-weight: bold;
+  color: rgba(255, 0, 255, 0.9);
+}
+
+/* line 319, src/sass/_header.scss */
 header ul:first-child ~ .button {
   width: 11.1%;
   padding: 10px 0;
@@ -2398,15 +4327,15 @@ header ul:first-child ~ .button {
   float: left;
 }
 
-/* line 246, src/sass/_header.scss */
+/* line 333, src/sass/_header.scss */
 header ul:first-child ~ a:not(.button) {
   text-decoration: none;
 }
 
-/* line 251, src/sass/_header.scss */
+/* line 338, src/sass/_header.scss */
 header ul:first-child + .button + .button + a {
   float: left;
-  color: #2bc1f6;
+  color: rgba(0, 255, 0, 0.9);
   font-weight: bold;
   font-style: italic;
   text-transform: uppercase;
@@ -2417,19 +4346,19 @@ header ul:first-child + .button + .button + a {
   margin-left: 4.2%;
 }
 
-/* line 291, src/sass/_header.scss */
+/* line 378, src/sass/_header.scss */
 header ul:first-child + .button + .button + a:hover {
-  color: #5ccff8;
+  color: red;
 }
 
-/* line 296, src/sass/_header.scss */
+/* line 384, src/sass/_header.scss */
 header [class*="icon-"], header form:after {
-  color: red;
+  color: rgba(0, 0, 255, 0.8);
   font-size: 18px;
   font-size: 1.125rem;
 }
 
-/* line 302, src/sass/_header.scss */
+/* line 390, src/sass/_header.scss */
 header form {
   display: inline-block;
   position: relative;
@@ -2441,7 +4370,7 @@ header form {
   height: 1.375rem;
 }
 
-/* line 319, src/sass/_header.scss */
+/* line 407, src/sass/_header.scss */
 header form:after {
   background: rgba(255, 255, 0, 0.4);
   content: "\f102";
@@ -2463,17 +4392,17 @@ header form:after {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 358, src/sass/_header.scss */
+/* line 446, src/sass/_header.scss */
 header form:hover {
   cursor: pointer;
 }
 
-/* line 360, src/sass/_header.scss */
+/* line 448, src/sass/_header.scss */
 header form:hover:after {
   opacity: 0.75;
 }
 
-/* line 367, src/sass/_header.scss */
+/* line 455, src/sass/_header.scss */
 header form input {
   position: absolute;
   right: 0;
@@ -2491,11 +4420,11 @@ header form input {
   background: rgba(0, 255, 255, 0.6);
   font-size: 14px;
   font-size: 0.875rem;
-  color: #fff;
+  color: rgba(0, 0, 255, 0.8);
   -webkit-appearance: none;
 }
 
-/* line 399, src/sass/_header.scss */
+/* line 487, src/sass/_header.scss */
 header form button {
   position: absolute;
   right: 0;
@@ -2514,34 +4443,35 @@ header form button {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 420, src/sass/_header.scss */
+/* line 508, src/sass/_header.scss */
 header form button:hover {
   opacity: 0.75;
 }
 
-/* line 427, src/sass/_header.scss */
+/* line 515, src/sass/_header.scss */
 header form.displayed:after {
   display: none;
 }
 
-/* line 432, src/sass/_header.scss */
+/* line 520, src/sass/_header.scss */
 header form:not(.displayed) input,
 header form:not(.displayed) button {
   display: none;
 }
 
-/* line 441, src/sass/_header.scss */
+/* line 529, src/sass/_header.scss */
 header form + a {
   float: right;
-  margin-left: 2.4%;
-  margin-right: 2.9%;
+  margin-left: 2.3%;
+  margin-right: 38px;
+  margin-right: 2.375rem;
   margin-top: 16px;
   margin-top: 1rem;
   height: 22px;
   height: 1.375rem;
 }
 
-/* line 450, src/sass/_header.scss */
+/* line 539, src/sass/_header.scss */
 header form + a .icon-cart {
   background: rgba(255, 255, 0, 0.4);
   -webkit-transition: all 0.2s ease-in-out;
@@ -2551,17 +4481,18 @@ header form + a .icon-cart {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 456, src/sass/_header.scss */
+/* line 545, src/sass/_header.scss */
 header form + a:hover .icon-cart {
   opacity: 0.75;
 }
 
-/* line 465, src/sass/_header.scss */
+/* line 554, src/sass/_header.scss */
 header .logo {
   clear: both;
   float: left;
   display: inline-block;
-  margin-left: 3%;
+  margin-left: 40px;
+  margin-left: 2.5rem;
   margin-top: 8px;
   margin-top: 0.5rem;
   width: 11.2%;

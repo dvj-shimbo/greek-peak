@@ -165,21 +165,21 @@ $paragraph-margin-bottom:   1rem !default;
 // Define the minimum dimensions at which your layout will change,
 // adapting to different screen sizes, for use in media queries.
 
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px
-) !default;
-
 //$grid-breakpoints: (
 //  xs: 0,
 //  sm: 576px,
 //  md: 768px,
 //  lg: 992px,
-//  xl: 1248px
+//  xl: 1200px
 //) !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1248px
+) !default;
 
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
 @include _assert-starts-at-zero($grid-breakpoints);
@@ -200,7 +200,7 @@ $container-max-widths: (
   sm: 768px,
   md: 992px,
   lg: 1200px,
-  xl: 1300px
+  xl: 1248px
 ) !default;
 
 

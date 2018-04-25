@@ -6,16 +6,23 @@
 //}
 //
 //
-[class*="col"] {
-	border: solid 1px;
-//	background: red;
-}
+//[class*="col"] {
+//	border: solid 1px;
+////	background: red;
+//}
 
 
 
-.container {
-	padding: 0 2.9%;
-}
+//.container {
+////	box-sizing: content-box;
+//	@include box-sizing(padding-box);
+//	padding: 0 2.9%;
+//	margin: 0 auto;
+//	.row {
+//		padding: 0 2.9%;
+////		margin: 0;
+//	}
+//}
 
 
 

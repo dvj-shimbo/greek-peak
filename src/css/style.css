@@ -4049,7 +4049,7 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   background-color: #fff;
-  color: red;
+  color: #1d2124;
   font-family: "Open-Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -4090,7 +4090,7 @@ i, em {
   font-family: "Open-Sans-Semibold", sans-serif;
   font-size: 12px;
   font-size: 0.75rem;
-  color: rgba(0, 0, 255, 0.8);
+  color: #fff;
   position: relative;
   z-index: 0;
   padding: 15px 0;
@@ -4099,7 +4099,7 @@ i, em {
 
 /* line 38, src/sass/components/_button.scss */
 .button:after {
-  background-color: rgba(0, 255, 0, 0.5);
+  background-color: #11a0d3;
   content: "";
   position: absolute;
   left: 0;
@@ -4120,7 +4120,7 @@ i, em {
 
 /* line 56, src/sass/components/_button.scss */
 .button:hover {
-  color: rgba(255, 0, 255, 0.6);
+  color: #00303c;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
@@ -4130,16 +4130,12 @@ i, em {
 
 /* line 60, src/sass/components/_button.scss */
 .button:hover:after {
-  background-color: rgba(77, 255, 77, 0.5);
+  background-color: #41c2f0;
 }
 
 /*************************** Header Styles ****************************/
 /* line 3, src/sass/_header.scss */
 header {
-  background-color: rgba(0, 255, 0, 0.3);
-  background-image: url("../img/!/Greek-Peak_home-page-_ready_a.png");
-  background-repeat: no-repeat;
-  background-position: -33px 0;
   margin: 0 auto;
   max-width: 1300px;
   max-width: 81.25rem;
@@ -4160,7 +4156,7 @@ header:before, header:after {
 
 /* line 52, src/sass/_header.scss */
 header:before {
-  background-color: rgba(255, 0, 255, 0.6);
+  background-color: #00303c;
   top: 0;
   height: 48px;
   height: 3rem;
@@ -4169,10 +4165,10 @@ header:before {
 
 /* line 59, src/sass/_header.scss */
 header:after {
-  background-image: -o-linear-gradient(red, yellow);
-  background-image: -moz-linear-gradient(red, yellow);
-  background-image: -webkit-linear-gradient(red, yellow);
-  background-image: linear-gradient(red, yellow);
+  background-image: -o-linear-gradient(rgba(51, 51, 51, 0.15), rgba(51, 51, 51, 0));
+  background-image: -moz-linear-gradient(rgba(51, 51, 51, 0.15), rgba(51, 51, 51, 0));
+  background-image: -webkit-linear-gradient(rgba(51, 51, 51, 0.15), rgba(51, 51, 51, 0));
+  background-image: linear-gradient(rgba(51, 51, 51, 0.15), rgba(51, 51, 51, 0));
   top: 120px;
   top: 7.5rem;
   height: 4px;
@@ -4195,7 +4191,6 @@ header ul li {
 
 /* line 102, src/sass/_header.scss */
 header ul:first-child {
-  background-color: rgba(255, 255, 0, 0.3);
   margin-left: 38px;
   margin-left: 2.375rem;
   margin-right: 2%;
@@ -4210,7 +4205,7 @@ header ul:first-child li {
   margin-top: 1.25rem;
   margin-bottom: 16px;
   margin-bottom: 1rem;
-  color: rgba(0, 0, 255, 0.8);
+  color: #fff;
 }
 
 /* line 124, src/sass/_header.scss */
@@ -4221,18 +4216,17 @@ header ul:first-child li:not(:last-child) {
 
 /* line 131, src/sass/_header.scss */
 header ul:first-child li a {
-  color: rgba(0, 0, 255, 0.8);
+  color: #fff;
   text-decoration: none;
 }
 
 /* line 135, src/sass/_header.scss */
 header ul:first-child li a:hover {
-  color: rgba(255, 255, 255, 0.6);
+  color: #bcf2ff;
 }
 
 /* line 143, src/sass/_header.scss */
 header ul:last-child {
-  background-color: rgba(0, 255, 255, 0.3);
   margin-left: 3.4%;
   display: inline-table;
   width: 80%;
@@ -4265,17 +4259,17 @@ header ul:last-child li p {
 
 /* line 188, src/sass/_header.scss */
 header ul:last-child li.selected p {
-  color: rgba(0, 255, 0, 0.5);
+  color: #11a0d3;
 }
 
 /* line 191, src/sass/_header.scss */
 header ul:last-child li.selected p:hover {
-  color: rgba(0, 179, 0, 0.5);
+  color: #0b6a8c;
 }
 
 /* line 199, src/sass/_header.scss */
 header ul:last-child li:not(.selected) p:hover {
-  color: rgba(0, 179, 0, 0.5);
+  color: #0b6a8c;
 }
 
 /* line 203, src/sass/_header.scss */
@@ -4285,7 +4279,7 @@ header ul:last-child li:not(.selected) .container-fluid {
 
 /* line 211, src/sass/_header.scss */
 header ul:last-child li .container-fluid {
-  background-color: rgba(255, 255, 0, 0.5);
+  background-color: #f7f7f7;
   position: absolute;
   left: 0;
   right: 0;
@@ -4313,10 +4307,10 @@ header ul:last-child li .container-fluid:before {
 header ul:last-child li .container-fluid:after {
   height: 4px;
   height: 0.25rem;
-  background-image: -o-linear-gradient(red, yellow);
-  background-image: -moz-linear-gradient(red, yellow);
-  background-image: -webkit-linear-gradient(red, yellow);
-  background-image: linear-gradient(red, yellow);
+  background-image: -o-linear-gradient(#efefef, rgba(239, 239, 239, 0));
+  background-image: -moz-linear-gradient(#efefef, rgba(239, 239, 239, 0));
+  background-image: -webkit-linear-gradient(#efefef, rgba(239, 239, 239, 0));
+  background-image: linear-gradient(#efefef, rgba(239, 239, 239, 0));
 }
 
 /* line 288, src/sass/_header.scss */
@@ -4327,7 +4321,7 @@ header ul:last-child li .container-fluid .container .row {
 
 /* line 295, src/sass/_header.scss */
 header ul:last-child li .container-fluid .container .row.v-divide [class*="col"]:not(:last-child):after {
-  background-color: red;
+  background-color: #e4e4e5;
   content: "";
   display: block;
   position: absolute;
@@ -4342,7 +4336,6 @@ header ul:last-child li .container-fluid .container .row.v-divide [class*="col"]
 
 /* line 321, src/sass/_header.scss */
 header ul:last-child li .container-fluid .container .row [class*="col"] {
-  background: rgba(255, 0, 0, 0.2);
   font-size: 14px;
   font-size: 0.875rem;
   letter-spacing: 0.1px;
@@ -4357,26 +4350,26 @@ header ul:last-child li .container-fluid .container .row [class*="col"] .row [cl
 /* line 351, src/sass/_header.scss */
 header ul:last-child li .container-fluid .container .row [class*="col"] h5 {
   font-weight: bold;
-  color: rgba(255, 0, 255, 0.9);
+  color: #abb8bc;
   margin-top: 35px;
   margin-top: 2.1875rem;
 }
 
 /* line 361, src/sass/_header.scss */
 header ul:last-child li .container-fluid .container .row [class*="col"] h5 a {
-  color: rgba(0, 255, 0, 0.5);
+  color: #11a0d3;
   text-decoration: none;
 }
 
 /* line 364, src/sass/_header.scss */
 header ul:last-child li .container-fluid .container .row [class*="col"] h5 a:hover {
-  color: rgba(0, 179, 0, 0.5);
+  color: #0b6a8c;
 }
 
 /* line 370, src/sass/_header.scss */
 header ul:last-child li .container-fluid .container .row [class*="col"] p {
   font-family: "Open-Sans-Light", sans-serif;
-  color: red;
+  color: #1d2124;
   text-transform: none;
   line-height: 30px;
   line-height: 1.875rem;
@@ -4401,13 +4394,13 @@ header ul:last-child li .container-fluid .container .row [class*="col"] p b, hea
 
 /* line 390, src/sass/_header.scss */
 header ul:last-child li .container-fluid .container .row [class*="col"] p a {
-  color: red;
+  color: #1d2124;
   text-decoration: none;
 }
 
 /* line 394, src/sass/_header.scss */
 header ul:last-child li .container-fluid .container .row [class*="col"] p a:hover {
-  color: #ff4d4d;
+  color: #3f484e;
 }
 
 /* line 401, src/sass/_header.scss */
@@ -4436,7 +4429,7 @@ header ul:first-child ~ a:not(.button) {
 /* line 441, src/sass/_header.scss */
 header ul:first-child + .button + .button + a {
   float: left;
-  color: rgba(0, 255, 0, 0.5);
+  color: #11a0d3;
   font-weight: bold;
   font-style: italic;
   text-transform: uppercase;
@@ -4449,12 +4442,12 @@ header ul:first-child + .button + .button + a {
 
 /* line 481, src/sass/_header.scss */
 header ul:first-child + .button + .button + a:hover {
-  color: red;
+  color: #29baee;
 }
 
 /* line 487, src/sass/_header.scss */
 header [class*="icon-"], header form:after {
-  color: rgba(0, 0, 255, 0.8);
+  color: #fff;
   font-size: 18px;
   font-size: 1.125rem;
 }
@@ -4473,7 +4466,6 @@ header form {
 
 /* line 510, src/sass/_header.scss */
 header form:after {
-  background: rgba(255, 255, 0, 0.4);
   content: "\f102";
   display: block;
   position: absolute;
@@ -4516,16 +4508,16 @@ header form input {
   padding-right: 24px;
   padding-right: 1.5rem;
   border: 0;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #fff;
   outline: 0;
-  background: rgba(0, 255, 255, 0.6);
+  background-color: #00303c;
   font-size: 14px;
   font-size: 0.875rem;
-  color: rgba(0, 0, 255, 0.8);
+  color: #fff;
   -webkit-appearance: none;
 }
 
-/* line 590, src/sass/_header.scss */
+/* line 591, src/sass/_header.scss */
 header form button {
   position: absolute;
   right: 0;
@@ -4533,7 +4525,7 @@ header form button {
   width: 1.125rem;
   height: 22px;
   height: 1.375rem;
-  background: rgba(255, 255, 0, 0.4);
+  background-color: transparent;
   border: 0;
   padding: 0;
   cursor: pointer;
@@ -4544,23 +4536,23 @@ header form button {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 611, src/sass/_header.scss */
+/* line 612, src/sass/_header.scss */
 header form button:hover {
   opacity: 0.75;
 }
 
-/* line 618, src/sass/_header.scss */
+/* line 619, src/sass/_header.scss */
 header form.displayed:after {
   display: none;
 }
 
-/* line 623, src/sass/_header.scss */
+/* line 624, src/sass/_header.scss */
 header form:not(.displayed) input,
 header form:not(.displayed) button {
   display: none;
 }
 
-/* line 632, src/sass/_header.scss */
+/* line 633, src/sass/_header.scss */
 header form + a {
   float: right;
   margin-left: 2.3%;
@@ -4572,9 +4564,8 @@ header form + a {
   height: 1.375rem;
 }
 
-/* line 642, src/sass/_header.scss */
+/* line 643, src/sass/_header.scss */
 header form + a .icon-cart {
-  background: rgba(255, 255, 0, 0.4);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -4582,12 +4573,12 @@ header form + a .icon-cart {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 648, src/sass/_header.scss */
+/* line 649, src/sass/_header.scss */
 header form + a:hover .icon-cart {
   opacity: 0.75;
 }
 
-/* line 657, src/sass/_header.scss */
+/* line 658, src/sass/_header.scss */
 header .logo {
   clear: both;
   float: left;

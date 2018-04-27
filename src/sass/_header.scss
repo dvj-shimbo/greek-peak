@@ -6,127 +6,501 @@ header {
 //	background-color: rgba(0,255,0,0.3);
 //	background-image: url("../img/!/Greek-Peak_home-page-_ready_a.png");
 //	background-repeat: no-repeat;
-//	background-position: -33px 0;
-
-//	overflow: hidden;
-//	box-sizing: border-box;
+////	background-position: -33px 0;
+//	background-position: -100px 0;
 
 
-	margin: 0 auto;
+	
 
 	@include rem(max-width, 1300px);
-//	height: 48px;
-//	height: 120px;
-	@include rem(height, 120px);
 
-//	@include rem(padding, 8px 24px);
-//	@include rem(padding, 8px);
-
-//	position: relative;
-
-//	padding: 0;
-	
 	text-align: right;
-
-//	direction: rtl;
-
 	cursor: default;
-
 
 	&:before, 
 	&:after {
 		content: "";
 		display: block;
-//		background-color: $dark-blue;
-
 		position: absolute;
-//		top: 0;
-		left: 0;
-		width: 100%;
-//		height: 48px;
-//		@include rem(height, 48px);
-//		z-index: -1;
+//		left: 0;
+//		width: 100%;
 
 	}
+
+	&:after {
+//		background-color: $background-color;
+//		background: linear-gradient(red, yellow);
+		@include linear-gradient(rgba(51,51,51,0.15), rgba(51,51,51,0));
+//		@include linear-gradient(rgba(51,51,51,1), rgba(51,51,51,0));
+
+
+//		@include rem(top, 120px);
+		@include rem(height, 4px);
+//		z-index: 0;
+		width: 100%;
+		left: 0;
+	}
+
+	ul:first-child ~ .button {
+
+		position: relative;
+
+//		width: 11.1%;
+
+		@include rem(padding, 10px 0);
+//		@include rem(margin-top, 8px);
+//		@include rem(top, 8px);
+
+//		margin-left: 1.9%;
+//		float: left;
+
+	}
+
+	ul:first-child ~ a:not(.button) {
+		text-decoration: none;
+	}
+
+	ul:first-child + .button + .button + a {
+
+		position: relative;
+
+//		float: left;
+		color: $blue;
+
+		font-weight: bold;
+		font-style: italic;
+		text-transform: uppercase;
+
+		@include rem(font-size, 14px);
+//		@include rem(margin-top, 19px);
+
+//		margin-left: 4.2%;
+
+		&:hover {
+			color: lighten($blue, 10%);
+		}
+	}
+
+
+	[class*="icon-"] {
+//		color: $white;
+		@include rem(font-size, 18px);
+	}
+
+
+
+
+	form {
+
+		display: inline-block;
+		position: relative;
+
+//		@include rem(margin-top, 16px);
+//		@include rem(top, 16px);
+
+		@include rem(width, 18px);
+		@include rem(height, 22px);
+
+		@include rem(top, 16px);
+
+
+		&:after {
+
+//			color: $white;
+			@include rem(font-size, 18px);
+
+			content: "\f102";
+			display: block;
+			position: absolute;
+
+			@include rem(width, 18px);
+			@include rem(height, 22px);
+
+			font-family: icons;
+			font-style: normal;
+			font-weight: normal;
+			vertical-align: top;
+			line-height: 1;
+
+			@include transition(all 0.2s ease-in-out);
+
+		}
+
+		&:hover {
+			cursor: pointer;
+			&:after {
+				opacity: 0.75;
+			}
+		}
+		
+
+
+		input {
+
+			position: absolute;
+			right: 0;
+
+			@include rem(width, 240px);
+			@include rem(height, 22px);
+
+			@include rem(padding-left, 8px);
+			@include rem(padding-right, 24px);
+
+			border: 0;
+
+			border-bottom: 1px solid $white;
+			outline: 0;
+
+			background-color: $dark-blue;
+
+
+			@include rem(font-size, 14px);
+//			color: $white;
+
+			-webkit-appearance: none;
+
+		}
+
+		button {
+
+			position: absolute;
+			right: 0;
+
+			@include rem(width, 18px);
+			@include rem(height, 22px);
+
+
+			background-color: transparent;
+
+
+			border: 0;
+			padding: 0;
+
+			cursor: pointer;
+
+			@include transition(all 0.2s ease-in-out);
+
+			&:hover {
+				opacity: 0.75;
+			}
+
+		}
+
+		&.displayed {
+			&:after {
+				display: none;
+			}
+		}
+		&:not(.displayed) {
+			& input,
+			& button {
+				display: none;
+			}
+		}
+
+
+	}
+
+	form + a {
+
+//		float: right;
+//		margin-left: 2.3%;
+
+//		@include rem(margin-right, 38px);
+//		@include rem(margin-top, 16px);
+//		@include rem(height, 22px);
+//
+		.icon-cart {
+//			background: rgba(255,255,0,0.4);
+			@include transition(all 0.2s ease-in-out);
+		}
+
+		&:hover {
+			.icon-cart {
+				opacity: 0.75;
+			}
+		}
+
+	}//<--------------------------------------------------------------------- MAIN STYLES
+//========================================================================================================
+
+@include media('screen', '<phone') {
+
+	form,
+	form + a {
+		margin-left: 5%;
+	}
+
+	.logo {
+		display: none;
+	}
+
+
+}//<--------------------------------------------------------------------- @include media('screen', '<phone')
+
+
+
+@include media('screen', '<tablet') {
+
+	ul:first-child ~ .button {
+		display: none;
+	}
+
+//	ul:first-child + .button + .button + a {
+//		@include rem(top, 10px);
+//	}
+
+//	form,
+//	form + a {
+//		margin-left: 2.3%;
+//	}
+
+}//<--------------------------------------------------------------------- @include media('screen', '<tablet')
+
+
+
+@include media('>=phone', '<desktop-wide') {
+
+	form,
+	form + a {
+		margin-left: 2.3%;
+	}
+
+}//<--------------------------------------------------------------------- @include media('>=phone', '<desktop-wide')
+
+
+
+@include media('>=tablet', '<desktop-wide') {
+
+	ul:first-child ~ .button {
+		width: 18%;
+		@include rem(max-width, 144px);
+		@include rem(top, 6px);
+		margin-left: 2%;
+	}
+
+//	ul:first-child + .button + .button + a {
+//		@include rem(top, 10px);
+//	}
+
+//	form,
+//	form + a {
+//		margin-left: 2.3%;
+//	}
+
+
+
+
+}//<--------------------------------------------------------------------- @include media('>=tablet', '<desktop-wide')
+
+
+@include media('screen', '<desktop-wide') {
+
+//	background-color: pink;
+//	background-color: rgba(51,51,51,0.15);
+
+//	ul,
+//	.button,
+//	.button ~ a,
+//	.button + .button ~ a,
+//	form,
+//	form + a {
+	ul {
+//		display: none;
+		position: absolute;
+		top: 300px;
+
+		&:first-child { 
+			display: none;
+			background-color: pink;
+
+
+		}
+		&:last-child { display: none; }
+
+
+	}
+
+
+
+
+	@include rem(height, 48px);
+
+	&:before {
+//		background-color: red;
+		content: "";
+		background-image: url("../img/burger.png");
+		background-repeat: no-repeat;
+		background-position: 6px 6px;
+		@include rem(top, 6px);
+		@include rem(left, 16px);
+		@include rem(width, 36px);
+		@include rem(height, 36px);
+		cursor: pointer;
+	}
+
+
+	&:after {
+//		background-color: $background-color;
+//		background: linear-gradient(red, yellow);
+//		@include linear-gradient(rgba(51,51,51,0.15), rgba(51,51,51,0));
+//		@include linear-gradient(rgba(51,51,51,1), rgba(51,51,51,0));
+
+
+		@include rem(top, 48px);
+//		@include rem(height, 4px);
+//		z-index: 0;
+//		width: 100%;
+//		left: 0;
+	}
+
+
+//	ul:first-child ~ .button {
+////		@include rem(width, 144px);
+//		width: 18%;
+//		@include rem(max-width, 144px);
+////		@include rem(margin-left, 24px);
+////		margin-left: 2.5%;
+//		margin-left: 2%;
+//	}
+
+
+
+	ul:first-child + .button + .button + a {
+//		position: relative;
+		margin-left: 2.3%;
+//		@include rem(margin-left, 24px);
+//		@include rem(top, 4px);
+//		@include rem(top, 8px);
+		@include rem(top, 10px);
+	}
+
+	[class*="icon-"] {
+		color: $font-color;
+	}
+
+
+
+	form {
+
+		input {
+			color: $font-color;
+		}
+	}
+
+
+
+
+	form + a {
+		position: relative;
+		@include rem(top, 16px);
+//		@include rem(margin-left, 24px);
+//		margin-left: 2.3%;
+//		margin-right: 2.8%;
+//		margin-right: 3.5%;
+		@include rem(margin-right, 24px);
+	}
+
+
+	.logo {
+		position: absolute;
+		@include rem(top, 4px);
+		@include rem(left, 70px);
+		@include rem(width, 100px);
+		
+	}
+
+
+
+
+}//<--------------------------------------------------------------------- @include media('screen', '<desktop-wide')
+
+
+
+
+
+
+
+
+@include media('screen', '>=desktop-wide') {
+
+	margin: 0 auto;
+
+	@include rem(height, 120px);
+	
+//	text-align: right;
+//	cursor: default;
+
+
+
+	
+
+
+//	&:before, 
+//	&:after {
+//		content: "";
+//		display: block;
+//		position: absolute;
+//		left: 0;
+////		width: 100%;
+//
+//	}
 
 	&:before {
 		background-color: $dark-blue;
 		top: 0;
 		@include rem(height, 48px);
 		z-index: -1;
+		width: 100%;
+		left: 0;
 	}
+
 
 	&:after {
 //		background-color: $background-color;
 //		background: linear-gradient(red, yellow);
-//		background: linear-gradient(rgba(51,51,51,1), rgba(51,51,51,0));
-//		background: linear-gradient(rgba(51,51,51,0.15), rgba(51,51,51,0));
-//		@include linear-gradient(red, yellow);
-		@include linear-gradient(rgba(51,51,51,0.15), rgba(51,51,51,0));
+//		@include linear-gradient(rgba(51,51,51,0.15), rgba(51,51,51,0));
 //		@include linear-gradient(rgba(51,51,51,1), rgba(51,51,51,0));
 
 
 		@include rem(top, 120px);
-		@include rem(height, 4px);
+//		@include rem(height, 4px);
 		z-index: 0;
+//		width: 100%;
+//		left: 0;
 	}
 
 
-
 	ul {
-		
-
-//		direction: ltr;
 
 		float: left;
-
 		text-align: left;
-
-//		display: inline-block;
-
-//		margin-left: 2.9%;
-//		margin-right: 2%;
 		
 		@include rem(font-size, 12px);
 
 		li {
-
-//			display: inline-block;
-
 			text-transform: uppercase;
-
-
-
 		}
 
 		&:first-child {
 
 //			background-color: rgba(255,255,0,0.3);
-
-
-//			float: left;
-
-//			margin-left: 2.9%;
 			@include rem(margin-left, 38px);
 			margin-right: 2%;
-//			@include rem(margin-top, 20px);
-//			@include rem(margin-bottom, 16px);
 
 			li {
 
 				display: inline-block;
+				color: $white;
 
 				@include rem(line-height, 12px);
-
-
 				@include rem(margin-top, 20px);
 				@include rem(margin-bottom, 16px);
+
 				&:not(:last-child) {
 					@include rem(margin-right, 24px);
 				}
 
-				color: $white;
-	
 	
 				a {
 					color: $white;
@@ -136,37 +510,27 @@ header {
 						color: lighten($dark-blue, 75%);
 					}
 				}
+
 			}
 		}
 
 
 		&:last-child {
 
-			//background-color: rgba(0,255,255,0.3);
-
-//			font-family: "Open-Sans-Semibold", sans-serif;
+//			background-color: rgba(0,255,255,0.3);
 
 			margin-left: 3.4%;
-
 			display: inline-table;
-
 			width: 80%;
-
-
-
 
 			li {
 
 				display: table-cell;
 
-//				font-family: "Open-Sans-Semibold", sans-serif;
-
 				@include rem(padding-top, 21px);
 				@include rem(padding-bottom, 15px);
 				@include rem(line-height, 18px);
 				@include rem(letter-spacing, 0.8px);
-
-
 
 				&:not(:last-child) {
 					@include rem(padding-right, 28px);
@@ -175,10 +539,6 @@ header {
 				p {
 					font-family: "Open-Sans-Semibold", sans-serif;
 					cursor: pointer;
-
-//					&:hover {
-//						color: darken($blue, 15%);
-//					}
 					
 //					br { display: none; }					
 				}
@@ -187,7 +547,6 @@ header {
 				&.selected {
 					p {
 						color: $blue;
-//						cursor: default;
 						&:hover {
 							color: darken($blue, 15%);
 						}
@@ -207,32 +566,19 @@ header {
 
 
 
-//				.container {
 				.container-fluid {
 //					background-color: rgba(255,255,0,0.5);
 					background-color: #f7f7f7;
 
-//					padding: 0 2.9%;
 					position: absolute;
 					
 					left: 0;
 					right: 0;
-//					margin: 0 auto;
 
-//					max-width: 1300px;
-//					top: 120px;
 					@include rem(top, 120px);
 
 					z-index: 1;
 
-//					.container {
-//						background-color: rgba(0,255,0,0.2);
-////						margin: 0 auto;
-//						padding: 0 2.9%;
-////						max-width: 1300px;
-////						@include rem(max-width, 1300px);
-//
-//					}
 
 					&:before, 
 					&:after {
@@ -243,45 +589,18 @@ header {
 					}
 					
 					&:before {
-//						content: "";
-//						
-//
-//						position: absolute;
-//						left: 0;
-//						right: 0;
-//						height: 1px;
+						background-color: #0498cd;
 						@include rem(height, 1px);
-//						top: 0;
-//						bottom: 0;
-						
-//						background-color: red;
-						background-color: #0498cd
-
 					}
 
 					&:after {
 
-//						content: "";
-//						position: absolute;
-//
-//						left: 0;
-//						right: 0;
-				
 						@include rem(height, 4px);
 
 //						@include linear-gradient(red, yellow);
 						@include linear-gradient(rgba(239,239,239,1), rgba(239,239,239,0));
-
-//						z-index: 0;
 					}
 
-
-
-
-//					[class*="col"] {
-////						border: solid 1px;
-//						background: rgba(255,0,0,0.2);
-//					}
 
 					.container {
 
@@ -306,45 +625,20 @@ header {
 										}
 									}
 
-//									.row {
-//										[class*="col"] {
-//											&:after {
-//												display: none;
-//											}
-//										}
-//									}
-
 								}
 
 							}
 
 							[class*="col"] {
-//								background: rgba(255,0,0,0.2);
-//								border: solid 1px;
-
-//								@include rem(min-height, 97px);
 								
 								@include rem(font-size, 14px);
 								@include rem(letter-spacing, 0.1px);
-									
-								
+										
 								.row {
-
-//									@include rem(margin-top, 16px);
-
 									[class*="col"] {
 										&:after {
 											display: none;
 										}
-
-//										p {
-//											font-family: "Open-Sans-Light", sans-serif;
-//											color: $font-color;
-//											text-transform: none;
-//											@include rem(font-size, 14px);
-//											@include rem(line-height, 30px);
-//											@include rem(letter-spacing, 0.1px);
-//										}
 									}
 								}
 
@@ -352,9 +646,6 @@ header {
 									font-weight: bold;
 //									color: rgba(255,0,255,0.9);
 									color: #abb8bc;
-
-//									@include rem(font-size, 14px);
-//									@include rem(letter-spacing, 0.1px);
 
 									@include rem(margin-top, 35px);
 
@@ -371,9 +662,8 @@ header {
 									font-family: "Open-Sans-Light", sans-serif;
 									color: $font-color;
 									text-transform: none;
-//									@include rem(font-size, 14px);
+
 									@include rem(line-height, 30px);
-//									@include rem(letter-spacing, 0.1px);
 
 									&:first-child {
 										@include rem(margin-top, 16px);
@@ -383,10 +673,10 @@ header {
 										@include rem(margin-bottom, 16px);
 									}
 
-
 									b, strong {
 										font-family: "Open-Sans-Semibold", sans-serif;
 									}
+
 									a {
 										color: $font-color;
 										text-decoration: none;
@@ -419,70 +709,49 @@ header {
 
 	}
 
+
+
 	ul:first-child ~ .button {
 
-//		@include rem(width, 144px);
 		width: 11.1%;
 
-
-		@include rem(padding, 10px 0);
-		@include rem(margin-top, 8px);
+//		@include rem(padding, 10px 0);
+//		@include rem(margin-top, 8px);
+		@include rem(top, 8px);
 
 		margin-left: 1.9%;
 		float: left;
 
 	}
 
-	ul:first-child ~ a:not(.button) {
-		text-decoration: none;
-	}
 
 //	ul:first-child ~ a:not(.button) {
+//		text-decoration: none;
+//	}
+
+
+
 	ul:first-child + .button + .button + a {
 
 		float: left;
-//		float: right;
-
-//		display: inline-block;
-
-
-
-
-
-
-
-		color: $blue;
-
-//		position: absolute;
-//		position: relative;
-//		@include rem(top, 19px);
-
-//		left: 50%;
-//		right: 16.5%;
-
-//		@include rem(margin-left, 332px);
-//		margin-left: 4%;
-
-
-
-		font-weight: bold;
-		font-style: italic;
-		text-transform: uppercase;
-//		text-decoration: none;
-
-		@include rem(font-size, 14px);
-
-		@include rem(margin-top, 19px);
-
+//		color: $blue;
+//
+//		font-weight: bold;
+//		font-style: italic;
+//		text-transform: uppercase;
+//
+//		@include rem(font-size, 14px);
+//		@include rem(margin-top, 19px);
+		@include rem(top, 19px);
+//
 		margin-left: 4.2%;
-
-//		margin-right: 4.9%;
-
-		&:hover {
-			color: lighten($blue, 10%);
-//			color: red;
-		}
+//
+//		&:hover {
+//			color: lighten($blue, 10%);
+//		}
 	}
+
+
 
 	[class*="icon-"] {
 		color: $white;
@@ -490,166 +759,159 @@ header {
 	}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 	form {
-
-		display: inline-block;
-
-//		background: rgba(0,255,0,0.5);
-
-		position: relative;
-
-//		@include rem(top, 6px);
-//		margin: 0;
-
-		@include rem(margin-top, 16px);
-
-		@include rem(width, 18px);
-		@include rem(height, 22px);
-
-
+//
+//		display: inline-block;
+//		position: relative;
+//
+//		@include rem(margin-top, 16px);
+//		@include rem(width, 18px);
+//		@include rem(height, 22px);
+//
+//
 		&:after {
-
-//			display: none;
-
-			@extend [class*="icon-"];
-
-//			background: rgba(255,255,0,0.4);
-
-			content: "\f102";
-
-			display: block;
-
-			position: absolute;
 //
-//
-//			@include rem(top, 16px);
-//			@include rem(left, 542px);
-			@include rem(width, 18px);
-			@include rem(height, 22px);
-
-
-
-//			margin-left: 590px;
-
-			font-family: icons;
-			font-style: normal;
-			font-weight: normal;
-			vertical-align: top;
-			line-height: 1;
-
-//			color: #00f;
-//			font-size: 18px;
-
-//			cursor: pointer;
-
-			@include transition(all 0.2s ease-in-out);
-
-		}
-
-		&:hover {
-			cursor: pointer;
-			&:after {
-				opacity: 0.75;
-			}
-		}
-		
-
-
-		input {
-//			display: none;
-
-			position: absolute;
-
-			right: 0;
-
-//			width: 0;
-
-
-			@include rem(width, 240px);
-			@include rem(height, 22px);
-
-			@include rem(padding-left, 8px);
-			@include rem(padding-right, 24px);
-
-
-
-			border: 0;
-//			border-bottom: 1px solid red;
-			border-bottom: 1px solid $white;
-			outline: 0;
-
-			background-color: $dark-blue;
-//			background: rgba(0,255,255,0.6);
-
-			@include rem(font-size, 14px);
 			color: $white;
-
-			-webkit-appearance: none;
-
+//			@include rem(font-size, 18px);
+//
+//			content: "\f102";
+//			display: block;
+//			position: absolute;
+//
+//			@include rem(width, 18px);
+//			@include rem(height, 22px);
+//
+//			font-family: icons;
+//			font-style: normal;
+//			font-weight: normal;
+//			vertical-align: top;
+//			line-height: 1;
+//
+//			@include transition(all 0.2s ease-in-out);
+//
 		}
-
-		button {
-//			display: none;
-
-			position: absolute;
-
-			right: 0;
-
-			@include rem(width, 18px);
-			@include rem(height, 22px);
-
-
-			background-color: transparent;
-//			background: rgba(255,255,0,0.4);
-
-			border: 0;
-			padding: 0;
-
-			cursor: pointer;
-
-			@include transition(all 0.2s ease-in-out);
-
-			&:hover {
-				opacity: 0.75;
-			}
-
+//
+//		&:hover {
+//			cursor: pointer;
+//			&:after {
+//				opacity: 0.75;
+//			}
+//		}
+//		
+//
+//
+		input {
+//
+//			position: absolute;
+//			right: 0;
+//
+//			@include rem(width, 240px);
+//			@include rem(height, 22px);
+//
+//			@include rem(padding-left, 8px);
+//			@include rem(padding-right, 24px);
+//
+//			border: 0;
+//
+//			border-bottom: 1px solid $white;
+//			outline: 0;
+//
+//			background-color: $dark-blue;
+//
+//
+//			@include rem(font-size, 14px);
+			color: $white;
+//
+//			-webkit-appearance: none;
+//
 		}
-
-		&.displayed {
-			&:after {
-				display: none;
-			}
-		}
-		&:not(.displayed) {
-			& input,
-			& button {
-				display: none;
-			}
-		}
-
-
+//
+//		button {
+//
+//			position: absolute;
+//			right: 0;
+//
+//			@include rem(width, 18px);
+//			@include rem(height, 22px);
+//
+//
+//			background-color: transparent;
+//
+//
+//			border: 0;
+//			padding: 0;
+//
+//			cursor: pointer;
+//
+//			@include transition(all 0.2s ease-in-out);
+//
+//			&:hover {
+//				opacity: 0.75;
+//			}
+//
+//		}
+//
+//		&.displayed {
+//			&:after {
+//				display: none;
+//			}
+//		}
+//		&:not(.displayed) {
+//			& input,
+//			& button {
+//				display: none;
+//			}
+//		}
+//
+//
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	form + a {
 
 		float: right;
 		margin-left: 2.3%;
-//		margin-right: 2.9%;
-		@include rem(margin-right, 38px);
 
+		@include rem(margin-right, 38px);
 		@include rem(margin-top, 16px);
 		@include rem(height, 22px);
 
-		.icon-cart {
-//			background: rgba(255,255,0,0.4);
-			@include transition(all 0.2s ease-in-out);
-		}
-
-		&:hover {
-			.icon-cart {
-				opacity: 0.75;
-			}
-		}
+//		.icon-cart {
+////			background: rgba(255,255,0,0.4);
+//			@include transition(all 0.2s ease-in-out);
+//		}
+//
+//		&:hover {
+//			.icon-cart {
+//				opacity: 0.75;
+//			}
+//		}
 
 	}
 
@@ -658,25 +920,17 @@ header {
 	.logo {
 		clear: both;
 		float: left;
-
 		display: inline-block;
 
-//		margin-left: 3%;
 		@include rem(margin-left, 40px);
-
-//		margin-right: 5%;
-
 		@include rem(margin-top, 8px);
 
-
-
-//		@include rem(width, 146px);
-
-		width: 11.2%;
-
+//		width: 11.2%;
+		@include rem(width, 145px);
 
 	}
 
+}//<--------------------------------------------------------------------- @include media('screen', '>=desktop-wide')
 
 
 

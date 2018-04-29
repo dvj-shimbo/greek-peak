@@ -41,6 +41,268 @@ header {
 		left: 0;
 	}
 
+
+
+
+
+	ul {
+
+//		float: left;
+//		text-align: left;
+		
+		@include rem(font-size, 12px);
+
+		li {
+			text-transform: uppercase;
+		}
+
+		&:first-child {
+
+//			background-color: rgba(255,255,0,0.3);
+//			@include rem(margin-left, 38px);
+//			margin-right: 2%;
+
+			li {
+
+				display: inline-block;
+				color: $white;
+
+				@include rem(line-height, 12px);
+				@include rem(margin-top, 20px);
+				@include rem(margin-bottom, 16px);
+
+//				&:not(:last-child) {
+//					@include rem(margin-right, 24px);
+//				}
+
+	
+				a {
+					color: $white;
+					text-decoration: none;
+	
+					&:hover {
+						color: lighten($dark-blue, 75%);
+					}
+				}
+
+			}
+		}
+
+
+		&:last-child {
+
+//			background-color: rgba(0,255,255,0.3);
+
+//			margin-left: 3.4%;
+//			display: inline-table;
+//			width: 80%;
+
+			li {
+
+//				display: table-cell;
+
+				@include rem(padding-top, 21px);
+				@include rem(padding-bottom, 15px);
+				@include rem(line-height, 18px);
+//				@include rem(letter-spacing, 0.8px);
+
+//				&:not(:last-child) {
+//					@include rem(padding-right, 28px);
+//				}
+
+				p {
+					font-family: "Open-Sans-Semibold", sans-serif;
+					cursor: pointer;
+					
+//					br { display: none; }					
+				}
+
+
+				&.selected {
+					p {
+						color: $blue;
+						&:hover {
+							color: darken($blue, 15%);
+						}
+					}
+				}
+
+				&:not(.selected) {
+					p {
+						&:hover {
+							color: darken($blue, 15%);
+						}
+					}
+					.container-fluid {
+						display: none;
+					}
+				}
+
+
+
+				.container-fluid {
+//					background-color: rgba(255,255,0,0.5);
+					background-color: #f7f7f7;
+
+					position: absolute;
+					
+					left: 0;
+					right: 0;
+
+//					@include rem(top, 120px);
+
+					z-index: 1;
+
+
+					&:before, 
+					&:after {
+						content: "";
+						position: absolute;
+						left: 0;
+						right: 0
+					}
+					
+					&:before {
+						background-color: #0498cd;
+						@include rem(height, 1px);
+					}
+
+					&:after {
+
+						@include rem(height, 4px);
+
+//						@include linear-gradient(red, yellow);
+						@include linear-gradient(rgba(239,239,239,1), rgba(239,239,239,0));
+					}
+
+
+					.container {
+
+						.row {
+
+							@include rem(min-height, 97px);
+
+
+
+							&.v-divide {
+								[class*="col"] {
+									&:not(:last-child) {
+										&:after {
+//											background-color: red;
+											background-color: #e4e4e5;
+
+											content: "";
+											display: block;
+											position: absolute;
+											right: 0;
+											@include rem(top, 16px);
+											@include rem(bottom, 16px);
+											@include rem(width, 1px);
+										}
+									}
+
+								}
+
+							}
+
+
+
+
+							[class*="col"] {
+								
+								@include rem(font-size, 14px);
+								@include rem(letter-spacing, 0.1px);
+
+//								border: solid 1px green;
+										
+								.row {
+									[class*="col"] {
+										&:after {
+											display: none;
+										}
+									}
+								}
+
+								h5 {
+									font-weight: bold;
+//									color: rgba(255,0,255,0.9);
+									color: #abb8bc;
+
+									@include rem(margin-top, 35px);
+
+									a {
+										color: $blue;
+										text-decoration: none;
+										&:hover {
+											color: darken($blue, 15%);
+										}
+									}
+								}
+
+								p {
+									font-family: "Open-Sans-Light", sans-serif;
+									color: $font-color;
+									text-transform: none;
+
+									@include rem(line-height, 30px);
+
+									&:first-child {
+										@include rem(margin-top, 16px);
+									}
+
+									&:last-child {
+										@include rem(margin-bottom, 16px);
+									}
+
+									b, strong {
+										font-family: "Open-Sans-Semibold", sans-serif;
+									}
+
+									a {
+										color: $font-color;
+										text-decoration: none;
+
+										&:hover {
+											color: lighten($font-color, 15%);
+										}
+									}
+
+								}
+
+								.button {
+									width: 100%;
+									@include rem(max-width, 200px);
+								}
+
+
+							}
+						}
+					}
+
+				}
+
+
+			}
+		}
+
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	ul:first-child ~ .button {
 
 		position: relative;
@@ -298,29 +560,8 @@ header {
 
 //	background-color: pink;
 //	background-color: rgba(51,51,51,0.15);
-
-//	ul,
-//	.button,
-//	.button ~ a,
-//	.button + .button ~ a,
-//	form,
-//	form + a {
-	ul {
-//		display: none;
-		position: absolute;
-		top: 300px;
-
-		&:first-child { 
-			display: none;
-			background-color: pink;
-
-
-		}
-		&:last-child { display: none; }
-
-
-	}
-
+	
+	background-color: $white;
 
 
 
@@ -363,6 +604,126 @@ header {
 ////		margin-left: 2.5%;
 //		margin-left: 2%;
 //	}
+
+	&:not(.menu-displayed) {
+		ul {
+			display: none;
+		}
+	}
+
+
+	ul {
+//		display: none;
+		position: absolute;
+//		position: relative;
+//		top: 300px;
+		z-index: 1;
+
+//		text-align: center;
+		text-align: left;
+
+		li {
+			margin-left: 2.8%;
+		}
+
+
+
+		&:first-child { 
+//			display: none;
+//			background-color: pink;
+			background-color: $dark-blue;
+
+
+//			position: absolute;
+			@include rem(top, 48px);
+			left: 0;
+			right: 0;
+
+//			text-align: center;
+
+//			z-index: 1;
+
+
+		}
+
+
+		&:last-child {
+
+//			display: none;
+//			background-color: pink;
+			background-color: $white;
+
+//			text-align: left;
+
+
+			@include rem(top, 96px);
+
+			left: 0;
+//			right: 0;
+			width: 100%;
+
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+//				background-color: $background-color;
+//				background: linear-gradient(red, yellow);
+				@include linear-gradient(rgba(51,51,51,0.15), rgba(51,51,51,0));
+		
+		
+//				@include rem(top, 120px);
+				@include rem(height, 4px);
+//				z-index: 0;
+				width: 100%;
+				left: 0;
+			}
+
+
+
+			li {
+				display: inline-block;
+////				background-color: red;
+////				padding: 0 2%;
+////				text-align: center;
+
+//				margin-left: 2%;
+
+//				&:not(:last-child) {
+////					@include rem(margin-right, 24px);
+//					margin-right: 2%;
+//				}
+
+//				p {
+//					background-color: red;
+////					width: 100%;
+////					max-width: 130px;
+//					width: 130px;
+//
+//					margin: 0 auto;
+//
+////					br {
+////						display: none;
+////					}
+//
+//
+//				}
+
+				.container-fluid {
+					@include rem(top, 72px);
+				}
+
+
+
+			}
+
+
+		}
+
+
+	}
+
+
+
 
 
 
@@ -471,243 +832,255 @@ header {
 	}
 
 
+
+
+
+
+
 	ul {
 
 		float: left;
 		text-align: left;
 		
-		@include rem(font-size, 12px);
-
-		li {
-			text-transform: uppercase;
-		}
-
+//		@include rem(font-size, 12px);
+//
+//		li {
+//			text-transform: uppercase;
+//		}
+//
 		&:first-child {
-
-//			background-color: rgba(255,255,0,0.3);
+//
+////			background-color: rgba(255,255,0,0.3);
 			@include rem(margin-left, 38px);
 			margin-right: 2%;
-
+//
 			li {
-
-				display: inline-block;
-				color: $white;
-
-				@include rem(line-height, 12px);
-				@include rem(margin-top, 20px);
-				@include rem(margin-bottom, 16px);
-
+//
+//				display: inline-block;
+//				color: $white;
+//
+//				@include rem(line-height, 12px);
+//				@include rem(margin-top, 20px);
+//				@include rem(margin-bottom, 16px);
+//
 				&:not(:last-child) {
 					@include rem(margin-right, 24px);
 				}
 
-	
-				a {
-					color: $white;
-					text-decoration: none;
-	
-					&:hover {
-						color: lighten($dark-blue, 75%);
-					}
-				}
-
+//	
+//				a {
+//					color: $white;
+//					text-decoration: none;
+//	
+//					&:hover {
+//						color: lighten($dark-blue, 75%);
+//					}
+//				}
+//
 			}
 		}
-
-
+//
+//
 		&:last-child {
-
-//			background-color: rgba(0,255,255,0.3);
-
+//
+////			background-color: rgba(0,255,255,0.3);
+//
 			margin-left: 3.4%;
 			display: inline-table;
 			width: 80%;
-
+//
 			li {
-
+//
 				display: table-cell;
-
-				@include rem(padding-top, 21px);
-				@include rem(padding-bottom, 15px);
-				@include rem(line-height, 18px);
+//
+//				@include rem(padding-top, 21px);
+//				@include rem(padding-bottom, 15px);
+//				@include rem(line-height, 18px);
 				@include rem(letter-spacing, 0.8px);
-
+//
 				&:not(:last-child) {
 					@include rem(padding-right, 28px);
 				}
-
-				p {
-					font-family: "Open-Sans-Semibold", sans-serif;
-					cursor: pointer;
-					
-//					br { display: none; }					
-				}
-
-
-				&.selected {
-					p {
-						color: $blue;
-						&:hover {
-							color: darken($blue, 15%);
-						}
-					}
-				}
-
-				&:not(.selected) {
-					p {
-						&:hover {
-							color: darken($blue, 15%);
-						}
-					}
-					.container-fluid {
-						display: none;
-					}
-				}
-
-
-
+//
+//				p {
+//					font-family: "Open-Sans-Semibold", sans-serif;
+//					cursor: pointer;
+//					
+////					br { display: none; }					
+//				}
+//
+//
+//				&.selected {
+//					p {
+//						color: $blue;
+//						&:hover {
+//							color: darken($blue, 15%);
+//						}
+//					}
+//				}
+//
+//				&:not(.selected) {
+//					p {
+//						&:hover {
+//							color: darken($blue, 15%);
+//						}
+//					}
+//					.container-fluid {
+//						display: none;
+//					}
+//				}
+//
+//
+//
 				.container-fluid {
-//					background-color: rgba(255,255,0,0.5);
-					background-color: #f7f7f7;
-
-					position: absolute;
-					
-					left: 0;
-					right: 0;
-
+////					background-color: rgba(255,255,0,0.5);
+//					background-color: #f7f7f7;
+//
+//					position: absolute;
+//					
+//					left: 0;
+//					right: 0;
+//
 					@include rem(top, 120px);
-
-					z-index: 1;
-
-
-					&:before, 
-					&:after {
-						content: "";
-						position: absolute;
-						left: 0;
-						right: 0
-					}
-					
-					&:before {
-						background-color: #0498cd;
-						@include rem(height, 1px);
-					}
-
-					&:after {
-
-						@include rem(height, 4px);
-
-//						@include linear-gradient(red, yellow);
-						@include linear-gradient(rgba(239,239,239,1), rgba(239,239,239,0));
-					}
-
-
-					.container {
-
-						.row {
-
-							@include rem(min-height, 97px);
-
-							&.v-divide {
-								[class*="col"] {
-									&:not(:last-child) {
-										&:after {
-//											background-color: red;
-											background-color: #e4e4e5;
-
-											content: "";
-											display: block;
-											position: absolute;
-											right: 0;
-											@include rem(top, 16px);
-											@include rem(bottom, 16px);
-											@include rem(width, 1px);
-										}
-									}
-
-								}
-
-							}
-
-							[class*="col"] {
-								
-								@include rem(font-size, 14px);
-								@include rem(letter-spacing, 0.1px);
-										
-								.row {
-									[class*="col"] {
-										&:after {
-											display: none;
-										}
-									}
-								}
-
-								h5 {
-									font-weight: bold;
-//									color: rgba(255,0,255,0.9);
-									color: #abb8bc;
-
-									@include rem(margin-top, 35px);
-
-									a {
-										color: $blue;
-										text-decoration: none;
-										&:hover {
-											color: darken($blue, 15%);
-										}
-									}
-								}
-
-								p {
-									font-family: "Open-Sans-Light", sans-serif;
-									color: $font-color;
-									text-transform: none;
-
-									@include rem(line-height, 30px);
-
-									&:first-child {
-										@include rem(margin-top, 16px);
-									}
-
-									&:last-child {
-										@include rem(margin-bottom, 16px);
-									}
-
-									b, strong {
-										font-family: "Open-Sans-Semibold", sans-serif;
-									}
-
-									a {
-										color: $font-color;
-										text-decoration: none;
-
-										&:hover {
-											color: lighten($font-color, 15%);
-										}
-									}
-
-								}
-
-								.button {
-									width: 100%;
-									@include rem(max-width, 200px);
-								}
-
-
-							}
-						}
-					}
-
+//
+//					z-index: 1;
+//
+//
+//					&:before, 
+//					&:after {
+//						content: "";
+//						position: absolute;
+//						left: 0;
+//						right: 0
+//					}
+//					
+//					&:before {
+//						background-color: #0498cd;
+//						@include rem(height, 1px);
+//					}
+//
+//					&:after {
+//
+//						@include rem(height, 4px);
+//
+////						@include linear-gradient(red, yellow);
+//						@include linear-gradient(rgba(239,239,239,1), rgba(239,239,239,0));
+//					}
+//
+//
+//					.container {
+//
+//						.row {
+//
+//							@include rem(min-height, 97px);
+//
+//							&.v-divide {
+//								[class*="col"] {
+//									&:not(:last-child) {
+//										&:after {
+////											background-color: red;
+//											background-color: #e4e4e5;
+//
+//											content: "";
+//											display: block;
+//											position: absolute;
+//											right: 0;
+//											@include rem(top, 16px);
+//											@include rem(bottom, 16px);
+//											@include rem(width, 1px);
+//										}
+//									}
+//
+//								}
+//
+//							}
+//
+//							[class*="col"] {
+//								
+//								@include rem(font-size, 14px);
+//								@include rem(letter-spacing, 0.1px);
+//										
+//								.row {
+//									[class*="col"] {
+//										&:after {
+//											display: none;
+//										}
+//									}
+//								}
+//
+//								h5 {
+//									font-weight: bold;
+////									color: rgba(255,0,255,0.9);
+//									color: #abb8bc;
+//
+//									@include rem(margin-top, 35px);
+//
+//									a {
+//										color: $blue;
+//										text-decoration: none;
+//										&:hover {
+//											color: darken($blue, 15%);
+//										}
+//									}
+//								}
+//
+//								p {
+//									font-family: "Open-Sans-Light", sans-serif;
+//									color: $font-color;
+//									text-transform: none;
+//
+//									@include rem(line-height, 30px);
+//
+//									&:first-child {
+//										@include rem(margin-top, 16px);
+//									}
+//
+//									&:last-child {
+//										@include rem(margin-bottom, 16px);
+//									}
+//
+//									b, strong {
+//										font-family: "Open-Sans-Semibold", sans-serif;
+//									}
+//
+//									a {
+//										color: $font-color;
+//										text-decoration: none;
+//
+//										&:hover {
+//											color: lighten($font-color, 15%);
+//										}
+//									}
+//
+//								}
+//
+//								.button {
+//									width: 100%;
+//									@include rem(max-width, 200px);
+//								}
+//
+//
+//							}
+//						}
+//					}
+//
 				}
-
-
+//
+//
 			}
 		}
-
-
-
-
+//
+//
+//
+//
 	}
+
+
+
+
+
+
+
 
 
 

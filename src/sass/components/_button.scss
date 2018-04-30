@@ -49,13 +49,14 @@
 		z-index: -1;
 
 
-		@include border-radius(4px);
+		@include border-radius(3px);
 		@include transition(all 0.25s ease-in-out);
 	}
 
 	&:hover {
 //		color: $blue-color;
 		color: $dark-blue;
+		text-decoration: none;
 		@include transition(all 0.25s ease-in-out);
 		&:after {
 //			background-color: #fff;

@@ -141,8 +141,8 @@ header {
 
 
 				.container-fluid {
-//					background-color: rgba(255,255,0,0.5);
-					background-color: #f7f7f7;
+					background-color: rgba(255,255,0,0.5);
+//					background-color: #f7f7f7;
 
 					position: absolute;
 					
@@ -178,9 +178,13 @@ header {
 
 					.container {
 
+//						@include rem(min-height, 97px);
+
 						.row {
 
-							@include rem(min-height, 97px);
+							border: solid 1px red;
+
+//							@include rem(min-height, 97px);
 
 
 
@@ -188,8 +192,8 @@ header {
 								[class*="col"] {
 									&:not(:last-child) {
 										&:after {
-//											background-color: red;
-											background-color: #e4e4e5;
+											background-color: red;
+//											background-color: #e4e4e5;
 
 											content: "";
 											display: block;
@@ -209,11 +213,17 @@ header {
 
 
 							[class*="col"] {
+
+
+
+//								@include rem(min-height, 97px);
+								@include rem(min-height, 197px);
+//								height: 100%;
 								
 								@include rem(font-size, 14px);
 								@include rem(letter-spacing, 0.1px);
 
-//								border: solid 1px green;
+								border: solid 1px green;
 										
 								.row {
 									[class*="col"] {
@@ -224,11 +234,16 @@ header {
 								}
 
 								h5 {
+
+									background-color: rgba(255,0,0,0.3);
+
+
 									font-weight: bold;
 //									color: rgba(255,0,255,0.9);
 									color: #abb8bc;
 
-									@include rem(margin-top, 35px);
+//									@include rem(margin-top, 35px);
+
 
 									a {
 										color: $blue;

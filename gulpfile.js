@@ -74,7 +74,8 @@ gulp.task('scripts-ie', function() {
 });
 
 
-gulp.task('scripts', ['scripts-ie'], function() {
+//gulp.task('scripts', ['scripts-ie'], function() {
+gulp.task('scripts', function() {
   return gulp.src([ // Берем все необходимые библиотеки
 //      'node_modules/mediaelement/build/mediaelement-and-player.js', // MediaElement.js
 //      'node_modules/jquery/dist/jquery.js', // jQuery
@@ -114,8 +115,9 @@ gulp.task('clean-src', function() {
   return del(['src/css/**/*', 
               'src/js/libs.js', 
               'src/js/libs.js.map', 
-              'src/js/libs-ie.js', 
-              'src/js/libs-ie.js.map']);
+ //             'src/js/libs-ie.js', 
+ //             'src/js/libs-ie.js.map'
+              ]);
 });
 
 

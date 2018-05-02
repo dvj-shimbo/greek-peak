@@ -162,26 +162,26 @@ header {
 					z-index: 1;
 
 
-					&:before, 
-					&:after {
-						content: "";
-						position: absolute;
-						left: 0;
-						right: 0
-					}
-					
-					&:before {
-						background-color: #0498cd;
-						@include rem(height, 1px);
-					}
-
-					&:after {
-
-						@include rem(height, 4px);
-
-						@include linear-gradient(red, yellow);
-//						@include linear-gradient(rgba(239,239,239,1), rgba(239,239,239,0));
-					}
+//					&:before, 
+//					&:after {
+//						content: "";
+//						position: absolute;
+//						left: 0;
+//						right: 0
+//					}
+//					
+//					&:before {
+//						background-color: #0498cd;
+//						@include rem(height, 1px);
+//					}
+//
+//					&:after {
+//
+//						@include rem(height, 4px);
+//
+//						@include linear-gradient(red, yellow);
+////						@include linear-gradient(rgba(239,239,239,1), rgba(239,239,239,0));
+//					}
 
 
 					.container {
@@ -196,7 +196,7 @@ header {
 							@include rem(min-height, $header-row-lg-min-height);
 
 
-
+/*
 							&.v-divide {
 								[class*="col"] {
 									&:not(:last-child) {
@@ -217,7 +217,7 @@ header {
 								}
 
 							}
-
+*/
 
 
 
@@ -298,7 +298,10 @@ header {
 									color: $font-color;
 									text-transform: none;
 
-									@include rem(line-height, 30px);
+//									@include rem(line-height, 30px);
+
+									@include rem(line-height, 18px);
+									@include rem(padding, 6px 0);
 
 									&:first-child {
 										@include rem(margin-top, 16px);
@@ -586,6 +589,7 @@ header {
 
 			.container-fluid {
 				@include rem(top, -306px);
+				@include rem(min-height, 620px);
 			}
 
 		}
@@ -661,6 +665,7 @@ header {
 
 			.container-fluid {
 				@include rem(top, -206px);
+				@include rem(min-height, 520px);
 			}
 
 		}
@@ -759,16 +764,17 @@ header {
 					display: none;
 				}
 
-				.container-fluid {
-
-					&:before,
-					&:after {
-						display: none;
-					}
-
-//					left: 80px;
-
-				}
+//				.container-fluid {
+//
+////					&:before,
+////					&:after {
+////						display: none;
+////					}
+////
+//
+////					left: 80px; // <------------!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//
+//				}
 			}
 		}
 
@@ -824,7 +830,69 @@ header {
 			li {
 				@include rem(line-height, 18px);
 				@include rem(padding-top, 21px);
-				@include rem(padding-bottom, 15px);	
+				@include rem(padding-bottom, 15px);
+
+
+				.container-fluid {
+
+
+
+					&:before, 
+					&:after {
+						content: "";
+						position: absolute;
+						left: 0;
+						right: 0
+					}
+					
+					&:before {
+						background-color: #0498cd;
+						@include rem(height, 1px);
+					}
+
+					&:after {
+
+						@include rem(height, 4px);
+
+						@include linear-gradient(red, yellow);
+//						@include linear-gradient(rgba(239,239,239,1), rgba(239,239,239,0));
+					}
+
+					.container {
+						.row {
+							&.v-divide {
+								[class*="col"] {
+									&:not(:last-child) {
+										&:after {
+											background-color: red;
+//											background-color: #e4e4e5;
+
+											content: "";
+											display: block;
+											position: absolute;
+											right: 0;
+											@include rem(top, 16px);
+											@include rem(bottom, 16px);
+											@include rem(width, 1px);
+										}
+									}
+
+								}
+
+							}
+						}
+					}
+
+
+				}
+
+
+
+
+
+
+
+
 			}
 		}
 
@@ -960,7 +1028,10 @@ header {
 	&:after {
 //		background-color: red;
 		content: "";
-		background-image: url("../img/burger.png");
+
+//		background-image: url("../img/burger.png");
+//		background-image: url("../img/arrow-back.png");
+
 		background-repeat: no-repeat;
 		background-position: 6px 6px;
 		@include rem(top, 6px);
@@ -968,6 +1039,18 @@ header {
 		@include rem(width, 36px);
 		@include rem(height, 36px);
 		cursor: pointer;
+	}
+
+	&.menu-displayed {
+		&:after {
+			background-image: url("../img/arrow-back.png");
+		}
+	}
+
+	&:not(.menu-displayed) {
+		&:after {
+			background-image: url("../img/burger.png");
+		}
 	}
 
 

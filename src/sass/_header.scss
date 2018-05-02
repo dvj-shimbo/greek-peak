@@ -55,6 +55,8 @@ header {
 
 //		float: left;
 //		text-align: left;
+
+
 		
 		@include rem(font-size, 12px);
 
@@ -147,7 +149,7 @@ header {
 
 
 				.container-fluid {
-					background-color: rgba(255,255,0,0.5);
+					background-color: rgba(255,255,0,0.8);
 //					background-color: #f7f7f7;
 
 					position: absolute;
@@ -581,6 +583,11 @@ header {
 
 		&:last-child {
 			@include rem(top, 354px);
+
+			.container-fluid {
+				@include rem(top, -306px);
+			}
+
 		}
 
 		& ~ .button {
@@ -651,6 +658,11 @@ header {
 
 		&:last-child {
 			@include rem(top, 254px);
+
+			.container-fluid {
+				@include rem(top, -206px);
+			}
+
 		}
 	}
 
@@ -715,11 +727,18 @@ header {
 
 
 //		width: 70%;
-//		@include rem(max-width, 260px);
+//		@include rem(min-width, 260px);
+//		@include rem(max-width, 360px);
+
 		@include rem(width, 260px);
 
 
 		@include rem(padding, 0 18px);
+
+
+//		left: 80px;
+
+
 
 
 //		&:first-child {
@@ -738,6 +757,17 @@ header {
 			li {
 				br {
 					display: none;
+				}
+
+				.container-fluid {
+
+					&:before,
+					&:after {
+						display: none;
+					}
+
+//					left: 80px;
+
 				}
 			}
 		}
@@ -997,7 +1027,7 @@ header {
 //
 ////			position: absolute;
 			@include rem(top, 48px);
-			left: 0;
+//			left: 0;
 //			right: 0;
 //
 ////			text-align: center;
@@ -1684,7 +1714,6 @@ header {
 
 
 }
-
 
 
 

@@ -356,19 +356,20 @@ header {
 
 
 	ul:first-child ~ .button {
-
-		position: relative;
-
-//		width: 11.1%;
-
+//
+//		position: relative;
+//
+////		width: 11.1%;
+//
 		@include rem(padding, 10px 0);
-//		@include rem(margin-top, 8px);
-//		@include rem(top, 8px);
-
-//		margin-left: 1.9%;
-//		float: left;
-
+////		@include rem(margin-top, 8px);
+////		@include rem(top, 8px);
+//
+////		margin-left: 1.9%;
+////		float: left;
+//
 	}
+
 
 	ul:first-child ~ a:not(.button) {
 		text-decoration: none;
@@ -571,24 +572,90 @@ header {
 
 @include media('screen', '<tablet') {
 
-	ul:first-child ~ .button {
-		display: none;
+
+	ul {
+		&:first-child {
+			@include rem(height, 306px);
+			@include rem(padding-top, 108px);
+		}
+
+		&:last-child {
+			@include rem(top, 354px);
+		}
+
+		& ~ .button {
+			display: block;
+			position: absolute;
+			z-index: 1;
+
+			@include rem(width, 224px);
+//			left: 18px;
+			@include rem(left, 18px);
+
+
+		}
+
+		& + .button {
+			top: 66px;	
+		}
+
+		& + .button + .button {
+			top: 116px;	
+		}
+
+
+
 	}
-
-//	ul:first-child + .button + .button + a {
-//		@include rem(top, 10px);
-//	}
-
-//	form,
-//	form + a {
-//		margin-left: 2.3%;
-//	}
 
 
 }//<--------------------------------------------------------------------- @include media('screen', '<tablet')
 
 
 
+
+
+@include media('screen', '>=tablet') {
+
+	ul:first-child ~ .button {
+
+		position: relative;
+
+//		width: 11.1%;
+
+//		@include rem(padding, 10px 0);
+//		@include rem(margin-top, 8px);
+//		@include rem(top, 8px);
+
+//		margin-left: 1.9%;
+//		float: left;
+
+	}
+
+}//<--------------------------------------------------------------------- @include media('screen', '>=tablet')
+
+
+
+
+
+
+
+
+@include media('>=tablet', '<tablet-wide') {
+
+
+	ul {
+		&:first-child {
+			@include rem(height, 206px);
+			@include rem(padding-top, 8px);
+		}
+
+		&:last-child {
+			@include rem(top, 254px);
+		}
+	}
+
+
+}//<--------------------------------------------------------------------- @include media('>=tablet', '<tablet-wide')
 
 
 
@@ -628,8 +695,8 @@ header {
 			position: absolute;
 	
 //			background-color: $background-color;
-			background: linear-gradient(red, yellow);
-//			@include linear-gradient(rgba(51,51,51,0.15), rgba(51,51,51,0));
+//			background: linear-gradient(red, yellow);
+			@include linear-gradient(rgba(51,51,51,0.15), rgba(51,51,51,0));
 //			@include linear-gradient(rgba(51,51,51,1), rgba(51,51,51,0));
 	
 	
@@ -647,24 +714,25 @@ header {
 	ul {
 
 
-		width: 70%;
-		@include rem(max-width, 260px);
+//		width: 70%;
+//		@include rem(max-width, 260px);
+		@include rem(width, 260px);
 
-//		padding: 0 5%;
+
 		@include rem(padding, 0 18px);
 
 
-		&:first-child {
-			@include rem(height, 206px);
-			@include rem(padding-top, 8px);
-		}
+//		&:first-child {
+//			@include rem(height, 206px);
+//			@include rem(padding-top, 8px);
+//		}
 
 		&:last-child {
-//			display: none;
-			background-color: rgba(0,255,0,0.7);
-//			background-color: $white;
 
-			@include rem(top, 254px);
+			background-color: rgba(0,255,0,0.7);
+//			background-color: darken($white, 15%);
+
+//			@include rem(top, 254px);
 			@include rem(padding-bottom, 8px);
 
 			li {
@@ -698,8 +766,8 @@ header {
 		position: absolute;
 
 //		background-color: $background-color;
-		background: linear-gradient(red, yellow);
-//		@include linear-gradient(rgba(51,51,51,0.15), rgba(51,51,51,0));
+//		background: linear-gradient(red, yellow);
+		@include linear-gradient(rgba(51,51,51,0.15), rgba(51,51,51,0));
 //		@include linear-gradient(rgba(51,51,51,1), rgba(51,51,51,0));
 
 
@@ -1187,9 +1255,9 @@ header {
 //
 //
 		&:last-child {
-//
-////			background-color: rgba(0,255,255,0.3);
-//
+
+//			background-color: rgba(0,255,255,0.3);
+
 			margin-left: 3.4%;
 			display: inline-table;
 			width: 80%;

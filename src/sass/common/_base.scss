@@ -137,3 +137,53 @@ i, em { font-style: italic; }
 
 ::-ms-clear,
 ::-ms-reveal { display: none; }
+
+
+// Breakpoints:
+@include media('screen', '<desktop-wide') {
+	.device-desktop-wide {
+		display: none;
+	}
+}
+
+@include media('screen', '<desktop') {
+	.device-desktop {
+		display: none;
+	}
+}
+
+@include media('screen', '<tablet-wide') {
+	.device-tablet-wide {
+		display: none;
+	}
+}
+
+@include media('screen', '<tablet') {
+	.device-tablet {
+		display: none;
+	}
+}
+
+@include media('screen', '<tablet-small') {
+	.device-tablet-small {
+		display: none;
+	}
+}
+
+@include media('screen', '<phablet') {
+	.device-phablet {
+		display: none;
+	}
+}
+
+@include media('screen', '<phone-wide') {
+	.device-phone-wide {
+		display: none;
+	}
+}
+
+@include media('screen', '<phone') {
+	.device-phone {
+		display: none;
+	}
+}

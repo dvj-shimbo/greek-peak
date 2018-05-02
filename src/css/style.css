@@ -4109,6 +4109,62 @@ i, em {
   display: none;
 }
 
+@media screen and (max-width: 1247px) {
+  /* line 144, src/sass/common/_base.scss */
+  .device-desktop-wide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 150, src/sass/common/_base.scss */
+  .device-desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 156, src/sass/common/_base.scss */
+  .device-tablet-wide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 162, src/sass/common/_base.scss */
+  .device-tablet {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  /* line 168, src/sass/common/_base.scss */
+  .device-tablet-small {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 174, src/sass/common/_base.scss */
+  .device-phablet {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  /* line 180, src/sass/common/_base.scss */
+  .device-phone-wide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 419px) {
+  /* line 186, src/sass/common/_base.scss */
+  .device-phone {
+    display: none;
+  }
+}
+
 /*************************** Button Styles ****************************/
 /* line 3, src/sass/components/_button.scss */
 .button {
@@ -4885,47 +4941,47 @@ header form + a:hover .icon-cart {
     height: 2.25rem;
     cursor: pointer;
   }
-  /* line 1170, src/sass/_header.scss */
+  /* line 1172, src/sass/_header.scss */
   header.menu-displayed:after {
     background-image: url("../img/arrow-back.png");
-    opacity: 0.6;
+    opacity: 0.8;
   }
-  /* line 1178, src/sass/_header.scss */
+  /* line 1180, src/sass/_header.scss */
   header:not(.menu-displayed):after {
     background-image: url("../img/burger.png");
   }
-  /* line 1209, src/sass/_header.scss */
+  /* line 1211, src/sass/_header.scss */
   header:not(.menu-displayed) ul {
     display: none;
   }
-  /* line 1215, src/sass/_header.scss */
+  /* line 1217, src/sass/_header.scss */
   header ul {
     position: absolute;
     z-index: 1;
   }
-  /* line 1232, src/sass/_header.scss */
+  /* line 1234, src/sass/_header.scss */
   header ul:first-child {
     background-color: #00303c;
     top: 48px;
     top: 3rem;
   }
-  /* line 1332, src/sass/_header.scss */
+  /* line 1334, src/sass/_header.scss */
   header ul:first-child + .button + .button + a {
     margin-left: 2.3%;
     top: 10px;
     top: 0.625rem;
   }
-  /* line 1341, src/sass/_header.scss */
+  /* line 1343, src/sass/_header.scss */
   header [class*="icon-"] {
     color: #1d2124;
   }
-  /* line 1349, src/sass/_header.scss */
+  /* line 1351, src/sass/_header.scss */
   header form input {
     color: #1d2124;
     border-bottom: 1px solid #1d2124;
     background-color: #fff;
   }
-  /* line 1359, src/sass/_header.scss */
+  /* line 1361, src/sass/_header.scss */
   header form + a {
     position: relative;
     top: 16px;
@@ -4933,7 +4989,7 @@ header form + a:hover .icon-cart {
     margin-right: 24px;
     margin-right: 1.5rem;
   }
-  /* line 1370, src/sass/_header.scss */
+  /* line 1372, src/sass/_header.scss */
   header .logo {
     position: absolute;
     top: 4px;
@@ -4952,7 +5008,7 @@ header form + a:hover .icon-cart {
     height: 120px;
     height: 7.5rem;
   }
-  /* line 1415, src/sass/_header.scss */
+  /* line 1417, src/sass/_header.scss */
   header:after {
     background-color: #00303c;
     top: 0;
@@ -4962,52 +5018,52 @@ header form + a:hover .icon-cart {
     height: 3rem;
     left: 0;
   }
-  /* line 1431, src/sass/_header.scss */
+  /* line 1433, src/sass/_header.scss */
   header:before {
     position: absolute;
     top: 120px;
     top: 7.5rem;
     z-index: 0;
   }
-  /* line 1455, src/sass/_header.scss */
+  /* line 1457, src/sass/_header.scss */
   header ul {
     float: left;
     text-align: left;
   }
-  /* line 1466, src/sass/_header.scss */
+  /* line 1468, src/sass/_header.scss */
   header ul:first-child {
     margin-left: 38px;
     margin-left: 2.375rem;
     margin-right: 2%;
   }
-  /* line 1481, src/sass/_header.scss */
+  /* line 1483, src/sass/_header.scss */
   header ul:first-child li:not(:last-child) {
     margin-right: 24px;
     margin-right: 1.5rem;
   }
-  /* line 1499, src/sass/_header.scss */
+  /* line 1501, src/sass/_header.scss */
   header ul:last-child {
     margin-left: 3.4%;
     display: inline-table;
     width: 80%;
   }
-  /* line 1507, src/sass/_header.scss */
+  /* line 1509, src/sass/_header.scss */
   header ul:last-child li {
     display: table-cell;
     letter-spacing: 0.8px;
     letter-spacing: 0.05rem;
   }
-  /* line 1516, src/sass/_header.scss */
+  /* line 1518, src/sass/_header.scss */
   header ul:last-child li:not(:last-child) {
     padding-right: 28px;
     padding-right: 1.75rem;
   }
-  /* line 1550, src/sass/_header.scss */
+  /* line 1552, src/sass/_header.scss */
   header ul:last-child li .container-fluid {
     top: 120px;
     top: 7.5rem;
   }
-  /* line 1702, src/sass/_header.scss */
+  /* line 1704, src/sass/_header.scss */
   header ul:first-child ~ .button {
     width: 11.1%;
     top: 8px;
@@ -5015,30 +5071,30 @@ header form + a:hover .icon-cart {
     margin-left: 1.9%;
     float: left;
   }
-  /* line 1722, src/sass/_header.scss */
+  /* line 1724, src/sass/_header.scss */
   header ul:first-child + .button + .button + a {
     float: left;
     top: 19px;
     top: 1.1875rem;
     margin-left: 4.2%;
   }
-  /* line 1744, src/sass/_header.scss */
+  /* line 1746, src/sass/_header.scss */
   header [class*="icon-"] {
     color: #fff;
     font-size: 18px;
     font-size: 1.125rem;
   }
-  /* line 1772, src/sass/_header.scss */
+  /* line 1774, src/sass/_header.scss */
   header form:after {
     color: #fff;
   }
-  /* line 1803, src/sass/_header.scss */
+  /* line 1805, src/sass/_header.scss */
   header form input {
     border-bottom: 1px solid #fff;
     background-color: #00303c;
     color: #fff;
   }
-  /* line 1884, src/sass/_header.scss */
+  /* line 1886, src/sass/_header.scss */
   header form + a {
     float: right;
     margin-left: 2.3%;
@@ -5049,7 +5105,7 @@ header form + a:hover .icon-cart {
     height: 22px;
     height: 1.375rem;
   }
-  /* line 1908, src/sass/_header.scss */
+  /* line 1910, src/sass/_header.scss */
   header .logo {
     clear: both;
     float: left;

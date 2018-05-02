@@ -186,42 +186,50 @@ header {
 
 					.container {
 
+//						border: solid 1px blue;
+
 //						@include rem(min-height, 97px);
 
 						.row {
 
 //							border: solid 1px red;
 
+//							display: block;
+
+
+
 //							@include rem(min-height, 97px);
-							@include rem(min-height, $header-row-lg-min-height);
+//							@include rem(min-height, $header-row-lg-min-height);
 
 
-/*
-							&.v-divide {
-								[class*="col"] {
-									&:not(:last-child) {
-										&:after {
-											background-color: red;
-//											background-color: #e4e4e5;
 
-											content: "";
-											display: block;
-											position: absolute;
-											right: 0;
-											@include rem(top, 16px);
-											@include rem(bottom, 16px);
-											@include rem(width, 1px);
-										}
-									}
+//							&.v-divide {
+//								[class*="col"] {
+//									&:not(:last-child) {
+//										&:after {
+//											background-color: red;
+////											background-color: #e4e4e5;
+//
+//											content: "";
+//											display: block;
+//											position: absolute;
+//											right: 0;
+//											@include rem(top, 16px);
+//											@include rem(bottom, 16px);
+//											@include rem(width, 1px);
+//										}
+//									}
+//
+//								}
+//
+//							}
 
-								}
-
-							}
-*/
 
 
 
 							[class*="col"] {
+
+								@include rem(min-height, $header-row-lg-min-height);
 
 
 
@@ -233,6 +241,7 @@ header {
 								@include rem(letter-spacing, 0.1px);
 
 //								border: solid 1px green;
+								border: solid 1px rgba(0,0,255,0.2);
 
 								.row {
 									[class*="col"] {
@@ -256,7 +265,7 @@ header {
 									width: 100%;
 									height: 100%;
 //									@include rem(min-height, 97px);
-									@include rem(min-height, $header-row-lg-min-height);
+//									@include rem(min-height, $header-row-lg-min-height);
 								}
 
 										
@@ -272,6 +281,8 @@ header {
 									}
 								}
 
+
+
 								h5 {
 
 //									background-color: rgba(255,0,0,0.3);
@@ -281,7 +292,7 @@ header {
 //									color: rgba(255,0,255,0.9);
 									color: #abb8bc;
 
-									@include rem(margin-top, 35px);
+//									@include rem(margin-top, 35px);
 
 
 									a {
@@ -303,6 +314,8 @@ header {
 									@include rem(line-height, 18px);
 									@include rem(padding, 6px 0);
 
+
+/*
 									&:first-child {
 										@include rem(margin-top, 16px);
 									}
@@ -310,9 +323,12 @@ header {
 									&:last-child {
 										@include rem(margin-bottom, 16px);
 									}
+*/
+
 
 									b, strong {
 										font-family: "Open-Sans-Semibold", sans-serif;
+										font-weight: normal;
 									}
 
 									a {
@@ -764,7 +780,7 @@ header {
 					display: none;
 				}
 
-//				.container-fluid {
+				.container-fluid {
 //
 ////					&:before,
 ////					&:after {
@@ -774,7 +790,32 @@ header {
 //
 ////					left: 80px; // <------------!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //
-//				}
+
+					.container {
+						.row {
+
+							@include rem(margin-top, 16px);
+
+							& [class*="align-"] {
+								h5 {
+//									background-color: rgba(0,0,255,0.3);
+									margin-bottom: 0;
+								}
+							}
+
+
+							h5 {
+								@include rem(margin-top, 24px);
+//								@include rem(margin-bottom, 24px);
+								@include rem(margin-bottom, 16px);
+
+							}
+						}
+					}
+
+				}
+
+
 			}
 		}
 
@@ -860,6 +901,7 @@ header {
 
 					.container {
 						.row {
+
 							&.v-divide {
 								[class*="col"] {
 									&:not(:last-child) {
@@ -880,6 +922,33 @@ header {
 								}
 
 							}
+
+
+//							& [class*="align-"] {
+//								h5 {
+////									background-color: rgba(0,0,255,0.3);
+//									margin-top: 0;
+//								}
+//							}
+//
+							h5 {
+								@include rem(margin-top, 35px);
+							}
+
+
+							p {
+								&:first-child {
+									@include rem(margin-top, 16px);
+								}
+
+								&:last-child {
+									@include rem(margin-bottom, 16px);
+								}
+							}
+
+
+
+
 						}
 					}
 

@@ -637,6 +637,16 @@ header {
 
 @include media('screen', '<tablet') {
 
+//	&.menu-displayed {}
+
+	&:not(.menu-displayed) {
+		ul {
+			& ~ .button {
+				display: none;
+			}
+		}
+	}
+
 
 	ul {
 		&:first-child {
@@ -655,7 +665,7 @@ header {
 		}
 
 		& ~ .button {
-			display: block;
+//			display: block;
 			position: absolute;
 			z-index: 1;
 

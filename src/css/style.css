@@ -4568,28 +4568,31 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 642, src/sass/_header.scss */
+  /* line 644, src/sass/_header.scss */
+  header:not(.menu-displayed) ul ~ .button {
+    display: none;
+  }
+  /* line 652, src/sass/_header.scss */
   header ul:first-child {
     height: 306px;
     height: 19.125rem;
     padding-top: 108px;
     padding-top: 6.75rem;
   }
-  /* line 647, src/sass/_header.scss */
+  /* line 657, src/sass/_header.scss */
   header ul:last-child {
     top: 354px;
     top: 22.125rem;
   }
-  /* line 650, src/sass/_header.scss */
+  /* line 660, src/sass/_header.scss */
   header ul:last-child .container-fluid {
     top: -306px;
     top: -19.125rem;
     min-height: 620px;
     min-height: 38.75rem;
   }
-  /* line 657, src/sass/_header.scss */
+  /* line 667, src/sass/_header.scss */
   header ul ~ .button {
-    display: block;
     position: absolute;
     z-index: 1;
     width: 224px;
@@ -4597,37 +4600,37 @@ header form + a:hover .icon-cart {
     left: 18px;
     left: 1.125rem;
   }
-  /* line 669, src/sass/_header.scss */
+  /* line 679, src/sass/_header.scss */
   header ul + .button {
     top: 66px;
   }
-  /* line 673, src/sass/_header.scss */
+  /* line 683, src/sass/_header.scss */
   header ul + .button + .button {
     top: 116px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  /* line 690, src/sass/_header.scss */
+  /* line 700, src/sass/_header.scss */
   header ul:first-child ~ .button {
     position: relative;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 718, src/sass/_header.scss */
+  /* line 728, src/sass/_header.scss */
   header ul:first-child {
     height: 206px;
     height: 12.875rem;
     padding-top: 8px;
     padding-top: 0.5rem;
   }
-  /* line 723, src/sass/_header.scss */
+  /* line 733, src/sass/_header.scss */
   header ul:last-child {
     top: 254px;
     top: 15.875rem;
   }
-  /* line 726, src/sass/_header.scss */
+  /* line 736, src/sass/_header.scss */
   header ul:last-child .container-fluid {
     top: -206px;
     top: -12.875rem;
@@ -4637,7 +4640,7 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 752, src/sass/_header.scss */
+  /* line 762, src/sass/_header.scss */
   header.menu-displayed:before {
     background-color: rgba(255, 255, 255, 0.8);
     position: fixed;
@@ -4647,7 +4650,7 @@ header form + a:hover .icon-cart {
     left: 0;
     bottom: 0;
   }
-  /* line 770, src/sass/_header.scss */
+  /* line 780, src/sass/_header.scss */
   header:not(.menu-displayed):before {
     position: absolute;
     background-image: -o-linear-gradient(rgba(51, 51, 51, 0.15), rgba(51, 51, 51, 0));
@@ -4661,40 +4664,40 @@ header form + a:hover .icon-cart {
     width: 100%;
     left: 0;
   }
-  /* line 791, src/sass/_header.scss */
+  /* line 801, src/sass/_header.scss */
   header ul {
     width: 260px;
     width: 16.25rem;
     padding: 0 18px;
     padding: 0 1.125rem;
   }
-  /* line 814, src/sass/_header.scss */
+  /* line 824, src/sass/_header.scss */
   header ul:last-child {
     background-color: #d9d9d9;
     padding-bottom: 8px;
     padding-bottom: 0.5rem;
   }
-  /* line 824, src/sass/_header.scss */
+  /* line 834, src/sass/_header.scss */
   header ul:last-child li br {
     display: none;
   }
-  /* line 840, src/sass/_header.scss */
+  /* line 850, src/sass/_header.scss */
   header ul:last-child li .container-fluid .container .row {
     margin-top: 16px;
     margin-top: 1rem;
   }
-  /* line 845, src/sass/_header.scss */
+  /* line 855, src/sass/_header.scss */
   header ul:last-child li .container-fluid .container .row [class*="align-"] h5 {
     margin-bottom: 0;
   }
-  /* line 852, src/sass/_header.scss */
+  /* line 862, src/sass/_header.scss */
   header ul:last-child li .container-fluid .container .row h5 {
     margin-top: 24px;
     margin-top: 1.5rem;
     margin-bottom: 16px;
     margin-bottom: 1rem;
   }
-  /* line 867, src/sass/_header.scss */
+  /* line 877, src/sass/_header.scss */
   header ul li {
     line-height: 18px;
     line-height: 1.125rem;
@@ -4706,7 +4709,7 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (min-width: 992px) {
-  /* line 886, src/sass/_header.scss */
+  /* line 896, src/sass/_header.scss */
   header:before {
     position: absolute;
     background-image: -o-linear-gradient(rgba(51, 51, 51, 0.15), rgba(51, 51, 51, 0));
@@ -4720,7 +4723,7 @@ header form + a:hover .icon-cart {
     width: 100%;
     left: 0;
   }
-  /* line 907, src/sass/_header.scss */
+  /* line 917, src/sass/_header.scss */
   header ul:first-child li {
     display: inline-block;
     line-height: 12px;
@@ -4730,7 +4733,7 @@ header form + a:hover .icon-cart {
     margin-bottom: 16px;
     margin-bottom: 1rem;
   }
-  /* line 916, src/sass/_header.scss */
+  /* line 926, src/sass/_header.scss */
   header ul:last-child li {
     line-height: 18px;
     line-height: 1.125rem;
@@ -4739,20 +4742,20 @@ header form + a:hover .icon-cart {
     padding-bottom: 15px;
     padding-bottom: 0.9375rem;
   }
-  /* line 926, src/sass/_header.scss */
+  /* line 936, src/sass/_header.scss */
   header ul:last-child li .container-fluid:before, header ul:last-child li .container-fluid:after {
     content: "";
     position: absolute;
     left: 0;
     right: 0;
   }
-  /* line 934, src/sass/_header.scss */
+  /* line 944, src/sass/_header.scss */
   header ul:last-child li .container-fluid:before {
     background-color: #0498cd;
     height: 1px;
     height: 0.0625rem;
   }
-  /* line 939, src/sass/_header.scss */
+  /* line 949, src/sass/_header.scss */
   header ul:last-child li .container-fluid:after {
     height: 4px;
     height: 0.25rem;
@@ -4761,7 +4764,7 @@ header form + a:hover .icon-cart {
     background-image: -webkit-linear-gradient(#efefef, rgba(239, 239, 239, 0));
     background-image: linear-gradient(#efefef, rgba(239, 239, 239, 0));
   }
-  /* line 953, src/sass/_header.scss */
+  /* line 963, src/sass/_header.scss */
   header ul:last-child li .container-fluid .container .row.v-divide [class*="col"]:not(:last-child):after {
     background-color: #e4e4e5;
     content: "";
@@ -4775,17 +4778,17 @@ header form + a:hover .icon-cart {
     width: 1px;
     width: 0.0625rem;
   }
-  /* line 980, src/sass/_header.scss */
+  /* line 990, src/sass/_header.scss */
   header ul:last-child li .container-fluid .container .row h5 {
     margin-top: 35px;
     margin-top: 2.1875rem;
   }
-  /* line 986, src/sass/_header.scss */
+  /* line 996, src/sass/_header.scss */
   header ul:last-child li .container-fluid .container .row p:first-child {
     margin-top: 16px;
     margin-top: 1rem;
   }
-  /* line 990, src/sass/_header.scss */
+  /* line 1000, src/sass/_header.scss */
   header ul:last-child li .container-fluid .container .row p:last-child {
     margin-bottom: 16px;
     margin-bottom: 1rem;
@@ -4793,7 +4796,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 420px) and (max-width: 1247px) {
-  /* line 1025, src/sass/_header.scss */
+  /* line 1035, src/sass/_header.scss */
   header form,
   header form + a {
     margin-left: 2.3%;
@@ -4801,7 +4804,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 768px) and (max-width: 1247px) {
-  /* line 1036, src/sass/_header.scss */
+  /* line 1046, src/sass/_header.scss */
   header ul:first-child ~ .button {
     width: 18%;
     max-width: 144px;
@@ -4813,19 +4816,19 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 992px) and (max-width: 1247px) {
-  /* line 1062, src/sass/_header.scss */
+  /* line 1072, src/sass/_header.scss */
   header ul {
     text-align: left;
   }
-  /* line 1066, src/sass/_header.scss */
+  /* line 1076, src/sass/_header.scss */
   header ul li {
     margin-left: 2.8%;
   }
-  /* line 1070, src/sass/_header.scss */
+  /* line 1080, src/sass/_header.scss */
   header ul:first-child {
     width: 100%;
   }
-  /* line 1083, src/sass/_header.scss */
+  /* line 1093, src/sass/_header.scss */
   header ul:last-child {
     background-color: #fff;
     top: 96px;
@@ -4833,7 +4836,7 @@ header form + a:hover .icon-cart {
     left: 0;
     width: 100%;
   }
-  /* line 1095, src/sass/_header.scss */
+  /* line 1105, src/sass/_header.scss */
   header ul:last-child:after {
     content: "";
     display: block;
@@ -4847,13 +4850,13 @@ header form + a:hover .icon-cart {
     width: 100%;
     left: 0;
   }
-  /* line 1111, src/sass/_header.scss */
+  /* line 1121, src/sass/_header.scss */
   header ul:last-child li {
     display: inline-block;
     letter-spacing: 0.1px;
     letter-spacing: 0.00625rem;
   }
-  /* line 1114, src/sass/_header.scss */
+  /* line 1124, src/sass/_header.scss */
   header ul:last-child li .container-fluid {
     top: 72px;
     top: 4.5rem;
@@ -4867,7 +4870,7 @@ header form + a:hover .icon-cart {
     height: 48px;
     height: 3rem;
   }
-  /* line 1143, src/sass/_header.scss */
+  /* line 1153, src/sass/_header.scss */
   header:after {
     content: "";
     background-repeat: no-repeat;
@@ -4882,47 +4885,47 @@ header form + a:hover .icon-cart {
     height: 2.25rem;
     cursor: pointer;
   }
-  /* line 1160, src/sass/_header.scss */
+  /* line 1170, src/sass/_header.scss */
   header.menu-displayed:after {
     background-image: url("../img/arrow-back.png");
     opacity: 0.6;
   }
-  /* line 1168, src/sass/_header.scss */
+  /* line 1178, src/sass/_header.scss */
   header:not(.menu-displayed):after {
     background-image: url("../img/burger.png");
   }
-  /* line 1199, src/sass/_header.scss */
+  /* line 1209, src/sass/_header.scss */
   header:not(.menu-displayed) ul {
     display: none;
   }
-  /* line 1205, src/sass/_header.scss */
+  /* line 1215, src/sass/_header.scss */
   header ul {
     position: absolute;
     z-index: 1;
   }
-  /* line 1222, src/sass/_header.scss */
+  /* line 1232, src/sass/_header.scss */
   header ul:first-child {
     background-color: #00303c;
     top: 48px;
     top: 3rem;
   }
-  /* line 1322, src/sass/_header.scss */
+  /* line 1332, src/sass/_header.scss */
   header ul:first-child + .button + .button + a {
     margin-left: 2.3%;
     top: 10px;
     top: 0.625rem;
   }
-  /* line 1331, src/sass/_header.scss */
+  /* line 1341, src/sass/_header.scss */
   header [class*="icon-"] {
     color: #1d2124;
   }
-  /* line 1339, src/sass/_header.scss */
+  /* line 1349, src/sass/_header.scss */
   header form input {
     color: #1d2124;
     border-bottom: 1px solid #1d2124;
     background-color: #fff;
   }
-  /* line 1349, src/sass/_header.scss */
+  /* line 1359, src/sass/_header.scss */
   header form + a {
     position: relative;
     top: 16px;
@@ -4930,7 +4933,7 @@ header form + a:hover .icon-cart {
     margin-right: 24px;
     margin-right: 1.5rem;
   }
-  /* line 1360, src/sass/_header.scss */
+  /* line 1370, src/sass/_header.scss */
   header .logo {
     position: absolute;
     top: 4px;
@@ -4949,7 +4952,7 @@ header form + a:hover .icon-cart {
     height: 120px;
     height: 7.5rem;
   }
-  /* line 1405, src/sass/_header.scss */
+  /* line 1415, src/sass/_header.scss */
   header:after {
     background-color: #00303c;
     top: 0;
@@ -4959,52 +4962,52 @@ header form + a:hover .icon-cart {
     height: 3rem;
     left: 0;
   }
-  /* line 1421, src/sass/_header.scss */
+  /* line 1431, src/sass/_header.scss */
   header:before {
     position: absolute;
     top: 120px;
     top: 7.5rem;
     z-index: 0;
   }
-  /* line 1445, src/sass/_header.scss */
+  /* line 1455, src/sass/_header.scss */
   header ul {
     float: left;
     text-align: left;
   }
-  /* line 1456, src/sass/_header.scss */
+  /* line 1466, src/sass/_header.scss */
   header ul:first-child {
     margin-left: 38px;
     margin-left: 2.375rem;
     margin-right: 2%;
   }
-  /* line 1471, src/sass/_header.scss */
+  /* line 1481, src/sass/_header.scss */
   header ul:first-child li:not(:last-child) {
     margin-right: 24px;
     margin-right: 1.5rem;
   }
-  /* line 1489, src/sass/_header.scss */
+  /* line 1499, src/sass/_header.scss */
   header ul:last-child {
     margin-left: 3.4%;
     display: inline-table;
     width: 80%;
   }
-  /* line 1497, src/sass/_header.scss */
+  /* line 1507, src/sass/_header.scss */
   header ul:last-child li {
     display: table-cell;
     letter-spacing: 0.8px;
     letter-spacing: 0.05rem;
   }
-  /* line 1506, src/sass/_header.scss */
+  /* line 1516, src/sass/_header.scss */
   header ul:last-child li:not(:last-child) {
     padding-right: 28px;
     padding-right: 1.75rem;
   }
-  /* line 1540, src/sass/_header.scss */
+  /* line 1550, src/sass/_header.scss */
   header ul:last-child li .container-fluid {
     top: 120px;
     top: 7.5rem;
   }
-  /* line 1692, src/sass/_header.scss */
+  /* line 1702, src/sass/_header.scss */
   header ul:first-child ~ .button {
     width: 11.1%;
     top: 8px;
@@ -5012,30 +5015,30 @@ header form + a:hover .icon-cart {
     margin-left: 1.9%;
     float: left;
   }
-  /* line 1712, src/sass/_header.scss */
+  /* line 1722, src/sass/_header.scss */
   header ul:first-child + .button + .button + a {
     float: left;
     top: 19px;
     top: 1.1875rem;
     margin-left: 4.2%;
   }
-  /* line 1734, src/sass/_header.scss */
+  /* line 1744, src/sass/_header.scss */
   header [class*="icon-"] {
     color: #fff;
     font-size: 18px;
     font-size: 1.125rem;
   }
-  /* line 1762, src/sass/_header.scss */
+  /* line 1772, src/sass/_header.scss */
   header form:after {
     color: #fff;
   }
-  /* line 1793, src/sass/_header.scss */
+  /* line 1803, src/sass/_header.scss */
   header form input {
     border-bottom: 1px solid #fff;
     background-color: #00303c;
     color: #fff;
   }
-  /* line 1874, src/sass/_header.scss */
+  /* line 1884, src/sass/_header.scss */
   header form + a {
     float: right;
     margin-left: 2.3%;
@@ -5046,7 +5049,7 @@ header form + a:hover .icon-cart {
     height: 22px;
     height: 1.375rem;
   }
-  /* line 1898, src/sass/_header.scss */
+  /* line 1908, src/sass/_header.scss */
   header .logo {
     clear: both;
     float: left;

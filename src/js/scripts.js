@@ -42,11 +42,18 @@ $(window).on("load", function() {
 
 				
 
-				if ($("header.menu-displayed").length) {
+//				if ($("header.menu-displayed").length) {
+				if ($("header").hasClass("menu-displayed")) {
 
 //					console.log ("Back");
 
-					$("header").removeClass("menu-displayed");
+					if ($("header ul:last-child li.selected").length) {
+						$("header ul:last-child li.selected").removeClass("selected");
+					} else {
+						$("header").removeClass("menu-displayed");
+					}
+
+					
 
 				} else {
 
@@ -65,6 +72,36 @@ $(window).on("load", function() {
 	});
 
 
+	$("header ul:last-child p").click(function() {
+		if ($(this).next().hasClass("container-fluid")) {
+			var li = $(this).parent();
+			if (li.hasClass("selected")) {
+
+				$("header ul:last-child li.selected").removeClass("selected");
+
+//				$("header").removeClass("menu-displayed");
+
+//				li.removeClass("selected");
+
+
+
+			} else {
+
+				$("header ul:last-child li.selected").removeClass("selected");
+				
+				if (!$("header").hasClass("menu-displayed")) {
+					$("header").addClass("menu-displayed");
+				}
+				
+				li.addClass("selected");
+
+				
+
+			}
+		}
+	});
+
+
 
 
 
@@ -74,6 +111,8 @@ $(window).on("load", function() {
 	function redraw() {
 //		console.log("REDRAW");
 //		console.log(isBreakpoint("desktop-wide"));
+//		console.log($("header ul:first-child ~ .button").css("left"));
+//		$("header ul:first-child ~ .button").css("left", 18);
 	}
 
 	$(window).resize(function(){

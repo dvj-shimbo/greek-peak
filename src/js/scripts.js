@@ -22,51 +22,38 @@ $(window).on("load", function() {
 		return $(".device-" + alias).is(":visible");
 	};
 
+	var headerMenuMouseOver = false;
 
-	
+	$("header ul").mouseover(function() {
+		headerMenuMouseOver = true;
+	});
 
-
+	$("header ul").mouseout(function() {
+		headerMenuMouseOver = false;
+	});
 
 	$("header").click(function(e) {
-
-//		console.log("Header Click");
-
 		if (!isBreakpoint("desktop-wide")) {
-
-//			console.log(e.pageX + "   " + e.pageY);
-
 			var posX = e.pageX;
 			var posY = e.pageY;
-
 			if (posX > 15 && posX < 53 && posY > 5 && posY < 43) {
-
-				
-
-//				if ($("header.menu-displayed").length) {
 				if ($("header").hasClass("menu-displayed")) {
-
-//					console.log ("Back");
-
 					if ($("header ul:last-child li.selected").length) {
 						$("header ul:last-child li.selected").removeClass("selected");
 					} else {
 						$("header").removeClass("menu-displayed");
 					}
-
-					
-
 				} else {
-
-//					console.log ("Burger");
-
 					$("header").addClass("menu-displayed");
-
 				}
 
+			} else if (!isBreakpoint("tablet-wide")) {
 
+				if (!headerMenuMouseOver) {
+					$("header ul:last-child li.selected").removeClass("selected");
+					$("header").removeClass("menu-displayed");
+				}
 			}
-
-
 		}
 		
 	});
@@ -76,29 +63,29 @@ $(window).on("load", function() {
 		if ($(this).next().hasClass("container-fluid")) {
 			var li = $(this).parent();
 			if (li.hasClass("selected")) {
-
 				$("header ul:last-child li.selected").removeClass("selected");
-
-//				$("header").removeClass("menu-displayed");
-
-//				li.removeClass("selected");
-
-
-
 			} else {
-
 				$("header ul:last-child li.selected").removeClass("selected");
-				
 				if (!$("header").hasClass("menu-displayed")) {
 					$("header").addClass("menu-displayed");
 				}
-				
 				li.addClass("selected");
-
-				
-
 			}
 		}
+	});
+
+
+	$("header form").click(function() {
+
+		if (!$(this).hasClass("displayed")) {
+			$(this).addClass("displayed");
+			$(this).find("input").focus();
+		}
+
+	});
+
+	$("header form input").blur(function() {
+		$("header form").removeClass("displayed");
 	});
 
 

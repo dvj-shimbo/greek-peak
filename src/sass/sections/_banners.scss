@@ -3,8 +3,8 @@
 
 .banners {
 
-	position: relative;
-	z-index: -1;
+//	position: relative;
+//	z-index: -1;
 
 	padding-top: 65px;
 	padding-bottom: 65px;
@@ -21,6 +21,11 @@
 
 			& img {
 				width: 100%;
+			}
+
+			& h2 {
+				position: absolute;
+				bottom: 120px;
 			}
 
 		}

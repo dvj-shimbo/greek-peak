@@ -87,6 +87,8 @@ $(window).on("load", function() {
 	});
 
 
+
+
 	$("header form").click(function() {
 
 		if (!$(this).hasClass("displayed")) {
@@ -96,8 +98,21 @@ $(window).on("load", function() {
 
 	});
 
+
+	var headerFormButtonMouseOver = false;
+
+	$("header form button").mouseover(function() {
+		headerFormButtonMouseOver = true;
+	});
+
+	$("header form button").mouseout(function() {
+		headerFormButtonMouseOver = false;
+	});
+
 	$("header form input").blur(function() {
-		$("header form").removeClass("displayed");
+		if (!headerFormButtonMouseOver) {
+			$("header form").removeClass("displayed");
+		}	
 	});
 
 

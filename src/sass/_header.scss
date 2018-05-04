@@ -15,6 +15,13 @@ header {
 		position: absolute;
 	}
 
+	&.menu-displayed {
+		& ~ * {
+			position: relative;
+			z-index: -1;
+		}
+	}
+
 	ul {
 		@include rem(font-size, 12px);
 
@@ -564,6 +571,8 @@ header {
 									.button {
 										@include rem(margin-top, 18px);
 										@include rem(margin-bottom, 18px);
+//										@include rem(margin-top, 20px);
+//										@include rem(margin-bottom, 20px);
 									}
 
 
@@ -575,8 +584,10 @@ header {
 
 	
 								h5 {
-									@include rem(margin-top, 24px);
-									@include rem(margin-bottom, 16px);
+//									@include rem(margin-top, 24px);
+									@include rem(margin-top, 26px);
+//									@include rem(margin-bottom, 16px);
+									@include rem(margin-bottom, 12px);
 	
 								}
 							}

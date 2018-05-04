@@ -76,10 +76,6 @@ header {
 				}
 
 				.container-fluid {
-
-//					background-color: #f7f7f7;
-//					background-color: red;
-
 					position: absolute;
 					left: 0;
 					right: 0;
@@ -408,7 +404,8 @@ header {
 	@include media('screen', '<tablet-wide') {
 	
 		&.menu-displayed {
-	
+
+/*
 			&:before {
 				background-color: rgba(255,255,255,0.8);
 				position: fixed;
@@ -417,11 +414,65 @@ header {
 				top: 0;
 				left: 0;
 				bottom: 0;
+				z-index: 1;
 			}
+*/
+
+			&:before,
+			&:after {
+//				background-color: rgba(255,255,255,0.8);
+				position: fixed;
+//				width: 100%;
+				height: 100%;
+				top: 0;
+//				left: 0;
+				bottom: 0;
+//				z-index: 1;
+			}
+
+			&:before {
+//				background-color: rgba(255,255,255,0.8);
+				background-color: rgba(70,70,70,0.9);
+//				width: 100%;
+				@include rem(left, 260px);
+				right: 0;
+				z-index: 1;
+			}
+
+			&:after {
+//				background-color: red;
+				background-color: #f7f7f7;
+//				background-color: darken($white, 15%);
+
+				@include rem(width, 260px);
+//				z-index: 0;
+
+			}
+
+
+
+
+/*
+			ul {
+				&:first-child {
+
+					&:before {
+						content: "AAA";
+						background-color: red;
+						position: absolute;
+						top: 0;
+						left: 0;
+						z-index: -100;
+					}
+				}
+			}
+*/
+
+
+
 		}
 	
 		&:not(.menu-displayed) {
-
 			&:before {
 	
 				position: absolute;
@@ -433,24 +484,26 @@ header {
 			}
 		}
 
-
-
-
-
-
-
-
-
-
-
 		ul {
+
+
 			@include rem(width, 260px);
 			@include rem(padding, 0 18px);
+
+
+
+			
+
+
+
 	
 			&:last-child {
-				background-color: darken($white, 15%);
+
+//				background-color: darken($white, 15%);
+//				background-color: red;
+
 				@include rem(padding-bottom, 8px);
-	
+
 				li {
 					br {
 						display: none;
@@ -458,10 +511,10 @@ header {
 	
 					.container-fluid {
 
-//						background-color: #f7f7f7;
-						background-color: darken(#f7f7f7, 4%);
-
-
+//						background-color: darken(#f7f7f7, 0%);
+//						background-color: red;
+//						background-color: darken($white, 15%);
+						background-color: #f7f7f7;
 
 						.container {
 
@@ -486,13 +539,6 @@ header {
 					}
 				}
 			}
-
-
-
-
-
-
-
 	
 			li {
 				@include rem(line-height, 18px);
@@ -673,6 +719,33 @@ header {
 		background-color: $white;
 		@include rem(height, 48px);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 		&:after {
 			content: "";
 			background-repeat: no-repeat;
@@ -682,28 +755,140 @@ header {
 			@include rem(width, 36px);
 			@include rem(height, 36px);
 			cursor: pointer;
+			z-index: 1;
 		}
 	
+
+
 		&.menu-displayed {
 
 			&:after {
 				background-image: url("../img/arrow-back.svg");	
 			}
 		}
+
+
 	
 		&:not(.menu-displayed) {
 
 			&:after {
 				background-image: url("../img/burger.svg");
 			}
-		}
-	
-		&:not(.menu-displayed) {
+
+
+//		}
+//
+//		&:not(.menu-displayed) {
 
 			ul {
 				display: none;
 			}
 		}
+*/
+
+
+
+	
+
+
+//		&.menu-displayed {
+//
+//			&:after {
+//				background-image: url("../img/arrow-back.svg");	
+//			}
+//		}
+
+		
+		&.menu-displayed {
+
+			ul {
+				&:first-child {
+
+					&:before {
+//						content: "AAA";
+//						background-color: red;
+//						position: absolute;
+//						top: 0;
+//						left: 0;
+//						z-index: -100;
+						
+						content: "";
+//						background-color: rgba(255,0,0,0.6);
+						position: absolute;
+
+						
+						@include rem(top, -42px);
+						@include rem(left, 16px);
+						@include rem(width, 36px);
+						@include rem(height, 36px);
+						cursor: pointer;
+						z-index: 1;
+						background-image: url("../img/arrow-back.svg");	
+						background-repeat: no-repeat;
+						background-position: 6px 6px;
+
+					}
+				}
+			}
+
+
+//			&:after {
+//				content: "";
+//				background-repeat: no-repeat;
+//				background-position: 6px 6px;
+//				@include rem(top, 6px);
+//				@include rem(left, 16px);
+//				@include rem(width, 36px);
+//				@include rem(height, 36px);
+//				cursor: pointer;
+//				z-index: 1;
+//				background-image: url("../img/arrow-back.svg");	
+//			}
+
+
+		}
+
+
+	
+		&:not(.menu-displayed) {
+
+			&:after {
+
+				content: "";
+				background-repeat: no-repeat;
+				background-position: 6px 6px;
+				@include rem(top, 6px);
+				@include rem(left, 16px);
+				@include rem(width, 36px);
+				@include rem(height, 36px);
+				cursor: pointer;
+				z-index: 1;
+
+				background-image: url("../img/burger.svg");
+			}
+
+
+//		}
+//
+//		&:not(.menu-displayed) {
+
+			ul {
+				display: none;
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 		ul {
 			position: absolute;

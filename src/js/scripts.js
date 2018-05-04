@@ -22,6 +22,7 @@ $(window).on("load", function() {
 		return $(".device-" + alias).is(":visible");
 	};
 
+/*
 	var headerMenuMouseOver = false;
 
 	$("header ul").mouseover(function() {
@@ -31,6 +32,8 @@ $(window).on("load", function() {
 	$("header ul").mouseout(function() {
 		headerMenuMouseOver = false;
 	});
+*/
+
 
 	$("header").click(function(e) {
 		if (!isBreakpoint("desktop-wide")) {
@@ -38,6 +41,7 @@ $(window).on("load", function() {
 			var posY = e.pageY;
 			if (posX > 15 && posX < 53 && posY > 5 && posY < 43) {
 				if ($("header").hasClass("menu-displayed")) {
+
 					if ($("header ul:last-child li.selected").length) {
 						$("header ul:last-child li.selected").removeClass("selected");
 					} else {
@@ -49,13 +53,21 @@ $(window).on("load", function() {
 
 			} else if (!isBreakpoint("tablet-wide")) {
 
+
+/*
 				if (!headerMenuMouseOver) {
 					$("header ul:last-child li.selected").removeClass("selected");
 					$("header").removeClass("menu-displayed");
 				}
+*/
+				if (posX > 260) {
+					$("header ul:last-child li.selected").removeClass("selected");
+					$("header").removeClass("menu-displayed");
+				}
+
+
 			}
 		}
-		
 	});
 
 

@@ -86,7 +86,20 @@ header {
 						.row {
 
 							[class*="col"] {
-								@include rem(min-height, $header-row-lg-min-height);
+
+
+//								border: 1px solid blue;
+
+
+
+
+
+
+
+//								@include rem(min-height, $header-row-lg-min-height);
+//								@include rem(min-height, 97px);
+
+
 								@include rem(font-size, 14px);
 								@include rem(letter-spacing, 0.1px);
 
@@ -511,6 +524,13 @@ header {
 	
 					.container-fluid {
 
+
+
+
+
+
+
+
 //						background-color: darken(#f7f7f7, 0%);
 //						background-color: red;
 //						background-color: darken($white, 15%);
@@ -518,15 +538,41 @@ header {
 
 						.container {
 
+//							@include rem(margin-top, 16px);
+							@include rem(margin-top, 8px);
+
 							.row {
-								@include rem(margin-top, 16px);
+//								@include rem(margin-top, 16px);
 	
+
+
 								& [class*="align-"] {
 
 									h5 {
 										margin-bottom: 0;
 									}
 								}
+
+
+
+
+
+								[class*="col"] {
+
+									@include rem(min-height, 42px);
+
+									.button {
+										@include rem(margin-top, 18px);
+										@include rem(margin-bottom, 18px);
+									}
+
+
+								}
+
+
+
+
+
 	
 								h5 {
 									@include rem(margin-top, 24px);
@@ -601,6 +647,13 @@ header {
 							@include linear-gradient(rgba(239,239,239,1), rgba(239,239,239,0));
 						}
 	
+
+
+
+
+
+
+
 						.container {
 
 							.row {
@@ -608,6 +661,21 @@ header {
 								&.v-divide {
 
 									[class*="col"] {
+
+
+
+
+
+
+
+
+										@include rem(min-height, 97px);
+
+
+
+
+
+
 
 										&:not(:last-child) {
 
@@ -798,11 +866,26 @@ header {
 //			}
 //		}
 
+/*
+		pointer-events: none;
+		cursor: pointer;
+
+		& * {
+			pointer-events: auto;
+		}
+*/
 		
 		&.menu-displayed {
 
 			ul {
 				&:first-child {
+
+					pointer-events: none;
+					cursor: pointer;
+		
+					& * {
+						pointer-events: auto;
+					}
 
 					&:before {
 //						content: "AAA";
@@ -821,7 +904,11 @@ header {
 						@include rem(left, 16px);
 						@include rem(width, 36px);
 						@include rem(height, 36px);
-						cursor: pointer;
+
+//						cursor: pointer;
+						pointer-events: auto;
+
+
 						z-index: 1;
 						background-image: url("../img/arrow-back.svg");	
 						background-repeat: no-repeat;
@@ -852,6 +939,13 @@ header {
 	
 		&:not(.menu-displayed) {
 
+			pointer-events: none;
+			cursor: pointer;
+
+			& * {
+				pointer-events: auto;
+			}
+
 			&:after {
 
 				content: "";
@@ -861,11 +955,29 @@ header {
 				@include rem(left, 16px);
 				@include rem(width, 36px);
 				@include rem(height, 36px);
-				cursor: pointer;
+
+//				cursor: pointer;
+
+				pointer-events: auto;
+
+
+
 				z-index: 1;
 
 				background-image: url("../img/burger.svg");
 			}
+
+			.logo {
+				cursor: default;
+			}
+
+			a {
+				.logo {
+					cursor: pointer;
+				}
+			}
+
+			
 
 
 //		}

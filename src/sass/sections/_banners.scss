@@ -1,5 +1,21 @@
 /*************************** Banners Section Styles ****************************/
 
+@mixin banners-font-size ($media-min, $media-max, $font-size-min, $font-size-max, $font-size-vw) {
+	$d: ($font-size-max - $font-size-min) / 1px;
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+		@include media('>=' + round($min), '<' + round($max)) {
+			$font-size: $i + $font-size-min;
+			@include rem(font-size, $font-size);
+			font-size: $font-size-vw;	
+		}
+	}
+}
+
+
+
 
 .banners {
 
@@ -15,6 +31,9 @@
 
 		& [class*="col"] {
 
+//			border: 1px solid blue;
+
+
 			padding: 7px;
 
 //			background: rgba(255,0,0,0.9);
@@ -25,7 +44,145 @@
 
 			& h2 {
 				position: absolute;
-				bottom: 120px;
+//				bottom: 120px;
+//				bottom: 30%;
+//				top: 65%;
+				top: 64%;
+				left: 5%;
+//				margin-top: 7px;
+
+//				@include rem(font-size, 30px);
+//				@include rem(line-height, 34px);
+
+//				@include rem(font-size, 33px);
+//				@include rem(font-size, 24px);
+
+//				@include rem(font-size, 50px);
+//				@include rem(font-size, 14px);
+
+
+//				font-size: 2.5vw;
+//				font-size: 5.5vh;
+
+//				font-size: 4.9vw;
+
+
+
+				font-weight: bold;
+				text-transform: uppercase;
+
+				color: rgba(255,0,255,0.8);
+//				color: $white;
+
+/*
+				@mixin banners-h2 ($media-min, $media-max, $font-size-min, $font-size-max) {
+					$d: ($font-size-max - $font-size-min) / 1px;
+					@for $i from 0 through $d {
+						$step: ($media-max - $media-min) / ($d + 1);
+						$min: $i * $step + $media-min;
+						$max: $min + $step;
+						@include media('>=' + round($min), '<' + round($max)) {
+							$font-size: $i + $font-size-min;
+							@include rem(font-size, $font-size);
+//							$line-height: round($font-size * 1.44);
+//							@include rem(line-height, $line-height);
+//							$padding-bottom: $font-size * 0.1389;
+//							@include rem(padding-bottom, $padding-bottom);	
+						}
+					}
+				}
+
+
+
+				@include media('screen', '<320px') {
+					@include rem(font-size, 13px);
+				}
+
+				@include banners-h2 (320px, 992px, 14px, 50px);
+				@include banners-h2 (992px, 1300px, 24px, 32px);
+
+				@include media('screen', '>=1300px') {
+					@include rem(font-size, 33px);
+				}
+*/
+
+/*
+				@mixin banners-h2 ($media-min, $media-max, $font-size-min, $font-size-max, $font-size-vw) {
+					$d: ($font-size-max - $font-size-min) / 1px;
+					@for $i from 0 through $d {
+						$step: ($media-max - $media-min) / ($d + 1);
+						$min: $i * $step + $media-min;
+						$max: $min + $step;
+						@include media('>=' + round($min), '<' + round($max)) {
+							$font-size: $i + $font-size-min;
+							@include rem(font-size, $font-size);
+							font-size: $font-size-vw;
+//							$line-height: round($font-size * 1.44);
+//							@include rem(line-height, $line-height);
+//							$padding-bottom: $font-size * 0.1389;
+//							@include rem(padding-bottom, $padding-bottom);	
+						}
+					}
+				}
+*/
+
+				@include media('screen', '<320px') {
+					@include rem(font-size, 13px);
+					font-size: 4.9vw;
+				}
+
+//				@include banners-h2 (320px, 992px, 14px, 50px, 4.9vw);
+//				@include banners-h2 (992px, 1300px, 24px, 32px, 2.5vw);
+
+				@include banners-font-size (320px, 992px, 14px, 50px, 4.9vw);
+				@include banners-font-size (992px, 1300px, 24px, 32px, 2.5vw);
+
+				@include media('screen', '>=1300px') {
+					@include rem(font-size, 33px);
+				}
+
+
+
+			}
+
+
+			& h2 + a {
+
+				position: absolute;
+				left: 5%;
+
+				bottom: 6.5%;
+
+				margin-bottom: 7px;
+
+				font-family: "Open-Sans-Semibold", sans-serif;
+				font-style: italic;
+
+				text-transform: uppercase;
+				text-decoration: none;
+
+				color: rgba(255,255,0,0.8);
+//				color: $blue;
+
+
+//				font-size: 1.5vw;
+//				font-size: 2.8vw;
+
+
+				@include media('screen', '<320px') {
+					@include rem(font-size, 8px);
+					font-size: 2.8vw;
+				}
+				
+
+				@include banners-font-size (320px, 992px, 9px, 30px, 2.8vw);
+				@include banners-font-size (992px, 1300px, 14px, 19px, 1.5vw);
+
+				@include media('screen', '>=1300px') {
+					@include rem(font-size, 20px);
+				}
+
+
 			}
 
 		}

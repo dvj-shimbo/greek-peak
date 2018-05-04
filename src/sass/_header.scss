@@ -452,7 +452,8 @@ header {
 
 			&:before {
 //				background-color: rgba(255,255,255,0.8);
-				background-color: rgba(70,70,70,0.9);
+//				background-color: rgba(70,70,70,0.9);
+				background-color: rgba(70,70,70,0.8);
 //				width: 100%;
 				@include rem(left, 260px);
 				right: 0;

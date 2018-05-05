@@ -5,6 +5,9 @@ $(window).on("load", function() {
 
 	console.log("scripts.js is loaded");
 
+	var  isBreakpoint = function(alias) {
+		return $(".device-" + alias).is(":visible");
+	};
 
 	$("<div class=\"device-phone\"></div>").appendTo("body");
 	$("<div class=\"device-phone-wide\"></div>").appendTo("body");
@@ -14,26 +17,6 @@ $(window).on("load", function() {
 	$("<div class=\"device-tablet-wide\"></div>").appendTo("body");
 	$("<div class=\"device-desktop\"></div>").appendTo("body");
 	$("<div class=\"device-desktop-wide\"></div>").appendTo("body");
-
-
-
-
-	var  isBreakpoint = function(alias) {
-		return $(".device-" + alias).is(":visible");
-	};
-
-/*
-	var headerMenuMouseOver = false;
-
-	$("header ul").mouseover(function() {
-		headerMenuMouseOver = true;
-	});
-
-	$("header ul").mouseout(function() {
-		headerMenuMouseOver = false;
-	});
-*/
-
 
 	$("header").click(function(e) {
 		if (!isBreakpoint("desktop-wide")) {
@@ -52,24 +35,13 @@ $(window).on("load", function() {
 				}
 
 			} else if (!isBreakpoint("tablet-wide")) {
-
-
-/*
-				if (!headerMenuMouseOver) {
-					$("header ul:last-child li.selected").removeClass("selected");
-					$("header").removeClass("menu-displayed");
-				}
-*/
 				if (posX > 260) {
 					$("header ul:last-child li.selected").removeClass("selected");
 					$("header").removeClass("menu-displayed");
 				}
-
-
 			}
 		}
 	});
-
 
 	$("header ul:last-child p").click(function() {
 		if ($(this).next().hasClass("container-fluid")) {
@@ -86,18 +58,12 @@ $(window).on("load", function() {
 		}
 	});
 
-
-
-
 	$("header form").click(function() {
-
 		if (!$(this).hasClass("displayed")) {
 			$(this).addClass("displayed");
 			$(this).find("input").focus();
 		}
-
 	});
-
 
 	var headerFormButtonMouseOver = false;
 

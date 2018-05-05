@@ -4,37 +4,29 @@ header {
 	text-align: right;
 	cursor: default;
 	@include rem(max-width, 1300px);
-
 	&:before, 
 	&:after {
 		content: "";
 		display: block;
 	}
-
 	&:after {
 		position: absolute;
 	}
-
 	&.menu-displayed {
 		& ~ * {
 			position: relative;
 			z-index: -1;
 		}
 	}
-
 	ul {
 		@include rem(font-size, 12px);
-
 		li {
 			text-transform: uppercase;
 		}
-
 		&:first-child {
-
 			li {
 				color: $white;
 				text-align: left;
-	
 				a {
 					color: $white;
 					text-decoration: none;
@@ -45,71 +37,41 @@ header {
 				}
 			}
 		}
-
-
 		&:last-child {
-
 			li {
 				text-align: left;
-
 				p {
 					font-family: "Open-Sans-Semibold", sans-serif;
 					cursor: pointer;					
 				}
-
-
 				&.selected {
-
 					p {
 						color: $blue;
-
 						&:hover {
 							color: darken($blue, 15%);
 						}
 					}
 				}
-
 				&:not(.selected) {
-
 					p {
 						&:hover {
 							color: darken($blue, 15%);
 						}
 					}
-
 					.container-fluid {
 						display: none;
 					}
 				}
-
 				.container-fluid {
 					position: absolute;
 					left: 0;
 					right: 0;
 					z-index: 1;
-
 					.container {
-
 						.row {
-
 							[class*="col"] {
-
-
-//								border: 1px solid blue;
-
-
-
-
-
-
-
-//								@include rem(min-height, $header-row-lg-min-height);
-//								@include rem(min-height, 97px);
-
-
 								@include rem(font-size, 14px);
 								@include rem(letter-spacing, 0.1px);
-
 								.row {
 									[class*="col"] {
 										&:after {
@@ -117,23 +79,18 @@ header {
 										}
 									}
 								}
-
 								[class*="d-"] {
 									width: 100%;
 									height: 100%;
 								}
-
 								& [class*="align-"] {
-
 									h5 {
 										margin-top: 0;
 									}
 								}
-
 								h5 {
 									font-weight: bold;
 									color: #abb8bc;
-
 									a {
 										color: $blue;
 										text-decoration: none;
@@ -143,29 +100,24 @@ header {
 										}
 									}
 								}
-
 								p {
 									font-family: "Open-Sans-Light", sans-serif;
 									color: $font-color;
 									text-transform: none;
 									@include rem(line-height, 18px);
 									@include rem(padding, 6px 0);
-
 									b, strong {
 										font-family: "Open-Sans-Semibold", sans-serif;
 										font-weight: normal;
 									}
-
 									a {
 										color: $font-color;
 										text-decoration: none;
-
 										&:hover {
 											color: lighten($font-color, 15%);
 										}
 									}
 								}
-
 								.button {
 									width: 100%;
 									@include rem(max-width, 200px);
@@ -177,15 +129,12 @@ header {
 			}
 		}
 	}
-
 	ul:first-child ~ .button {
 		@include rem(padding, 10px 0);
 	}
-
 	ul:first-child ~ a:not(.button) {
 		text-decoration: none;
 	}
-
 	ul:first-child + .button + .button + a {
 		position: relative;
 		color: $blue;
@@ -198,18 +147,15 @@ header {
 			color: lighten($blue, 10%);
 		}
 	}
-
 	[class*="icon-"] {
 		@include rem(font-size, 18px);
 	}
-
 	form {
 		display: inline-block;
 		position: relative;
 		@include rem(width, 18px);
 		@include rem(height, 22px);
 		@include rem(top, 16px);
-
 		&:after {
 			content: "\f102";
 			display: block;
@@ -224,7 +170,6 @@ header {
 			line-height: 1;
 			@include transition(all 0.2s ease-in-out);
 		}
-
 		&:hover {
 			cursor: pointer;
 
@@ -232,7 +177,6 @@ header {
 				opacity: 0.75;
 			}
 		}
-		
 		input {
 			position: absolute;
 			right: 0;
@@ -243,15 +187,12 @@ header {
 			border: 0;
 			outline: 0;
 			-webkit-appearance: none;
-
 			@include media('screen', '>=1300px') {
 				@include rem(width, 240px);
 			}
-
 			@include media('>=1290px', '<1300px') {
 				@include rem(width, 235px);
 			}
-
 			@include media('>=1280px', '<1290px') {
 				@include rem(width, 230px);
 			}
@@ -259,28 +200,22 @@ header {
 			@include media('>=1270px', '<1280px') {
 				@include rem(width, 225px);
 			}
-
 			@include media('>=1260px', '<1270px') {
 				@include rem(width, 220px);
 			}
-
 			@include media('>=desktop-wide', '<1260px') {
 				@include rem(width, 215px);
 			}
-
 			@include media('>=phone-wide', '<desktop-wide') {
 				@include rem(width, 180px);
 			}
-
 			@include media('>=phone', '<phone-wide') {
 				@include rem(width, 170px);
 			}
-
 			@include media('screen', '<phone') {
 				@include rem(width, 180px);
 			}
 		}
-
 		button {
 			position: absolute;
 			right: 0;
@@ -291,19 +226,15 @@ header {
 			padding: 0;
 			cursor: pointer;
 			@include transition(all 0.2s ease-in-out);
-
 			&:hover {
 				opacity: 0.75;
 			}
 		}
-
 		&.displayed {
-
 			&:after {
 				display: none;
 			}
 		}
-
 		&:not(.displayed) {
 
 			& input,
@@ -312,9 +243,7 @@ header {
 			}
 		}
 	}
-
 	form + a {
-
 		.icon-cart {
 			@include transition(all 0.2s ease-in-out);
 		}
@@ -326,26 +255,19 @@ header {
 		}
 	}//<--------------------------------------------------------------------- MAIN STYLES
 	
-//========================================================================================================
-	
 	@include media('screen', '<phone') {
-	
 		form,
 		form + a {
 			margin-left: 5%;
 		}
-	
 		.logo {
 			display: none;
 		}
 
 	}//<--------------------------------------------------------------------- @include media('screen', '<phone')
 	
-
 	@include media('screen', '<tablet') {
-	
 		&:not(.menu-displayed) {
-
 			ul {
 
 				& ~ .button {
@@ -353,14 +275,11 @@ header {
 				}
 			}
 		}
-	
 		ul {
-
 			&:first-child {
 				@include rem(height, 306px);
 				@include rem(padding-top, 108px);
 			}
-	
 			&:last-child {
 				@include rem(top, 354px);
 	
@@ -368,45 +287,34 @@ header {
 					@include rem(top, -306px);
 					@include rem(min-height, 620px);
 				}
-	
 			}
-	
 			& ~ .button {
 				position: absolute;
 				z-index: 1;
 				@include rem(width, 224px);
 				@include rem(left, 18px);
 			}
-	
 			& + .button {
 				top: 66px;	
 			}
-	
 			& + .button + .button {
 				top: 116px;	
 			}
 		}
-
 	}//<--------------------------------------------------------------------- @include media('screen', '<tablet')
 	
-	
 	@include media('screen', '>=tablet') {
-	
 		ul:first-child ~ .button {
 			position: relative;
 		}
-
 	}//<--------------------------------------------------------------------- @include media('screen', '>=tablet')
 	
-	
 	@include media('>=tablet', '<tablet-wide') {
-	
 		ul {
 			&:first-child {
 				@include rem(height, 206px);
 				@include rem(padding-top, 8px);
 			}
-	
 			&:last-child {
 				@include rem(top, 254px);
 	
@@ -414,85 +322,30 @@ header {
 					@include rem(top, -206px);
 					@include rem(min-height, 520px);
 				}
-	
 			}
 		}
-
 	}//<--------------------------------------------------------------------- @include media('>=tablet', '<tablet-wide')
 	
-	
 	@include media('screen', '<tablet-wide') {
-	
 		&.menu-displayed {
-
-/*
-			&:before {
-				background-color: rgba(255,255,255,0.8);
-				position: fixed;
-				width: 100%;
-				height: 100%;
-				top: 0;
-				left: 0;
-				bottom: 0;
-				z-index: 1;
-			}
-*/
-
 			&:before,
 			&:after {
-//				background-color: rgba(255,255,255,0.8);
 				position: fixed;
-//				width: 100%;
 				height: 100%;
 				top: 0;
-//				left: 0;
 				bottom: 0;
-//				z-index: 1;
 			}
-
 			&:before {
-//				background-color: rgba(255,255,255,0.8);
-//				background-color: rgba(70,70,70,0.9);
 				background-color: rgba(70,70,70,0.8);
-//				width: 100%;
 				@include rem(left, 260px);
 				right: 0;
 				z-index: 1;
 			}
-
 			&:after {
-//				background-color: red;
 				background-color: #f7f7f7;
-//				background-color: darken($white, 15%);
-
 				@include rem(width, 260px);
-//				z-index: 0;
-
 			}
-
-
-
-
-/*
-			ul {
-				&:first-child {
-
-					&:before {
-						content: "AAA";
-						background-color: red;
-						position: absolute;
-						top: 0;
-						left: 0;
-						z-index: -100;
-					}
-				}
-			}
-*/
-
-
-
 		}
-	
 		&:not(.menu-displayed) {
 			&:before {
 	
@@ -504,112 +357,50 @@ header {
 				left: 0;
 			}
 		}
-
 		ul {
-
-
 			@include rem(width, 260px);
 			@include rem(padding, 0 18px);
-
-
-
-			
-
-
-
-	
 			&:last-child {
-
-//				background-color: darken($white, 15%);
-//				background-color: red;
-
 				@include rem(padding-bottom, 8px);
-
 				li {
 					br {
 						display: none;
 					}
-	
 					.container-fluid {
-
-
-
-
-
-
-
-
-//						background-color: darken(#f7f7f7, 0%);
-//						background-color: red;
-//						background-color: darken($white, 15%);
 						background-color: #f7f7f7;
-
 						.container {
-
-//							@include rem(margin-top, 16px);
 							@include rem(margin-top, 8px);
-
 							.row {
-//								@include rem(margin-top, 16px);
-	
-
-
 								& [class*="align-"] {
-
 									h5 {
 										margin-bottom: 0;
 									}
 								}
-
-
-
-
-
 								[class*="col"] {
-
 									@include rem(min-height, 42px);
-
 									.button {
 										@include rem(margin-top, 18px);
 										@include rem(margin-bottom, 18px);
-//										@include rem(margin-top, 20px);
-//										@include rem(margin-bottom, 20px);
 									}
-
-
 								}
-
-
-
-
-
-	
 								h5 {
-//									@include rem(margin-top, 24px);
 									@include rem(margin-top, 26px);
-//									@include rem(margin-bottom, 16px);
 									@include rem(margin-bottom, 12px);
-	
 								}
 							}
 						}
-	
 					}
 				}
 			}
-	
 			li {
 				@include rem(line-height, 18px);
 				@include rem(margin-top, 18px);
 				@include rem(margin-bottom, 18px);
 			}
 		}
-	
 	}//<--------------------------------------------------------------------- @include media('screen', '<tablet-wide')
 	
-	
 	@include media('screen', '>=tablet-wide') {
-	
 		&:before {
 			position: absolute;
 			@include linear-gradient(rgba(51,51,51,0.15), rgba(51,51,51,0));
@@ -618,11 +409,9 @@ header {
 			width: 100%;
 			left: 0;
 		}
-	
 		ul {
 	
 			&:first-child {
-
 				li {
 					display: inline-block;
 					@include rem(line-height, 12px);
@@ -630,17 +419,13 @@ header {
 					@include rem(margin-bottom, 16px);
 				}
 			}
-	
 			&:last-child {
-
 				li {
 					@include rem(line-height, 18px);
 					@include rem(padding-top, 21px);
 					@include rem(padding-bottom, 15px);
-
 					.container-fluid {
 						background-color: #f7f7f7;
-
 						&:before, 
 						&:after {
 							content: "";
@@ -648,49 +433,20 @@ header {
 							left: 0;
 							right: 0
 						}
-						
 						&:before {
 							background-color: #0498cd;
 							@include rem(height, 1px);
 						}
-	
 						&:after {
 							@include rem(height, 4px);
 							@include linear-gradient(rgba(239,239,239,1), rgba(239,239,239,0));
 						}
-	
-
-
-
-
-
-
-
 						.container {
-
 							.row {
-	
 								&.v-divide {
-
 									[class*="col"] {
-
-
-
-
-
-
-
-
 										@include rem(min-height, 97px);
-
-
-
-
-
-
-
 										&:not(:last-child) {
-
 											&:after {
 												background-color: #e4e4e5;
 												content: "";
@@ -704,17 +460,13 @@ header {
 										}
 									}
 								}
-
 								h5 {
 									@include rem(margin-top, 35px);
 								}
-
 								p {
-
 									&:first-child {
 										@include rem(margin-top, 16px);
 									}
-	
 									&:last-child {
 										@include rem(margin-bottom, 16px);
 									}
@@ -725,51 +477,38 @@ header {
 				}
 			}
 		}
-
 	}//<--------------------------------------------------------------------- @include media('screen', '>=tablet-wide')
 	
-	
 	@include media('>=phone', '<desktop-wide') {
-	
 		form,
 		form + a {
 			margin-left: 2.3%;
 		}
-	
 	}//<--------------------------------------------------------------------- @include media('>=phone', '<desktop-wide')
 	
-	
 	@include media('>=tablet', '<desktop-wide') {
-	
 		ul:first-child ~ .button {
 			width: 18%;
 			@include rem(max-width, 144px);
 			@include rem(top, 6px);
 			margin-left: 2%;
 		}
-
 	}//<--------------------------------------------------------------------- @include media('>=tablet', '<desktop-wide')
 	
-
 	@include media('>=tablet-wide', '<desktop-wide') {
-		
 		ul {
 			text-align: left;
-	
 			li {
 				margin-left: 2.8%;
 			}
-	
 			&:first-child { 
 				width: 100%;
 			}
-	
 			&:last-child {
 				background-color: $white;
 				@include rem(top, 96px);
 				left: 0;
 				width: 100%;
-	
 				&:after {
 					content: "";
 					display: block;
@@ -779,7 +518,6 @@ header {
 					width: 100%;
 					left: 0;
 				}
-	
 				li {
 					display: inline-block;
 					@include rem(letter-spacing, 0.1px);
@@ -790,176 +528,45 @@ header {
 				}
 			}
 		}
-
 	}//<--------------------------------------------------------------------- @include media('>=tablet-wide', '<desktop-wide')
-	
 	
 	@include media('screen', '<desktop-wide') {
 
 		background-color: $white;
 		@include rem(height, 48px);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-		&:after {
-			content: "";
-			background-repeat: no-repeat;
-			background-position: 6px 6px;
-			@include rem(top, 6px);
-			@include rem(left, 16px);
-			@include rem(width, 36px);
-			@include rem(height, 36px);
-			cursor: pointer;
-			z-index: 1;
-		}
-	
-
-
 		&.menu-displayed {
-
-			&:after {
-				background-image: url("../img/arrow-back.svg");	
-			}
-		}
-
-
-	
-		&:not(.menu-displayed) {
-
-			&:after {
-				background-image: url("../img/burger.svg");
-			}
-
-
-//		}
-//
-//		&:not(.menu-displayed) {
-
-			ul {
-				display: none;
-			}
-		}
-*/
-
-
-
-	
-
-
-//		&.menu-displayed {
-//
-//			&:after {
-//				background-image: url("../img/arrow-back.svg");	
-//			}
-//		}
-
-/*
-		pointer-events: none;
-		cursor: pointer;
-
-		& * {
-			pointer-events: auto;
-		}
-*/
-		
-		&.menu-displayed {
-
 			ul {
 				&:first-child {
-
 					pointer-events: none;
 					cursor: pointer;
-		
 					& * {
 						pointer-events: auto;
 					}
 
 					&:before {
-//						content: "AAA";
-//						background-color: red;
-//						position: absolute;
-//						top: 0;
-//						left: 0;
-//						z-index: -100;
-						
 						content: "";
-//						background-color: rgba(255,0,0,0.6);
 						position: absolute;
-
-						
 						@include rem(top, -42px);
 						@include rem(left, 16px);
 						@include rem(width, 36px);
 						@include rem(height, 36px);
-
-//						cursor: pointer;
 						pointer-events: auto;
-
-
 						z-index: 1;
 						background-image: url("../img/arrow-back.svg");	
 						background-repeat: no-repeat;
 						background-position: 6px 6px;
-
 					}
 				}
 			}
-
-
-//			&:after {
-//				content: "";
-//				background-repeat: no-repeat;
-//				background-position: 6px 6px;
-//				@include rem(top, 6px);
-//				@include rem(left, 16px);
-//				@include rem(width, 36px);
-//				@include rem(height, 36px);
-//				cursor: pointer;
-//				z-index: 1;
-//				background-image: url("../img/arrow-back.svg");	
-//			}
-
-
 		}
-
-
 	
 		&:not(.menu-displayed) {
-
 			pointer-events: none;
 			cursor: pointer;
-
 			& * {
 				pointer-events: auto;
 			}
-
 			&:after {
-
 				content: "";
 				background-repeat: no-repeat;
 				background-position: 6px 6px;
@@ -967,87 +574,49 @@ header {
 				@include rem(left, 16px);
 				@include rem(width, 36px);
 				@include rem(height, 36px);
-
-//				cursor: pointer;
-
 				pointer-events: auto;
-
-
-
 				z-index: 1;
-
 				background-image: url("../img/burger.svg");
 			}
-
 			.logo {
 				cursor: default;
 			}
-
 			a {
 				.logo {
 					cursor: pointer;
 				}
 			}
-
-			
-
-
-//		}
-//
-//		&:not(.menu-displayed) {
-
 			ul {
 				display: none;
 			}
 		}
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
 		ul {
 			position: absolute;
 			z-index: 1;
-	
 			&:first-child { 
 				background-color: $dark-blue;
 				@include rem(top, 48px);
 			}
 		}
-	
 		ul:first-child + .button + .button + a {
 			margin-left: 2.3%;
 			@include rem(top, 10px);
 		}
-	
 		[class*="icon-"] {
 			color: $font-color;
 		}
-	
 		form {
-
 			input {
 				color: $font-color;
 				border-bottom: 1px solid $font-color;
 				background-color: $white;
 			}
 		}
-
 		form + a {
 			position: relative;
 			@include rem(top, 16px);
 			@include rem(margin-right, 24px);
 		}
-	
 		.logo {
 			position: absolute;
 			@include rem(top, 4px);
@@ -1055,15 +624,11 @@ header {
 			@include rem(width, 100px);
 			
 		}
-	
 	}//<--------------------------------------------------------------------- @include media('screen', '<desktop-wide')
 	
-	
 	@include media('screen', '>=desktop-wide') {
-	
 		margin: 0 auto;
 		@include rem(height, 120px);
-		
 		&:after {
 			background-color: $dark-blue;
 			top: 0;
@@ -1072,34 +637,27 @@ header {
 			@include rem(height, 48px);
 			left: 0;
 		}
-
 		&:before {
 			position: absolute;
 			@include rem(top, 120px);
 			z-index: 0;
 		}
-	
 		ul {
 			float: left;
 			text-align: left;
-
 			&:first-child {
 				@include rem(margin-left, 38px);
 				margin-right: 2%;
-
 				li {
-
 					&:not(:last-child) {
 						@include rem(margin-right, 24px);
 					}
 				}
 			}
-
 			&:last-child {
 				margin-left: 3.4%;
 				display: inline-table;
 				width: 80%;
-
 				li {
 					display: table-cell;
 					@include rem(letter-spacing, 0.8px);
@@ -1114,38 +672,31 @@ header {
 				}
 			}
 		}
-	
 		ul:first-child ~ .button {
 			width: 11.1%;
 			@include rem(top, 8px);
 			margin-left: 1.9%;
 			float: left;
 		}
-
 		ul:first-child + .button + .button + a {
 			float: left;
 			@include rem(top, 19px);
 			margin-left: 4.2%;
 		}
-	
 		[class*="icon-"] {
 			color: $white;
 			@include rem(font-size, 18px);
 		}
-	
 		form {
-
 			&:after {
 				color: $white;
 			}
-
 			input {
 				border-bottom: 1px solid $white;
 				background-color: $dark-blue;
 				color: $white;
 			}
 		}
-	
 		form + a {
 			float: right;
 			margin-left: 2.3%;
@@ -1153,7 +704,6 @@ header {
 			@include rem(margin-top, 16px);
 			@include rem(height, 22px);
 		}
-
 		.logo {
 			clear: both;
 			float: left;
@@ -1162,7 +712,5 @@ header {
 			@include rem(margin-top, 8px);
 			@include rem(width, 145px);
 		}
-	
 	}//<--------------------------------------------------------------------- @include media('screen', '>=desktop-wide')
-
 }

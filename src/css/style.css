@@ -4078,24 +4078,24 @@ table {
 body {
   overflow-x: hidden;
   overflow-y: scroll;
-  background-color: rgba(0, 255, 0, 0.9);
+  background-color: #fff;
   color: #1d2124;
   font-family: "Open-Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 82, src/sass/common/_base.scss */
+/* line 83, src/sass/common/_base.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 84, src/sass/common/_base.scss */
+/* line 85, src/sass/common/_base.scss */
 i, em {
   font-style: italic;
 }
 
-/* line 133, src/sass/common/_base.scss */
+/* line 134, src/sass/common/_base.scss */
 ::-webkit-search-decoration,
 ::-webkit-search-cancel-button,
 ::-webkit-search-results-button,
@@ -4103,63 +4103,63 @@ i, em {
   display: none;
 }
 
-/* line 138, src/sass/common/_base.scss */
+/* line 139, src/sass/common/_base.scss */
 ::-ms-clear,
 ::-ms-reveal {
   display: none;
 }
 
 @media screen and (max-width: 1247px) {
-  /* line 144, src/sass/common/_base.scss */
+  /* line 145, src/sass/common/_base.scss */
   .device-desktop-wide {
     display: none;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 150, src/sass/common/_base.scss */
+  /* line 151, src/sass/common/_base.scss */
   .device-desktop {
     display: none;
   }
 }
 
 @media screen and (max-width: 991px) {
-  /* line 156, src/sass/common/_base.scss */
+  /* line 157, src/sass/common/_base.scss */
   .device-tablet-wide {
     display: none;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 162, src/sass/common/_base.scss */
+  /* line 163, src/sass/common/_base.scss */
   .device-tablet {
     display: none;
   }
 }
 
 @media screen and (max-width: 639px) {
-  /* line 168, src/sass/common/_base.scss */
+  /* line 169, src/sass/common/_base.scss */
   .device-tablet-small {
     display: none;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 174, src/sass/common/_base.scss */
+  /* line 175, src/sass/common/_base.scss */
   .device-phablet {
     display: none;
   }
 }
 
 @media screen and (max-width: 479px) {
-  /* line 180, src/sass/common/_base.scss */
+  /* line 181, src/sass/common/_base.scss */
   .device-phone-wide {
     display: none;
   }
 }
 
 @media screen and (max-width: 419px) {
-  /* line 186, src/sass/common/_base.scss */
+  /* line 187, src/sass/common/_base.scss */
   .device-phone {
     display: none;
   }
@@ -5266,33 +5266,676 @@ header form + a:hover .icon-cart {
 /*************************** Banners Section Styles ****************************/
 /* line 20, src/sass/sections/_banners.scss */
 .banners {
-  padding-top: 65px;
-  padding-bottom: 65px;
+  /*
+	@for $i from 0 through 36 {
+		$step: (992px - 320px) / 37;
+		$min: $i * $step + 320px;
+		$max: $min + $step;
+		@include media('>=' + round($min), '<' + round($max)) {
+			$padding-top: $i + 60px;
+			@include rem(padding-top, $padding-top);
+			$padding-bottom: $i + 60px;
+			@include rem(padding-bottom, $padding-bottom);
+		}
+	}
+*/
+  /*
+	@for $i from 0 through 4 {
+		$step: (1248px - 992px) / 5;
+		$min: $i * $step + 992px;
+		$max: $min + $step;
+		@include media('>=' + round($min), '<' + round($max)) {
+			$padding-top: $i + 60px;
+			@include rem(padding-top, $padding-top);
+			$padding-bottom: $i + 60px;
+			@include rem(padding-bottom, $padding-bottom);
+		}
+	}
+*/
 }
 
-/* line 28, src/sass/sections/_banners.scss */
+@media screen and (max-width: 319px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 20px;
+    padding-top: 1.25rem;
+    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 334px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 21px;
+    padding-top: 1.3125rem;
+    padding-bottom: 21px;
+    padding-bottom: 1.3125rem;
+  }
+}
+
+@media (min-width: 335px) and (max-width: 349px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 22px;
+    padding-top: 1.375rem;
+    padding-bottom: 22px;
+    padding-bottom: 1.375rem;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 364px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 23px;
+    padding-top: 1.4375rem;
+    padding-bottom: 23px;
+    padding-bottom: 1.4375rem;
+  }
+}
+
+@media (min-width: 365px) and (max-width: 379px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 24px;
+    padding-top: 1.5rem;
+    padding-bottom: 24px;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 394px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 25px;
+    padding-top: 1.5625rem;
+    padding-bottom: 25px;
+    padding-bottom: 1.5625rem;
+  }
+}
+
+@media (min-width: 395px) and (max-width: 409px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 26px;
+    padding-top: 1.625rem;
+    padding-bottom: 26px;
+    padding-bottom: 1.625rem;
+  }
+}
+
+@media (min-width: 410px) and (max-width: 424px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 27px;
+    padding-top: 1.6875rem;
+    padding-bottom: 27px;
+    padding-bottom: 1.6875rem;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 438px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 28px;
+    padding-top: 1.75rem;
+    padding-bottom: 28px;
+    padding-bottom: 1.75rem;
+  }
+}
+
+@media (min-width: 439px) and (max-width: 453px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 29px;
+    padding-top: 1.8125rem;
+    padding-bottom: 29px;
+    padding-bottom: 1.8125rem;
+  }
+}
+
+@media (min-width: 454px) and (max-width: 468px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 30px;
+    padding-top: 1.875rem;
+    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
+  }
+}
+
+@media (min-width: 469px) and (max-width: 483px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 31px;
+    padding-top: 1.9375rem;
+    padding-bottom: 31px;
+    padding-bottom: 1.9375rem;
+  }
+}
+
+@media (min-width: 484px) and (max-width: 498px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 32px;
+    padding-top: 2rem;
+    padding-bottom: 32px;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 499px) and (max-width: 513px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 33px;
+    padding-top: 2.0625rem;
+    padding-bottom: 33px;
+    padding-bottom: 2.0625rem;
+  }
+}
+
+@media (min-width: 514px) and (max-width: 528px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 34px;
+    padding-top: 2.125rem;
+    padding-bottom: 34px;
+    padding-bottom: 2.125rem;
+  }
+}
+
+@media (min-width: 529px) and (max-width: 543px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 35px;
+    padding-top: 2.1875rem;
+    padding-bottom: 35px;
+    padding-bottom: 2.1875rem;
+  }
+}
+
+@media (min-width: 544px) and (max-width: 558px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 36px;
+    padding-top: 2.25rem;
+    padding-bottom: 36px;
+    padding-bottom: 2.25rem;
+  }
+}
+
+@media (min-width: 559px) and (max-width: 573px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 37px;
+    padding-top: 2.3125rem;
+    padding-bottom: 37px;
+    padding-bottom: 2.3125rem;
+  }
+}
+
+@media (min-width: 574px) and (max-width: 588px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 38px;
+    padding-top: 2.375rem;
+    padding-bottom: 38px;
+    padding-bottom: 2.375rem;
+  }
+}
+
+@media (min-width: 589px) and (max-width: 603px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 39px;
+    padding-top: 2.4375rem;
+    padding-bottom: 39px;
+    padding-bottom: 2.4375rem;
+  }
+}
+
+@media (min-width: 604px) and (max-width: 618px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 40px;
+    padding-top: 2.5rem;
+    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 619px) and (max-width: 633px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 41px;
+    padding-top: 2.5625rem;
+    padding-bottom: 41px;
+    padding-bottom: 2.5625rem;
+  }
+}
+
+@media (min-width: 634px) and (max-width: 648px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 42px;
+    padding-top: 2.625rem;
+    padding-bottom: 42px;
+    padding-bottom: 2.625rem;
+  }
+}
+
+@media (min-width: 649px) and (max-width: 662px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 43px;
+    padding-top: 2.6875rem;
+    padding-bottom: 43px;
+    padding-bottom: 2.6875rem;
+  }
+}
+
+@media (min-width: 663px) and (max-width: 677px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 44px;
+    padding-top: 2.75rem;
+    padding-bottom: 44px;
+    padding-bottom: 2.75rem;
+  }
+}
+
+@media (min-width: 678px) and (max-width: 692px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 45px;
+    padding-top: 2.8125rem;
+    padding-bottom: 45px;
+    padding-bottom: 2.8125rem;
+  }
+}
+
+@media (min-width: 693px) and (max-width: 707px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 46px;
+    padding-top: 2.875rem;
+    padding-bottom: 46px;
+    padding-bottom: 2.875rem;
+  }
+}
+
+@media (min-width: 708px) and (max-width: 722px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 47px;
+    padding-top: 2.9375rem;
+    padding-bottom: 47px;
+    padding-bottom: 2.9375rem;
+  }
+}
+
+@media (min-width: 723px) and (max-width: 737px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 48px;
+    padding-top: 3rem;
+    padding-bottom: 48px;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (min-width: 738px) and (max-width: 752px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 49px;
+    padding-top: 3.0625rem;
+    padding-bottom: 49px;
+    padding-bottom: 3.0625rem;
+  }
+}
+
+@media (min-width: 753px) and (max-width: 767px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 50px;
+    padding-top: 3.125rem;
+    padding-bottom: 50px;
+    padding-bottom: 3.125rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 782px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 51px;
+    padding-top: 3.1875rem;
+    padding-bottom: 51px;
+    padding-bottom: 3.1875rem;
+  }
+}
+
+@media (min-width: 783px) and (max-width: 797px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 52px;
+    padding-top: 3.25rem;
+    padding-bottom: 52px;
+    padding-bottom: 3.25rem;
+  }
+}
+
+@media (min-width: 798px) and (max-width: 812px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 53px;
+    padding-top: 3.3125rem;
+    padding-bottom: 53px;
+    padding-bottom: 3.3125rem;
+  }
+}
+
+@media (min-width: 813px) and (max-width: 827px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 54px;
+    padding-top: 3.375rem;
+    padding-bottom: 54px;
+    padding-bottom: 3.375rem;
+  }
+}
+
+@media (min-width: 828px) and (max-width: 842px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 55px;
+    padding-top: 3.4375rem;
+    padding-bottom: 55px;
+    padding-bottom: 3.4375rem;
+  }
+}
+
+@media (min-width: 843px) and (max-width: 857px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 56px;
+    padding-top: 3.5rem;
+    padding-bottom: 56px;
+    padding-bottom: 3.5rem;
+  }
+}
+
+@media (min-width: 858px) and (max-width: 872px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 57px;
+    padding-top: 3.5625rem;
+    padding-bottom: 57px;
+    padding-bottom: 3.5625rem;
+  }
+}
+
+@media (min-width: 873px) and (max-width: 886px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 58px;
+    padding-top: 3.625rem;
+    padding-bottom: 58px;
+    padding-bottom: 3.625rem;
+  }
+}
+
+@media (min-width: 887px) and (max-width: 901px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 59px;
+    padding-top: 3.6875rem;
+    padding-bottom: 59px;
+    padding-bottom: 3.6875rem;
+  }
+}
+
+@media (min-width: 902px) and (max-width: 916px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 60px;
+    padding-top: 3.75rem;
+    padding-bottom: 60px;
+    padding-bottom: 3.75rem;
+  }
+}
+
+@media (min-width: 917px) and (max-width: 931px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 61px;
+    padding-top: 3.8125rem;
+    padding-bottom: 61px;
+    padding-bottom: 3.8125rem;
+  }
+}
+
+@media (min-width: 932px) and (max-width: 946px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 62px;
+    padding-top: 3.875rem;
+    padding-bottom: 62px;
+    padding-bottom: 3.875rem;
+  }
+}
+
+@media (min-width: 947px) and (max-width: 961px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 63px;
+    padding-top: 3.9375rem;
+    padding-bottom: 63px;
+    padding-bottom: 3.9375rem;
+  }
+}
+
+@media (min-width: 962px) and (max-width: 976px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 64px;
+    padding-top: 4rem;
+    padding-bottom: 64px;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 977px) and (max-width: 991px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 65px;
+    padding-top: 4.0625rem;
+    padding-bottom: 65px;
+    padding-bottom: 4.0625rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1011px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 52px;
+    padding-top: 3.25rem;
+    padding-bottom: 52px;
+    padding-bottom: 3.25rem;
+  }
+}
+
+@media (min-width: 1012px) and (max-width: 1030px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 53px;
+    padding-top: 3.3125rem;
+    padding-bottom: 53px;
+    padding-bottom: 3.3125rem;
+  }
+}
+
+@media (min-width: 1031px) and (max-width: 1050px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 54px;
+    padding-top: 3.375rem;
+    padding-bottom: 54px;
+    padding-bottom: 3.375rem;
+  }
+}
+
+@media (min-width: 1051px) and (max-width: 1070px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 55px;
+    padding-top: 3.4375rem;
+    padding-bottom: 55px;
+    padding-bottom: 3.4375rem;
+  }
+}
+
+@media (min-width: 1071px) and (max-width: 1089px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 56px;
+    padding-top: 3.5rem;
+    padding-bottom: 56px;
+    padding-bottom: 3.5rem;
+  }
+}
+
+@media (min-width: 1090px) and (max-width: 1109px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 57px;
+    padding-top: 3.5625rem;
+    padding-bottom: 57px;
+    padding-bottom: 3.5625rem;
+  }
+}
+
+@media (min-width: 1110px) and (max-width: 1129px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 58px;
+    padding-top: 3.625rem;
+    padding-bottom: 58px;
+    padding-bottom: 3.625rem;
+  }
+}
+
+@media (min-width: 1130px) and (max-width: 1149px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 59px;
+    padding-top: 3.6875rem;
+    padding-bottom: 59px;
+    padding-bottom: 3.6875rem;
+  }
+}
+
+@media (min-width: 1150px) and (max-width: 1168px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 60px;
+    padding-top: 3.75rem;
+    padding-bottom: 60px;
+    padding-bottom: 3.75rem;
+  }
+}
+
+@media (min-width: 1169px) and (max-width: 1188px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 61px;
+    padding-top: 3.8125rem;
+    padding-bottom: 61px;
+    padding-bottom: 3.8125rem;
+  }
+}
+
+@media (min-width: 1189px) and (max-width: 1208px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 62px;
+    padding-top: 3.875rem;
+    padding-bottom: 62px;
+    padding-bottom: 3.875rem;
+  }
+}
+
+@media (min-width: 1209px) and (max-width: 1227px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 63px;
+    padding-top: 3.9375rem;
+    padding-bottom: 63px;
+    padding-bottom: 3.9375rem;
+  }
+}
+
+@media (min-width: 1228px) and (max-width: 1247px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 64px;
+    padding-top: 4rem;
+    padding-bottom: 64px;
+    padding-bottom: 4rem;
+  }
+}
+
+@media screen and (min-width: 1248px) {
+  /* line 20, src/sass/sections/_banners.scss */
+  .banners {
+    padding-top: 65px;
+    padding-top: 4.0625rem;
+    padding-bottom: 65px;
+    padding-bottom: 4.0625rem;
+  }
+}
+
+/* line 94, src/sass/sections/_banners.scss */
 .banners .row {
   padding: 0 7px;
 }
 
-/* line 32, src/sass/sections/_banners.scss */
+/* line 100, src/sass/sections/_banners.scss */
 .banners .row [class*="col"] {
   padding: 7px;
 }
 
-/* line 41, src/sass/sections/_banners.scss */
-.banners .row [class*="col"] img {
-  width: 100%;
+/* line 110, src/sass/sections/_banners.scss */
+.banners .row [class*="col"]:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  right: 0.4375rem;
+  bottom: 7px;
+  bottom: 0.4375rem;
+  left: 7px;
+  left: 0.4375rem;
+  background-image: -o-linear-gradient(rgba(0, 0, 255, 0), rgba(0, 0, 0, 0.75));
+  background-image: -moz-linear-gradient(rgba(0, 0, 255, 0), rgba(0, 0, 0, 0.75));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 255, 0), rgba(0, 0, 0, 0.75));
+  background-image: linear-gradient(rgba(0, 0, 255, 0), rgba(0, 0, 0, 0.75));
 }
 
-/* line 45, src/sass/sections/_banners.scss */
+/* line 127, src/sass/sections/_banners.scss */
+.banners .row [class*="col"] img {
+  width: 100%;
+  vertical-align: top;
+}
+
+/* line 132, src/sass/sections/_banners.scss */
 .banners .row [class*="col"] h2 {
   position: absolute;
   top: 64%;
   left: 5%;
   font-weight: bold;
   text-transform: uppercase;
-  color: rgba(255, 0, 255, 0.8);
+  color: #fff;
+  z-index: 1;
   /*
 				@mixin banners-h2 ($media-min, $media-max, $font-size-min, $font-size-max) {
 					$d: ($font-size-max - $font-size-min) / 1px;
@@ -5346,7 +5989,7 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (max-width: 319px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 13px;
     font-size: 0.8125rem;
@@ -5355,7 +5998,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 320px) and (max-width: 337px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 14px;
     font-size: 0.875rem;
@@ -5364,7 +6007,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 338px) and (max-width: 355px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 15px;
     font-size: 0.9375rem;
@@ -5373,7 +6016,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 356px) and (max-width: 373px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 16px;
     font-size: 1rem;
@@ -5382,7 +6025,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 374px) and (max-width: 392px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 17px;
     font-size: 1.0625rem;
@@ -5391,7 +6034,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 393px) and (max-width: 410px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 18px;
     font-size: 1.125rem;
@@ -5400,7 +6043,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 411px) and (max-width: 428px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 19px;
     font-size: 1.1875rem;
@@ -5409,7 +6052,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 429px) and (max-width: 446px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 20px;
     font-size: 1.25rem;
@@ -5418,7 +6061,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 447px) and (max-width: 464px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 21px;
     font-size: 1.3125rem;
@@ -5427,7 +6070,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 465px) and (max-width: 482px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 22px;
     font-size: 1.375rem;
@@ -5436,7 +6079,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 483px) and (max-width: 501px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 23px;
     font-size: 1.4375rem;
@@ -5445,7 +6088,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 502px) and (max-width: 519px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 24px;
     font-size: 1.5rem;
@@ -5454,7 +6097,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 520px) and (max-width: 537px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 25px;
     font-size: 1.5625rem;
@@ -5463,7 +6106,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 538px) and (max-width: 555px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 26px;
     font-size: 1.625rem;
@@ -5472,7 +6115,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 556px) and (max-width: 573px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 27px;
     font-size: 1.6875rem;
@@ -5481,7 +6124,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 574px) and (max-width: 591px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 28px;
     font-size: 1.75rem;
@@ -5490,7 +6133,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 592px) and (max-width: 610px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 29px;
     font-size: 1.8125rem;
@@ -5499,7 +6142,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 611px) and (max-width: 628px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 30px;
     font-size: 1.875rem;
@@ -5508,7 +6151,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 629px) and (max-width: 646px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 31px;
     font-size: 1.9375rem;
@@ -5517,7 +6160,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 647px) and (max-width: 664px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 32px;
     font-size: 2rem;
@@ -5526,7 +6169,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 665px) and (max-width: 682px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 33px;
     font-size: 2.0625rem;
@@ -5535,7 +6178,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 683px) and (max-width: 700px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 34px;
     font-size: 2.125rem;
@@ -5544,7 +6187,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 701px) and (max-width: 719px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 35px;
     font-size: 2.1875rem;
@@ -5553,7 +6196,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 720px) and (max-width: 737px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 36px;
     font-size: 2.25rem;
@@ -5562,7 +6205,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 738px) and (max-width: 755px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 37px;
     font-size: 2.3125rem;
@@ -5571,7 +6214,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 756px) and (max-width: 773px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 38px;
     font-size: 2.375rem;
@@ -5580,7 +6223,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 774px) and (max-width: 791px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 39px;
     font-size: 2.4375rem;
@@ -5589,7 +6232,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 792px) and (max-width: 809px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 40px;
     font-size: 2.5rem;
@@ -5598,7 +6241,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 810px) and (max-width: 828px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 41px;
     font-size: 2.5625rem;
@@ -5607,7 +6250,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 829px) and (max-width: 846px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 42px;
     font-size: 2.625rem;
@@ -5616,7 +6259,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 847px) and (max-width: 864px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 43px;
     font-size: 2.6875rem;
@@ -5625,7 +6268,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 865px) and (max-width: 882px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 44px;
     font-size: 2.75rem;
@@ -5634,7 +6277,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 883px) and (max-width: 900px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 45px;
     font-size: 2.8125rem;
@@ -5643,7 +6286,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 901px) and (max-width: 918px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 46px;
     font-size: 2.875rem;
@@ -5652,7 +6295,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 919px) and (max-width: 937px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 47px;
     font-size: 2.9375rem;
@@ -5661,7 +6304,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 938px) and (max-width: 955px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 48px;
     font-size: 3rem;
@@ -5670,7 +6313,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 956px) and (max-width: 973px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 49px;
     font-size: 3.0625rem;
@@ -5679,7 +6322,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 974px) and (max-width: 991px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 50px;
     font-size: 3.125rem;
@@ -5688,7 +6331,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 992px) and (max-width: 1025px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 24px;
     font-size: 1.5rem;
@@ -5697,7 +6340,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 1026px) and (max-width: 1059px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 25px;
     font-size: 1.5625rem;
@@ -5706,7 +6349,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 1060px) and (max-width: 1094px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 26px;
     font-size: 1.625rem;
@@ -5715,7 +6358,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 1095px) and (max-width: 1128px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 27px;
     font-size: 1.6875rem;
@@ -5724,7 +6367,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 1129px) and (max-width: 1162px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 28px;
     font-size: 1.75rem;
@@ -5733,7 +6376,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 1163px) and (max-width: 1196px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 29px;
     font-size: 1.8125rem;
@@ -5742,7 +6385,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 1197px) and (max-width: 1231px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 30px;
     font-size: 1.875rem;
@@ -5751,7 +6394,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 1232px) and (max-width: 1265px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 31px;
     font-size: 1.9375rem;
@@ -5760,7 +6403,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 1266px) and (max-width: 1299px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 32px;
     font-size: 2rem;
@@ -5769,14 +6412,14 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (min-width: 1300px) {
-  /* line 45, src/sass/sections/_banners.scss */
+  /* line 132, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 {
     font-size: 33px;
     font-size: 2.0625rem;
   }
 }
 
-/* line 149, src/sass/sections/_banners.scss */
+/* line 238, src/sass/sections/_banners.scss */
 .banners .row [class*="col"] h2 + a {
   position: absolute;
   left: 5%;
@@ -5786,11 +6429,17 @@ header form + a:hover .icon-cart {
   font-style: italic;
   text-transform: uppercase;
   text-decoration: none;
-  color: rgba(255, 255, 0, 0.8);
+  color: #11a0d3;
+  z-index: 1;
+}
+
+/* line 258, src/sass/sections/_banners.scss */
+.banners .row [class*="col"] h2 + a:hover {
+  color: #41c2f0;
 }
 
 @media screen and (max-width: 319px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 8px;
     font-size: 0.5rem;
@@ -5799,7 +6448,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 320px) and (max-width: 350px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 9px;
     font-size: 0.5625rem;
@@ -5808,7 +6457,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 351px) and (max-width: 380px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 10px;
     font-size: 0.625rem;
@@ -5817,7 +6466,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 381px) and (max-width: 411px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 11px;
     font-size: 0.6875rem;
@@ -5826,7 +6475,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 412px) and (max-width: 441px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 12px;
     font-size: 0.75rem;
@@ -5835,7 +6484,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 442px) and (max-width: 472px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 13px;
     font-size: 0.8125rem;
@@ -5844,7 +6493,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 473px) and (max-width: 502px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 14px;
     font-size: 0.875rem;
@@ -5853,7 +6502,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 503px) and (max-width: 533px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 15px;
     font-size: 0.9375rem;
@@ -5862,7 +6511,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 534px) and (max-width: 563px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 16px;
     font-size: 1rem;
@@ -5871,7 +6520,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 564px) and (max-width: 594px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 17px;
     font-size: 1.0625rem;
@@ -5880,7 +6529,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 595px) and (max-width: 624px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 18px;
     font-size: 1.125rem;
@@ -5889,7 +6538,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 625px) and (max-width: 655px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 19px;
     font-size: 1.1875rem;
@@ -5898,7 +6547,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 656px) and (max-width: 686px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 20px;
     font-size: 1.25rem;
@@ -5907,7 +6556,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 687px) and (max-width: 716px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 21px;
     font-size: 1.3125rem;
@@ -5916,7 +6565,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 717px) and (max-width: 747px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 22px;
     font-size: 1.375rem;
@@ -5925,7 +6574,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 748px) and (max-width: 777px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 23px;
     font-size: 1.4375rem;
@@ -5934,7 +6583,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 778px) and (max-width: 808px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 24px;
     font-size: 1.5rem;
@@ -5943,7 +6592,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 809px) and (max-width: 838px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 25px;
     font-size: 1.5625rem;
@@ -5952,7 +6601,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 839px) and (max-width: 869px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 26px;
     font-size: 1.625rem;
@@ -5961,7 +6610,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 870px) and (max-width: 899px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 27px;
     font-size: 1.6875rem;
@@ -5970,7 +6619,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 900px) and (max-width: 930px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 28px;
     font-size: 1.75rem;
@@ -5979,7 +6628,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 931px) and (max-width: 960px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 29px;
     font-size: 1.8125rem;
@@ -5988,7 +6637,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 961px) and (max-width: 991px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 30px;
     font-size: 1.875rem;
@@ -5997,7 +6646,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 992px) and (max-width: 1042px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 14px;
     font-size: 0.875rem;
@@ -6006,7 +6655,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 1043px) and (max-width: 1094px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 15px;
     font-size: 0.9375rem;
@@ -6015,7 +6664,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 1095px) and (max-width: 1145px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 16px;
     font-size: 1rem;
@@ -6024,7 +6673,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 1146px) and (max-width: 1196px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 17px;
     font-size: 1.0625rem;
@@ -6033,7 +6682,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 1197px) and (max-width: 1248px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 18px;
     font-size: 1.125rem;
@@ -6042,7 +6691,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 1249px) and (max-width: 1299px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 19px;
     font-size: 1.1875rem;
@@ -6051,7 +6700,7 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (min-width: 1300px) {
-  /* line 149, src/sass/sections/_banners.scss */
+  /* line 238, src/sass/sections/_banners.scss */
   .banners .row [class*="col"] h2 + a {
     font-size: 20px;
     font-size: 1.25rem;

@@ -81,7 +81,10 @@ gulp.task('scripts', function() {
       'node_modules/jquery/dist/jquery.js', // jQuery
 
 //      'node_modules/jquery/dist/jquery.slim.js', // jQuery slim
-      'node_modules/popper.js/dist/umd/popper.js', // popper.js
+
+      'node_modules/bootstrap/dist/js/bootstrap.js', // Bootstrap 4
+
+      'node_modules/jquery-ui-dist/jquery-ui.js', // jquery-ui-dist
 
 //      'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js', // Bootstrap 3
 /**

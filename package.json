@@ -33,6 +33,7 @@
     "icon-font-generator": "^1.1.1",
     "include-media": "^1.4.9",
     "jquery": "^3.2.1",
+    "jquery-ui-dist": "^1.12.1",
     "mediaelement": "^4.2.8",
     "normalize-scss": "^7.0.0",
     "popper.js": "^1.12.9",

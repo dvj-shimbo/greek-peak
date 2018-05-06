@@ -325,10 +325,6 @@
 	
 	</header>
 
-	<!--br><br-->
-	<!--p>Date: <input type="text" id="datepicker"></p-->
-	<!--input class="picker" type="text"-->
-
 
 	<!--div class="container-fluid" style="background: url(img/!/Greek-Peak_home-page-_ready.png) no-repeat 0 -120px; height: 743px;"></div-->
 
@@ -338,7 +334,8 @@
 	<!--div class="container-fluid" style="background: url(img/!/Greek-Peak_home-page-_ready.png) no-repeat 0 -863px; height: 217px;"></div-->
 
 
-	<section class="booking" style="/**/background-image: url(img/!/Greek-Peak_home-page-_ready_a.png); background-repeat: no-repeat; background-position: 0 -863px; height: 217px/**/;">
+	<!--section class="booking" style="/**/background-image: url(img/!/Greek-Peak_home-page-_ready_a.png); background-repeat: no-repeat; background-position: 0 -863px; height: 217px;/**/;"-->
+	<section class="booking" style="/**/background-image: url(img/!/Greek-Peak_home-page-_ready_a.png); background-repeat: no-repeat; background-position: 0 -863px;/**/">
 		
 		<!--form>
 			<fieldset>
@@ -471,7 +468,13 @@
 
 									<!--input class="select hasDatepicker" type="text" id="booking-section-datepicker" name="DateIn" placeholder="mm/dd/yy"-->
 
-									<input class="datepicker" type="text" id="booking-section-datepicker" name="DateIn" placeholder="mm/dd/yy">
+									<div class="input-wrapper">
+
+										<input type="text" id="booking-section-datepicker" name="DateIn" placeholder="mm / dd / yy">
+
+									</div>
+
+									
 
 									<!--input class="picker" type="text" id="datepicker"-->
 
@@ -480,55 +483,76 @@
 								<div class="col-2">
 
 									<label for="booking-section-length">Nights</label>
-									<select id="booking-section-length" name="Length">
-										<option selected="selected" value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-										<option value="6">6</option>
-										<option value="7">7</option>
-										<option value="8">8</option>
-										<option value="9">9</option>
-										<option value="10">10</option>
-									</select>
+
+									<div class="select-wrapper">
+										
+										<select id="booking-section-length" name="Length">
+											<option selected="selected" value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+
+									</div>
+
+
 
 								</div>
 
 								<div class="col-2">
 
 									<label for="booking-section-adults">Adults</label>
-									<select class="select" id="booking-section-adults" name="Adults">
-										<option selected="selected" value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-										<option value="6">6</option>
-										<option value="7">7</option>
-										<option value="8">8</option>
-										<option value="9">9</option>
-										<option value="10">10</option>
-									</select>
+
+									<div class="select-wrapper">
+	
+										<select class="select" id="booking-section-adults" name="Adults">
+											<option selected="selected" value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+										
+									</div>
+
+
 
 								</div>
 
 								<div class="col-2">
 
 									<label for="booking-section-children">Children</label>
-									<select class="select" id="booking-section-children" name="Children">
-										<option selected="selected" value="0">0</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-										<option value="6">6</option>
-										<option value="7">7</option>
-										<option value="8">8</option>
-										<option value="9">9</option>
-										<option value="10">10</option>
-									</select>
+
+									<div class="select-wrapper">
+
+										<select class="select" id="booking-section-children" name="Children">
+											<option selected="selected" value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>										
+
+									</div>
+
+
 
 								</div>
 

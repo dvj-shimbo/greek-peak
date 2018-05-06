@@ -102,16 +102,17 @@
 		.tab-content {
 			background-color: rgba(255,255,0,0.2);
 
-			@include rem(padding-top, 34px);
+			@include rem(padding-top, 37px);
 
 			.tab-pane {
+
 				background-color: rgba(0,0,255,0.1);
 
 
-				[class*="col"] {
-					border: 1px solid red;
-				}
-				
+//				[class*="col"] {
+//					border: 1px solid red;
+//				}
+
 
 
 			}

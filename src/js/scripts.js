@@ -101,8 +101,8 @@ $(window).on("load", function() {
 	});
 
 
-
-	$(".datepicker").datepicker();
+	
+	$('.book-accommodation input[type="text"]').datepicker();
 
 
 

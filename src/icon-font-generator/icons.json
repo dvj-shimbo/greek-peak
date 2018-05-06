@@ -1,4 +1,6 @@
 {
-    "cart": "\\f101",
-    "search": "\\f102"
+    "calendar": "\\f101",
+    "cart": "\\f102",
+    "chevron-down": "\\f103",
+    "search": "\\f104"
 }

@@ -55,11 +55,11 @@
         /**************************** Icon Font *****************************/
 @font-face {
     font-family: "icons";
-    src: url("../fonts/icons/icons.eot?e87de3eff31292b5ce97000a76945f6c?#iefix") format("embedded-opentype"),
-url("../fonts/icons/icons.woff2?e87de3eff31292b5ce97000a76945f6c") format("woff2"),
-url("../fonts/icons/icons.woff?e87de3eff31292b5ce97000a76945f6c") format("woff"),
-url("../fonts/icons/icons.ttf?e87de3eff31292b5ce97000a76945f6c") format("truetype"),
-url("../fonts/icons/icons.svg?e87de3eff31292b5ce97000a76945f6c#icons") format("svg");
+    src: url("../fonts/icons/icons.eot?4fe11bc366fd25da38757905e692b4e0?#iefix") format("embedded-opentype"),
+url("../fonts/icons/icons.woff2?4fe11bc366fd25da38757905e692b4e0") format("woff2"),
+url("../fonts/icons/icons.woff?4fe11bc366fd25da38757905e692b4e0") format("woff"),
+url("../fonts/icons/icons.ttf?4fe11bc366fd25da38757905e692b4e0") format("truetype"),
+url("../fonts/icons/icons.svg?4fe11bc366fd25da38757905e692b4e0#icons") format("svg");
 }
 
 [class*="icon-"]:before {
@@ -70,11 +70,17 @@ url("../fonts/icons/icons.svg?e87de3eff31292b5ce97000a76945f6c#icons") format("s
     line-height: 1;
 }
 
-.icon-cart:before {
+.icon-calendar:before {
     content: "\f101";
 }
-.icon-search:before {
+.icon-cart:before {
     content: "\f102";
+}
+.icon-chevron-down:before {
+    content: "\f103";
+}
+.icon-search:before {
+    content: "\f104";
 }
 
 
@@ -87,10 +93,28 @@ url("../fonts/icons/icons.svg?e87de3eff31292b5ce97000a76945f6c#icons") format("s
 
         <div class="preview">
             <span class="inner">
+                <i class="icon-calendar"></i>
+            </span>
+            <br>
+            <span class='label'>calendar</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
                 <i class="icon-cart"></i>
             </span>
             <br>
             <span class='label'>cart</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="icon-chevron-down"></i>
+            </span>
+            <br>
+            <span class='label'>chevron-down</span>
         </div>
 
 

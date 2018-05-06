@@ -12,19 +12,103 @@ form {
 
 		background-color: rgba(255,0,0,0.2);
 
-//		color: $white;
-		color: rgba(255,255,0,0.9);
+		color: $white;
+//		color: rgba(255,255,0,0.9);
 
 		label {
 
-			background-color: rgba(0,0,255,0.2);
+//			background-color: rgba(0,0,255,0.2);
 
 			display: block;
 
 			@include rem(font-size, 14px);
-			@include rem(padding-bottom, 14px);
+			@include rem(padding-bottom, 13px);
 
 		}
+
+
+		.input-wrapper {
+
+			position: relative;
+
+			&:before,
+			&:after {
+				position: absolute;
+				font-family: "icons";
+			}
+
+			&:before {
+				@include rem(top, 9px);
+				@include rem(right, 40px);
+				@include rem(font-size, 31px);
+				content: "\f101";
+			}
+
+			&:after {
+				@include rem(top, 21px);
+				@include rem(right, 13px);
+				@include rem(font-size, 9px);
+				content: "\f103";
+			}
+
+			input {
+	
+				&[type="text"] {
+
+
+					background-color: rgba(255,255,255,0.2);
+
+//					border: 1px solid red;
+
+					border: 1px solid rgba(255,255,255,0.3);
+
+					@include border-radius(3px);
+
+					color: $white;
+
+//					padding: 16px;
+					width: 100%;
+
+					@include rem(padding, 15px 80px 15px 15px);
+
+					@include rem(font-size, 14px);
+
+					cursor: default;
+
+					&::-webkit-input-placeholder {
+						color: $white;
+						font-style: italic;
+					}
+					&:-moz-placeholder {
+						color: $white;
+						opacity: 1;
+						font-style: italic;
+					}
+					&::-moz-placeholder {
+						color: $white;
+						opacity: 1;
+						font-style: italic;
+					}
+					&:-ms-input-placeholder {
+						color: $white;
+						font-style: italic;
+					}
+					&::-ms-input-placeholder {
+						color: $white;
+						font-style: italic;
+					}
+					
+					&::placeholder {
+						color: $white;
+						font-style: italic;
+					}
+
+				}
+	
+			}
+
+		}
+
 
 
 

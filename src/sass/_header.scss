@@ -187,7 +187,7 @@ header {
 		@include rem(height, 22px);
 		@include rem(top, 16px);
 		&:after {
-			content: "\f102";
+			content: "\f104";
 			display: block;
 			position: absolute;
 			@include rem(width, 18px);

@@ -78,10 +78,10 @@ gulp.task('scripts-ie', function() {
 gulp.task('scripts', function() {
   return gulp.src([ // Берем все необходимые библиотеки
 //      'node_modules/mediaelement/build/mediaelement-and-player.js', // MediaElement.js
-//      'node_modules/jquery/dist/jquery.js', // jQuery
+      'node_modules/jquery/dist/jquery.js', // jQuery
 
-      'node_modules/jquery/dist/jquery.slim.js', // jQuery slim
-//      'node_modules/popper.js/dist/umd/popper.js', // popper.js
+//      'node_modules/jquery/dist/jquery.slim.js', // jQuery slim
+      'node_modules/popper.js/dist/umd/popper.js', // popper.js
 
 //      'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js', // Bootstrap 3
 /**
@@ -99,7 +99,7 @@ gulp.task('scripts', function() {
 //      'node_modules/bootstrap-sass/assets/javascripts/bootstrap/affix.js', // Bootstrap 3 affix
 /**/
 
-//      'node_modules/bootstrap/dist/js/bootstrap.js', // Bootstrap 4
+      'node_modules/bootstrap/dist/js/bootstrap.js', // Bootstrap 4
 
     ])
     .pipe(sourcemaps.init())

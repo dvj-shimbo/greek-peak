@@ -1,0 +1,62 @@
+/*************************** Book Accommodation Form Component Styles ****************************/
+
+//.book-accommodation,
+//.banner {
+//
+//	form {
+
+
+form {
+
+	&.book-accommodation{
+
+		background-color: rgba(255,0,0,0.2);
+
+		color: $white;
+
+		h4 {
+			background-color: rgba(0,0,255,0.2);
+
+			position: relative;
+
+			font-family: "Open-Sans-Semibold", sans-serif;
+			text-transform: uppercase;
+
+			@include rem(font-size, 16px);
+
+			@include rem(padding-bottom, 14px);
+
+			&:after {
+				content: "AAA";
+				position: absolute;
+
+				
+				left: 0;
+				right: 0;
+
+				bottom: 0;
+				height: 4px;
+
+				background-color: $white;
+			}
+
+		}
+
+		a {
+
+			text-transform: uppercase;
+			text-decoration: none;
+			@include rem(font-size, 16px);
+
+			color: $white;
+
+			&:hover {
+				color: lighten($blue, 15%);
+			}
+
+		}
+
+
+	}
+
+}

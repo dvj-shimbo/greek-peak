@@ -29,31 +29,13 @@ $(window).on("load", function() {
 	});
 
 	$(document).click(function() {
-		
-/*
-		if (!isBreakpoint("desktop-wide")) {
-			if ($("header").hasClass("menu-displayed")) {
-				if (!headerMouseOver) {
-					$("header ul:last-child li.selected").removeClass("selected");
-					$("header").removeClass("menu-displayed");
-				}
-			}
-		}
-*/
-
-		
 		if ($("header").hasClass("menu-displayed")) {
 			if (!headerMouseOver) {
 				$("header ul:last-child li.selected").removeClass("selected");
 				$("header").removeClass("menu-displayed");
 			}
 		}
-		
-
-
 	});
-
-
 
 	$("header").click(function(e) {
 		if (!isBreakpoint("desktop-wide")) {
@@ -117,6 +99,10 @@ $(window).on("load", function() {
 			$("header form").removeClass("displayed");
 		}	
 	});
+
+
+
+	$(".datepicker").datepicker();
 
 
 

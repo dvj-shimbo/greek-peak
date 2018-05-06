@@ -12,7 +12,21 @@ form {
 
 		background-color: rgba(255,0,0,0.2);
 
-		color: $white;
+//		color: $white;
+		color: rgba(255,255,0,0.9);
+
+		label {
+
+			background-color: rgba(0,0,255,0.2);
+
+			display: block;
+
+			@include rem(font-size, 14px);
+			@include rem(padding-bottom, 14px);
+
+		}
+
+
 
 /*
 		h4 {

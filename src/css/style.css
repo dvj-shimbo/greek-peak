@@ -4304,7 +4304,7 @@ i, em {
 /* line 11, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation {
   background-color: rgba(255, 0, 0, 0.2);
-  color: rgba(255, 0, 0, 0.8);
+  color: rgba(255, 255, 0, 0.9);
   /*
 		h4 {
 			background-color: rgba(0,0,255,0.2);
@@ -4348,6 +4348,16 @@ form.book-accommodation {
 
 		}
 */
+}
+
+/* line 18, src/sass/components/_book-accommodation-form.scss */
+form.book-accommodation label {
+  background-color: rgba(0, 0, 255, 0.2);
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding-bottom: 14px;
+  padding-bottom: 0.875rem;
 }
 
 /*************************** Button Component Styles ****************************/
@@ -8835,6 +8845,11 @@ header form + a:hover .icon-cart {
 /* line 107, src/sass/sections/_booking.scss */
 .booking .container .tab-content .tab-pane {
   background-color: rgba(0, 0, 255, 0.1);
+}
+
+/* line 111, src/sass/sections/_booking.scss */
+.booking .container .tab-content .tab-pane [class*="col"] {
+  border: 1px solid red;
 }
 
 /*# sourceMappingURL=style.css.map */

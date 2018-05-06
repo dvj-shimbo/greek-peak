@@ -4304,44 +4304,50 @@ i, em {
 /* line 11, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation {
   background-color: rgba(255, 0, 0, 0.2);
-  color: rgba(255, 0, 255, 0.8);
-}
+  color: rgba(255, 0, 0, 0.8);
+  /*
+		h4 {
+			background-color: rgba(0,0,255,0.2);
 
-/* line 17, src/sass/components/_book-accommodation-form.scss */
-form.book-accommodation h4 {
-  background-color: rgba(0, 0, 255, 0.2);
-  position: relative;
-  font-family: "Open-Sans-Semibold", sans-serif;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-size: 1rem;
-  padding-bottom: 14px;
-  padding-bottom: 0.875rem;
-}
+			position: relative;
 
-/* line 29, src/sass/components/_book-accommodation-form.scss */
-form.book-accommodation h4:after {
-  content: "AAA";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 4px;
-  background-color: rgba(255, 0, 255, 0.8);
-}
+			font-family: "Open-Sans-Semibold", sans-serif;
+			text-transform: uppercase;
 
-/* line 45, src/sass/components/_book-accommodation-form.scss */
-form.book-accommodation a {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 16px;
-  font-size: 1rem;
-  color: rgba(255, 0, 255, 0.8);
-}
+			@include rem(font-size, 16px);
 
-/* line 53, src/sass/components/_book-accommodation-form.scss */
-form.book-accommodation a:hover {
-  color: rgba(77, 255, 77, 0.5);
+			@include rem(padding-bottom, 14px);
+
+			&:after {
+				content: "AAA";
+				position: absolute;
+
+				
+				left: 0;
+				right: 0;
+
+				bottom: 0;
+				height: 4px;
+
+				background-color: $white;
+			}
+
+		}
+
+		a {
+
+			text-transform: uppercase;
+			text-decoration: none;
+			@include rem(font-size, 16px);
+
+			color: $white;
+
+			&:hover {
+				color: lighten($blue, 15%);
+			}
+
+		}
+*/
 }
 
 /*************************** Button Component Styles ****************************/
@@ -4355,7 +4361,7 @@ form.book-accommodation a:hover {
   font-family: "Open-Sans-Semibold", sans-serif;
   font-size: 12px;
   font-size: 0.75rem;
-  color: rgba(255, 0, 255, 0.8);
+  color: rgba(255, 0, 0, 0.8);
   position: relative;
   z-index: 0;
   padding: 15px 0;
@@ -4443,13 +4449,13 @@ header ul li {
 
 /* line 44, src/sass/_header.scss */
 header ul:first-child li {
-  color: rgba(255, 0, 255, 0.8);
+  color: rgba(255, 0, 0, 0.8);
   text-align: left;
 }
 
 /* line 47, src/sass/_header.scss */
 header ul:first-child li a {
-  color: rgba(255, 0, 255, 0.8);
+  color: rgba(255, 0, 0, 0.8);
   text-decoration: none;
 }
 
@@ -5111,7 +5117,7 @@ header form + a:hover .icon-cart {
   }
   /* line 566, src/sass/_header.scss */
   header ul:last-child {
-    background-color: rgba(255, 0, 255, 0.8);
+    background-color: rgba(255, 0, 0, 0.8);
     top: 96px;
     top: 6rem;
     left: 0;
@@ -5147,7 +5153,7 @@ header form + a:hover .icon-cart {
 @media screen and (max-width: 1247px) {
   /* line 3, src/sass/_header.scss */
   header {
-    background-color: rgba(255, 0, 255, 0.8);
+    background-color: rgba(255, 0, 0, 0.8);
     height: 48px;
     height: 3rem;
     /*
@@ -5254,7 +5260,7 @@ header form + a:hover .icon-cart {
   header form input {
     color: #1d2124;
     border-bottom: 1px solid #1d2124;
-    background-color: rgba(255, 0, 255, 0.8);
+    background-color: rgba(255, 0, 0, 0.8);
   }
   /* line 700, src/sass/_header.scss */
   header form + a {
@@ -5355,19 +5361,19 @@ header form + a:hover .icon-cart {
   }
   /* line 777, src/sass/_header.scss */
   header [class*="icon-"] {
-    color: rgba(255, 0, 255, 0.8);
+    color: rgba(255, 0, 0, 0.8);
     font-size: 18px;
     font-size: 1.125rem;
   }
   /* line 782, src/sass/_header.scss */
   header form:after {
-    color: rgba(255, 0, 255, 0.8);
+    color: rgba(255, 0, 0, 0.8);
   }
   /* line 785, src/sass/_header.scss */
   header form input {
-    border-bottom: 1px solid rgba(255, 0, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 0, 0, 0.8);
     background-color: #00303c;
-    color: rgba(255, 0, 255, 0.8);
+    color: rgba(255, 0, 0, 0.8);
   }
   /* line 791, src/sass/_header.scss */
   header form + a {
@@ -6192,7 +6198,7 @@ header form + a:hover .icon-cart {
   text-transform: uppercase;
   max-width: 650px;
   max-width: 40.625rem;
-  color: rgba(255, 0, 255, 0.8);
+  color: rgba(255, 0, 0, 0.8);
   margin-left: 2%;
   margin-right: 2%;
   /*
@@ -6877,7 +6883,7 @@ header form + a:hover .icon-cart {
   font-family: "Open-Sans-Semibold", sans-serif;
   max-width: 650px;
   max-width: 40.625rem;
-  color: rgba(255, 0, 255, 0.8);
+  color: rgba(255, 0, 0, 0.8);
   margin-left: 2%;
   margin-right: 2%;
 }
@@ -8206,7 +8212,7 @@ header form + a:hover .icon-cart {
   left: 5%;
   font-weight: bold;
   text-transform: uppercase;
-  color: rgba(255, 0, 255, 0.8);
+  color: rgba(255, 0, 0, 0.8);
   z-index: 1;
 }
 
@@ -8752,28 +8758,83 @@ header form + a:hover .icon-cart {
 /* line 3, src/sass/sections/_booking.scss */
 .booking {
   background-color: rgba(0, 255, 0, 0.5);
-  /*
-	.container {
-		border: 1px solid blue;
+}
 
-		max-width: 1000px;
+/* line 8, src/sass/sections/_booking.scss */
+.booking .container {
+  background-color: rgba(255, 0, 0, 0.1);
+  max-width: 1000px;
+  padding-top: 34px;
+  padding-top: 2.125rem;
+  padding-bottom: 34px;
+  padding-bottom: 2.125rem;
+}
 
-		padding: 32px 5%;
+/* line 24, src/sass/sections/_booking.scss */
+.booking .container .nav.nav-tabs {
+  background-color: rgba(255, 0, 0, 0.1);
+  border: 0;
+}
 
-//		padding-top: 32px;
+/* line 30, src/sass/sections/_booking.scss */
+.booking .container .nav.nav-tabs .nav-link {
+  position: relative;
+  background-color: transparent;
+  color: rgba(255, 0, 0, 0.8);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0;
+  padding: 0 0 15px;
+  padding: 0 0 0.9375rem;
+  font-size: 16px;
+  font-size: 1rem;
+}
 
+/* line 54, src/sass/sections/_booking.scss */
+.booking .container .nav.nav-tabs .nav-link h4 {
+  font-family: "Open-Sans-Semibold", sans-serif;
+}
 
+/* line 63, src/sass/sections/_booking.scss */
+.booking .container .nav.nav-tabs .nav-link.active:after, .booking .container .nav.nav-tabs .nav-link:not(.active):hover:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 5px;
+}
 
+/* line 78, src/sass/sections/_booking.scss */
+.booking .container .nav.nav-tabs .nav-link.active {
+  cursor: default;
+}
 
+/* line 81, src/sass/sections/_booking.scss */
+.booking .container .nav.nav-tabs .nav-link.active:after {
+  background-color: rgba(255, 0, 0, 0.8);
+}
 
-		[class*="col"] {
-			border: 1px solid red;
-		}
+/* line 87, src/sass/sections/_booking.scss */
+.booking .container .nav.nav-tabs .nav-link:not(.active):hover {
+  color: rgba(230, 255, 230, 0.5);
+}
 
+/* line 89, src/sass/sections/_booking.scss */
+.booking .container .nav.nav-tabs .nav-link:not(.active):hover:after {
+  background-color: rgba(230, 255, 230, 0.5);
+}
 
+/* line 102, src/sass/sections/_booking.scss */
+.booking .container .tab-content {
+  background-color: rgba(255, 255, 0, 0.2);
+  padding-top: 34px;
+  padding-top: 2.125rem;
+}
 
-	}
-*/
+/* line 107, src/sass/sections/_booking.scss */
+.booking .container .tab-content .tab-pane {
+  background-color: rgba(0, 0, 255, 0.1);
 }
 
 /*# sourceMappingURL=style.css.map */

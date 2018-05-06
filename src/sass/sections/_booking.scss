@@ -4,28 +4,127 @@
 
 	background-color: $blue;
 
-/*
+
 	.container {
-		border: 1px solid blue;
+//		border: 1px solid blue;
+
+		background-color: rgba(255,0,0,0.1);
 
 		max-width: 1000px;
 
-		padding: 32px 5%;
+//		padding: 32px 5%;
 
 //		padding-top: 32px;
+//		padding-bottom: 32px;
+
+		@include rem(padding-top, 34px);
+		@include rem(padding-bottom, 34px);
+
+		.nav {
+			&.nav-tabs {
+
+				background-color: rgba(255,0,0,0.1);
+
+				border: 0;
+
+				.nav-link {
+		
+					position: relative;
+		
+					background-color: transparent;
+		//			background-color: rgba(0,0,255,0.2);
+		
+					color: $white;
+		
+					text-decoration: none;
+					text-transform: uppercase;
+
+					
+		
+					
+		
+					border: 0;
+		
+		//			padding: 0 0 20px;
+					@include rem(padding, 0 0 15px);
+		
+		
+					@include rem(font-size, 16px);
+
+					h4 {
+						font-family: "Open-Sans-Semibold", sans-serif;
+					}
+		
+					&.active,
+					&:not(.active):hover {
+		
+						
+		
+						&:after {
+							content: "";
+							position: absolute;
+							
+							left: 0;
+							right: 0;
+			
+							bottom: 0;
+							height: 5px;
+			
+		//					background-color: $white;
+						}
+		
+					}
+		
+					&.active {
+		//				font-family: "Open-Sans-Semibold", sans-serif;
+						cursor: default;
+						&:after {
+							background-color: $white;
+						}
+					}
+		
+					&:not(.active) {
+						&:hover {
+							color: lighten($blue, 45%);
+							&:after {
+								background-color: lighten($blue, 45%);
+							}
+						}
+					}
+		
+				}
 
 
-
-
-
-		[class*="col"] {
-			border: 1px solid red;
+			}
 		}
+
+
+		.tab-content {
+			background-color: rgba(255,255,0,0.2);
+
+			@include rem(padding-top, 34px);
+
+			.tab-pane {
+				background-color: rgba(0,0,255,0.1);
+			}
+
+		}
+		
+
+
+
+
+
+
+
+//		[class*="col"] {
+//			border: 1px solid red;
+//		}
 
 
 
 	}
-*/
+
 	
 
 

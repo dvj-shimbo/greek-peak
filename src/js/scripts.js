@@ -18,6 +18,43 @@ $(window).on("load", function() {
 	$("<div class=\"device-desktop\"></div>").appendTo("body");
 	$("<div class=\"device-desktop-wide\"></div>").appendTo("body");
 
+	var headerMouseOver = false;
+
+	$("header").mouseover(function() {
+		headerMouseOver = true;
+	});
+
+	$("header").mouseout(function() {
+		headerMouseOver = false;
+	});
+
+	$(document).click(function() {
+		
+/*
+		if (!isBreakpoint("desktop-wide")) {
+			if ($("header").hasClass("menu-displayed")) {
+				if (!headerMouseOver) {
+					$("header ul:last-child li.selected").removeClass("selected");
+					$("header").removeClass("menu-displayed");
+				}
+			}
+		}
+*/
+
+		
+		if ($("header").hasClass("menu-displayed")) {
+			if (!headerMouseOver) {
+				$("header ul:last-child li.selected").removeClass("selected");
+				$("header").removeClass("menu-displayed");
+			}
+		}
+		
+
+
+	});
+
+
+
 	$("header").click(function(e) {
 		if (!isBreakpoint("desktop-wide")) {
 			var posX = e.pageX;

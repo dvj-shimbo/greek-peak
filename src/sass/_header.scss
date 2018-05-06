@@ -12,12 +12,29 @@ header {
 	&:after {
 		position: absolute;
 	}
+
+//	z-index: 10000;
+
+/*	
 	&.menu-displayed {
 		& ~ * {
 			position: relative;
 			z-index: -1;
 		}
 	}
+*/
+
+/*
+	& ~ * {
+		position: relative;
+		z-index: -1;
+	}
+*/
+
+
+
+
+
 	ul {
 		@include rem(font-size, 12px);
 		li {
@@ -30,7 +47,6 @@ header {
 				a {
 					color: $white;
 					text-decoration: none;
-	
 					&:hover {
 						color: lighten($dark-blue, 75%);
 					}
@@ -83,7 +99,7 @@ header {
 									width: 100%;
 									height: 100%;
 								}
-								& [class*="align-"] {
+								[class*="align-"] {
 									h5 {
 										margin-top: 0;
 									}
@@ -101,6 +117,14 @@ header {
 									}
 								}
 								p {
+
+									cursor: default;
+
+
+//									background-color: red;
+
+
+
 									font-family: "Open-Sans-Light", sans-serif;
 									color: $font-color;
 									text-transform: none;
@@ -111,10 +135,16 @@ header {
 										font-weight: normal;
 									}
 									a {
+
+//										background-color: blue;
+
 										color: $font-color;
 										text-decoration: none;
 										&:hover {
-											color: lighten($font-color, 15%);
+
+//											color: lighten($font-color, 15%);
+											color: darken($blue, 15%);
+
 										}
 									}
 								}
@@ -172,7 +202,6 @@ header {
 		}
 		&:hover {
 			cursor: pointer;
-
 			&:after {
 				opacity: 0.75;
 			}
@@ -196,7 +225,6 @@ header {
 			@include media('>=1280px', '<1290px') {
 				@include rem(width, 230px);
 			}
-
 			@include media('>=1270px', '<1280px') {
 				@include rem(width, 225px);
 			}
@@ -237,8 +265,8 @@ header {
 		}
 		&:not(.displayed) {
 
-			& input,
-			& button {
+			input,
+			button {
 				display: none;
 			}
 		}
@@ -269,7 +297,6 @@ header {
 	@include media('screen', '<tablet') {
 		&:not(.menu-displayed) {
 			ul {
-
 				& ~ .button {
 					display: none;
 				}
@@ -317,7 +344,6 @@ header {
 			}
 			&:last-child {
 				@include rem(top, 254px);
-	
 				.container-fluid {
 					@include rem(top, -206px);
 					@include rem(min-height, 520px);
@@ -327,6 +353,16 @@ header {
 	}//<--------------------------------------------------------------------- @include media('>=tablet', '<tablet-wide')
 	
 	@include media('screen', '<tablet-wide') {
+
+
+//		&.menu-displayed {
+//			& ~ * {
+//				position: relative;
+//				z-index: -1;
+//			}
+//		}
+
+
 		&.menu-displayed {
 			&:before,
 			&:after {
@@ -345,16 +381,30 @@ header {
 				background-color: #f7f7f7;
 				@include rem(width, 260px);
 			}
+
+/*
+			& ~ * {
+				position: relative;
+				z-index: -1;
+			}
+*/
+
+
 		}
 		&:not(.menu-displayed) {
 			&:before {
-	
 				position: absolute;
+
+
 				@include linear-gradient(rgba(51,51,51,0.15), rgba(51,51,51,0));
+//				@include linear-gradient(red, yellow);
+
 				@include rem(top, 48px);
 				@include rem(height, 4px);
 				width: 100%;
 				left: 0;
+
+				z-index: 1;
 			}
 		}
 		ul {
@@ -371,7 +421,7 @@ header {
 						.container {
 							@include rem(margin-top, 8px);
 							.row {
-								& [class*="align-"] {
+								[class*="align-"] {
 									h5 {
 										margin-bottom: 0;
 									}
@@ -403,12 +453,18 @@ header {
 	@include media('screen', '>=tablet-wide') {
 		&:before {
 			position: absolute;
+
 			@include linear-gradient(rgba(51,51,51,0.15), rgba(51,51,51,0));
+//			@include linear-gradient(red, yellow);
+
 			@include rem(top, 48px);
 			@include rem(height, 4px);
 			width: 100%;
 			left: 0;
+			z-index: 1;
 		}
+
+
 		ul {
 	
 			&:first-child {
@@ -439,7 +495,10 @@ header {
 						}
 						&:after {
 							@include rem(height, 4px);
+
 							@include linear-gradient(rgba(239,239,239,1), rgba(239,239,239,0));
+//							@include linear-gradient(red, yellow);
+
 						}
 						.container {
 							.row {
@@ -513,7 +572,11 @@ header {
 					content: "";
 					display: block;
 					position: absolute;
+
 					@include linear-gradient(rgba(51,51,51,0.15), rgba(51,51,51,0));
+//					@include linear-gradient(red, yellow);
+
+
 					@include rem(height, 4px);
 					width: 100%;
 					left: 0;
@@ -531,15 +594,37 @@ header {
 	}//<--------------------------------------------------------------------- @include media('>=tablet-wide', '<desktop-wide')
 	
 	@include media('screen', '<desktop-wide') {
-
 		background-color: $white;
 		@include rem(height, 48px);
+
+/*
 		&.menu-displayed {
+			& ~ * {
+				position: relative;
+				z-index: -1;
+			}
+		}
+*/
+
+
+
+		&.menu-displayed {
+
+
+
+			& ~ * {
+				position: relative;
+				z-index: -1;
+			}
+
+
+
+
 			ul {
 				&:first-child {
 					pointer-events: none;
 					cursor: pointer;
-					& * {
+					* {
 						pointer-events: auto;
 					}
 
@@ -563,7 +648,7 @@ header {
 		&:not(.menu-displayed) {
 			pointer-events: none;
 			cursor: pointer;
-			& * {
+			* {
 				pointer-events: auto;
 			}
 			&:after {
@@ -637,11 +722,17 @@ header {
 			@include rem(height, 48px);
 			left: 0;
 		}
+
 		&:before {
 			position: absolute;
 			@include rem(top, 120px);
-			z-index: 0;
+
+//			z-index: 0;
+			z-index: 1;
+
 		}
+
+
 		ul {
 			float: left;
 			text-align: left;

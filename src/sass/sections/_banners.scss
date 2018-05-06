@@ -1,4 +1,5 @@
 /*************************** Banners Section Styles ****************************/
+
 @mixin banners-padding ($media-min, $media-max, $padding-min, $padding-max) {
 	$d: ($padding-max - $padding-min) / 1px;
 	@for $i from 0 through $d {
@@ -23,42 +24,68 @@
 		@include media('>=' + round($min), '<' + round($max)) {
 			$font-size: $i + $font-size-min;
 			@include rem(font-size, $font-size);
-			font-size: $font-size-vw;	
+
+//			font-size: $font-size-vw;
+
+			@if $font-size-vw != -1 {
+				font-size: $font-size-vw;	
+			}	
+
 		}
 	}
 }
 
 .banners {
-	@include media('screen', '<320px') {
-		@include rem(padding-top, 20px);
-		@include rem(padding-bottom, 20px);
+
+
+//	@include media('screen', '<320px') {
+//		@include rem(padding-top, 20px);
+//		@include rem(padding-bottom, 20px);
+//	}
+//	@include banners-padding (320px, 992px, 21px, 65px);
+
+
+
+	@include media('screen', '<420px') {
+		@include rem(padding-top, 7px);
+		@include rem(padding-bottom, 7px);
 	}
-	@include banners-padding (320px, 992px, 21px, 65px);
+	@include banners-padding (420px, 992px, 7px, 51px);
+
+
 	@include banners-padding (992px, 1248px, 52px, 64px);
 	@include media('screen', '>=1248px') {
 		@include rem(padding-top, 65px);
 		@include rem(padding-bottom, 65px);
 	}
-	& .row {
+	.row {
 		padding: 0 7px;
-		& [class*="col"] {
+		[class*="col"] {
 			padding: 7px;
 			&:after {
 				content: "";
 				position: absolute;
-				top: 50%;
+
+//				top: 50%;
+				top: 40%;
+
+
 				@include rem(right, 7px);
 				@include rem(bottom, 7px);
 				@include rem(left, 7px);
-				@include linear-gradient(rgba(0,0,2055,0), rgba(0,0,0,0.75));
+				@include linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.75));
 			}
-			& img {
+			img {
 				width: 100%;
 				vertical-align: top;
 			}
-			& h2 {
+			h2 {
 				position: absolute;
-				top: 64%;
+
+//				top: 64%;
+				top: 61%;
+
+
 				left: 5%;
 				font-weight: bold;
 				text-transform: uppercase;
@@ -74,7 +101,7 @@
 					@include rem(font-size, 33px);
 				}
 			}
-			& h2 + a {
+			h2 + a {
 				position: absolute;
 				left: 5%;
 				bottom: 6.5%;
@@ -89,14 +116,20 @@
 					color: lighten($blue, 15%);
 				}
 				@include media('screen', '<320px') {
-					@include rem(font-size, 8px);
-					font-size: 2.8vw;
+					@include rem(font-size, 10px);
+
+//					font-size: 2.8vw;
+
 				}
-				@include banners-font-size (320px, 992px, 9px, 30px, 2.8vw);
-				@include banners-font-size (992px, 1300px, 14px, 19px, 1.5vw);
+
+//				@include banners-font-size (320px, 992px, 9px, 30px, 2.8vw);
+
+				@include banners-font-size (320px, 992px, 11px, 19px, -1);
+
+//				@include banners-font-size (992px, 1300px, 14px, 19px, 1.5vw);
 
 				@include media('screen', '>=1300px') {
-					@include rem(font-size, 20px);
+					@include rem(font-size, 18px);
 				}
 			}
 		}

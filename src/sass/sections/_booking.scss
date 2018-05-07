@@ -115,18 +115,72 @@
 //			@include rem(padding-top, 37px);
 			@include rem(padding-top, 20px);
 
-//			.tab-pane {
-//
-//				background-color: rgba(0,0,255,0.1);
-//
-//
-////				[class*="col"] {
-////					border: 1px solid red;
-////				}
-//
-//
-//
-//			}
+			.tab-pane {
+
+//				background-color: rgba(0,0,255,0.2);
+
+//				[class*="col"] {
+//					border: 1px solid red;
+//				}
+				
+				form {
+					&.book-accommodation {
+
+						label {
+
+							@include rem(padding, 16px 0 13px);
+
+						}
+
+						.input-wrapper,
+						.select-wrapper {
+
+							background-color: rgba(255,255,255,0.2);
+
+							&:after {
+								@include rem(padding, 20px 0 0 14px);
+							}
+						}
+
+						.input-wrapper {
+
+							&:before {
+								@include rem(padding, 9px 0 0 3px);
+							}
+
+
+							input {
+								&[type="text"] {
+									@include rem(padding, 15px 80px 15px 15px);
+								}
+							}
+						}
+
+						.select-wrapper {
+							select {
+								@include rem(padding, 15px 20px 15px 15px);
+							}
+						}
+
+						input[type="submit"] {
+
+							color: $blue;
+							background-color: $white;
+
+							@include rem(padding, 15px 0);
+							@include rem(margin-top, 42px);
+
+							&:hover {
+								background-color: lighten($blue, 45%);
+								color: darken($blue, 15%);
+							}
+						}
+
+					}
+				}
+
+
+			}
 
 		}
 		

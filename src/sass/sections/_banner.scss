@@ -32,7 +32,7 @@
 
 
 
-
+/*
 @mixin banner-padding-bottom ($media-min, $media-max, $padding-bottom-min, $padding-bottom-max) {
 
 	$d: ($padding-bottom-max - $padding-bottom-min) / 1px;
@@ -51,6 +51,30 @@
 		}
 	}
 }
+*/
+
+
+@mixin banner-margin-bottom ($media-min, $media-max, $margin-bottom-min, $margin-bottom-max) {
+
+	$d: ($margin-bottom-max - $margin-bottom-min) / 1px;
+
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+
+		@include media('>=' + round($min), '<' + round($max)) {
+
+			$margin-bottom: $i + $margin-bottom-min;
+
+			@include rem(margin-bottom, $margin-bottom);
+
+		}
+	}
+}
+
+
+
 
 
 
@@ -97,7 +121,7 @@
 	}
 }
 
-
+/*
 @mixin banner-bottom ($media-min, $media-max, $bottom-min, $bottom-max) {
 
 	$d: ($bottom-max - $bottom-min) / 1px;
@@ -116,6 +140,8 @@
 		}
 	}
 }
+*/
+
 
 
 
@@ -156,7 +182,8 @@
 
 
 //		@include linear-gradient(rgba(51,51,51,0), rgba(51,51,51,0.85));
-		@include linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.75));
+		@include linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.75)); // <---------------------------------------------------RESTORE IT
+
 
 //		top: 50%;
 
@@ -187,7 +214,7 @@
 		z-index: 1;
 
 //		border: 1px solid blue;
-//		background-color: rgba(0,0,255,0.1);
+//		background-color: rgba(255,255,0,0.3);
 
 		position: absolute;
 //		top: 0;
@@ -207,6 +234,7 @@
 
 //		padding-bottom: 72px;
 
+/*
 		@include media('screen', '<320px') {
 			@include rem(padding-bottom, 26px);
 		}
@@ -217,7 +245,7 @@
 		@include media('screen', '>=992px') {
 			@include rem(padding-bottom, 72px);
 		}
-
+*/
 
 //		display: inline-block;
 //		vertical-align: bottom;
@@ -263,6 +291,7 @@
 			}
 */
 
+/*
 			@include media('screen', '<320px') {
 				@include rem(padding-bottom, 6px);
 			}
@@ -272,6 +301,17 @@
 			@include media('screen', '>=992px') {
 				@include rem(padding-bottom, 16px);
 			}
+*/
+			@include media('screen', '<320px') {
+				@include rem(margin-bottom, 7px);
+			}
+
+			@include banner-margin-bottom (320px, 992px, 8px, 15px);
+
+			@include media('screen', '>=992px') {
+				@include rem(margin-bottom, 16px);
+			}
+
 
 
 //			font-size: 4.55vw;
@@ -360,75 +400,214 @@
 			@include media('screen', '>=640px') {
 				@include rem(font-size, 16px);
 			}
+
+
+/*
+
+			@include media('screen', '<320px') {
+				@include rem(padding-bottom, 26px);
+			}
 	
+//			@include banner-padding-bottom (320px, 1300px, 32px, 72px);
+			@include banner-padding-bottom (320px, 992px, 27px, 71px);
+	
+			@include media('screen', '>=992px') {
+				@include rem(padding-bottom, 72px);
+			}
+*/
+
+
+			@include media('screen', '<320px') {
+				@include rem(margin-bottom, 7px);
+			}
+	
+//			@include banner-padding-bottom (320px, 1300px, 32px, 72px);
+			@include banner-margin-bottom (320px, 992px, 8px, 12px);
+	
+
+			@include media('screen', '>=992px') {
+				@include rem(margin-bottom, 12px);
+			}
+
+
+//			@include rem(margin-bottom, 12px);
+//			@include rem(margin-bottom, 8px);
+
 	
 		}
 
-		a:last-child {
-//		h1 + a,
-//		h4 + a {
-
-//			background-color: rgba(255,0,0,0.2);
-
-			position: absolute;
-
-
-			margin-left: 2%;
-			margin-right: 2%;
-
-//			bottom: 38px;
 
 
 
 
 
-			font-family: "Open-Sans-Semibold", sans-serif;
-			font-style: italic;
-			text-transform: uppercase;
-			text-decoration: none;
 
-			color: $blue;
-//			color: rgba(255,255,0,0.8);
+		form {
+			&.book-accommodation {
 
-			&:hover {
-				color: lighten($blue, 15%);
+//				background-color: rgba(255,0,0,0.3);
+				background-color: rgba(0,0,0,0.55);
+
+//				[class*="col"] {
+//					border: 1px solid red;
+//				}
+
+//				margin-bottom: 32px;
+				@include rem(margin-bottom, 32px);
+
+//				max-width: 840px;
+				@include rem(max-width, 960px);
+
+				margin-left: 2%;
+				margin-right: 2%;
+
+				@include border-radius(3px);
+
+				@include rem(padding, 0 7px 7px);
+
+
+
+				label {
+
+					@include rem(padding, 14px 0 12px);
+
+				}
+
+
+				.input-wrapper,
+				.select-wrapper {
+					&:after {
+						@include rem(padding, 16px 0 0 14px);
+					}
+				}
+
+				.input-wrapper {
+
+					&:before {
+						@include rem(padding, 5px 0 0 3px);
+					}
+
+					input {
+						&[type="text"] {
+							@include rem(padding, 12px 80px 12px 12px);
+						}
+					}
+				}
+
+				.select-wrapper {
+					select {
+						@include rem(padding, 12px 20px 12px 12px);
+					}
+				}
+
+				input[type="submit"] {
+
+					color: $white;
+					background-color: $blue;
+
+					@include rem(padding, 12px 0);
+					@include rem(margin-top, 39px);
+
+					&:hover {
+						background-color: lighten($blue, 15%);
+						color: darken($blue, 15%);
+					}
+
+				}
+
+
+
 			}
+		}
 
 
-//			font-size: 19px;
-//			font-size: 1.38vw;
 
 
-//			bottom: 38px;
 
-			@include media('screen', '<320px') {
-				@include rem(bottom, 9px);
+
+
+
+
+
+
+//		a:last-child {
+		a {
+			&:last-child {
+//			h1 + a,
+//			h4 + a {
+	
+//				background-color: rgba(255,0,0,0.2);
+	
+//				position: absolute;
+				display: block;
+	
+	
+				margin-left: 2%;
+				margin-right: 2%;
+	
+//				bottom: 38px;
+	
+	
+	
+	
+	
+				font-family: "Open-Sans-Semibold", sans-serif;
+				font-style: italic;
+				text-transform: uppercase;
+				text-decoration: none;
+	
+				color: $blue;
+//				color: rgba(255,255,0,0.8);
+	
+				&:hover {
+					color: lighten($blue, 15%);
+				}
+	
+	
+//				font-size: 19px;
+//				font-size: 1.38vw;
+	
+/*	
+//				bottom: 38px;
+	
+				@include media('screen', '<320px') {
+					@include rem(bottom, 9px);
+				}
+	
+//				@include banner-bottom (320px, 1300px, 12px, 38px);
+				@include banner-bottom (320px, 992px, 10px, 39px);
+	
+				@include media('screen', '>=992px') {
+					@include rem(bottom, 40px);
+				}
+*/	
+				
+				@include media('screen', '<320px') {
+					@include rem(margin-bottom, 11px);
+				}
+	
+//				@include banner-bottom (320px, 1300px, 12px, 38px);
+				@include banner-margin-bottom (320px, 992px, 12px, 39px);
+	
+				@include media('screen', '>=992px') {
+					@include rem(margin-bottom, 40px);
+				}
+	
+	
+				@include media('screen', '<320px') {
+					@include rem(font-size, 10px);
+				}
+				
+//				@include banner-font-size (320px, 1300px, 9px, 19px);
+	
+				@include banner-font-size (320px, 992px, 11px, 19px);
+//				@include banner-font-size (992px, 1300px, 14px, 19px);
+	
+				@include media('screen', '>=992px') {
+					@include rem(font-size, 20px);
+				}
+	
 			}
-
-//			@include banner-bottom (320px, 1300px, 12px, 38px);
-			@include banner-bottom (320px, 992px, 10px, 39px);
-
-			@include media('screen', '>=992px') {
-				@include rem(bottom, 40px);
-			}
-
-			
-
-
-
-			@include media('screen', '<320px') {
-				@include rem(font-size, 10px);
-			}
-			
-//			@include banner-font-size (320px, 1300px, 9px, 19px);
-
-			@include banner-font-size (320px, 992px, 11px, 19px);
-//			@include banner-font-size (992px, 1300px, 14px, 19px);
-
-			@include media('screen', '>=992px') {
-				@include rem(font-size, 20px);
-			}
-
 		}
 
 	}

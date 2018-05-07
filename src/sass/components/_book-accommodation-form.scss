@@ -10,7 +10,9 @@ form {
 
 	&.book-accommodation {
 
-		background-color: rgba(255,0,0,0.2);
+		cursor: default;
+
+//		background-color: rgba(255,0,0,0.2);
 
 		color: $white;
 //		color: rgba(255,255,0,0.9);
@@ -26,43 +28,142 @@ form {
 
 		}
 
-
-		.input-wrapper {
+		.input-wrapper,
+		.select-wrapper {
 
 			position: relative;
+			background-color: rgba(255,255,255,0.2);
+			border: 1px solid rgba(255,255,255,0.3);
+			@include border-radius(3px);
+			cursor: pointer;
+
+
+
+
+			&:hover {
+				&:before,
+				&:after {
+					color: lighten($blue, 45%);
+				}
+			}
 
 			&:before,
 			&:after {
 				position: absolute;
 				font-family: "icons";
-			}
+				top: 0;
+				bottom: 0;	
 
-			&:before {
-				@include rem(top, 9px);
-				@include rem(right, 40px);
-				@include rem(font-size, 31px);
-				content: "\f101";
 			}
 
 			&:after {
-				@include rem(top, 21px);
-				@include rem(right, 13px);
+
+//				background-color: rgba(255,0,255,0.3);
+
+//				@include rem(top, 21px);
+//				@include rem(right, 13px);
+				right: 0;
+				@include rem(width, 40px);
+				@include rem(padding, 20px 0 0 14px);
+
+				@include rem(font-size, 9px);
+				content: "\f103";
+
+				
+			}
+
+		}
+
+
+		.input-wrapper {
+
+//			background-color: rgba(255,0,0,0.3);
+
+/*
+			position: relative;
+			background-color: rgba(255,255,255,0.2);
+			border: 1px solid rgba(255,255,255,0.3);
+			@include border-radius(3px);
+			cursor: pointer;
+
+
+			&:hover {
+				&:before,
+				&:after {
+					color: lighten($blue, 45%);
+				}
+			}
+
+
+			&:before,
+			&:after {
+				position: absolute;
+				font-family: "icons";
+
+				top: 0;
+				bottom: 0;
+
+//				&:hover {
+//					color: lighten($blue, 45%);
+//				}
+				
+
+			}
+*/
+
+			&:before {
+				
+//				background-color: rgba(255,255,0,0.3);
+
+//				@include rem(top, 9px);
+//				@include rem(right, 40px);
+
+				@include rem(right, 40px);
+				@include rem(width, 34px);
+				@include rem(padding, 9px 0 0 3px);
+
+				@include rem(font-size, 31px);
+
+//				top: 0;
+//				bottom: 0;
+//				padding-top: 10px;
+
+
+
+				content: "\f101";
+			}
+
+/*
+			&:after {
+
+//				background-color: rgba(255,0,255,0.3);
+
+//				@include rem(top, 21px);
+//				@include rem(right, 13px);
+				right: 0;
+				@include rem(width, 40px);
+				@include rem(padding, 20px 0 0 14px);
+
 				@include rem(font-size, 9px);
 				content: "\f103";
 			}
+*/
 
 			input {
 	
 				&[type="text"] {
 
+//					background-color: transparent;
+//					border: 0;
 
+/*
 					background-color: rgba(255,255,255,0.2);
-
 //					border: 1px solid red;
-
 					border: 1px solid rgba(255,255,255,0.3);
-
 					@include border-radius(3px);
+*/
+
+					cursor: pointer;
 
 					color: $white;
 
@@ -73,7 +174,7 @@ form {
 
 					@include rem(font-size, 14px);
 
-					cursor: default;
+//					cursor: default;
 
 					&::-webkit-input-placeholder {
 						color: $white;
@@ -103,58 +204,85 @@ form {
 						font-style: italic;
 					}
 
+
 				}
 	
 			}
 
 		}
 
+		.select-wrapper {
 
+			select {
 
+//				background-color: rgba(0,0,255,0.2);
 
-/*
-		h4 {
-			background-color: rgba(0,0,255,0.2);
+				position: relative;
 
-			position: relative;
+				z-index: 1;
 
-			font-family: "Open-Sans-Semibold", sans-serif;
-			text-transform: uppercase;
+				color: $white;
+				width: 100%;
 
-			@include rem(font-size, 16px);
-
-			@include rem(padding-bottom, 14px);
-
-			&:after {
-				content: "AAA";
-				position: absolute;
+				cursor: pointer;
 
 				
-				left: 0;
-				right: 0;
 
-				bottom: 0;
-				height: 4px;
+				@include rem(padding, 15px 20px 15px 15px);
 
-				background-color: $white;
+				@include rem(font-size, 14px);
+
+				
+
 			}
+
 
 		}
 
-		a {
+		input[type="submit"] {
+//			
+
+			cursor: pointer;
 
 			text-transform: uppercase;
 			text-decoration: none;
-			@include rem(font-size, 16px);
+			text-align: center;
+			
 
-			color: $white;
+			font-family: "Open-Sans-Semibold", sans-serif;
+
+			@include rem(font-size, 14px);
+
+			color: $blue;
+
+			background-color: $white;
+
+			border: 0;
+
+			@include rem(padding, 15px 0);
+
+			@include rem(margin-top, 26px);
+
+
+
+			width: 100%;
+
+			@include border-radius(3px);
+			@include transition(all 0.25s ease-in-out);
 
 			&:hover {
-				color: lighten($blue, 15%);
+
+				background-color: lighten($blue, 45%);
+				color: darken($blue, 15%);
+
 			}
 
+
+
+
+
 		}
-*/
+
 
 	}
 

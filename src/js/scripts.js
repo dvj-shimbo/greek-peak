@@ -104,6 +104,10 @@ $(window).on("load", function() {
 	
 	$('.book-accommodation input[type="text"]').datepicker();
 
+	$(".book-accommodation .input-wrapper").click(function() {
+		console.log("AAA");
+		$('.book-accommodation input[type="text"]').datepicker("show");
+	});
 
 
 
@@ -111,6 +115,10 @@ $(window).on("load", function() {
 
 
 
+
+
+
+/*
 	function redraw() {
 //		console.log("REDRAW");
 //		console.log(isBreakpoint("desktop-wide"));
@@ -123,7 +131,7 @@ $(window).on("load", function() {
 	});
 
 	redraw();
-
+*/
 	
 
 

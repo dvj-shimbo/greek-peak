@@ -6631,57 +6631,104 @@ i, em {
   display: none;
 }
 
+/* line 142, src/sass/common/_base.scss */
+:focus {
+  outline: none !important;
+}
+
+/* line 143, src/sass/common/_base.scss */
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+/* line 144, src/sass/common/_base.scss */
+:focus::-moz-placeholder {
+  color: transparent;
+}
+
+/* line 145, src/sass/common/_base.scss */
+:focus:-moz-placeholder {
+  color: transparent;
+}
+
+/* line 146, src/sass/common/_base.scss */
+:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+/* line 149, src/sass/common/_base.scss */
+select {
+  background-color: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+/* line 157, src/sass/common/_base.scss */
+select::-ms-expand {
+  display: none;
+}
+
+/* line 163, src/sass/common/_base.scss */
+input[type="text"] {
+  background-color: transparent;
+  border: 0;
+}
+
 @media screen and (max-width: 1247px) {
-  /* line 162, src/sass/common/_base.scss */
+  /* line 184, src/sass/common/_base.scss */
   .device-desktop-wide {
     display: none;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 168, src/sass/common/_base.scss */
+  /* line 190, src/sass/common/_base.scss */
   .device-desktop {
     display: none;
   }
 }
 
 @media screen and (max-width: 991px) {
-  /* line 174, src/sass/common/_base.scss */
+  /* line 196, src/sass/common/_base.scss */
   .device-tablet-wide {
     display: none;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 180, src/sass/common/_base.scss */
+  /* line 202, src/sass/common/_base.scss */
   .device-tablet {
     display: none;
   }
 }
 
 @media screen and (max-width: 639px) {
-  /* line 186, src/sass/common/_base.scss */
+  /* line 208, src/sass/common/_base.scss */
   .device-tablet-small {
     display: none;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 192, src/sass/common/_base.scss */
+  /* line 214, src/sass/common/_base.scss */
   .device-phablet {
     display: none;
   }
 }
 
 @media screen and (max-width: 479px) {
-  /* line 198, src/sass/common/_base.scss */
+  /* line 220, src/sass/common/_base.scss */
   .device-phone-wide {
     display: none;
   }
 }
 
 @media screen and (max-width: 419px) {
-  /* line 204, src/sass/common/_base.scss */
+  /* line 226, src/sass/common/_base.scss */
   .device-phone {
     display: none;
   }
@@ -6690,54 +6737,11 @@ i, em {
 /*************************** Book Accommodation Form Component Styles ****************************/
 /* line 11, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation {
-  background-color: rgba(255, 0, 0, 0.2);
+  cursor: default;
   color: rgba(255, 0, 0, 0.8);
-  /*
-		h4 {
-			background-color: rgba(0,0,255,0.2);
-
-			position: relative;
-
-			font-family: "Open-Sans-Semibold", sans-serif;
-			text-transform: uppercase;
-
-			@include rem(font-size, 16px);
-
-			@include rem(padding-bottom, 14px);
-
-			&:after {
-				content: "AAA";
-				position: absolute;
-
-				
-				left: 0;
-				right: 0;
-
-				bottom: 0;
-				height: 4px;
-
-				background-color: $white;
-			}
-
-		}
-
-		a {
-
-			text-transform: uppercase;
-			text-decoration: none;
-			@include rem(font-size, 16px);
-
-			color: $white;
-
-			&:hover {
-				color: lighten($blue, 15%);
-			}
-
-		}
-*/
 }
 
-/* line 18, src/sass/components/_book-accommodation-form.scss */
+/* line 20, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation label {
   display: block;
   font-size: 14px;
@@ -6746,89 +6750,206 @@ form.book-accommodation label {
   padding-bottom: 0.8125rem;
 }
 
-/* line 30, src/sass/components/_book-accommodation-form.scss */
-form.book-accommodation .input-wrapper {
+/* line 31, src/sass/components/_book-accommodation-form.scss */
+form.book-accommodation .input-wrapper,
+form.book-accommodation .select-wrapper {
   position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  cursor: pointer;
 }
 
-/* line 34, src/sass/components/_book-accommodation-form.scss */
-form.book-accommodation .input-wrapper:before, form.book-accommodation .input-wrapper:after {
+/* line 44, src/sass/components/_book-accommodation-form.scss */
+form.book-accommodation .input-wrapper:hover:before, form.book-accommodation .input-wrapper:hover:after,
+form.book-accommodation .select-wrapper:hover:before,
+form.book-accommodation .select-wrapper:hover:after {
+  color: rgba(230, 255, 230, 0.5);
+}
+
+/* line 50, src/sass/components/_book-accommodation-form.scss */
+form.book-accommodation .input-wrapper:before, form.book-accommodation .input-wrapper:after,
+form.book-accommodation .select-wrapper:before,
+form.book-accommodation .select-wrapper:after {
   position: absolute;
   font-family: "icons";
+  top: 0;
+  bottom: 0;
 }
 
-/* line 40, src/sass/components/_book-accommodation-form.scss */
-form.book-accommodation .input-wrapper:before {
-  top: 9px;
-  top: 0.5625rem;
-  right: 40px;
-  right: 2.5rem;
-  font-size: 31px;
-  font-size: 1.9375rem;
-  content: "\f101";
-}
-
-/* line 47, src/sass/components/_book-accommodation-form.scss */
-form.book-accommodation .input-wrapper:after {
-  top: 21px;
-  top: 1.3125rem;
-  right: 13px;
-  right: 0.8125rem;
+/* line 59, src/sass/components/_book-accommodation-form.scss */
+form.book-accommodation .input-wrapper:after,
+form.book-accommodation .select-wrapper:after {
+  right: 0;
+  width: 40px;
+  width: 2.5rem;
+  padding: 20px 0 0 14px;
+  padding: 1.25rem 0 0 0.875rem;
   font-size: 9px;
   font-size: 0.5625rem;
   content: "\f103";
 }
 
-/* line 56, src/sass/components/_book-accommodation-form.scss */
+/* line 78, src/sass/components/_book-accommodation-form.scss */
+form.book-accommodation .input-wrapper {
+  /*
+			position: relative;
+			background-color: rgba(255,255,255,0.2);
+			border: 1px solid rgba(255,255,255,0.3);
+			@include border-radius(3px);
+			cursor: pointer;
+
+
+			&:hover {
+				&:before,
+				&:after {
+					color: lighten($blue, 45%);
+				}
+			}
+
+
+			&:before,
+			&:after {
+				position: absolute;
+				font-family: "icons";
+
+				top: 0;
+				bottom: 0;
+
+//				&:hover {
+//					color: lighten($blue, 45%);
+//				}
+				
+
+			}
+*/
+  /*
+			&:after {
+
+//				background-color: rgba(255,0,255,0.3);
+
+//				@include rem(top, 21px);
+//				@include rem(right, 13px);
+				right: 0;
+				@include rem(width, 40px);
+				@include rem(padding, 20px 0 0 14px);
+
+				@include rem(font-size, 9px);
+				content: "\f103";
+			}
+*/
+}
+
+/* line 114, src/sass/components/_book-accommodation-form.scss */
+form.book-accommodation .input-wrapper:before {
+  right: 40px;
+  right: 2.5rem;
+  width: 34px;
+  width: 2.125rem;
+  padding: 9px 0 0 3px;
+  padding: 0.5625rem 0 0 0.1875rem;
+  font-size: 31px;
+  font-size: 1.9375rem;
+  content: "\f101";
+}
+
+/* line 154, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation .input-wrapper input[type="text"] {
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 3px;
+  /*
+					background-color: rgba(255,255,255,0.2);
+//					border: 1px solid red;
+					border: 1px solid rgba(255,255,255,0.3);
+					@include border-radius(3px);
+*/
+  cursor: pointer;
   color: rgba(255, 0, 0, 0.8);
   width: 100%;
   padding: 15px 80px 15px 15px;
   padding: 0.9375rem 5rem 0.9375rem 0.9375rem;
   font-size: 14px;
   font-size: 0.875rem;
-  cursor: default;
 }
 
-/* line 78, src/sass/components/_book-accommodation-form.scss */
+/* line 179, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation .input-wrapper input[type="text"]::-webkit-input-placeholder {
   color: rgba(255, 0, 0, 0.8);
   font-style: italic;
 }
 
-/* line 82, src/sass/components/_book-accommodation-form.scss */
+/* line 183, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation .input-wrapper input[type="text"]:-moz-placeholder {
   color: rgba(255, 0, 0, 0.8);
   opacity: 1;
   font-style: italic;
 }
 
-/* line 87, src/sass/components/_book-accommodation-form.scss */
+/* line 188, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation .input-wrapper input[type="text"]::-moz-placeholder {
   color: rgba(255, 0, 0, 0.8);
   opacity: 1;
   font-style: italic;
 }
 
-/* line 92, src/sass/components/_book-accommodation-form.scss */
+/* line 193, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation .input-wrapper input[type="text"]:-ms-input-placeholder {
   color: rgba(255, 0, 0, 0.8);
   font-style: italic;
 }
 
-/* line 96, src/sass/components/_book-accommodation-form.scss */
+/* line 197, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation .input-wrapper input[type="text"]::-ms-input-placeholder {
   color: rgba(255, 0, 0, 0.8);
   font-style: italic;
 }
 
-/* line 101, src/sass/components/_book-accommodation-form.scss */
+/* line 202, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation .input-wrapper input[type="text"]::placeholder {
   color: rgba(255, 0, 0, 0.8);
   font-style: italic;
+}
+
+/* line 216, src/sass/components/_book-accommodation-form.scss */
+form.book-accommodation .select-wrapper select {
+  position: relative;
+  z-index: 1;
+  color: rgba(255, 0, 0, 0.8);
+  width: 100%;
+  cursor: pointer;
+  padding: 15px 20px 15px 15px;
+  padding: 0.9375rem 1.25rem 0.9375rem 0.9375rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+/* line 242, src/sass/components/_book-accommodation-form.scss */
+form.book-accommodation input[type="submit"] {
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Open-Sans-Semibold", sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: rgba(0, 255, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.8);
+  border: 0;
+  padding: 15px 0;
+  padding: 0.9375rem 0;
+  margin-top: 26px;
+  margin-top: 1.625rem;
+  width: 100%;
+  border-radius: 3px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+/* line 273, src/sass/components/_book-accommodation-form.scss */
+form.book-accommodation input[type="submit"]:hover {
+  background-color: rgba(230, 255, 230, 0.5);
+  color: rgba(0, 179, 0, 0.5);
 }
 
 /*************************** Button Component Styles ****************************/

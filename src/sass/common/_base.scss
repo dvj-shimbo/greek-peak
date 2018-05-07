@@ -139,10 +139,32 @@ i, em { font-style: italic; }
 ::-ms-clear,
 ::-ms-reveal { display: none; }
 
+:focus { outline: none !important; }
+:focus::-webkit-input-placeholder { color: transparent }
+:focus::-moz-placeholder { color: transparent }
+:focus:-moz-placeholder { color: transparent }
+:focus:-ms-input-placeholder { color: transparent }
 
 
+select {
+	background-color: transparent;
+	border: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	&::-ms-expand {
+		display: none;
+	}
+}
 
-
+input {
+	&[type="text"] {
+		background-color: transparent;
+		border: 0;
+	}
+}
 
 
 

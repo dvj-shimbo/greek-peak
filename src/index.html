@@ -45,8 +45,10 @@
 
 		<a href="#"><i class="icon-cart"></i></a>
 
-		<img class="logo" src="img/logo.png" alt=""><!-- For Home Page Only!!! -->
-		<!--a href="#"><img class="logo" src="img/logo.png" alt=""></a--><!-- For Other Pages -->
+
+
+		<img class="logo" src="img/logo.png" alt=""><!--[htmlclean-protect]--><!-- For Home Page Only!!! --><!--[/htmlclean-protect]-->
+		<!--[htmlclean-protect]--><!--a href="#"><img class="logo" src="img/logo.png" alt=""></a--><!-- For Other Pages --><!--[/htmlclean-protect]-->
 
 		<ul>
 
@@ -335,22 +337,28 @@
 
 
 	<!--section class="booking" style="/**/background-image: url(img/!/Greek-Peak_home-page-_ready_a.png); background-repeat: no-repeat; background-position: 0 -863px; height: 217px;/**/;"-->
-	<section class="booking" style="/**/background-image: url(img/!/Greek-Peak_home-page-_ready_a.png); background-repeat: no-repeat; background-position: 0 -863px;/**/">
+	<section class="booking" style="/**background-image: url(img/!/Greek-Peak_home-page-_ready_a.png); background-repeat: no-repeat; background-position: 0 -863px;/**/">
+	<!--section class="booking"-->
 
 		<div class="container">
 
 			<ul class="nav nav-tabs row">
-				<li class="nav-item col-4">
+
+				<li class="nav-item col-lg-4 col-md-5 col-sm-6">
+
 					<a class="nav-link active" href="#book-accommodation" data-toggle="tab">
 						<h4>Book Accommodation</h4>
 					</a>
 				</li>
+				<!-- EXAMPLE, DO NOT REMOVE!!!
 				<li class="nav-item col-4">
 					<a class="nav-link" href="#purchase-tickets-passes" data-toggle="tab">
 						<h4>Purchase Tickets / Passes</h4>
 					</a>
-				</li>
-				<li class="nav-item col-4">
+				</li-->
+
+				<li class="nav-item col-lg-4 col-md-5 col-sm-6">
+
 					<a class="nav-link" href="#">
 						<h4>Purchase Tickets / Passes</h4>
 					</a>
@@ -364,11 +372,11 @@
 
 					<form class="book-accommodation row">
 
-						<div class="col-9">
+						<div class="col-lg-9">
 
 							<div class="row">
 
-								<div class="col-6">
+								<div class="col-md-6 col-sm-12 col-6">
 
 									<label for="booking-section-datepicker">Check in</label>
 
@@ -380,7 +388,7 @@
 
 								</div>
 
-								<div class="col-2">
+								<div class="col-md-2 col-sm-4 col-6">
 
 									<label for="booking-section-length">Nights</label>
 
@@ -404,7 +412,7 @@
 
 								</div>
 
-								<div class="col-2">
+								<div class="col-md-2 col-sm-4 col-6">
 
 									<label for="booking-section-adults">Adults</label>
 
@@ -429,7 +437,7 @@
 
 								</div>
 
-								<div class="col-2">
+								<div class="col-md-2 col-sm-4 col-6">
 
 									<label for="booking-section-children">Children</label>
 
@@ -459,7 +467,7 @@
 
 						</div>
 
-						<div class="col-3">
+						<div class="col-lg-3">
 
 							<input type="submit" value="Check Availability">
 
@@ -469,10 +477,10 @@
 
 				</div>
 
-
+				<!-- EXAMPLE, DO NOT REMOVE!!!
 				<div class="tab-pane fade row" id="purchase-tickets-passes">
 					<div class="col">Purchase Tickets / Passes</div>
-				</div>
+				</div-->
 
 
 			</div>

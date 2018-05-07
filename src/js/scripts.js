@@ -104,11 +104,11 @@ $(window).on("load", function() {
 	
 	$('.book-accommodation input[type="text"]').datepicker();
 
+/*
 	$(".book-accommodation .input-wrapper").click(function() {
-		console.log("AAA");
 		$('.book-accommodation input[type="text"]').datepicker("show");
 	});
-
+*/
 
 
 

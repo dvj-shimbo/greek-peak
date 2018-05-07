@@ -6738,7 +6738,7 @@ input[type="text"] {
 /* line 11, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation {
   cursor: default;
-  color: rgba(255, 0, 0, 0.8);
+  color: #fff;
 }
 
 /* line 20, src/sass/components/_book-accommodation-form.scss */
@@ -6746,28 +6746,27 @@ form.book-accommodation label {
   display: block;
   font-size: 14px;
   font-size: 0.875rem;
-  padding-bottom: 13px;
-  padding-bottom: 0.8125rem;
+  padding: 16px 0 13px;
+  padding: 1rem 0 0.8125rem;
 }
 
-/* line 31, src/sass/components/_book-accommodation-form.scss */
+/* line 34, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation .input-wrapper,
 form.book-accommodation .select-wrapper {
   position: relative;
   background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 3px;
-  cursor: pointer;
 }
 
-/* line 44, src/sass/components/_book-accommodation-form.scss */
+/* line 49, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation .input-wrapper:hover:before, form.book-accommodation .input-wrapper:hover:after,
 form.book-accommodation .select-wrapper:hover:before,
 form.book-accommodation .select-wrapper:hover:after {
-  color: rgba(230, 255, 230, 0.5);
+  color: #ceeffb;
 }
 
-/* line 50, src/sass/components/_book-accommodation-form.scss */
+/* line 55, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation .input-wrapper:before, form.book-accommodation .input-wrapper:after,
 form.book-accommodation .select-wrapper:before,
 form.book-accommodation .select-wrapper:after {
@@ -6777,7 +6776,7 @@ form.book-accommodation .select-wrapper:after {
   bottom: 0;
 }
 
-/* line 59, src/sass/components/_book-accommodation-form.scss */
+/* line 64, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation .input-wrapper:after,
 form.book-accommodation .select-wrapper:after {
   right: 0;
@@ -6790,7 +6789,7 @@ form.book-accommodation .select-wrapper:after {
   content: "\f103";
 }
 
-/* line 78, src/sass/components/_book-accommodation-form.scss */
+/* line 83, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation .input-wrapper {
   /*
 			position: relative;
@@ -6840,7 +6839,7 @@ form.book-accommodation .input-wrapper {
 */
 }
 
-/* line 114, src/sass/components/_book-accommodation-form.scss */
+/* line 119, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation .input-wrapper:before {
   right: 40px;
   right: 2.5rem;
@@ -6853,7 +6852,7 @@ form.book-accommodation .input-wrapper:before {
   content: "\f101";
 }
 
-/* line 154, src/sass/components/_book-accommodation-form.scss */
+/* line 159, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation .input-wrapper input[type="text"] {
   /*
 					background-color: rgba(255,255,255,0.2);
@@ -6861,8 +6860,10 @@ form.book-accommodation .input-wrapper input[type="text"] {
 					border: 1px solid rgba(255,255,255,0.3);
 					@include border-radius(3px);
 */
+  position: relative;
+  z-index: 1;
   cursor: pointer;
-  color: rgba(255, 0, 0, 0.8);
+  color: #fff;
   width: 100%;
   padding: 15px 80px 15px 15px;
   padding: 0.9375rem 5rem 0.9375rem 0.9375rem;
@@ -6870,49 +6871,49 @@ form.book-accommodation .input-wrapper input[type="text"] {
   font-size: 0.875rem;
 }
 
-/* line 179, src/sass/components/_book-accommodation-form.scss */
-form.book-accommodation .input-wrapper input[type="text"]::-webkit-input-placeholder {
-  color: rgba(255, 0, 0, 0.8);
-  font-style: italic;
-}
-
-/* line 183, src/sass/components/_book-accommodation-form.scss */
-form.book-accommodation .input-wrapper input[type="text"]:-moz-placeholder {
-  color: rgba(255, 0, 0, 0.8);
-  opacity: 1;
-  font-style: italic;
-}
-
 /* line 188, src/sass/components/_book-accommodation-form.scss */
-form.book-accommodation .input-wrapper input[type="text"]::-moz-placeholder {
-  color: rgba(255, 0, 0, 0.8);
-  opacity: 1;
+form.book-accommodation .input-wrapper input[type="text"]::-webkit-input-placeholder {
+  color: #fff;
   font-style: italic;
 }
 
-/* line 193, src/sass/components/_book-accommodation-form.scss */
-form.book-accommodation .input-wrapper input[type="text"]:-ms-input-placeholder {
-  color: rgba(255, 0, 0, 0.8);
+/* line 192, src/sass/components/_book-accommodation-form.scss */
+form.book-accommodation .input-wrapper input[type="text"]:-moz-placeholder {
+  color: #fff;
+  opacity: 1;
   font-style: italic;
 }
 
 /* line 197, src/sass/components/_book-accommodation-form.scss */
-form.book-accommodation .input-wrapper input[type="text"]::-ms-input-placeholder {
-  color: rgba(255, 0, 0, 0.8);
+form.book-accommodation .input-wrapper input[type="text"]::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
   font-style: italic;
 }
 
 /* line 202, src/sass/components/_book-accommodation-form.scss */
-form.book-accommodation .input-wrapper input[type="text"]::placeholder {
-  color: rgba(255, 0, 0, 0.8);
+form.book-accommodation .input-wrapper input[type="text"]:-ms-input-placeholder {
+  color: #fff;
   font-style: italic;
 }
 
-/* line 216, src/sass/components/_book-accommodation-form.scss */
+/* line 206, src/sass/components/_book-accommodation-form.scss */
+form.book-accommodation .input-wrapper input[type="text"]::-ms-input-placeholder {
+  color: #fff;
+  font-style: italic;
+}
+
+/* line 211, src/sass/components/_book-accommodation-form.scss */
+form.book-accommodation .input-wrapper input[type="text"]::placeholder {
+  color: #fff;
+  font-style: italic;
+}
+
+/* line 225, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation .select-wrapper select {
   position: relative;
   z-index: 1;
-  color: rgba(255, 0, 0, 0.8);
+  color: #fff;
   width: 100%;
   cursor: pointer;
   padding: 15px 20px 15px 15px;
@@ -6921,7 +6922,12 @@ form.book-accommodation .select-wrapper select {
   font-size: 0.875rem;
 }
 
-/* line 242, src/sass/components/_book-accommodation-form.scss */
+/* line 244, src/sass/components/_book-accommodation-form.scss */
+form.book-accommodation .select-wrapper select option {
+  color: #1d2124;
+}
+
+/* line 255, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation input[type="submit"] {
   cursor: pointer;
   text-transform: uppercase;
@@ -6930,14 +6936,16 @@ form.book-accommodation input[type="submit"] {
   font-family: "Open-Sans-Semibold", sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
-  color: rgba(0, 255, 0, 0.5);
-  background-color: rgba(255, 0, 0, 0.8);
+  color: #11a0d3;
+  background-color: #fff;
   border: 0;
   padding: 15px 0;
   padding: 0.9375rem 0;
-  margin-top: 26px;
-  margin-top: 1.625rem;
+  margin-top: 42px;
+  margin-top: 2.625rem;
   width: 100%;
+  max-width: 220px;
+  max-width: 13.75rem;
   border-radius: 3px;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -6946,10 +6954,10 @@ form.book-accommodation input[type="submit"] {
   transition: all 0.25s ease-in-out;
 }
 
-/* line 273, src/sass/components/_book-accommodation-form.scss */
+/* line 287, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation input[type="submit"]:hover {
-  background-color: rgba(230, 255, 230, 0.5);
-  color: rgba(0, 179, 0, 0.5);
+  background-color: #ceeffb;
+  color: #0b6a8c;
 }
 
 /*************************** Button Component Styles ****************************/
@@ -6963,7 +6971,7 @@ form.book-accommodation input[type="submit"]:hover {
   font-family: "Open-Sans-Semibold", sans-serif;
   font-size: 12px;
   font-size: 0.75rem;
-  color: rgba(255, 0, 0, 0.8);
+  color: #fff;
   position: relative;
   z-index: 0;
   padding: 15px 0;
@@ -6972,7 +6980,7 @@ form.book-accommodation input[type="submit"]:hover {
 
 /* line 38, src/sass/components/_button.scss */
 .button:after {
-  background-color: rgba(0, 255, 0, 0.5);
+  background-color: #11a0d3;
   content: "";
   position: absolute;
   left: 0;
@@ -7001,7 +7009,7 @@ form.book-accommodation input[type="submit"]:hover {
 
 /* line 61, src/sass/components/_button.scss */
 .button:hover:after {
-  background-color: rgba(77, 255, 77, 0.5);
+  background-color: #41c2f0;
 }
 
 /*************************** Header Styles ****************************/
@@ -7051,13 +7059,13 @@ header ul li {
 
 /* line 44, src/sass/_header.scss */
 header ul:first-child li {
-  color: rgba(255, 0, 0, 0.8);
+  color: #fff;
   text-align: left;
 }
 
 /* line 47, src/sass/_header.scss */
 header ul:first-child li a {
-  color: rgba(255, 0, 0, 0.8);
+  color: #fff;
   text-decoration: none;
 }
 
@@ -7079,17 +7087,17 @@ header ul:last-child li p {
 
 /* line 64, src/sass/_header.scss */
 header ul:last-child li.selected p {
-  color: rgba(0, 255, 0, 0.5);
+  color: #11a0d3;
 }
 
 /* line 66, src/sass/_header.scss */
 header ul:last-child li.selected p:hover {
-  color: rgba(0, 179, 0, 0.5);
+  color: #0b6a8c;
 }
 
 /* line 73, src/sass/_header.scss */
 header ul:last-child li:not(.selected) p:hover {
-  color: rgba(0, 179, 0, 0.5);
+  color: #0b6a8c;
 }
 
 /* line 77, src/sass/_header.scss */
@@ -7137,13 +7145,13 @@ header ul:last-child li .container-fluid .container .row [class*="col"] h5 {
 
 /* line 110, src/sass/_header.scss */
 header ul:last-child li .container-fluid .container .row [class*="col"] h5 a {
-  color: rgba(0, 255, 0, 0.5);
+  color: #11a0d3;
   text-decoration: none;
 }
 
 /* line 114, src/sass/_header.scss */
 header ul:last-child li .container-fluid .container .row [class*="col"] h5 a:hover {
-  color: rgba(0, 179, 0, 0.5);
+  color: #0b6a8c;
 }
 
 /* line 119, src/sass/_header.scss */
@@ -7172,7 +7180,7 @@ header ul:last-child li .container-fluid .container .row [class*="col"] p a {
 
 /* line 143, src/sass/_header.scss */
 header ul:last-child li .container-fluid .container .row [class*="col"] p a:hover {
-  color: rgba(0, 179, 0, 0.5);
+  color: #0b6a8c;
 }
 
 /* line 151, src/sass/_header.scss */
@@ -7196,7 +7204,7 @@ header ul:first-child ~ a:not(.button) {
 /* line 168, src/sass/_header.scss */
 header ul:first-child + .button + .button + a {
   position: relative;
-  color: rgba(0, 255, 0, 0.5);
+  color: #11a0d3;
   font-weight: bold;
   font-style: italic;
   text-transform: uppercase;
@@ -7206,7 +7214,7 @@ header ul:first-child + .button + .button + a {
 
 /* line 176, src/sass/_header.scss */
 header ul:first-child + .button + .button + a:hover {
-  color: rgba(51, 255, 51, 0.5);
+  color: #29baee;
 }
 
 /* line 180, src/sass/_header.scss */
@@ -7719,7 +7727,7 @@ header form + a:hover .icon-cart {
   }
   /* line 566, src/sass/_header.scss */
   header ul:last-child {
-    background-color: rgba(255, 0, 0, 0.8);
+    background-color: #fff;
     top: 96px;
     top: 6rem;
     left: 0;
@@ -7755,7 +7763,7 @@ header form + a:hover .icon-cart {
 @media screen and (max-width: 1247px) {
   /* line 3, src/sass/_header.scss */
   header {
-    background-color: rgba(255, 0, 0, 0.8);
+    background-color: #fff;
     height: 48px;
     height: 3rem;
     /*
@@ -7862,7 +7870,7 @@ header form + a:hover .icon-cart {
   header form input {
     color: #1d2124;
     border-bottom: 1px solid #1d2124;
-    background-color: rgba(255, 0, 0, 0.8);
+    background-color: #fff;
   }
   /* line 700, src/sass/_header.scss */
   header form + a {
@@ -7963,19 +7971,19 @@ header form + a:hover .icon-cart {
   }
   /* line 777, src/sass/_header.scss */
   header [class*="icon-"] {
-    color: rgba(255, 0, 0, 0.8);
+    color: #fff;
     font-size: 18px;
     font-size: 1.125rem;
   }
   /* line 782, src/sass/_header.scss */
   header form:after {
-    color: rgba(255, 0, 0, 0.8);
+    color: #fff;
   }
   /* line 785, src/sass/_header.scss */
   header form input {
-    border-bottom: 1px solid rgba(255, 0, 0, 0.8);
+    border-bottom: 1px solid #fff;
     background-color: #00303c;
-    color: rgba(255, 0, 0, 0.8);
+    color: #fff;
   }
   /* line 791, src/sass/_header.scss */
   header form + a {
@@ -8800,7 +8808,7 @@ header form + a:hover .icon-cart {
   text-transform: uppercase;
   max-width: 650px;
   max-width: 40.625rem;
-  color: rgba(255, 0, 0, 0.8);
+  color: #fff;
   margin-left: 2%;
   margin-right: 2%;
   /*
@@ -9485,7 +9493,7 @@ header form + a:hover .icon-cart {
   font-family: "Open-Sans-Semibold", sans-serif;
   max-width: 650px;
   max-width: 40.625rem;
-  color: rgba(255, 0, 0, 0.8);
+  color: #fff;
   margin-left: 2%;
   margin-right: 2%;
 }
@@ -9671,12 +9679,12 @@ header form + a:hover .icon-cart {
   font-style: italic;
   text-transform: uppercase;
   text-decoration: none;
-  color: rgba(0, 255, 0, 0.5);
+  color: #11a0d3;
 }
 
 /* line 393, src/sass/sections/_banner.scss */
 .banner .container a:last-child:hover {
-  color: rgba(77, 255, 77, 0.5);
+  color: #41c2f0;
 }
 
 @media screen and (max-width: 319px) {
@@ -10814,7 +10822,7 @@ header form + a:hover .icon-cart {
   left: 5%;
   font-weight: bold;
   text-transform: uppercase;
-  color: rgba(255, 0, 0, 0.8);
+  color: #fff;
   z-index: 1;
 }
 
@@ -11259,13 +11267,13 @@ header form + a:hover .icon-cart {
   font-style: italic;
   text-transform: uppercase;
   text-decoration: none;
-  color: rgba(0, 255, 0, 0.5);
+  color: #11a0d3;
   z-index: 1;
 }
 
 /* line 115, src/sass/sections/_banners.scss */
 .banners .row [class*="col"] h2 + a:hover {
-  color: rgba(77, 255, 77, 0.5);
+  color: #41c2f0;
 }
 
 @media screen and (max-width: 319px) {
@@ -11359,45 +11367,47 @@ header form + a:hover .icon-cart {
 /*************************** Booking Accommodation Styles ****************************/
 /* line 3, src/sass/sections/_booking.scss */
 .booking {
-  background-color: rgba(0, 255, 0, 0.5);
+  background-color: #11a0d3;
 }
 
 /* line 8, src/sass/sections/_booking.scss */
 .booking .container {
-  background-color: rgba(255, 0, 0, 0.1);
   max-width: 1000px;
-  padding-top: 34px;
-  padding-top: 2.125rem;
+  padding-top: 15px;
+  padding-top: 0.9375rem;
   padding-bottom: 34px;
   padding-bottom: 2.125rem;
+  padding-left: 34px;
+  padding-left: 2.125rem;
+  padding-right: 34px;
+  padding-right: 2.125rem;
 }
 
-/* line 24, src/sass/sections/_booking.scss */
+/* line 32, src/sass/sections/_booking.scss */
 .booking .container .nav.nav-tabs {
-  background-color: rgba(255, 0, 0, 0.1);
   border: 0;
 }
 
-/* line 30, src/sass/sections/_booking.scss */
+/* line 38, src/sass/sections/_booking.scss */
 .booking .container .nav.nav-tabs .nav-link {
   position: relative;
   background-color: transparent;
-  color: rgba(255, 0, 0, 0.8);
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   border: 0;
-  padding: 0 0 15px;
-  padding: 0 0 0.9375rem;
+  padding: 19px 0 15px;
+  padding: 1.1875rem 0 0.9375rem;
   font-size: 16px;
   font-size: 1rem;
 }
 
-/* line 54, src/sass/sections/_booking.scss */
+/* line 64, src/sass/sections/_booking.scss */
 .booking .container .nav.nav-tabs .nav-link h4 {
   font-family: "Open-Sans-Semibold", sans-serif;
 }
 
-/* line 63, src/sass/sections/_booking.scss */
+/* line 73, src/sass/sections/_booking.scss */
 .booking .container .nav.nav-tabs .nav-link.active:after, .booking .container .nav.nav-tabs .nav-link:not(.active):hover:after {
   content: "";
   position: absolute;
@@ -11407,36 +11417,30 @@ header form + a:hover .icon-cart {
   height: 5px;
 }
 
-/* line 78, src/sass/sections/_booking.scss */
+/* line 88, src/sass/sections/_booking.scss */
 .booking .container .nav.nav-tabs .nav-link.active {
   cursor: default;
 }
 
-/* line 81, src/sass/sections/_booking.scss */
+/* line 91, src/sass/sections/_booking.scss */
 .booking .container .nav.nav-tabs .nav-link.active:after {
-  background-color: rgba(255, 0, 0, 0.8);
+  background-color: #fff;
 }
 
-/* line 87, src/sass/sections/_booking.scss */
+/* line 97, src/sass/sections/_booking.scss */
 .booking .container .nav.nav-tabs .nav-link:not(.active):hover {
-  color: rgba(230, 255, 230, 0.5);
+  color: #ceeffb;
 }
 
-/* line 89, src/sass/sections/_booking.scss */
+/* line 99, src/sass/sections/_booking.scss */
 .booking .container .nav.nav-tabs .nav-link:not(.active):hover:after {
-  background-color: rgba(230, 255, 230, 0.5);
+  background-color: #ceeffb;
 }
 
-/* line 102, src/sass/sections/_booking.scss */
+/* line 112, src/sass/sections/_booking.scss */
 .booking .container .tab-content {
-  background-color: rgba(255, 255, 0, 0.2);
-  padding-top: 37px;
-  padding-top: 2.3125rem;
-}
-
-/* line 107, src/sass/sections/_booking.scss */
-.booking .container .tab-content .tab-pane {
-  background-color: rgba(0, 0, 255, 0.1);
+  padding-top: 20px;
+  padding-top: 1.25rem;
 }
 
 /*# sourceMappingURL=style.css.map */

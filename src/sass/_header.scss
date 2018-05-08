@@ -181,11 +181,20 @@ header {
 		@include rem(font-size, 18px);
 	}
 	form {
+
+//		background-color: rgba(255,255,0,0.6);
+
+
 		display: inline-block;
 		position: relative;
 		@include rem(width, 18px);
 		@include rem(height, 22px);
+
+
 		@include rem(top, 16px);
+
+
+
 		&:after {
 			content: "\f104";
 			display: block;
@@ -209,7 +218,12 @@ header {
 		input {
 			position: absolute;
 			right: 0;
+
 			@include rem(height, 22px);
+
+			
+
+
 			@include rem(padding-left, 8px);
 			@include rem(padding-right, 24px);
 			@include rem(font-size, 14px);
@@ -247,9 +261,24 @@ header {
 		button {
 			position: absolute;
 			right: 0;
+
+
+//			@include rem(top, -1px);
+
+
 			@include rem(width, 18px);
+
 			@include rem(height, 22px);
+//			@include rem(height, 21px);
+			
+
 			background-color: transparent;
+//			background-color: rgba(255,255,0,0.6);
+
+			
+
+
+
 			border: 0;
 			padding: 0;
 			cursor: pointer;
@@ -257,6 +286,18 @@ header {
 			&:hover {
 				opacity: 0.75;
 			}
+
+			.icon-search {
+
+//				background-color: rgba(255,0,0,0.3);
+
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+
+
 		}
 		&.displayed {
 			&:after {
@@ -685,7 +726,10 @@ header {
 		}
 		ul:first-child + .button + .button + a {
 			margin-left: 2.3%;
-			@include rem(top, 10px);
+
+//			@include rem(top, 10px);
+			@include rem(top, 8px);
+
 		}
 		[class*="icon-"] {
 			color: $font-color;

@@ -323,13 +323,13 @@
 								@include media('screen', '<phone-wide') {
 									@include rem(width, 20px);
 									@include rem(font-size, 7px);
-									@include rem(padding, 8px 0 0 5px);
+									@include rem(padding, 10px 0 0 3px);
 								}
 
 								@include media('>=phone-wide', '<phablet') {
 									@include rem(width, 30px);
 									@include rem(font-size, 8px);
-									@include rem(padding, 11px 0 0 8px);
+									@include rem(padding, 12px 0 0 8px);
 								}
 								
 								@include media('screen', '>=phablet') {
@@ -358,7 +358,7 @@
 									@include rem(width, 20px);
 //									@include rem(padding, 3px 0 0 2px);
 //									@include rem(font-size, 17px);
-									@include rem(padding, 3px 0 0 1px);
+									@include rem(padding, 4px 0 0 0px);
 									@include rem(font-size, 16px);
 								}
 
@@ -368,7 +368,7 @@
 									@include rem(width, 22px);
 //									@include rem(padding, 5px 0 0 2px);
 //									@include rem(font-size, 20px);
-									@include rem(padding, 5px 0 0 1px);
+									@include rem(padding, 6px 0 0 1px);
 									@include rem(font-size, 18px);
 								}
 
@@ -463,9 +463,13 @@
 
 							}
 
+							@include media('>=phone', '<phone-wide') {
+								@include rem(max-width, 150px);
+							}
+
 							@include media('screen', '<phone-wide') {
 								@include rem(font-size, 11px);
-								@include rem(max-width, 150px);
+//								@include rem(max-width, 150px);
 								@include rem(padding, 6px 0);
 								@include rem(margin-top, 14px);
 							}
@@ -498,8 +502,14 @@
 								@include rem(margin-top, 42px);
 							}
 
-							@include media('screen', '<desktop-wide') {
+//							@include media('screen', '<desktop-wide') {
+							@include media('>=phone', '<desktop-wide') {
+
 								float: right;
+
+//								margin-left: auto;
+//								margin-right: auto;
+
 							}
 
 						}

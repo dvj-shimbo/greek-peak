@@ -3,7 +3,7 @@ $(window).on("load", function() {
 
 	// User's functions
 
-	console.log("scripts.js is loaded");
+//	console.log("scripts.js is loaded");
 
 	var  isBreakpoint = function(alias) {
 		return $(".device-" + alias).is(":visible");

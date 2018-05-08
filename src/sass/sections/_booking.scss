@@ -353,17 +353,23 @@
 							&:before {
 
 								@include media('screen', '<phone-wide') {
+//									color: #0000ff;
 									@include rem(right, 20px);
 									@include rem(width, 20px);
-									@include rem(padding, 3px 0 0 2px);
-									@include rem(font-size, 17px);
+//									@include rem(padding, 3px 0 0 2px);
+//									@include rem(font-size, 17px);
+									@include rem(padding, 3px 0 0 1px);
+									@include rem(font-size, 16px);
 								}
 
 								@include media('>=phone-wide', '<phablet') {
+									
 									@include rem(right, 30px);
 									@include rem(width, 22px);
-									@include rem(padding, 5px 0 0 2px);
-									@include rem(font-size, 20px);
+//									@include rem(padding, 5px 0 0 2px);
+//									@include rem(font-size, 20px);
+									@include rem(padding, 5px 0 0 1px);
+									@include rem(font-size, 18px);
 								}
 
 								@include media('screen', '>=phablet') {
@@ -371,15 +377,20 @@
 								}		
 
 								@include media('>=phablet', '<tablet') {
+									
 									@include rem(width, 26px);
+//									@include rem(padding, 6px 0 0 2px);
+//									@include rem(font-size, 23px);
 									@include rem(padding, 6px 0 0 2px);
-									@include rem(font-size, 23px);
+									@include rem(font-size, 22px);
 								}
 
 								@include media('screen', '>=tablet') {
 									@include rem(width, 34px);
-									@include rem(padding, 9px 0 0 3px);
-									@include rem(font-size, 31px);
+//									@include rem(padding, 9px 0 0 3px);
+//									@include rem(font-size, 31px);
+									@include rem(padding, 10px 0 0 4px);
+									@include rem(font-size, 26px);
 								}
 
 							}
@@ -445,8 +456,11 @@
 							background-color: $white;
 
 							&:hover {
+								color: $dark-blue;
 								background-color: lighten($blue, 45%);
-								color: darken($blue, 15%);
+//								color: darken($blue, 15%);
+
+
 							}
 
 							@include media('screen', '<phone-wide') {

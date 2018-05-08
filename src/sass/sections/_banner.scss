@@ -561,17 +561,21 @@
 					&:before {
 
 						@include media('screen', '<phone-wide') {
+//							color: #0000ff;
 							@include rem(right, 20px);
 							@include rem(width, 20px);
 							@include rem(padding, 2px 0 0 2px);
-							@include rem(font-size, 17px);
+//							@include rem(font-size, 17px);
+							@include rem(font-size, 15px);
 						}
 
 						@include media('>=phone-wide', '<phablet') {
+							
 							@include rem(right, 30px);
 							@include rem(width, 22px);
 							@include rem(padding, 3px 0 0 2px);
-							@include rem(font-size, 20px);
+//							@include rem(font-size, 20px);
+							@include rem(font-size, 18px);
 						}
 
 						@include media('screen', '>=phablet') {
@@ -579,15 +583,20 @@
 						}
 
 						@include media('>=phablet', '<tablet') {
+							
 							@include rem(width, 26px);
 							@include rem(padding, 4px 0 0 2px);
-							@include rem(font-size, 23px);
+//							@include rem(font-size, 23px);
+							@include rem(font-size, 21px);
 						}
 
 						@include media('screen', '>=tablet') {
+							
 							@include rem(width, 30px);
+//							@include rem(padding, 7px 0 0 2px);
+//							@include rem(font-size, 27px);
 							@include rem(padding, 7px 0 0 2px);
-							@include rem(font-size, 27px);
+							@include rem(font-size, 25px);
 						}
 					}
 
@@ -648,8 +657,10 @@
 					background-color: $blue;
 
 					&:hover {
+//						background-color: lighten($blue, 15%);
+//						color: darken($blue, 15%);
+						color: $dark-blue;
 						background-color: lighten($blue, 15%);
-						color: darken($blue, 15%);
 					}
 					
 					@include media('screen', '<phone-wide') {

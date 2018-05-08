@@ -6563,7 +6563,7 @@ a.ui-button:active,
 /**************************** Icon Font *****************************/
 @font-face {
   font-family: "icons";
-  src: url("../fonts/icons/icons.eot?e466ca91482515162fc4a1c674e6fb99?#iefix") format("embedded-opentype"), url("../fonts/icons/icons.woff2?e466ca91482515162fc4a1c674e6fb99") format("woff2"), url("../fonts/icons/icons.woff?e466ca91482515162fc4a1c674e6fb99") format("woff"), url("../fonts/icons/icons.ttf?e466ca91482515162fc4a1c674e6fb99") format("truetype"), url("../fonts/icons/icons.svg?e466ca91482515162fc4a1c674e6fb99#icons") format("svg");
+  src: url("../fonts/icons/icons.eot?d1f053d4c263b6c83c56e0b5f9b1c970?#iefix") format("embedded-opentype"), url("../fonts/icons/icons.woff2?d1f053d4c263b6c83c56e0b5f9b1c970") format("woff2"), url("../fonts/icons/icons.woff?d1f053d4c263b6c83c56e0b5f9b1c970") format("woff"), url("../fonts/icons/icons.ttf?d1f053d4c263b6c83c56e0b5f9b1c970") format("truetype"), url("../fonts/icons/icons.svg?d1f053d4c263b6c83c56e0b5f9b1c970#icons") format("svg");
 }
 
 /* line 11, src/icon-font-generator/_icons.scss */
@@ -9551,8 +9551,8 @@ header form + a:hover .icon-cart {
     width: 1.25rem;
     padding: 2px 0 0 2px;
     padding: 0.125rem 0 0 0.125rem;
-    font-size: 17px;
-    font-size: 1.0625rem;
+    font-size: 15px;
+    font-size: 0.9375rem;
   }
 }
 
@@ -9565,8 +9565,8 @@ header form + a:hover .icon-cart {
     width: 1.375rem;
     padding: 3px 0 0 2px;
     padding: 0.1875rem 0 0 0.125rem;
-    font-size: 20px;
-    font-size: 1.25rem;
+    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 
@@ -9585,8 +9585,8 @@ header form + a:hover .icon-cart {
     width: 1.625rem;
     padding: 4px 0 0 2px;
     padding: 0.25rem 0 0 0.125rem;
-    font-size: 23px;
-    font-size: 1.4375rem;
+    font-size: 21px;
+    font-size: 1.3125rem;
   }
 }
 
@@ -9597,13 +9597,13 @@ header form + a:hover .icon-cart {
     width: 1.875rem;
     padding: 7px 0 0 2px;
     padding: 0.4375rem 0 0 0.125rem;
-    font-size: 27px;
-    font-size: 1.6875rem;
+    font-size: 25px;
+    font-size: 1.5625rem;
   }
 }
 
 @media screen and (max-width: 479px) {
-  /* line 595, src/sass/sections/_banner.scss */
+  /* line 604, src/sass/sections/_banner.scss */
   .banner .container form.book-accommodation .input-wrapper input[type="text"] {
     font-size: 11px;
     font-size: 0.6875rem;
@@ -9613,7 +9613,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 480px) and (max-width: 575px) {
-  /* line 595, src/sass/sections/_banner.scss */
+  /* line 604, src/sass/sections/_banner.scss */
   .banner .container form.book-accommodation .input-wrapper input[type="text"] {
     font-size: 12px;
     font-size: 0.75rem;
@@ -9623,7 +9623,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  /* line 595, src/sass/sections/_banner.scss */
+  /* line 604, src/sass/sections/_banner.scss */
   .banner .container form.book-accommodation .input-wrapper input[type="text"] {
     font-size: 13px;
     font-size: 0.8125rem;
@@ -9633,7 +9633,7 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 595, src/sass/sections/_banner.scss */
+  /* line 604, src/sass/sections/_banner.scss */
   .banner .container form.book-accommodation .input-wrapper input[type="text"] {
     font-size: 14px;
     font-size: 0.875rem;
@@ -9643,7 +9643,7 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (max-width: 479px) {
-  /* line 621, src/sass/sections/_banner.scss */
+  /* line 630, src/sass/sections/_banner.scss */
   .banner .container form.book-accommodation .select-wrapper select {
     font-size: 11px;
     font-size: 0.6875rem;
@@ -9653,7 +9653,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 480px) and (max-width: 575px) {
-  /* line 621, src/sass/sections/_banner.scss */
+  /* line 630, src/sass/sections/_banner.scss */
   .banner .container form.book-accommodation .select-wrapper select {
     font-size: 12px;
     font-size: 0.75rem;
@@ -9663,7 +9663,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  /* line 621, src/sass/sections/_banner.scss */
+  /* line 630, src/sass/sections/_banner.scss */
   .banner .container form.book-accommodation .select-wrapper select {
     font-size: 13px;
     font-size: 0.8125rem;
@@ -9673,7 +9673,7 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 621, src/sass/sections/_banner.scss */
+  /* line 630, src/sass/sections/_banner.scss */
   .banner .container form.book-accommodation .select-wrapper select {
     font-size: 14px;
     font-size: 0.875rem;
@@ -9682,20 +9682,20 @@ header form + a:hover .icon-cart {
   }
 }
 
-/* line 645, src/sass/sections/_banner.scss */
+/* line 654, src/sass/sections/_banner.scss */
 .banner .container form.book-accommodation input[type="submit"] {
   color: #fff;
   background-color: #11a0d3;
 }
 
-/* line 650, src/sass/sections/_banner.scss */
+/* line 659, src/sass/sections/_banner.scss */
 .banner .container form.book-accommodation input[type="submit"]:hover {
+  color: #00303c;
   background-color: #41c2f0;
-  color: #0b6a8c;
 }
 
 @media screen and (max-width: 479px) {
-  /* line 645, src/sass/sections/_banner.scss */
+  /* line 654, src/sass/sections/_banner.scss */
   .banner .container form.book-accommodation input[type="submit"] {
     font-size: 11px;
     font-size: 0.6875rem;
@@ -9709,7 +9709,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 480px) and (max-width: 575px) {
-  /* line 645, src/sass/sections/_banner.scss */
+  /* line 654, src/sass/sections/_banner.scss */
   .banner .container form.book-accommodation input[type="submit"] {
     font-size: 12px;
     font-size: 0.75rem;
@@ -9723,7 +9723,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  /* line 645, src/sass/sections/_banner.scss */
+  /* line 654, src/sass/sections/_banner.scss */
   .banner .container form.book-accommodation input[type="submit"] {
     font-size: 13px;
     font-size: 0.8125rem;
@@ -9737,7 +9737,7 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 645, src/sass/sections/_banner.scss */
+  /* line 654, src/sass/sections/_banner.scss */
   .banner .container form.book-accommodation input[type="submit"] {
     font-size: 14px;
     font-size: 0.875rem;
@@ -9749,7 +9749,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 645, src/sass/sections/_banner.scss */
+  /* line 654, src/sass/sections/_banner.scss */
   .banner .container form.book-accommodation input[type="submit"] {
     margin-top: 24px;
     margin-top: 1.5rem;
@@ -9757,7 +9757,7 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (min-width: 992px) {
-  /* line 645, src/sass/sections/_banner.scss */
+  /* line 654, src/sass/sections/_banner.scss */
   .banner .container form.book-accommodation input[type="submit"] {
     margin-top: 39px;
     margin-top: 2.4375rem;
@@ -9765,13 +9765,13 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (max-width: 1247px) {
-  /* line 645, src/sass/sections/_banner.scss */
+  /* line 654, src/sass/sections/_banner.scss */
   .banner .container form.book-accommodation input[type="submit"] {
     float: right;
   }
 }
 
-/* line 713, src/sass/sections/_banner.scss */
+/* line 724, src/sass/sections/_banner.scss */
 .banner .container a:last-child {
   display: block;
   margin-left: 2%;
@@ -9797,13 +9797,13 @@ header form + a:hover .icon-cart {
 */
 }
 
-/* line 740, src/sass/sections/_banner.scss */
+/* line 751, src/sass/sections/_banner.scss */
 .banner .container a:last-child:hover {
   color: #41c2f0;
 }
 
 @media screen and (max-width: 319px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 11px;
     margin-bottom: 0.6875rem;
@@ -9811,7 +9811,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 320px) and (max-width: 343px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 12px;
     margin-bottom: 0.75rem;
@@ -9819,7 +9819,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 344px) and (max-width: 367px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 13px;
     margin-bottom: 0.8125rem;
@@ -9827,7 +9827,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 368px) and (max-width: 391px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 14px;
     margin-bottom: 0.875rem;
@@ -9835,7 +9835,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 392px) and (max-width: 415px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 15px;
     margin-bottom: 0.9375rem;
@@ -9843,7 +9843,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 416px) and (max-width: 439px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 16px;
     margin-bottom: 1rem;
@@ -9851,7 +9851,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 440px) and (max-width: 463px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 17px;
     margin-bottom: 1.0625rem;
@@ -9859,7 +9859,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 464px) and (max-width: 487px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 18px;
     margin-bottom: 1.125rem;
@@ -9867,7 +9867,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 488px) and (max-width: 511px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 19px;
     margin-bottom: 1.1875rem;
@@ -9875,7 +9875,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 512px) and (max-width: 535px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 20px;
     margin-bottom: 1.25rem;
@@ -9883,7 +9883,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 536px) and (max-width: 559px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 21px;
     margin-bottom: 1.3125rem;
@@ -9891,7 +9891,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 560px) and (max-width: 583px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 22px;
     margin-bottom: 1.375rem;
@@ -9899,7 +9899,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 584px) and (max-width: 607px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 23px;
     margin-bottom: 1.4375rem;
@@ -9907,7 +9907,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 608px) and (max-width: 631px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 24px;
     margin-bottom: 1.5rem;
@@ -9915,7 +9915,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 632px) and (max-width: 655px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 25px;
     margin-bottom: 1.5625rem;
@@ -9923,7 +9923,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 656px) and (max-width: 679px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 26px;
     margin-bottom: 1.625rem;
@@ -9931,7 +9931,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 680px) and (max-width: 703px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 27px;
     margin-bottom: 1.6875rem;
@@ -9939,7 +9939,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 704px) and (max-width: 727px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 28px;
     margin-bottom: 1.75rem;
@@ -9947,7 +9947,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 728px) and (max-width: 751px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 29px;
     margin-bottom: 1.8125rem;
@@ -9955,7 +9955,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 752px) and (max-width: 775px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 30px;
     margin-bottom: 1.875rem;
@@ -9963,7 +9963,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 776px) and (max-width: 799px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 31px;
     margin-bottom: 1.9375rem;
@@ -9971,7 +9971,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 800px) and (max-width: 823px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 32px;
     margin-bottom: 2rem;
@@ -9979,7 +9979,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 824px) and (max-width: 847px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 33px;
     margin-bottom: 2.0625rem;
@@ -9987,7 +9987,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 848px) and (max-width: 871px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 34px;
     margin-bottom: 2.125rem;
@@ -9995,7 +9995,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 872px) and (max-width: 895px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 35px;
     margin-bottom: 2.1875rem;
@@ -10003,7 +10003,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 896px) and (max-width: 919px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 36px;
     margin-bottom: 2.25rem;
@@ -10011,7 +10011,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 920px) and (max-width: 943px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 37px;
     margin-bottom: 2.3125rem;
@@ -10019,7 +10019,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 944px) and (max-width: 967px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 38px;
     margin-bottom: 2.375rem;
@@ -10027,7 +10027,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 968px) and (max-width: 991px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 39px;
     margin-bottom: 2.4375rem;
@@ -10035,7 +10035,7 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (min-width: 992px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 40px;
     margin-bottom: 2.5rem;
@@ -10043,7 +10043,7 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (max-width: 319px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 10px;
     font-size: 0.625rem;
@@ -10051,7 +10051,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 320px) and (max-width: 394px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 11px;
     font-size: 0.6875rem;
@@ -10064,7 +10064,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 395px) and (max-width: 468px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 12px;
     font-size: 0.75rem;
@@ -10077,7 +10077,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 469px) and (max-width: 543px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 13px;
     font-size: 0.8125rem;
@@ -10090,7 +10090,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 544px) and (max-width: 618px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 14px;
     font-size: 0.875rem;
@@ -10103,7 +10103,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 619px) and (max-width: 692px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 15px;
     font-size: 0.9375rem;
@@ -10116,7 +10116,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 693px) and (max-width: 767px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 16px;
     font-size: 1rem;
@@ -10129,7 +10129,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 768px) and (max-width: 842px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 17px;
     font-size: 1.0625rem;
@@ -10142,7 +10142,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 843px) and (max-width: 916px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 18px;
     font-size: 1.125rem;
@@ -10155,7 +10155,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 917px) and (max-width: 991px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 19px;
     font-size: 1.1875rem;
@@ -10168,7 +10168,7 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (min-width: 992px) {
-  /* line 713, src/sass/sections/_banner.scss */
+  /* line 724, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 20px;
     font-size: 1.25rem;
@@ -11890,10 +11890,10 @@ header form + a:hover .icon-cart {
     right: 1.25rem;
     width: 20px;
     width: 1.25rem;
-    padding: 3px 0 0 2px;
-    padding: 0.1875rem 0 0 0.125rem;
-    font-size: 17px;
-    font-size: 1.0625rem;
+    padding: 3px 0 0 1px;
+    padding: 0.1875rem 0 0 0.0625rem;
+    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
@@ -11904,10 +11904,10 @@ header form + a:hover .icon-cart {
     right: 1.875rem;
     width: 22px;
     width: 1.375rem;
-    padding: 5px 0 0 2px;
-    padding: 0.3125rem 0 0 0.125rem;
-    font-size: 20px;
-    font-size: 1.25rem;
+    padding: 5px 0 0 1px;
+    padding: 0.3125rem 0 0 0.0625rem;
+    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 
@@ -11926,8 +11926,8 @@ header form + a:hover .icon-cart {
     width: 1.625rem;
     padding: 6px 0 0 2px;
     padding: 0.375rem 0 0 0.125rem;
-    font-size: 23px;
-    font-size: 1.4375rem;
+    font-size: 22px;
+    font-size: 1.375rem;
   }
 }
 
@@ -11936,15 +11936,15 @@ header form + a:hover .icon-cart {
   .booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper:before {
     width: 34px;
     width: 2.125rem;
-    padding: 9px 0 0 3px;
-    padding: 0.5625rem 0 0 0.1875rem;
-    font-size: 31px;
-    font-size: 1.9375rem;
+    padding: 10px 0 0 4px;
+    padding: 0.625rem 0 0 0.25rem;
+    font-size: 26px;
+    font-size: 1.625rem;
   }
 }
 
 @media screen and (max-width: 479px) {
-  /* line 389, src/sass/sections/_booking.scss */
+  /* line 400, src/sass/sections/_booking.scss */
   .booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper input[type="text"] {
     font-size: 11px;
     font-size: 0.6875rem;
@@ -11954,7 +11954,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 480px) and (max-width: 575px) {
-  /* line 389, src/sass/sections/_booking.scss */
+  /* line 400, src/sass/sections/_booking.scss */
   .booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper input[type="text"] {
     font-size: 12px;
     font-size: 0.75rem;
@@ -11964,7 +11964,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  /* line 389, src/sass/sections/_booking.scss */
+  /* line 400, src/sass/sections/_booking.scss */
   .booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper input[type="text"] {
     font-size: 13px;
     font-size: 0.8125rem;
@@ -11974,7 +11974,7 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 389, src/sass/sections/_booking.scss */
+  /* line 400, src/sass/sections/_booking.scss */
   .booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper input[type="text"] {
     font-size: 14px;
     font-size: 0.875rem;
@@ -11984,7 +11984,7 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (max-width: 479px) {
-  /* line 416, src/sass/sections/_booking.scss */
+  /* line 427, src/sass/sections/_booking.scss */
   .booking .container .tab-content .tab-pane form.book-accommodation .select-wrapper select {
     font-size: 11px;
     font-size: 0.6875rem;
@@ -11994,7 +11994,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 480px) and (max-width: 575px) {
-  /* line 416, src/sass/sections/_booking.scss */
+  /* line 427, src/sass/sections/_booking.scss */
   .booking .container .tab-content .tab-pane form.book-accommodation .select-wrapper select {
     font-size: 12px;
     font-size: 0.75rem;
@@ -12004,7 +12004,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  /* line 416, src/sass/sections/_booking.scss */
+  /* line 427, src/sass/sections/_booking.scss */
   .booking .container .tab-content .tab-pane form.book-accommodation .select-wrapper select {
     font-size: 13px;
     font-size: 0.8125rem;
@@ -12014,7 +12014,7 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 416, src/sass/sections/_booking.scss */
+  /* line 427, src/sass/sections/_booking.scss */
   .booking .container .tab-content .tab-pane form.book-accommodation .select-wrapper select {
     font-size: 14px;
     font-size: 0.875rem;
@@ -12023,20 +12023,20 @@ header form + a:hover .icon-cart {
   }
 }
 
-/* line 441, src/sass/sections/_booking.scss */
+/* line 452, src/sass/sections/_booking.scss */
 .booking .container .tab-content .tab-pane form.book-accommodation input[type="submit"] {
   color: #11a0d3;
   background-color: #fff;
 }
 
-/* line 447, src/sass/sections/_booking.scss */
+/* line 458, src/sass/sections/_booking.scss */
 .booking .container .tab-content .tab-pane form.book-accommodation input[type="submit"]:hover {
+  color: #00303c;
   background-color: #ceeffb;
-  color: #0b6a8c;
 }
 
 @media screen and (max-width: 479px) {
-  /* line 441, src/sass/sections/_booking.scss */
+  /* line 452, src/sass/sections/_booking.scss */
   .booking .container .tab-content .tab-pane form.book-accommodation input[type="submit"] {
     font-size: 11px;
     font-size: 0.6875rem;
@@ -12050,7 +12050,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 480px) and (max-width: 575px) {
-  /* line 441, src/sass/sections/_booking.scss */
+  /* line 452, src/sass/sections/_booking.scss */
   .booking .container .tab-content .tab-pane form.book-accommodation input[type="submit"] {
     font-size: 12px;
     font-size: 0.75rem;
@@ -12064,7 +12064,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  /* line 441, src/sass/sections/_booking.scss */
+  /* line 452, src/sass/sections/_booking.scss */
   .booking .container .tab-content .tab-pane form.book-accommodation input[type="submit"] {
     font-size: 13px;
     font-size: 0.8125rem;
@@ -12078,7 +12078,7 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 441, src/sass/sections/_booking.scss */
+  /* line 452, src/sass/sections/_booking.scss */
   .booking .container .tab-content .tab-pane form.book-accommodation input[type="submit"] {
     font-size: 14px;
     font-size: 0.875rem;
@@ -12090,7 +12090,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 441, src/sass/sections/_booking.scss */
+  /* line 452, src/sass/sections/_booking.scss */
   .booking .container .tab-content .tab-pane form.book-accommodation input[type="submit"] {
     margin-top: 26px;
     margin-top: 1.625rem;
@@ -12098,7 +12098,7 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (min-width: 992px) {
-  /* line 441, src/sass/sections/_booking.scss */
+  /* line 452, src/sass/sections/_booking.scss */
   .booking .container .tab-content .tab-pane form.book-accommodation input[type="submit"] {
     margin-top: 42px;
     margin-top: 2.625rem;
@@ -12106,7 +12106,7 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (max-width: 1247px) {
-  /* line 441, src/sass/sections/_booking.scss */
+  /* line 452, src/sass/sections/_booking.scss */
   .booking .container .tab-content .tab-pane form.book-accommodation input[type="submit"] {
     float: right;
   }

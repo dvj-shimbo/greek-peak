@@ -6774,7 +6774,6 @@ form.book-accommodation .select-wrapper:after {
 /* line 67, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation .input-wrapper:after,
 form.book-accommodation .select-wrapper:after {
-  background-color: rgba(255, 0, 255, 0.3);
   right: 0;
   content: "\f103";
 }
@@ -6831,7 +6830,6 @@ form.book-accommodation .input-wrapper {
 
 /* line 122, src/sass/components/_book-accommodation-form.scss */
 form.book-accommodation .input-wrapper:before {
-  background-color: rgba(255, 255, 0, 0.3);
   content: "\f101";
 }
 
@@ -9585,8 +9583,8 @@ header form + a:hover .icon-cart {
   .banner .container form.book-accommodation .input-wrapper:before {
     width: 26px;
     width: 1.625rem;
-    padding: 4px 0 0 1px;
-    padding: 0.25rem 0 0 0.0625rem;
+    padding: 4px 0 0 2px;
+    padding: 0.25rem 0 0 0.125rem;
     font-size: 23px;
     font-size: 1.4375rem;
   }
@@ -9705,8 +9703,8 @@ header form + a:hover .icon-cart {
     max-width: 9.375rem;
     padding: 4px 0;
     padding: 0.25rem 0;
-    margin-top: 8px;
-    margin-top: 0.5rem;
+    margin-top: 10px;
+    margin-top: 0.625rem;
   }
 }
 
@@ -9719,8 +9717,8 @@ header form + a:hover .icon-cart {
     max-width: 10rem;
     padding: 6px 0;
     padding: 0.375rem 0;
-    margin-top: 10px;
-    margin-top: 0.625rem;
+    margin-top: 16px;
+    margin-top: 1rem;
   }
 }
 
@@ -9733,8 +9731,8 @@ header form + a:hover .icon-cart {
     max-width: 11.25rem;
     padding: 8px 0;
     padding: 0.5rem 0;
-    margin-top: 12px;
-    margin-top: 0.75rem;
+    margin-top: 18px;
+    margin-top: 1.125rem;
   }
 }
 
@@ -9747,6 +9745,20 @@ header form + a:hover .icon-cart {
     max-width: 13.75rem;
     padding: 12px 0;
     padding: 0.75rem 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 645, src/sass/sections/_banner.scss */
+  .banner .container form.book-accommodation input[type="submit"] {
+    margin-top: 24px;
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 645, src/sass/sections/_banner.scss */
+  .banner .container form.book-accommodation input[type="submit"] {
     margin-top: 39px;
     margin-top: 2.4375rem;
   }
@@ -9759,7 +9771,7 @@ header form + a:hover .icon-cart {
   }
 }
 
-/* line 706, src/sass/sections/_banner.scss */
+/* line 713, src/sass/sections/_banner.scss */
 .banner .container a:last-child {
   display: block;
   margin-left: 2%;
@@ -9785,13 +9797,13 @@ header form + a:hover .icon-cart {
 */
 }
 
-/* line 733, src/sass/sections/_banner.scss */
+/* line 740, src/sass/sections/_banner.scss */
 .banner .container a:last-child:hover {
   color: #41c2f0;
 }
 
 @media screen and (max-width: 319px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 11px;
     margin-bottom: 0.6875rem;
@@ -9799,7 +9811,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 320px) and (max-width: 343px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 12px;
     margin-bottom: 0.75rem;
@@ -9807,7 +9819,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 344px) and (max-width: 367px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 13px;
     margin-bottom: 0.8125rem;
@@ -9815,7 +9827,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 368px) and (max-width: 391px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 14px;
     margin-bottom: 0.875rem;
@@ -9823,7 +9835,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 392px) and (max-width: 415px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 15px;
     margin-bottom: 0.9375rem;
@@ -9831,7 +9843,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 416px) and (max-width: 439px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 16px;
     margin-bottom: 1rem;
@@ -9839,7 +9851,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 440px) and (max-width: 463px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 17px;
     margin-bottom: 1.0625rem;
@@ -9847,7 +9859,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 464px) and (max-width: 487px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 18px;
     margin-bottom: 1.125rem;
@@ -9855,7 +9867,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 488px) and (max-width: 511px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 19px;
     margin-bottom: 1.1875rem;
@@ -9863,7 +9875,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 512px) and (max-width: 535px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 20px;
     margin-bottom: 1.25rem;
@@ -9871,7 +9883,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 536px) and (max-width: 559px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 21px;
     margin-bottom: 1.3125rem;
@@ -9879,7 +9891,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 560px) and (max-width: 583px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 22px;
     margin-bottom: 1.375rem;
@@ -9887,7 +9899,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 584px) and (max-width: 607px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 23px;
     margin-bottom: 1.4375rem;
@@ -9895,7 +9907,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 608px) and (max-width: 631px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 24px;
     margin-bottom: 1.5rem;
@@ -9903,7 +9915,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 632px) and (max-width: 655px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 25px;
     margin-bottom: 1.5625rem;
@@ -9911,7 +9923,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 656px) and (max-width: 679px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 26px;
     margin-bottom: 1.625rem;
@@ -9919,7 +9931,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 680px) and (max-width: 703px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 27px;
     margin-bottom: 1.6875rem;
@@ -9927,7 +9939,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 704px) and (max-width: 727px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 28px;
     margin-bottom: 1.75rem;
@@ -9935,7 +9947,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 728px) and (max-width: 751px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 29px;
     margin-bottom: 1.8125rem;
@@ -9943,7 +9955,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 752px) and (max-width: 775px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 30px;
     margin-bottom: 1.875rem;
@@ -9951,7 +9963,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 776px) and (max-width: 799px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 31px;
     margin-bottom: 1.9375rem;
@@ -9959,7 +9971,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 800px) and (max-width: 823px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 32px;
     margin-bottom: 2rem;
@@ -9967,7 +9979,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 824px) and (max-width: 847px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 33px;
     margin-bottom: 2.0625rem;
@@ -9975,7 +9987,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 848px) and (max-width: 871px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 34px;
     margin-bottom: 2.125rem;
@@ -9983,7 +9995,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 872px) and (max-width: 895px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 35px;
     margin-bottom: 2.1875rem;
@@ -9991,7 +10003,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 896px) and (max-width: 919px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 36px;
     margin-bottom: 2.25rem;
@@ -9999,7 +10011,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 920px) and (max-width: 943px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 37px;
     margin-bottom: 2.3125rem;
@@ -10007,7 +10019,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 944px) and (max-width: 967px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 38px;
     margin-bottom: 2.375rem;
@@ -10015,7 +10027,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 968px) and (max-width: 991px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 39px;
     margin-bottom: 2.4375rem;
@@ -10023,7 +10035,7 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (min-width: 992px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     margin-bottom: 40px;
     margin-bottom: 2.5rem;
@@ -10031,7 +10043,7 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (max-width: 319px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 10px;
     font-size: 0.625rem;
@@ -10039,7 +10051,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 320px) and (max-width: 394px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 11px;
     font-size: 0.6875rem;
@@ -10052,7 +10064,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 395px) and (max-width: 468px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 12px;
     font-size: 0.75rem;
@@ -10065,7 +10077,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 469px) and (max-width: 543px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 13px;
     font-size: 0.8125rem;
@@ -10078,7 +10090,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 544px) and (max-width: 618px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 14px;
     font-size: 0.875rem;
@@ -10091,7 +10103,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 619px) and (max-width: 692px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 15px;
     font-size: 0.9375rem;
@@ -10104,7 +10116,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 693px) and (max-width: 767px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 16px;
     font-size: 1rem;
@@ -10117,7 +10129,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 768px) and (max-width: 842px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 17px;
     font-size: 1.0625rem;
@@ -10130,7 +10142,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 843px) and (max-width: 916px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 18px;
     font-size: 1.125rem;
@@ -10143,7 +10155,7 @@ header form + a:hover .icon-cart {
 }
 
 @media (min-width: 917px) and (max-width: 991px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 19px;
     font-size: 1.1875rem;
@@ -10156,7 +10168,7 @@ header form + a:hover .icon-cart {
 }
 
 @media screen and (min-width: 992px) {
-  /* line 706, src/sass/sections/_banner.scss */
+  /* line 713, src/sass/sections/_banner.scss */
   .banner .container a:last-child {
     font-size: 20px;
     font-size: 1.25rem;
@@ -11460,22 +11472,70 @@ header form + a:hover .icon-cart {
 /* line 8, src/sass/sections/_booking.scss */
 .booking .container {
   max-width: 1000px;
-  padding-top: 15px;
-  padding-top: 0.9375rem;
-  padding-bottom: 34px;
-  padding-bottom: 2.125rem;
-  padding-left: 34px;
-  padding-left: 2.125rem;
-  padding-right: 34px;
-  padding-right: 2.125rem;
 }
 
-/* line 32, src/sass/sections/_booking.scss */
+@media screen and (max-width: 419px) {
+  /* line 8, src/sass/sections/_booking.scss */
+  .booking .container {
+    padding: 8px 22px 22px;
+    padding: 0.5rem 1.375rem 1.375rem;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 479px) {
+  /* line 8, src/sass/sections/_booking.scss */
+  .booking .container {
+    padding: 10px 24px 24px;
+    padding: 0.625rem 1.5rem 1.5rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 575px) {
+  /* line 8, src/sass/sections/_booking.scss */
+  .booking .container {
+    padding: 11px 26px 26px;
+    padding: 0.6875rem 1.625rem 1.625rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 639px) {
+  /* line 8, src/sass/sections/_booking.scss */
+  .booking .container {
+    padding: 12px 28px 28px;
+    padding: 0.75rem 1.75rem 1.75rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  /* line 8, src/sass/sections/_booking.scss */
+  .booking .container {
+    padding: 13px 30px 30px;
+    padding: 0.8125rem 1.875rem 1.875rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 8, src/sass/sections/_booking.scss */
+  .booking .container {
+    padding: 14px 32px 32px;
+    padding: 0.875rem 2rem 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 8, src/sass/sections/_booking.scss */
+  .booking .container {
+    padding: 15px 34px 34px;
+    padding: 0.9375rem 2.125rem 2.125rem;
+  }
+}
+
+/* line 62, src/sass/sections/_booking.scss */
 .booking .container .nav.nav-tabs {
   border: 0;
 }
 
-/* line 38, src/sass/sections/_booking.scss */
+/* line 68, src/sass/sections/_booking.scss */
 .booking .container .nav.nav-tabs .nav-link {
   position: relative;
   background-color: transparent;
@@ -11483,128 +11543,570 @@ header form + a:hover .icon-cart {
   text-decoration: none;
   text-transform: uppercase;
   border: 0;
-  padding: 19px 0 15px;
-  padding: 1.1875rem 0 0.9375rem;
-  font-size: 16px;
-  font-size: 1rem;
+  /*
+
+					@include media('screen', '<phone') {
+						@include rem(font-size, 9px);
+					}
+
+					@include media('>=phone', '<phone-wide') {
+						@include rem(font-size, 10px);
+					}
+
+					@include media('>=phone-wide', '<phablet') {
+						@include rem(font-size, 11px);
+					}
+
+					@include media('>=phablet', '<tablet-small') {
+						@include rem(font-size, 12px);
+					}
+
+					@include media('>=tablet-small', '<tablet') {
+						@include rem(font-size, 13px);
+					}
+
+					@include media('>=tablet', '<tablet-wide') {
+						@include rem(font-size, 14px);
+					}
+
+					@include media('screen', '>=tablet-wide') {
+						@include rem(font-size, 15px);
+					}
+
+*/
 }
 
-/* line 64, src/sass/sections/_booking.scss */
+@media screen and (max-width: 419px) {
+  /* line 68, src/sass/sections/_booking.scss */
+  .booking .container .nav.nav-tabs .nav-link {
+    padding: 14px 0 6px;
+    padding: 0.875rem 0 0.375rem;
+    font-size: 11px;
+    font-size: 0.6875rem;
+    line-height: 14px;
+    line-height: 0.875rem;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 479px) {
+  /* line 68, src/sass/sections/_booking.scss */
+  .booking .container .nav.nav-tabs .nav-link {
+    padding: 15px 0 8px;
+    padding: 0.9375rem 0 0.5rem;
+    font-size: 12px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 575px) {
+  /* line 68, src/sass/sections/_booking.scss */
+  .booking .container .nav.nav-tabs .nav-link {
+    padding: 16px 0 10px;
+    padding: 1rem 0 0.625rem;
+    font-size: 13px;
+    font-size: 0.8125rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 639px) {
+  /* line 68, src/sass/sections/_booking.scss */
+  .booking .container .nav.nav-tabs .nav-link {
+    padding: 17px 0 12px;
+    padding: 1.0625rem 0 0.75rem;
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 991px) {
+  /* line 68, src/sass/sections/_booking.scss */
+  .booking .container .nav.nav-tabs .nav-link {
+    padding: 18px 0 14px;
+    padding: 1.125rem 0 0.875rem;
+    font-size: 15px;
+    font-size: 0.9375rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 68, src/sass/sections/_booking.scss */
+  .booking .container .nav.nav-tabs .nav-link {
+    padding: 19px 0 15px;
+    padding: 1.1875rem 0 0.9375rem;
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+
+/* line 156, src/sass/sections/_booking.scss */
 .booking .container .nav.nav-tabs .nav-link h4 {
   font-family: "Open-Sans-Semibold", sans-serif;
 }
 
-/* line 73, src/sass/sections/_booking.scss */
-.booking .container .nav.nav-tabs .nav-link.active:after, .booking .container .nav.nav-tabs .nav-link:not(.active):hover:after {
+/* line 166, src/sass/sections/_booking.scss */
+.booking .container .nav.nav-tabs .nav-link.active:after {
   content: "";
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 5px;
 }
 
-/* line 88, src/sass/sections/_booking.scss */
+@media screen and (max-width: 479px) {
+  /* line 166, src/sass/sections/_booking.scss */
+  .booking .container .nav.nav-tabs .nav-link.active:after {
+    height: 1px;
+    height: 0.0625rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 575px) {
+  /* line 166, src/sass/sections/_booking.scss */
+  .booking .container .nav.nav-tabs .nav-link.active:after {
+    height: 2px;
+    height: 0.125rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 639px) {
+  /* line 166, src/sass/sections/_booking.scss */
+  .booking .container .nav.nav-tabs .nav-link.active:after {
+    height: 3px;
+    height: 0.1875rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 991px) {
+  /* line 166, src/sass/sections/_booking.scss */
+  .booking .container .nav.nav-tabs .nav-link.active:after {
+    height: 4px;
+    height: 0.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 166, src/sass/sections/_booking.scss */
+  .booking .container .nav.nav-tabs .nav-link.active:after {
+    height: 5px;
+    height: 0.3125rem;
+  }
+}
+
+/* line 198, src/sass/sections/_booking.scss */
 .booking .container .nav.nav-tabs .nav-link.active {
   cursor: default;
 }
 
-/* line 91, src/sass/sections/_booking.scss */
+/* line 201, src/sass/sections/_booking.scss */
 .booking .container .nav.nav-tabs .nav-link.active:after {
   background-color: #fff;
 }
 
-/* line 97, src/sass/sections/_booking.scss */
+/* line 206, src/sass/sections/_booking.scss */
+.booking .container .nav.nav-tabs .nav-link:not(.active) {
+  float: left;
+}
+
+/* line 210, src/sass/sections/_booking.scss */
 .booking .container .nav.nav-tabs .nav-link:not(.active):hover {
-  color: #ceeffb;
+  color: #b7e8f9;
 }
 
-/* line 99, src/sass/sections/_booking.scss */
-.booking .container .nav.nav-tabs .nav-link:not(.active):hover:after {
-  background-color: #ceeffb;
-}
-
-/* line 112, src/sass/sections/_booking.scss */
+/* line 228, src/sass/sections/_booking.scss */
 .booking .container .tab-content {
-  padding-top: 20px;
-  padding-top: 1.25rem;
+  /*
+			@include media('>=phablet', '<tablet') {
+				@include rem(padding-top, 14px);
+			}
+			
+			@include media('>=tablet', '<tablet-wide') {
+				@include rem(padding-top, 16px);
+			}
+*/
+  /*
+			@include media('screen', '<phone') {}
+			@include media('>=phone', '<phone-wide') {}
+			@include media('>=phone-wide', '<phablet') {}
+			@include media('>=phablet', '<tablet-small') {}
+			@include media('>=tablet-small', '<tablet') {}
+			@include media('>=tablet', '<tablet-wide') {}
+			@include media('screen', '>=tablet-wide') {}
+*/
 }
 
-/* line 129, src/sass/sections/_booking.scss */
-.booking .container .tab-content .tab-pane form.book-accommodation label {
-  font-size: 14px;
-  font-size: 0.875rem;
-  padding: 16px 0 13px;
-  padding: 1rem 0 0.8125rem;
+@media screen and (max-width: 419px) {
+  /* line 228, src/sass/sections/_booking.scss */
+  .booking .container .tab-content {
+    padding-top: 10px;
+    padding-top: 0.625rem;
+  }
 }
 
-/* line 136, src/sass/sections/_booking.scss */
+@media (min-width: 420px) and (max-width: 479px) {
+  /* line 228, src/sass/sections/_booking.scss */
+  .booking .container .tab-content {
+    padding-top: 12px;
+    padding-top: 0.75rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 575px) {
+  /* line 228, src/sass/sections/_booking.scss */
+  .booking .container .tab-content {
+    padding-top: 14px;
+    padding-top: 0.875rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 639px) {
+  /* line 228, src/sass/sections/_booking.scss */
+  .booking .container .tab-content {
+    padding-top: 16px;
+    padding-top: 1rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 991px) {
+  /* line 228, src/sass/sections/_booking.scss */
+  .booking .container .tab-content {
+    padding-top: 18px;
+    padding-top: 1.125rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 228, src/sass/sections/_booking.scss */
+  .booking .container .tab-content {
+    padding-top: 20px;
+    padding-top: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  /* line 292, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation label {
+    font-size: 11px;
+    font-size: 0.6875rem;
+    padding: 8px 0 5px;
+    padding: 0.5rem 0 0.3125rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 575px) {
+  /* line 292, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation label {
+    font-size: 12px;
+    font-size: 0.75rem;
+    padding: 8px 0 6px;
+    padding: 0.5rem 0 0.375rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  /* line 292, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation label {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    padding: 10px 0 8px;
+    padding: 0.625rem 0 0.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 292, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation label {
+    font-size: 14px;
+    font-size: 0.875rem;
+    padding: 16px 0 13px;
+    padding: 1rem 0 0.8125rem;
+  }
+}
+
+/* line 316, src/sass/sections/_booking.scss */
 .booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper,
 .booking .container .tab-content .tab-pane form.book-accommodation .select-wrapper {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* line 141, src/sass/sections/_booking.scss */
-.booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper:after,
-.booking .container .tab-content .tab-pane form.book-accommodation .select-wrapper:after {
-  padding: 20px 0 0 14px;
-  padding: 1.25rem 0 0 0.875rem;
-  width: 40px;
-  width: 2.5rem;
-  font-size: 9px;
-  font-size: 0.5625rem;
+@media screen and (max-width: 479px) {
+  /* line 321, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper:after,
+  .booking .container .tab-content .tab-pane form.book-accommodation .select-wrapper:after {
+    width: 20px;
+    width: 1.25rem;
+    font-size: 7px;
+    font-size: 0.4375rem;
+    padding: 8px 0 0 5px;
+    padding: 0.5rem 0 0 0.3125rem;
+  }
 }
 
-/* line 150, src/sass/sections/_booking.scss */
-.booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper:before {
-  right: 40px;
-  right: 2.5rem;
-  width: 34px;
-  width: 2.125rem;
-  padding: 9px 0 0 3px;
-  padding: 0.5625rem 0 0 0.1875rem;
-  font-size: 31px;
-  font-size: 1.9375rem;
+@media (min-width: 480px) and (max-width: 575px) {
+  /* line 321, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper:after,
+  .booking .container .tab-content .tab-pane form.book-accommodation .select-wrapper:after {
+    width: 30px;
+    width: 1.875rem;
+    font-size: 8px;
+    font-size: 0.5rem;
+    padding: 11px 0 0 8px;
+    padding: 0.6875rem 0 0 0.5rem;
+  }
 }
 
-/* line 159, src/sass/sections/_booking.scss */
-.booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper input[type="text"] {
-  font-size: 14px;
-  font-size: 0.875rem;
-  padding: 15px 80px 15px 15px;
-  padding: 0.9375rem 5rem 0.9375rem 0.9375rem;
+@media screen and (min-width: 576px) {
+  /* line 321, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper:after,
+  .booking .container .tab-content .tab-pane form.book-accommodation .select-wrapper:after {
+    width: 40px;
+    width: 2.5rem;
+    font-size: 9px;
+    font-size: 0.5625rem;
+  }
 }
 
-/* line 167, src/sass/sections/_booking.scss */
-.booking .container .tab-content .tab-pane form.book-accommodation .select-wrapper select {
-  font-size: 14px;
-  font-size: 0.875rem;
-  padding: 15px 20px 15px 15px;
-  padding: 0.9375rem 1.25rem 0.9375rem 0.9375rem;
+@media (min-width: 576px) and (max-width: 767px) {
+  /* line 321, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper:after,
+  .booking .container .tab-content .tab-pane form.book-accommodation .select-wrapper:after {
+    padding: 14px 0 0 12px;
+    padding: 0.875rem 0 0 0.75rem;
+  }
 }
 
-/* line 173, src/sass/sections/_booking.scss */
+@media screen and (min-width: 768px) {
+  /* line 321, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper:after,
+  .booking .container .tab-content .tab-pane form.book-accommodation .select-wrapper:after {
+    padding: 20px 0 0 14px;
+    padding: 1.25rem 0 0 0.875rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  /* line 353, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper:before {
+    right: 20px;
+    right: 1.25rem;
+    width: 20px;
+    width: 1.25rem;
+    padding: 3px 0 0 2px;
+    padding: 0.1875rem 0 0 0.125rem;
+    font-size: 17px;
+    font-size: 1.0625rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 575px) {
+  /* line 353, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper:before {
+    right: 30px;
+    right: 1.875rem;
+    width: 22px;
+    width: 1.375rem;
+    padding: 5px 0 0 2px;
+    padding: 0.3125rem 0 0 0.125rem;
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  /* line 353, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper:before {
+    right: 40px;
+    right: 2.5rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  /* line 353, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper:before {
+    width: 26px;
+    width: 1.625rem;
+    padding: 6px 0 0 2px;
+    padding: 0.375rem 0 0 0.125rem;
+    font-size: 23px;
+    font-size: 1.4375rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 353, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper:before {
+    width: 34px;
+    width: 2.125rem;
+    padding: 9px 0 0 3px;
+    padding: 0.5625rem 0 0 0.1875rem;
+    font-size: 31px;
+    font-size: 1.9375rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  /* line 389, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper input[type="text"] {
+    font-size: 11px;
+    font-size: 0.6875rem;
+    padding: 6px 40px 6px 8px;
+    padding: 0.375rem 2.5rem 0.375rem 0.5rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 575px) {
+  /* line 389, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper input[type="text"] {
+    font-size: 12px;
+    font-size: 0.75rem;
+    padding: 8px 60px 8px 10px;
+    padding: 0.5rem 3.75rem 0.5rem 0.625rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  /* line 389, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper input[type="text"] {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    padding: 10px 80px 10px 14px;
+    padding: 0.625rem 5rem 0.625rem 0.875rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 389, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation .input-wrapper input[type="text"] {
+    font-size: 14px;
+    font-size: 0.875rem;
+    padding: 15px 80px 15px 15px;
+    padding: 0.9375rem 5rem 0.9375rem 0.9375rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  /* line 416, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation .select-wrapper select {
+    font-size: 11px;
+    font-size: 0.6875rem;
+    padding: 6px 20px 6px 8px;
+    padding: 0.375rem 1.25rem 0.375rem 0.5rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 575px) {
+  /* line 416, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation .select-wrapper select {
+    font-size: 12px;
+    font-size: 0.75rem;
+    padding: 8px 30px 8px 10px;
+    padding: 0.5rem 1.875rem 0.5rem 0.625rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  /* line 416, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation .select-wrapper select {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    padding: 10px 40px 10px 14px;
+    padding: 0.625rem 2.5rem 0.625rem 0.875rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 416, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation .select-wrapper select {
+    font-size: 14px;
+    font-size: 0.875rem;
+    padding: 15px 40px 15px 15px;
+    padding: 0.9375rem 2.5rem 0.9375rem 0.9375rem;
+  }
+}
+
+/* line 441, src/sass/sections/_booking.scss */
 .booking .container .tab-content .tab-pane form.book-accommodation input[type="submit"] {
   color: #11a0d3;
   background-color: #fff;
-  padding: 15px 0;
-  padding: 0.9375rem 0;
-  margin-top: 42px;
-  margin-top: 2.625rem;
-  font-size: 14px;
-  font-size: 0.875rem;
-  max-width: 220px;
-  max-width: 13.75rem;
 }
 
-/* line 186, src/sass/sections/_booking.scss */
+/* line 447, src/sass/sections/_booking.scss */
 .booking .container .tab-content .tab-pane form.book-accommodation input[type="submit"]:hover {
   background-color: #ceeffb;
   color: #0b6a8c;
 }
 
+@media screen and (max-width: 479px) {
+  /* line 441, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation input[type="submit"] {
+    font-size: 11px;
+    font-size: 0.6875rem;
+    max-width: 150px;
+    max-width: 9.375rem;
+    padding: 6px 0;
+    padding: 0.375rem 0;
+    margin-top: 14px;
+    margin-top: 0.875rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 575px) {
+  /* line 441, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation input[type="submit"] {
+    font-size: 12px;
+    font-size: 0.75rem;
+    max-width: 160px;
+    max-width: 10rem;
+    padding: 8px 0;
+    padding: 0.5rem 0;
+    margin-top: 18px;
+    margin-top: 1.125rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  /* line 441, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation input[type="submit"] {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    max-width: 180px;
+    max-width: 11.25rem;
+    padding: 10px 0;
+    padding: 0.625rem 0;
+    margin-top: 20px;
+    margin-top: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 441, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation input[type="submit"] {
+    font-size: 14px;
+    font-size: 0.875rem;
+    max-width: 220px;
+    max-width: 13.75rem;
+    padding: 15px 0;
+    padding: 0.9375rem 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 441, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation input[type="submit"] {
+    margin-top: 26px;
+    margin-top: 1.625rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 441, src/sass/sections/_booking.scss */
+  .booking .container .tab-content .tab-pane form.book-accommodation input[type="submit"] {
+    margin-top: 42px;
+    margin-top: 2.625rem;
+  }
+}
+
 @media screen and (max-width: 1247px) {
-  /* line 173, src/sass/sections/_booking.scss */
+  /* line 441, src/sass/sections/_booking.scss */
   .booking .container .tab-content .tab-pane form.book-accommodation input[type="submit"] {
     float: right;
   }

@@ -21,11 +21,41 @@
 //		@include rem(padding-top, 34px);
 //		@include rem(padding-bottom, 34px);
 
-		@include rem(padding-top, 15px);
-		@include rem(padding-bottom, 34px);
+//		@include rem(padding-top, 15px);
+//		@include rem(padding-bottom, 34px);
+//
+//		@include rem(padding-left, 34px);
+//		@include rem(padding-right, 34px);
 
-		@include rem(padding-left, 34px);
-		@include rem(padding-right, 34px);
+
+		@include media('screen', '<phone') {
+			@include rem(padding, 8px 22px 22px);
+		}
+
+		@include media('>=phone', '<phone-wide') {
+			@include rem(padding, 10px 24px 24px);
+		}
+
+		@include media('>=phone-wide', '<phablet') {
+			@include rem(padding, 11px 26px 26px);
+		}
+
+		@include media('>=phablet', '<tablet-small') {
+			@include rem(padding, 12px 28px 28px);
+		}
+
+		@include media('>=tablet-small', '<tablet') {
+			@include rem(padding, 13px 30px 30px);
+		}
+
+		@include media('>=tablet', '<tablet-wide') {
+			@include rem(padding, 14px 32px 32px);
+		}
+
+
+		@include media('screen', '>=tablet-wide') {
+			@include rem(padding, 15px 34px 34px);
+		}
 
 
 		.nav {
@@ -55,18 +85,81 @@
 		
 		//			padding: 0 0 20px;
 //					@include rem(padding, 0 0 15px);
-					@include rem(padding, 19px 0 15px);
+					
 //					@include rem(padding-top, 19px);
 		
 		
-					@include rem(font-size, 16px);
+					@include media('screen', '<phone') {
+						@include rem(padding, 14px 0 6px);
+						@include rem(font-size, 11px);
+						@include rem(line-height, 14px);
+					}
+
+					@include media('>=phone', '<phone-wide') {
+						@include rem(padding, 15px 0 8px);
+						@include rem(font-size, 12px);
+					}
+
+					@include media('>=phone-wide', '<phablet') {
+						@include rem(padding, 16px 0 10px);
+						@include rem(font-size, 13px);
+					}
+
+					@include media('>=phablet', '<tablet-small') {
+						@include rem(padding, 17px 0 12px);
+						@include rem(font-size, 14px);
+					}
+
+					@include media('>=tablet-small', '<tablet-wide') {
+						@include rem(padding, 18px 0 14px);
+						@include rem(font-size, 15px);
+					}
+
+/*
+
+					@include media('screen', '<phone') {
+						@include rem(font-size, 9px);
+					}
+
+					@include media('>=phone', '<phone-wide') {
+						@include rem(font-size, 10px);
+					}
+
+					@include media('>=phone-wide', '<phablet') {
+						@include rem(font-size, 11px);
+					}
+
+					@include media('>=phablet', '<tablet-small') {
+						@include rem(font-size, 12px);
+					}
+
+					@include media('>=tablet-small', '<tablet') {
+						@include rem(font-size, 13px);
+					}
+
+					@include media('>=tablet', '<tablet-wide') {
+						@include rem(font-size, 14px);
+					}
+
+					@include media('screen', '>=tablet-wide') {
+						@include rem(font-size, 15px);
+					}
+
+*/
+					@include media('screen', '>=tablet-wide') {
+						@include rem(padding, 19px 0 15px);
+						@include rem(font-size, 16px);
+					}
+
+
 
 					h4 {
 						font-family: "Open-Sans-Semibold", sans-serif;
 					}
 		
-					&.active,
-					&:not(.active):hover {
+//					&.active,
+//					&:not(.active):hover {
+					&.active {
 		
 						
 		
@@ -78,7 +171,24 @@
 							right: 0;
 			
 							bottom: 0;
-							height: 5px;
+//							height: 5px;
+
+							@include media('screen', '<phone-wide') {
+								@include rem(height, 1px);
+							}
+							@include media('>=phone-wide', '<phablet') {
+								@include rem(height, 2px);
+							}
+							@include media('>=phablet', '<tablet-small') {
+								@include rem(height, 3px);
+							}
+							@include media('>=tablet-small', '<tablet-wide') {
+								@include rem(height, 4px);
+							}
+
+							@include media('screen', '>=tablet') {
+								@include rem(height, 5px);
+							}
 			
 		//					background-color: $white;
 						}
@@ -94,11 +204,17 @@
 					}
 		
 					&:not(.active) {
+
+						float: left;
+
 						&:hover {
-							color: lighten($blue, 45%);
-							&:after {
-								background-color: lighten($blue, 45%);
-							}
+//							color: lighten($blue, 45%);
+							color: lighten($blue, 40%);
+
+//							&:after {
+//								background-color: lighten($blue, 45%);
+//							}
+
 						}
 					}
 		
@@ -113,7 +229,52 @@
 //			background-color: rgba(255,255,0,0.2);
 
 //			@include rem(padding-top, 37px);
-			@include rem(padding-top, 20px);
+
+
+
+/*
+			@include media('>=phablet', '<tablet') {
+				@include rem(padding-top, 14px);
+			}
+			
+			@include media('>=tablet', '<tablet-wide') {
+				@include rem(padding-top, 16px);
+			}
+*/
+
+/*
+			@include media('screen', '<phone') {}
+			@include media('>=phone', '<phone-wide') {}
+			@include media('>=phone-wide', '<phablet') {}
+			@include media('>=phablet', '<tablet-small') {}
+			@include media('>=tablet-small', '<tablet') {}
+			@include media('>=tablet', '<tablet-wide') {}
+			@include media('screen', '>=tablet-wide') {}
+*/
+
+			@include media('screen', '<phone') {
+				@include rem(padding-top, 10px);
+			}
+
+			@include media('>=phone', '<phone-wide') {
+				@include rem(padding-top, 12px);
+			}
+
+			@include media('>=phone-wide', '<phablet') {
+				@include rem(padding-top, 14px);
+			}
+
+			@include media('>=phablet', '<tablet-small') {
+				@include rem(padding-top, 16px);
+			}
+
+			@include media('>=tablet-small', '<tablet-wide') {
+				@include rem(padding-top, 18px);
+			}
+
+			@include media('screen', '>=tablet-wide') {
+				@include rem(padding-top, 20px);
+			}
 
 			.tab-pane {
 
@@ -126,10 +287,29 @@
 				form {
 					&.book-accommodation {
 
+
+
 						label {
 
-							@include rem(font-size, 14px);
-							@include rem(padding, 16px 0 13px);
+							@include media('screen', '<phone-wide') {
+								@include rem(font-size, 11px);
+								@include rem(padding, 8px 0 5px);
+							}
+
+							@include media('>=phone-wide', '<phablet') {
+								@include rem(font-size, 12px);
+								@include rem(padding, 8px 0 6px);
+							}
+
+							@include media('>=phablet', '<tablet') {
+								@include rem(font-size, 13px);
+								@include rem(padding, 10px 0 8px);
+							}
+
+							@include media('screen', '>=tablet') {
+								@include rem(font-size, 14px);
+								@include rem(padding, 16px 0 13px);
+							}
 
 						}
 
@@ -139,53 +319,169 @@
 							background-color: rgba(255,255,255,0.2);
 
 							&:after {
-								@include rem(padding, 20px 0 0 14px);
-								@include rem(width, 40px);
-								@include rem(font-size, 9px);
+
+								@include media('screen', '<phone-wide') {
+									@include rem(width, 20px);
+									@include rem(font-size, 7px);
+									@include rem(padding, 8px 0 0 5px);
+								}
+
+								@include media('>=phone-wide', '<phablet') {
+									@include rem(width, 30px);
+									@include rem(font-size, 8px);
+									@include rem(padding, 11px 0 0 8px);
+								}
+								
+								@include media('screen', '>=phablet') {
+									@include rem(width, 40px);
+									@include rem(font-size, 9px);
+								}
+
+								@include media('>=phablet', '<tablet') {
+									@include rem(padding, 14px 0 0 12px);
+								}
+
+								@include media('screen', '>=tablet') {
+									@include rem(padding, 20px 0 0 14px);
+								}
+
 							}
 						}
 
 						.input-wrapper {
 
 							&:before {
-								@include rem(right, 40px);
-								@include rem(width, 34px);
-								@include rem(padding, 9px 0 0 3px);
-								@include rem(font-size, 31px);
+
+								@include media('screen', '<phone-wide') {
+									@include rem(right, 20px);
+									@include rem(width, 20px);
+									@include rem(padding, 3px 0 0 2px);
+									@include rem(font-size, 17px);
+								}
+
+								@include media('>=phone-wide', '<phablet') {
+									@include rem(right, 30px);
+									@include rem(width, 22px);
+									@include rem(padding, 5px 0 0 2px);
+									@include rem(font-size, 20px);
+								}
+
+								@include media('screen', '>=phablet') {
+									@include rem(right, 40px);
+								}		
+
+								@include media('>=phablet', '<tablet') {
+									@include rem(width, 26px);
+									@include rem(padding, 6px 0 0 2px);
+									@include rem(font-size, 23px);
+								}
+
+								@include media('screen', '>=tablet') {
+									@include rem(width, 34px);
+									@include rem(padding, 9px 0 0 3px);
+									@include rem(font-size, 31px);
+								}
+
 							}
 
 
 							input {
 								&[type="text"] {
-									@include rem(font-size, 14px);
-									@include rem(padding, 15px 80px 15px 15px);
+
+									@include media('screen', '<phone-wide') {
+										@include rem(font-size, 11px);
+										@include rem(padding, 6px 40px 6px 8px);
+									}
+									
+									@include media('>=phone-wide', '<phablet') {
+										@include rem(font-size, 12px);
+										@include rem(padding, 8px 60px 8px 10px);
+									}
+
+									@include media('>=phablet', '<tablet') {
+										@include rem(font-size, 13px);
+										@include rem(padding, 10px 80px 10px 14px);
+									}
+
+									@include media('screen', '>=tablet') {
+										@include rem(font-size, 14px);
+										@include rem(padding, 15px 80px 15px 15px);
+									}
+
 								}
 							}
 						}
 
 						.select-wrapper {
 							select {
-								@include rem(font-size, 14px);
-								@include rem(padding, 15px 20px 15px 15px);
+
+								@include media('screen', '<phone-wide') {
+									@include rem(font-size, 11px);
+									@include rem(padding, 6px 20px 6px 8px);
+								}
+								
+								@include media('>=phone-wide', '<phablet') {
+									@include rem(font-size, 12px);
+									@include rem(padding, 8px 30px 8px 10px);
+								}
+
+								@include media('>=phablet', '<tablet') {
+									@include rem(font-size, 13px);
+									@include rem(padding, 10px 40px 10px 14px);
+								}
+
+								@include media('screen', '>=tablet') {
+									@include rem(font-size, 14px);
+									@include rem(padding, 15px 40px 15px 15px);
+								}
+
 							}
 						}
 
 						input[type="submit"] {
 
 
-
 							color: $blue;
 							background-color: $white;
-
-							@include rem(padding, 15px 0);
-							@include rem(margin-top, 42px);
-
-							@include rem(font-size, 14px);
-							@include rem(max-width, 220px);
 
 							&:hover {
 								background-color: lighten($blue, 45%);
 								color: darken($blue, 15%);
+							}
+
+							@include media('screen', '<phone-wide') {
+								@include rem(font-size, 11px);
+								@include rem(max-width, 150px);
+								@include rem(padding, 6px 0);
+								@include rem(margin-top, 14px);
+							}
+
+							@include media('>=phone-wide', '<phablet') {
+								@include rem(font-size, 12px);
+								@include rem(max-width, 160px);
+								@include rem(padding, 8px 0);
+								@include rem(margin-top, 18px);
+							}
+
+							@include media('>=phablet', '<tablet') {
+								@include rem(font-size, 13px);
+								@include rem(max-width, 180px);
+								@include rem(padding, 10px 0);
+								@include rem(margin-top, 20px);
+							}
+
+							@include media('screen', '>=tablet') {
+								@include rem(font-size, 14px);
+								@include rem(max-width, 220px);
+								@include rem(padding, 15px 0);
+							}
+
+							@include media('>=tablet', '<tablet-wide') {
+								@include rem(margin-top, 26px);
+							}
+
+							@include media('screen', '>=tablet-wide') {
+								@include rem(margin-top, 42px);
 							}
 
 							@include media('screen', '<desktop-wide') {

@@ -580,7 +580,7 @@
 
 						@include media('>=phablet', '<tablet') {
 							@include rem(width, 26px);
-							@include rem(padding, 4px 0 0 1px);
+							@include rem(padding, 4px 0 0 2px);
 							@include rem(font-size, 23px);
 						}
 
@@ -656,27 +656,34 @@
 						@include rem(font-size, 11px);
 						@include rem(max-width, 150px);
 						@include rem(padding, 4px 0);
-						@include rem(margin-top, 8px);
+						@include rem(margin-top, 10px);
 					}
 
 					@include media('>=phone-wide', '<phablet') {
 						@include rem(font-size, 12px);
 						@include rem(max-width, 160px);
 						@include rem(padding, 6px 0);
-						@include rem(margin-top, 10px);
+						@include rem(margin-top, 16px);
 					}
 
 					@include media('>=phablet', '<tablet') {
 						@include rem(font-size, 13px);
 						@include rem(max-width, 180px);
 						@include rem(padding, 8px 0);
-						@include rem(margin-top, 12px);
+						@include rem(margin-top, 18px);
 					}
 
 					@include media('screen', '>=tablet') {
 						@include rem(font-size, 14px);
 						@include rem(max-width, 220px);
 						@include rem(padding, 12px 0);
+					}
+
+					@include media('>=tablet', '<tablet-wide') {
+						@include rem(margin-top, 24px);
+					}
+
+					@include media('screen', '>=tablet-wide') {
 						@include rem(margin-top, 39px);
 					}
 

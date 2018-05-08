@@ -24,7 +24,7 @@ form {
 			display: block;
 //			display: inline-block;
 
-			@include rem(font-size, 14px);
+//			@include rem(font-size, 14px);
 
 //			@include rem(padding-bottom, 13px);
 //			@include rem(padding, 16px 0 13px);
@@ -66,15 +66,15 @@ form {
 
 			&:after {
 
-//				background-color: rgba(255,0,255,0.3);
+				background-color: rgba(255,0,255,0.3);
 
 //				@include rem(top, 21px);
 //				@include rem(right, 13px);
 				right: 0;
-				@include rem(width, 40px);
+//				@include rem(width, 40px);
 //				@include rem(padding, 20px 0 0 14px);
 
-				@include rem(font-size, 9px);
+//				@include rem(font-size, 9px);
 				content: "\f103";
 
 				
@@ -121,16 +121,16 @@ form {
 
 			&:before {
 				
-//				background-color: rgba(255,255,0,0.3);
+				background-color: rgba(255,255,0,0.3);
 
 //				@include rem(top, 9px);
 //				@include rem(right, 40px);
 
-				@include rem(right, 40px);
-				@include rem(width, 34px);
+//				@include rem(right, 40px);
+//				@include rem(width, 34px);
 //				@include rem(padding, 9px 0 0 3px);
 
-				@include rem(font-size, 31px);
+//				@include rem(font-size, 31px);
 
 //				top: 0;
 //				bottom: 0;
@@ -184,7 +184,7 @@ form {
 
 //					@include rem(padding, 15px 80px 15px 15px);
 
-					@include rem(font-size, 14px);
+//					@include rem(font-size, 14px);
 
 //					cursor: default;
 
@@ -242,7 +242,7 @@ form {
 
 //				@include rem(padding, 15px 20px 15px 15px);
 
-				@include rem(font-size, 14px);
+//				@include rem(font-size, 14px);
 
 				option {
 					color: $font-color;
@@ -267,7 +267,7 @@ form {
 
 			font-family: "Open-Sans-Semibold", sans-serif;
 
-			@include rem(font-size, 14px);
+//			@include rem(font-size, 14px);
 
 //			color: $blue;
 //			background-color: $white;
@@ -280,7 +280,7 @@ form {
 
 
 			width: 100%;
-			@include rem(max-width, 220px);
+//			@include rem(max-width, 220px);
 
 			@include border-radius(3px);
 			@include transition(all 0.25s ease-in-out);

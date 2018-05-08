@@ -128,6 +128,7 @@
 
 						label {
 
+							@include rem(font-size, 14px);
 							@include rem(padding, 16px 0 13px);
 
 						}
@@ -139,18 +140,24 @@
 
 							&:after {
 								@include rem(padding, 20px 0 0 14px);
+								@include rem(width, 40px);
+								@include rem(font-size, 9px);
 							}
 						}
 
 						.input-wrapper {
 
 							&:before {
+								@include rem(right, 40px);
+								@include rem(width, 34px);
 								@include rem(padding, 9px 0 0 3px);
+								@include rem(font-size, 31px);
 							}
 
 
 							input {
 								&[type="text"] {
+									@include rem(font-size, 14px);
 									@include rem(padding, 15px 80px 15px 15px);
 								}
 							}
@@ -158,11 +165,14 @@
 
 						.select-wrapper {
 							select {
+								@include rem(font-size, 14px);
 								@include rem(padding, 15px 20px 15px 15px);
 							}
 						}
 
 						input[type="submit"] {
+
+
 
 							color: $blue;
 							background-color: $white;
@@ -170,10 +180,18 @@
 							@include rem(padding, 15px 0);
 							@include rem(margin-top, 42px);
 
+							@include rem(font-size, 14px);
+							@include rem(max-width, 220px);
+
 							&:hover {
 								background-color: lighten($blue, 45%);
 								color: darken($blue, 15%);
 							}
+
+							@include media('screen', '<desktop-wide') {
+								float: right;
+							}
+
 						}
 
 					}

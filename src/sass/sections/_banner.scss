@@ -445,7 +445,7 @@
 		form {
 			&.book-accommodation {
 
-//				background-color: rgba(255,0,0,0.3);
+//				background-color: rgba(0,0,255,0.5);
 				background-color: rgba(0,0,0,0.55);
 
 //				[class*="col"] {
@@ -453,23 +453,74 @@
 //				}
 
 //				margin-bottom: 32px;
-				@include rem(margin-bottom, 32px);
+				
 
 //				max-width: 840px;
 				@include rem(max-width, 960px);
 
-				margin-left: 2%;
-				margin-right: 2%;
+//				margin-left: 2%;
+//				margin-right: 2%;
+
+//				margin-left: 0;
+//				margin-right: 0;
+
+				@include media('screen', '<phablet') {
+					margin-left: 0;
+					margin-right: 0;
+				}
+
+				@include media('screen', '>=phablet') {
+					margin-left: 2%;
+					margin-right: 2%;
+				}
+
+
 
 				@include border-radius(3px);
 
-				@include rem(padding, 0 7px 7px);
+				@include media('screen', '<phone-wide') {
+					@include rem(margin-bottom, 10px);
+					@include rem(padding-bottom, 5px);
+				}
+
+				@include media('>=phone-wide', '<phablet') {
+					@include rem(margin-bottom, 14px);
+					@include rem(padding-bottom, 6px);
+				}
+
+				@include media('>=phablet', '<tablet') {
+					@include rem(margin-bottom, 16px);
+					@include rem(padding-bottom, 7px);
+				}
+
+				@include media('screen', '>=tablet') {
+					@include rem(margin-bottom, 32px);
+					@include rem(padding, 0 7px 9px);
+				}
 
 
 
 				label {
 
-					@include rem(padding, 14px 0 12px);
+					@include media('screen', '<phone-wide') {
+						@include rem(font-size, 11px);
+						@include rem(padding, 5px 0 4px);
+					}
+
+					@include media('>=phone-wide', '<phablet') {
+						@include rem(font-size, 12px);
+						@include rem(padding, 6px 0 5px);
+					}
+
+					@include media('>=phablet', '<tablet') {
+						@include rem(font-size, 13px);
+						@include rem(padding, 8px 0 6px);
+					}
+
+					@include media('screen', '>=tablet') {
+						@include rem(font-size, 14px);
+						@include rem(padding, 14px 0 12px);
+					}
 
 				}
 
@@ -477,26 +528,117 @@
 				.input-wrapper,
 				.select-wrapper {
 					&:after {
-						@include rem(padding, 16px 0 0 14px);
+
+						@include media('screen', '<phone-wide') {
+							@include rem(width, 20px);
+							@include rem(font-size, 7px);
+							@include rem(padding, 6px 0 0 5px);
+						}
+
+						@include media('>=phone-wide', '<phablet') {
+							@include rem(width, 30px);
+							@include rem(font-size, 8px);
+							@include rem(padding, 8px 0 0 8px);
+						}
+
+						@include media('screen', '>=phablet') {
+							@include rem(width, 40px);
+							@include rem(font-size, 9px);
+						}
+
+						@include media('>=phablet', '<tablet') {
+							@include rem(padding, 12px 0 0 12px);
+						}
+
+						@include media('screen', '>=tablet') {
+							@include rem(padding, 16px 0 0 14px);
+						}
 					}
 				}
 
 				.input-wrapper {
 
 					&:before {
-						@include rem(padding, 5px 0 0 3px);
+
+						@include media('screen', '<phone-wide') {
+							@include rem(right, 20px);
+							@include rem(width, 20px);
+							@include rem(padding, 2px 0 0 2px);
+							@include rem(font-size, 17px);
+						}
+
+						@include media('>=phone-wide', '<phablet') {
+							@include rem(right, 30px);
+							@include rem(width, 22px);
+							@include rem(padding, 3px 0 0 2px);
+							@include rem(font-size, 20px);
+						}
+
+						@include media('screen', '>=phablet') {
+							@include rem(right, 40px);
+						}
+
+						@include media('>=phablet', '<tablet') {
+							@include rem(width, 26px);
+							@include rem(padding, 4px 0 0 1px);
+							@include rem(font-size, 23px);
+						}
+
+						@include media('screen', '>=tablet') {
+							@include rem(width, 30px);
+							@include rem(padding, 7px 0 0 2px);
+							@include rem(font-size, 27px);
+						}
 					}
 
 					input {
 						&[type="text"] {
-							@include rem(padding, 12px 80px 12px 12px);
+
+							@include media('screen', '<phone-wide') {
+								@include rem(font-size, 11px);
+								@include rem(padding, 4px 40px 4px 6px);
+							}
+
+							@include media('>=phone-wide', '<phablet') {
+								@include rem(font-size, 12px);
+								@include rem(padding, 6px 60px 6px 10px);
+							}
+
+							@include media('>=phablet', '<tablet') {
+								@include rem(font-size, 13px);
+								@include rem(padding, 8px 80px 8px 10px);
+							}
+
+							@include media('screen', '>=tablet') {
+								@include rem(font-size, 14px);
+								@include rem(padding, 12px 80px 12px 12px);
+							}
 						}
 					}
 				}
 
 				.select-wrapper {
 					select {
-						@include rem(padding, 12px 20px 12px 12px);
+
+						@include media('screen', '<phone-wide') {
+							@include rem(font-size, 11px);
+							@include rem(padding, 4px 20px 4px 6px);
+						}
+
+						@include media('>=phone-wide', '<phablet') {
+							@include rem(font-size, 12px);
+							@include rem(padding, 6px 30px 6px 8px);
+						}
+
+						@include media('>=phablet', '<tablet') {
+							@include rem(font-size, 13px);
+							@include rem(padding, 8px 40px 8px 10px);
+						}
+
+						@include media('screen', '>=tablet') {
+							@include rem(font-size, 14px);
+							@include rem(padding, 12px 40px 12px 12px);
+						}
 					}
 				}
 
@@ -505,12 +647,41 @@
 					color: $white;
 					background-color: $blue;
 
-					@include rem(padding, 12px 0);
-					@include rem(margin-top, 39px);
-
 					&:hover {
 						background-color: lighten($blue, 15%);
 						color: darken($blue, 15%);
+					}
+					
+					@include media('screen', '<phone-wide') {
+						@include rem(font-size, 11px);
+						@include rem(max-width, 150px);
+						@include rem(padding, 4px 0);
+						@include rem(margin-top, 8px);
+					}
+
+					@include media('>=phone-wide', '<phablet') {
+						@include rem(font-size, 12px);
+						@include rem(max-width, 160px);
+						@include rem(padding, 6px 0);
+						@include rem(margin-top, 10px);
+					}
+
+					@include media('>=phablet', '<tablet') {
+						@include rem(font-size, 13px);
+						@include rem(max-width, 180px);
+						@include rem(padding, 8px 0);
+						@include rem(margin-top, 12px);
+					}
+
+					@include media('screen', '>=tablet') {
+						@include rem(font-size, 14px);
+						@include rem(max-width, 220px);
+						@include rem(padding, 12px 0);
+						@include rem(margin-top, 39px);
+					}
+
+					@include media('screen', '<desktop-wide') {
+						float: right;
 					}
 
 				}

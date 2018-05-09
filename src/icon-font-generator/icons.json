@@ -2,5 +2,7 @@
     "calendar": "\\f101",
     "cart": "\\f102",
     "chevron-down": "\\f103",
-    "search": "\\f104"
+    "next": "\\f104",
+    "prev": "\\f105",
+    "search": "\\f106"
 }

@@ -1179,6 +1179,252 @@ html {
   display: block;
 }
 
+/* line 11, node_modules/bootstrap/scss/_carousel.scss */
+.carousel {
+  position: relative;
+}
+
+/* line 15, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 21, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-item {
+  position: relative;
+  display: none;
+  align-items: center;
+  width: 100%;
+  -webkit-transition: transform 0.6s ease;
+  -moz-transition: transform 0.6s ease;
+  -o-transition: transform 0.6s ease;
+  -ms-transition: transform 0.6s ease;
+  transition: transform 0.6s ease;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* line 31, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+
+/* line 37, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-item-next,
+.carousel-item-prev {
+  position: absolute;
+  top: 0;
+}
+
+/* line 43, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+  transform: translateX(0);
+}
+
+@supports (transform-style: preserve-3d) {
+  /* line 43, node_modules/bootstrap/scss/_carousel.scss */
+  .carousel-item-next.carousel-item-left,
+  .carousel-item-prev.carousel-item-right {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* line 52, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-item-next,
+.active.carousel-item-right {
+  transform: translateX(100%);
+}
+
+@supports (transform-style: preserve-3d) {
+  /* line 52, node_modules/bootstrap/scss/_carousel.scss */
+  .carousel-item-next,
+  .active.carousel-item-right {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+/* line 61, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-item-prev,
+.active.carousel-item-left {
+  transform: translateX(-100%);
+}
+
+@supports (transform-style: preserve-3d) {
+  /* line 61, node_modules/bootstrap/scss/_carousel.scss */
+  .carousel-item-prev,
+  .active.carousel-item-left {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+/* line 76, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-duration: .6s;
+  transition-property: opacity;
+}
+
+/* line 82, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+/* line 88, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+  opacity: 0;
+}
+
+/* line 93, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+  transform: translateX(0);
+}
+
+@supports (transform-style: preserve-3d) {
+  /* line 93, node_modules/bootstrap/scss/_carousel.scss */
+  .carousel-fade .carousel-item-next,
+  .carousel-fade .carousel-item-prev,
+  .carousel-fade .carousel-item.active,
+  .carousel-fade .active.carousel-item-left,
+  .carousel-fade .active.carousel-item-prev {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* line 111, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+}
+
+/* line 17, node_modules/bootstrap/scss/mixins/_hover.scss */
+.carousel-control-prev:hover, .carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: .9;
+}
+
+/* line 135, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-control-prev {
+  left: 0;
+}
+
+/* line 141, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-control-next {
+  right: 0;
+}
+
+/* line 149, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+/* line 157, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+/* line 160, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* line 170, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+
+/* line 184, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-indicators li {
+  position: relative;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 196, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-indicators li::before {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  content: "";
+}
+
+/* line 205, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-indicators li::after {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  content: "";
+}
+
+/* line 216, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+/* line 226, node_modules/bootstrap/scss/_carousel.scss */
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
 /* line 3, node_modules/bootstrap/scss/utilities/_align.scss */
 .align-baseline {
   vertical-align: baseline !important;
@@ -6529,6 +6775,22 @@ a.ui-button:active,
 }
 
 @font-face {
+  font-family: "Open-Sans-Light";
+  src: url("../fonts/open-sans/Light/OpenSans-Light.eot");
+  src: url("../fonts/open-sans/Light/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/Light/OpenSans-Light.woff2") format("woff2"), url("../fonts/open-sans/Light/OpenSans-Light.woff") format("woff"), url("../fonts/open-sans/Light/OpenSans-Light.ttf") format("truetype"), url("../fonts/open-sans/Light/OpenSans-Light.svg#OpenSansLight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open-Sans-Light";
+  src: url("../fonts/open-sans/LightItalic/OpenSans-LightItalic.eot");
+  src: url("../fonts/open-sans/LightItalic/OpenSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/LightItalic/OpenSans-LightItalic.woff2") format("woff2"), url("../fonts/open-sans/LightItalic/OpenSans-LightItalic.woff") format("woff"), url("../fonts/open-sans/LightItalic/OpenSans-LightItalic.ttf") format("truetype"), url("../fonts/open-sans/LightItalic/OpenSans-LightItalic.svg#OpenSansSemiboldItalic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
   font-family: "Open-Sans-Semibold";
   src: url("../fonts/open-sans/Semibold/OpenSans-Semibold.eot");
   src: url("../fonts/open-sans/Semibold/OpenSans-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/Semibold/OpenSans-Semibold.woff2") format("woff2"), url("../fonts/open-sans/Semibold/OpenSans-Semibold.woff") format("woff"), url("../fonts/open-sans/Semibold/OpenSans-Semibold.ttf") format("truetype"), url("../fonts/open-sans/Semibold/OpenSans-Semibold.svg#OpenSansSemibold") format("svg");
@@ -6545,17 +6807,17 @@ a.ui-button:active,
 }
 
 @font-face {
-  font-family: "Open-Sans-Light";
-  src: url("../fonts/open-sans/Light/OpenSans-Light.eot");
-  src: url("../fonts/open-sans/Light/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/Light/OpenSans-Light.woff2") format("woff2"), url("../fonts/open-sans/Light/OpenSans-Light.woff") format("woff"), url("../fonts/open-sans/Light/OpenSans-Light.ttf") format("truetype"), url("../fonts/open-sans/Light/OpenSans-Light.svg#OpenSansLight") format("svg");
+  font-family: "Open-Sans-ExtraBold";
+  src: url("../fonts/open-sans/ExtraBold/OpenSans-ExtraBold.eot");
+  src: url("../fonts/open-sans/ExtraBold/OpenSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/ExtraBold/OpenSans-ExtraBold.woff2") format("woff2"), url("../fonts/open-sans/ExtraBold/OpenSans-ExtraBold.woff") format("woff"), url("../fonts/open-sans/ExtraBold/OpenSans-ExtraBold.ttf") format("truetype"), url("../fonts/open-sans/ExtraBold/OpenSans-ExtraBold.svg#OpenSansExtraBold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Open-Sans-Light";
-  src: url("../fonts/open-sans/LightItalic/OpenSans-LightItalic.eot");
-  src: url("../fonts/open-sans/LightItalic/OpenSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/LightItalic/OpenSans-LightItalic.woff2") format("woff2"), url("../fonts/open-sans/LightItalic/OpenSans-LightItalic.woff") format("woff"), url("../fonts/open-sans/LightItalic/OpenSans-LightItalic.ttf") format("truetype"), url("../fonts/open-sans/LightItalic/OpenSans-LightItalic.svg#OpenSansSemiboldItalic") format("svg");
+  font-family: "Open-Sans-ExtraBold";
+  src: url("../fonts/open-sans/ExtraBoldItalic/OpenSans-ExtraBoldItalic.eot");
+  src: url("../fonts/open-sans/ExtraBoldItalic/OpenSans-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans/ExtraBoldItalic/OpenSans-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/open-sans/ExtraBoldItalic/OpenSans-ExtraBoldItalic.woff") format("woff"), url("../fonts/open-sans/ExtraBoldItalic/OpenSans-ExtraBoldItalic.ttf") format("truetype"), url("../fonts/open-sans/ExtraBoldItalic/OpenSans-ExtraBoldItalic.svg#OpenSansExtraBoldItalic") format("svg");
   font-weight: normal;
   font-style: italic;
 }
@@ -6563,7 +6825,7 @@ a.ui-button:active,
 /**************************** Icon Font *****************************/
 @font-face {
   font-family: "icons";
-  src: url("../fonts/icons/icons.eot?d1f053d4c263b6c83c56e0b5f9b1c970?#iefix") format("embedded-opentype"), url("../fonts/icons/icons.woff2?d1f053d4c263b6c83c56e0b5f9b1c970") format("woff2"), url("../fonts/icons/icons.woff?d1f053d4c263b6c83c56e0b5f9b1c970") format("woff"), url("../fonts/icons/icons.ttf?d1f053d4c263b6c83c56e0b5f9b1c970") format("truetype"), url("../fonts/icons/icons.svg?d1f053d4c263b6c83c56e0b5f9b1c970#icons") format("svg");
+  src: url("../fonts/icons/icons.eot?03a48d75550e183d03470d9a62da04c5?#iefix") format("embedded-opentype"), url("../fonts/icons/icons.woff2?03a48d75550e183d03470d9a62da04c5") format("woff2"), url("../fonts/icons/icons.woff?03a48d75550e183d03470d9a62da04c5") format("woff"), url("../fonts/icons/icons.ttf?03a48d75550e183d03470d9a62da04c5") format("truetype"), url("../fonts/icons/icons.svg?03a48d75550e183d03470d9a62da04c5#icons") format("svg");
 }
 
 /* line 11, src/icon-font-generator/_icons.scss */
@@ -6591,8 +6853,18 @@ a.ui-button:active,
 }
 
 /* line 28, src/icon-font-generator/_icons.scss */
-.icon-search:before {
+.icon-next:before {
   content: "\f104";
+}
+
+/* line 31, src/icon-font-generator/_icons.scss */
+.icon-prev:before {
+  content: "\f105";
+}
+
+/* line 34, src/icon-font-generator/_icons.scss */
+.icon-search:before {
+  content: "\f106";
 }
 
 /*************************** Base Styles ****************************/
@@ -6600,7 +6872,7 @@ a.ui-button:active,
 body {
   overflow-x: hidden;
   overflow-y: scroll;
-  background-color: #fff;
+  background-color: rgba(0, 255, 0, 0.9);
   color: #1d2124;
   font-family: "Open-Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -7203,7 +7475,7 @@ header form {
 
 /* line 198, src/sass/_header.scss */
 header form:after {
-  content: "\f104";
+  content: "\f106";
   display: block;
   position: absolute;
   width: 18px;
@@ -8030,54 +8302,6 @@ header form + a:hover .icon-cart {
   max-height: 52.5rem;
   overflow: hidden;
   position: relative;
-  /*
-	h1 {
-		background-color: rgba(255,0,0,0.2);
-
-		position: absolute;
-//		bottom: 25%;
-
-//		left: 5%;
-
-		font-family: "Open-Sans-Semibold", sans-serif;
-		text-transform: uppercase;
-
-		color: $white;
-		color: rgba(0,255,255,0.8);
-
-		
-
-		font-size: 60px;
-
-
-
-
-	}
-
-
-	h4 {
-//		background-color: rgba(255,0,255,0.2);
-
-		position: absolute;
-//		bottom: 12%;
-
-//		left: 5%;
-
-		width: 90%;
-
-		max-width: 630px;
-
-
-
-//		color: $white;
-		color: rgba(255,255,0,0.8);
-
-		font-size: 16px;
-		line-height: 22px;
-
-
-	}
-*/
 }
 
 /* line 165, src/sass/sections/_banner.scss */
@@ -9795,20 +10019,6 @@ header form + a:hover .icon-cart {
   text-transform: uppercase;
   text-decoration: none;
   color: #11a0d3;
-  /*	
-//				bottom: 38px;
-	
-				@include media('screen', '<320px') {
-					@include rem(bottom, 9px);
-				}
-	
-//				@include banner-bottom (320px, 1300px, 12px, 38px);
-				@include banner-bottom (320px, 992px, 10px, 39px);
-	
-				@include media('screen', '>=992px') {
-					@include rem(bottom, 40px);
-				}
-*/
 }
 
 /* line 757, src/sass/sections/_banner.scss */
@@ -10189,111 +10399,6 @@ header form + a:hover .icon-cart {
   }
 }
 
-/*
-@mixin banners-padding ($media-min, $media-max, $padding-min, $padding-max) {
-	$d: ($padding-max - $padding-min) / 1px;
-	@for $i from 0 through $d {
-		$step: ($media-max - $media-min) / ($d + 1);
-		$min: $i * $step + $media-min;
-		$max: $min + $step;
-		@include media('>=' + round($min), '<' + round($max)) {
-			$padding-top: $i + $padding-min;
-			@include rem(padding-top, $padding-top);
-			$padding-bottom: $i + $padding-min;
-			@include rem(padding-bottom, $padding-bottom);
-		}
-	}
-}
-
-@mixin banners-font-size ($media-min, $media-max, $font-size-min, $font-size-max, $font-size-vw) {
-	$d: ($font-size-max - $font-size-min) / 1px;
-	@for $i from 0 through $d {
-		$step: ($media-max - $media-min) / ($d + 1);
-		$min: $i * $step + $media-min;
-		$max: $min + $step;
-		@include media('>=' + round($min), '<' + round($max)) {
-			$font-size: $i + $font-size-min;
-			@include rem(font-size, $font-size);
-			font-size: $font-size-vw;	
-		}
-	}
-}
-
-.banners {
-	@include media('screen', '<320px') {
-		@include rem(padding-top, 20px);
-		@include rem(padding-bottom, 20px);
-	}
-	@include banners-padding (320px, 992px, 21px, 65px);
-	@include banners-padding (992px, 1248px, 52px, 64px);
-	@include media('screen', '>=1248px') {
-		@include rem(padding-top, 65px);
-		@include rem(padding-bottom, 65px);
-	}
-	& .row {
-		padding: 0 7px;
-		& [class*="col"] {
-			padding: 7px;
-			&:after {
-				content: "";
-				position: absolute;
-				top: 50%;
-				@include rem(right, 7px);
-				@include rem(bottom, 7px);
-				@include rem(left, 7px);
-				@include linear-gradient(rgba(0,0,2055,0), rgba(0,0,0,0.75));
-			}
-			& img {
-				width: 100%;
-				vertical-align: top;
-			}
-			& h2 {
-				position: absolute;
-				top: 64%;
-				left: 5%;
-				font-weight: bold;
-				text-transform: uppercase;
-				color: $white;
-				z-index: 1;
-				@include media('screen', '<320px') {
-					@include rem(font-size, 13px);
-					font-size: 4.9vw;
-				}
-				@include banners-font-size (320px, 992px, 14px, 50px, 4.9vw);
-				@include banners-font-size (992px, 1300px, 24px, 32px, 2.5vw);
-				@include media('screen', '>=1300px') {
-					@include rem(font-size, 33px);
-				}
-			}
-			& h2 + a {
-				position: absolute;
-				left: 5%;
-				bottom: 6.5%;
-				margin-bottom: 7px;
-				font-family: "Open-Sans-Semibold", sans-serif;
-				font-style: italic;
-				text-transform: uppercase;
-				text-decoration: none;
-				color: $blue;
-				z-index: 1;
-				&:hover {
-					color: lighten($blue, 15%);
-				}
-				@include media('screen', '<320px') {
-					@include rem(font-size, 8px);
-					font-size: 2.8vw;
-				}
-				@include banners-font-size (320px, 992px, 9px, 30px, 2.8vw);
-				@include banners-font-size (992px, 1300px, 14px, 19px, 1.5vw);
-
-				@include media('screen', '>=1300px') {
-					@include rem(font-size, 20px);
-				}
-			}
-		}
-	}
-}
-*/
 /*************************** Banners Section Styles ****************************/
 @media screen and (max-width: 419px) {
   /* line 38, src/sass/sections/_banners.scss */
@@ -12130,6 +12235,94 @@ header form + a:hover .icon-cart {
   .booking .container .tab-content .tab-pane form.book-accommodation input[type="submit"] {
     float: right;
   }
+}
+
+/*************************** Carousel Styles ****************************/
+/* line 12, src/sass/sections/_carousel.scss */
+.carousel .carousel-inner .carousel-item {
+  max-height: 840px;
+  max-height: 52.5rem;
+}
+
+/* line 19, src/sass/sections/_carousel.scss */
+.carousel .carousel-inner .carousel-item img {
+  vertical-align: top;
+  width: 100%;
+}
+
+/* line 24, src/sass/sections/_carousel.scss */
+.carousel .carousel-inner .carousel-item .carousel-caption {
+  background-color: rgba(0, 0, 255, 0.3);
+  position: absolute;
+  padding: 0;
+  left: 0;
+  right: 50%;
+  margin-right: -226px;
+  margin-right: -14.125rem;
+  bottom: 30px;
+  bottom: 1.875rem;
+  color: #fff;
+  /*
+				h1 {
+
+					background-color: rgba(255,0,0,0.3);
+
+					font-family: "Open-Sans-ExtraBold", sans-serif;
+					text-transform: uppercase;
+
+					@include rem(font-size, 70px);
+
+				}
+*/
+}
+
+/* line 58, src/sass/sections/_carousel.scss */
+.carousel .carousel-inner .carousel-item .carousel-caption a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 63, src/sass/sections/_carousel.scss */
+.carousel .carousel-inner .carousel-item .carousel-caption div {
+  float: right;
+  clear: right;
+  width: 100%;
+}
+
+/* line 69, src/sass/sections/_carousel.scss */
+.carousel .carousel-inner .carousel-item .carousel-caption div.row {
+  width: 81%;
+  max-width: 860px;
+  max-width: 53.75rem;
+  text-align: left;
+}
+
+/* line 114, src/sass/sections/_carousel.scss */
+.carousel .carousel-inner .carousel-item .carousel-caption div.row [class*="col"] {
+  border: 1px solid blue;
+}
+
+/* line 153, src/sass/sections/_carousel.scss */
+.carousel [class*="carousel-control"] {
+  text-decoration: none;
+}
+
+/* line 160, src/sass/sections/_carousel.scss */
+.carousel [class*="carousel-control"] [class*="icon"] {
+  background-color: #1d2124;
+  color: #fff;
+}
+
+/* line 175, src/sass/sections/_carousel.scss */
+.carousel [class*="carousel-control"] [class*="icon"]:before {
+  background-color: blue;
+  display: block;
+  width: 48px;
+  width: 3rem;
+  line-height: 48px;
+  line-height: 3rem;
+  font-size: 26px;
+  font-size: 1.625rem;
 }
 
 /*# sourceMappingURL=style.css.map */

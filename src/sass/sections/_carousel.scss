@@ -1,0 +1,194 @@
+/*************************** Carousel Styles ****************************/
+
+.carousel {
+
+//	background-color: red;
+
+//	max-height: 400px;
+//	overflow: hidden;
+
+	.carousel-inner {
+
+		.carousel-item {
+
+
+
+			@include rem(max-height, 840px);
+
+
+			img {
+				vertical-align: top;
+				width: 100%;
+			}
+
+			.carousel-caption {
+				background-color: rgba(0,0,255,0.3);
+
+
+				position: absolute;
+//				text-align: right;
+
+
+				
+
+
+				padding: 0;
+				left: 0;
+//				right: 0;
+
+//				right: 30%;
+//				right: auto;
+
+//				display: flex;
+//				justify-content: space-around;
+
+				
+
+				
+
+				right: 50%;
+				@include rem(margin-right, -226px);
+
+				@include rem(bottom, 30px);
+
+				
+
+				color: $white;
+
+				a {
+					color: $white;
+					text-decoration: none;
+				}
+
+				div {
+					float: right;
+					clear: right;
+					width: 100%;
+					
+	
+					&.row {
+//						background-color: rgba(255,255,0,0.4);
+	
+						
+	
+//						position: relative;
+	
+	
+	
+//	
+//						left: -250px;
+	
+//						right: 50%;
+	
+	
+//						right: 0;
+//						left: 50%;
+//						width: 100px;
+	
+//						left: 40%;
+	
+//						margin-left: 50%;
+//						margin-right: -250px;
+	
+	
+	
+//						display: inline-block;
+//						width: 86%;
+//						width: 50%;
+						width: 81%;
+	
+//						padding-left: 16%;
+	
+	
+//						max-width: 740px;
+						@include rem(max-width, 860px);
+//	
+//						float: right; 
+//						clear: right;
+//						float: left;
+//						clear: left;
+	
+						text-align: left;
+	
+	
+						[class*="col"] {
+	
+							border: 1px solid blue;
+	
+						}
+
+					}
+
+				}
+
+
+/*
+				h1 {
+
+					background-color: rgba(255,0,0,0.3);
+
+					font-family: "Open-Sans-ExtraBold", sans-serif;
+					text-transform: uppercase;
+
+					@include rem(font-size, 70px);
+
+				}
+*/
+
+				
+
+				
+
+				
+
+			}
+
+
+
+
+		}
+
+	}
+
+	[class*="carousel-control"] {
+
+//		background-color: red;
+
+		text-decoration: none;
+//		border: 1px solid red;
+
+		[class*="icon"] {
+
+//			background-color: red;
+			background-color: $font-color;
+
+			color: $white;
+
+//			width: 48px;
+//			height: 48px;
+
+//			@include rem(width, 48px);
+//			@include rem(height, 48px);
+//
+//			@include rem(font-size, 30px);
+
+			&:before {
+				background-color: blue;
+				display: block;
+				@include rem(width, 48px);
+				@include rem(line-height, 48px);
+				@include rem(font-size, 26px);
+			}
+
+			
+		}
+		
+//		.carousel-control-prev-icon {
+//			background-color: red;
+//		}
+		
+	}
+
+	
+
+}

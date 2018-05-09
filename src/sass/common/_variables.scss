@@ -29,8 +29,8 @@ $breakpoints: (
 
 
 
-$background-color: #fff;
-//$background-color: rgba(0,255,0,0.9);
+//$background-color: #fff;
+$background-color: rgba(0,255,0,0.9);
 
 
 
@@ -40,8 +40,9 @@ $font-color: #1d2124;
 
 
 $white: #fff;
-//$white: rgba(0,0,255,0.8);
 //$white: rgba(255,0,0,0.8);
+//$white: rgba(0,255,0,0.8);
+//$white: rgba(0,0,255,0.8);
 
 
 $blue: #11a0d3;

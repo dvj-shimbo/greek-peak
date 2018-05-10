@@ -1,5 +1,83 @@
 /*************************** Carousel Styles ****************************/
 
+
+@mixin carousel-top ($media-min, $media-max, $top-min, $top-max) {
+
+	$d: ($top-max - $top-min) / 1%;
+
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+
+		@include media('>=' + round($min), '<' + round($max)) {
+			$top: $i + $top-min;
+			top: $top;
+
+		}
+	}
+}
+
+
+@mixin carousel-font-size ($media-min, $media-max, $font-size-min, $font-size-max) {
+	$d: ($font-size-max - $font-size-min) / 1px;
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+		@include media('>=' + round($min), '<' + round($max)) {
+
+			$font-size: $i + $font-size-min;
+			@include rem(font-size, $font-size);
+
+
+		}
+	}
+}
+
+
+@mixin carousel-padding-top ($media-min, $media-max, $padding-top-min, $padding-top-max) {
+
+	$d: ($padding-top-max - $padding-top-min) / 1px;
+
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+
+		@include media('>=' + round($min), '<' + round($max)) {
+
+			$padding-top: $i + $padding-top-min;
+
+			@include rem(padding-top, $padding-top);
+
+		}
+	}
+}
+
+
+
+@mixin carousel-padding-bottom ($media-min, $media-max, $padding-bottom-min, $padding-bottom-max) {
+
+	$d: ($padding-bottom-max - $padding-bottom-min) / 1px;
+
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+
+		@include media('>=' + round($min), '<' + round($max)) {
+
+			$padding-bottom: $i + $padding-bottom-min;
+
+			@include rem(padding-bottom, $padding-bottom);
+
+		}
+	}
+}
+
+
+
 .carousel {
 
 //	background-color: red;
@@ -29,8 +107,18 @@
 				@include linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.75)); // <---------------------------------------------------RESTORE IT
 		
 		
-				top: 50%;
+//				top: 50%;
 //				top: 0;
+				
+				@include media('screen', '<420px') {
+					top: 0;
+				}
+				@include carousel-top (420px, 1024px, 1%, 49%);
+
+				@include media('screen', '>=1024px') {
+					top: 50%;
+				}
+
 		
 				right: 0;
 				bottom: 0;
@@ -69,16 +157,36 @@
 				color: $white;
 
 
-				@include rem(bottom, 30px);
+//				@include rem(bottom, 30px);
+				@include rem(bottom, 10px);
+
+				@include media('screen', '>=1300px') {
+					@include rem(bottom, 30px);
+				}
 
 
+/*
 				@include media('screen', '<tablet') {
 
 //					width: 95%;
-					width: 100%;
+//					width: 100%;
+					width: 90%;
 
 					@include rem(max-width, 610px);
 				}
+*/
+
+				@include media('screen', '<tablet') {
+					width: 80%;
+					@include rem(max-width, 380px);
+				}
+
+
+				@include media('>=phablet', '<tablet') {
+					width: 90%;
+					@include rem(max-width, 610px);
+				}
+
 
 
 				@include media('screen', '>=tablet') {
@@ -110,6 +218,7 @@
 					float: right;
 					clear: right;
 					width: 100%;
+
 //					}
 					
 	
@@ -126,10 +235,11 @@
 
 
 
+
 						@include media('screen', '<tablet') {
 
-//							width: 95%;
-							width: 100%;
+							width: 95%;
+//							width: 100%;
 
 							@include rem(max-width, 496px);
 						}
@@ -152,6 +262,7 @@
 
 //							padding: 0;
 							padding-bottom: 0;
+//							padding: 0 14px;
 
 
 
@@ -166,30 +277,82 @@
 
 //								background-color: rgba(0,0,255,0.3);
 
-								@include rem(font-size, 70px);
+//								@include rem(font-size, 70px);
 
-								@include rem(padding-bottom, 16px);
+//								@include rem(padding-bottom, 16px);
+
+								
+								
+
+								@include media('screen', '<320px') {
+									@include rem(font-size, 19px);
+									@include rem(padding-bottom, 5px);
+
+								}
+
+								@include carousel-font-size (320px, 1500px, 20px, 69px);
+								@include carousel-padding-bottom (320px, 1500px, 6px, 16px);
+
+
+								@include media('screen', '>=1500px') {
+									@include rem(font-size, 70px);
+									@include rem(padding-bottom, 16px);
+								}
+
 							}
 
 							h2 {
 
+//								background-color: rgba(0,255,255,0.3);
+
 								font-style: italic;
 
-								@include rem(font-size, 55px);
+//								@include rem(font-size, 55px);
 
-								@include rem(padding-top, 6px);
-								@include rem(padding-bottom, 6px);
+//								@include rem(padding-top, 6px);
+//								@include rem(padding-bottom, 6px);
 
 //								@include rem(margin-top, 4px);
 //								@include rem(margin-bottom, 6px);
 //								@include rem(margin, 4px 0);
+
+								
+
+								@include media('screen', '<320px') {
+									@include rem(font-size, 16px);
+									@include rem(padding-top, 2px);
+									@include rem(padding-bottom, 2px);
+								}
+
+								@include carousel-font-size (320px, 1300px, 17px, 54px);
+								@include carousel-padding-top (320px, 1300px, 3px, 6px);
+								@include carousel-padding-bottom (320px, 1300px, 3px, 6px);
+
+
+								@include media('screen', '>=1300px') {
+									@include rem(font-size, 55px);
+									@include rem(padding-top, 7px);
+									@include rem(padding-bottom, 7px);
+								}
 
 								sup {
 									font-family: "Open-Sans", sans-serif;
 									font-weight: bold;
 									vertical-align: super;
 
-									@include rem(font-size, 24px);
+//									@include rem(font-size, 24px);
+
+									
+
+									@include media('screen', '<320px') {
+										@include rem(font-size, 7px);
+									}
+
+									@include carousel-font-size (320px, 1300px, 8px, 23px);
+
+									@include media('screen', '>=1300px') {
+										@include rem(font-size, 24px);
+									}
 									
 									
 
@@ -200,25 +363,87 @@
 
 
 							h3 {
+
+//								background-color: rgba(0,255,0,0.3);
+
+
 								font-style: italic;
 								color: $font-color;
-								@include rem(font-size, 24px);
+//								@include rem(font-size, 24px);
 
-								@include rem(padding-top, 12px);
-								@include rem(padding-bottom, 12px);
+//								@include rem(padding-top, 12px);
+//								@include rem(padding-bottom, 12px);
+
+//								@include rem(font-size, 12px);
+
+//								@include carousel-font-size (320px, 1300px, 12px, 23px);
+
+								@include media('screen', '<320px') {
+									@include rem(font-size, 11px);
+									@include rem(padding-top, 3px);
+									@include rem(padding-bottom, 3px);
+								}
+
+								@include carousel-font-size (320px, 576px, 12px, 18px);
+								@include carousel-padding-top (320px, 576px, 4px, 8px);
+								@include carousel-padding-bottom (320px, 576px, 4px, 8px);
+
+
+								@include carousel-font-size (576px, 1300px, 16px, 20px);
+								@include carousel-padding-top (576px, 1300px, 7px, 11px);
+								@include carousel-padding-bottom (576px, 1300px, 7px, 11px);
+
+
+
+								@include media('screen', '>=1300px') {
+									@include rem(font-size, 24px);
+									@include rem(padding-top, 12px);
+									@include rem(padding-bottom, 12px);
+								}
+
+
 								
 							}
 
 							p {
+
+//								background-color: rgba(255,0,0,0.3);
+
 								font-family: "Open-Sans", sans-serif;
 								font-weight: bold;
 								font-style: italic;
 
-								@include rem(font-size, 21px);
+//								@include rem(font-size, 21px);
 
 //								@include rem(padding-top, 2px);
 
-								@include rem(padding-bottom, 10px);
+//								@include rem(padding-bottom, 10px);
+
+//								@include rem(font-size, 10px);
+
+//								@include rem(font-size, 15px);
+
+
+								@include media('screen', '<320px') {
+									@include rem(font-size, 10px);
+									@include rem(padding-bottom, 4px);
+
+								}
+
+								@include carousel-font-size (320px, 576px, 11px, 15px);
+								@include carousel-padding-bottom (320px, 576px, 5px, 8px);
+
+								@include carousel-font-size (576px, 1300px, 14px, 20px);
+								@include carousel-padding-bottom (576px, 1300px, 5px, 9px);
+
+
+
+								@include media('screen', '>=1300px') {
+									@include rem(font-size, 21px);
+									@include rem(padding-bottom, 10px);
+								}
+
+
 							}
 
 

@@ -1,0 +1,27 @@
+/*************************** Footer Styles ****************************/
+
+footer {
+	background-color: rgba(255,0,0,0.5);
+
+
+	@include rem(padding-top, 73px);
+
+	.row {
+		border: 1px solid blue;
+
+		max-width: 1100px;
+		margin: 0 auto;
+
+		.col {
+			border: 1px solid red;
+
+
+		}
+
+		li {
+			color: red;
+		}
+	}
+
+
+}

@@ -6,22 +6,99 @@ footer {
 
 	@include rem(padding-top, 73px);
 
-	.row {
+	a {
+		color: $font-color;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+
+/*
+	ul {
+
 		border: 1px solid blue;
 
+		display: table;
+		table-layout: fixed;
+
+		width: 100%;
 		max-width: 1100px;
+
+		margin: 0 auto;
+
+
+
+		li {
+			border: 1px solid red;
+
+			display: table-cell;
+
+		}
+
+
+	}
+*/
+
+
+
+	.row {
+//		border: 1px solid blue;
+
+		max-width: 1248px;
 		margin: 0 auto;
 
 		.col {
 			border: 1px solid red;
 
+//			padding: 0;
+
 
 		}
 
 		li {
-			color: red;
+//			background-color: blue;
+			
+			text-transform: uppercase;
+			text-align: center;
+
+			@include rem(font-size, 13px);
+
+//			@include rem(padding, 13px 5%);
+			@include rem(padding, 34px 0);
+//			@include rem(padding-top, 34px);
+//			@include rem(padding-bottom, 34px);
+
+			.dropdown-menu {
+				a {
+					display: block;
+				}
+			}
+
 		}
+
+
 	}
 
+
+
+/*
+	ul {
+
+		background-color: rgba(255,255,0,0.1);
+
+		@include rem(padding, 34px 0);
+
+		li {
+			text-transform: uppercase;
+			text-align: center;
+			@include rem(font-size, 13px);
+
+			
+
+
+		}
+
+	}
+*/
 
 }

@@ -26,13 +26,13 @@
 
 // ================== Bootstrap-4 ==================
 
-//@import "vendor/bootstrap/4.1.0/bootstrap";
+@import "vendor/bootstrap/4.1.0/bootstrap";
 
 //@import "vendor/bootstrap/4.1.0/bootstrap-reboot";
 //@import "vendor/bootstrap/4.1.0/bootstrap-grid";
 
 // -------------------------------------------------
-
+/*
 
 @at-root {
   @-ms-viewport { width: device-width; } // stylelint-disable-line at-rule-no-vendor-prefix
@@ -153,7 +153,7 @@ html {
 
 //@import "../../node_modules/bootstrap/scss/print";
 
-
+*/
 // =================================================
 
 
@@ -196,6 +196,7 @@ html {
 
 
 @import "header";
+@import "footer";
 
 
 @import "sections/banner";

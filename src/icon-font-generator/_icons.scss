@@ -1,11 +1,11 @@
 /**************************** Icon Font *****************************/
 @font-face {
     font-family: "icons";
-    src: url("../fonts/icons/icons.eot?03a48d75550e183d03470d9a62da04c5?#iefix") format("embedded-opentype"),
-url("../fonts/icons/icons.woff2?03a48d75550e183d03470d9a62da04c5") format("woff2"),
-url("../fonts/icons/icons.woff?03a48d75550e183d03470d9a62da04c5") format("woff"),
-url("../fonts/icons/icons.ttf?03a48d75550e183d03470d9a62da04c5") format("truetype"),
-url("../fonts/icons/icons.svg?03a48d75550e183d03470d9a62da04c5#icons") format("svg");
+    src: url("../fonts/icons/icons.eot?17bf2a6e1f2570c52062101457d4b0df?#iefix") format("embedded-opentype"),
+url("../fonts/icons/icons.woff2?17bf2a6e1f2570c52062101457d4b0df") format("woff2"),
+url("../fonts/icons/icons.woff?17bf2a6e1f2570c52062101457d4b0df") format("woff"),
+url("../fonts/icons/icons.ttf?17bf2a6e1f2570c52062101457d4b0df") format("truetype"),
+url("../fonts/icons/icons.svg?17bf2a6e1f2570c52062101457d4b0df#icons") format("svg");
 }
 
 [class*="icon-"]:before {
@@ -25,12 +25,21 @@ url("../fonts/icons/icons.svg?03a48d75550e183d03470d9a62da04c5#icons") format("s
 .icon-chevron-down:before {
     content: "\f103";
 }
-.icon-next:before {
+.icon-facebook:before {
     content: "\f104";
 }
-.icon-prev:before {
+.icon-instagram:before {
     content: "\f105";
 }
-.icon-search:before {
+.icon-next:before {
     content: "\f106";
+}
+.icon-prev:before {
+    content: "\f107";
+}
+.icon-search:before {
+    content: "\f108";
+}
+.icon-twitter:before {
+    content: "\f109";
 }

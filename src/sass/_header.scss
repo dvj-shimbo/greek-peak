@@ -32,6 +32,7 @@ header {
 */
 
 
+	
 
 
 
@@ -196,7 +197,7 @@ header {
 
 
 		&:after {
-			content: "\f106";
+			content: "\f108";
 			display: block;
 			position: absolute;
 			@include rem(width, 18px);

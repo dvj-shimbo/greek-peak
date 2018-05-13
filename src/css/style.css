@@ -8591,7 +8591,6 @@ footer a:hover [class*="icon"] {
 /* line 76, src/sass/_footer.scss */
 footer .row {
   text-align: left;
-  border: 1px solid blue;
   max-width: 1024px;
   max-width: 64rem;
   margin: 0 auto;
@@ -8601,16 +8600,56 @@ footer .row {
 
 /* line 97, src/sass/_footer.scss */
 footer .row [class*="col"] {
-  border: 1px solid red;
   padding: 0;
 }
 
-/* line 109, src/sass/_footer.scss */
+/* line 103, src/sass/_footer.scss */
+footer .row [class*="col"] .logo {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+
+/* line 112, src/sass/_footer.scss */
+footer .row [class*="col"] h5 {
+  background-color: rgba(0, 0, 255, 0.1);
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 36px;
+  margin-top: 2.25rem;
+  margin-bottom: 36px;
+  margin-bottom: 2.25rem;
+}
+
+/* line 129, src/sass/_footer.scss */
 footer .row [class*="col"] .row {
   padding: 0;
 }
 
-/* line 117, src/sass/_footer.scss */
+/* line 133, src/sass/_footer.scss */
+footer .row [class*="col"] .row h5 {
+  margin: 0 10%;
+}
+
+/* line 140, src/sass/_footer.scss */
+footer .row [class*="col"][class*="offset"]:last-child {
+  background-color: rgba(0, 255, 0, 0.1);
+  font-family: "Open-Sans-Light", sans-serif;
+  padding-top: 18px;
+  padding-top: 1.125rem;
+  padding-bottom: 36px;
+  padding-bottom: 2.25rem;
+}
+
+/* line 156, src/sass/_footer.scss */
 footer .row li {
   text-transform: uppercase;
   font-size: 13px;
@@ -8623,13 +8662,13 @@ footer .row li {
   margin-bottom: 1.625rem;
 }
 
-/* line 140, src/sass/_footer.scss */
+/* line 179, src/sass/_footer.scss */
 footer .row li a {
   margin: 0;
   color: red;
 }
 
-/* line 150, src/sass/_footer.scss */
+/* line 189, src/sass/_footer.scss */
 footer .row li .dropdown [data-toggle="dropdown"]:after {
   content: "\f103";
   font-family: icons;
@@ -8646,7 +8685,7 @@ footer .row li .dropdown [data-toggle="dropdown"]:after {
   top: 0.125rem;
 }
 
-/* line 180, src/sass/_footer.scss */
+/* line 219, src/sass/_footer.scss */
 footer .row li .dropdown .dropdown-menu a {
   display: block;
   font-size: 13px;
@@ -8655,7 +8694,7 @@ footer .row li .dropdown .dropdown-menu a {
   padding: 0.625rem;
 }
 
-/* line 195, src/sass/_footer.scss */
+/* line 234, src/sass/_footer.scss */
 footer .row li .dropdown .dropdown-menu a:hover {
   background-color: #e6f7fd;
 }

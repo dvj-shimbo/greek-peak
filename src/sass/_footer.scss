@@ -82,7 +82,7 @@ footer {
 //		color: $font-color;
 
 
-		border: 1px solid blue;
+//		border: 1px solid blue;
 
 //		max-width: 1248px;
 		@include rem(max-width, 1024px);
@@ -96,18 +96,57 @@ footer {
 
 		[class*="col"] {
 
-			border: 1px solid red;
+//			border: 1px solid red;
 
 			padding: 0;
 
-//			.logo {
-//				width: 90%;
-//				margin: 24px 0;
-//
-//			}
+			.logo {
+				width: 90%;
+//				margin: 18px 5%;
+				margin-left: 5%;
+				margin-right: 5%;
+				@include rem(margin-top, 24px);
+				@include rem(margin-bottom, 24px);
+			}
+
+			h5 {
+
+				background-color: rgba(0,0,255,0.1);
+
+				@include rem(font-size, 13px);
+
+				@include rem(line-height, 24px);
+
+//				margin: 36px 5%;
+				margin-left: 5%;
+				margin-right: 5%;
+				@include rem(margin-top, 36px);
+				@include rem(margin-bottom, 36px);
+
+
+			}
 
 			.row {
+//				padding: 0 5%;
 				padding: 0;
+
+				h5 {
+//					margin: 0 38px;
+					margin: 0 10%;
+				}
+
+			}
+
+			&[class*="offset"]:last-child {
+
+				background-color: rgba(0,255,0,0.1);
+
+				font-family: "Open-Sans-Light", sans-serif;
+
+				@include rem(padding-top, 18px);
+				@include rem(padding-bottom, 36px);
+
+
 			}
 
 

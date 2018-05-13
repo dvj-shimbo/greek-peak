@@ -1,49 +1,30 @@
 /*************************** Book Accommodation Form Component Styles ****************************/
 
-//.book-accommodation,
-//.banner {
-//
-//	form {
-
-
 form {
 
 	&.book-accommodation {
 
 		cursor: default;
 
-//		background-color: rgba(255,0,0,0.2);
 
 		color: $white;
-//		color: rgba(255,255,0,0.9);
+
 
 		label {
 
-//			background-color: rgba(0,0,255,0.2);
-
 			display: block;
-//			display: inline-block;
-
-//			@include rem(font-size, 14px);
-
-//			@include rem(padding-bottom, 13px);
-//			@include rem(padding, 16px 0 13px);
 
 		}
 
 		.input-wrapper,
 		.select-wrapper {
 
-//			display: inline-block;
 
 			position: relative;
-
-//			background-color: rgba(255,255,255,0.2);
 
 			border: 1px solid rgba(255,255,255,0.3);
 
 			@include border-radius(3px);
-//			cursor: pointer;
 
 
 
@@ -65,16 +46,7 @@ form {
 			}
 
 			&:after {
-
-//				background-color: rgba(255,0,255,0.3);
-
-//				@include rem(top, 21px);
-//				@include rem(right, 13px);
 				right: 0;
-//				@include rem(width, 40px);
-//				@include rem(padding, 20px 0 0 14px);
-
-//				@include rem(font-size, 9px);
 				content: "\f103";
 
 				
@@ -85,91 +57,16 @@ form {
 
 		.input-wrapper {
 
-//			background-color: rgba(255,0,0,0.3);
-
-/*
-			position: relative;
-			background-color: rgba(255,255,255,0.2);
-			border: 1px solid rgba(255,255,255,0.3);
-			@include border-radius(3px);
-			cursor: pointer;
-
-
-			&:hover {
-				&:before,
-				&:after {
-					color: lighten($blue, 45%);
-				}
-			}
-
-
-			&:before,
-			&:after {
-				position: absolute;
-				font-family: "icons";
-
-				top: 0;
-				bottom: 0;
-
-//				&:hover {
-//					color: lighten($blue, 45%);
-//				}
-				
-
-			}
-*/
 
 			&:before {
 				
-//				background-color: rgba(255,255,0,0.8);
-
-//				@include rem(top, 9px);
-//				@include rem(right, 40px);
-
-//				@include rem(right, 40px);
-//				@include rem(width, 34px);
-//				@include rem(padding, 9px 0 0 3px);
-
-//				@include rem(font-size, 31px);
-
-//				top: 0;
-//				bottom: 0;
-//				padding-top: 10px;
-
-
-
 				content: "\f101";
 			}
 
-/*
-			&:after {
-
-//				background-color: rgba(255,0,255,0.3);
-
-//				@include rem(top, 21px);
-//				@include rem(right, 13px);
-				right: 0;
-				@include rem(width, 40px);
-				@include rem(padding, 20px 0 0 14px);
-
-				@include rem(font-size, 9px);
-				content: "\f103";
-			}
-*/
 
 			input {
 	
 				&[type="text"] {
-
-//					background-color: transparent;
-//					border: 0;
-
-/*
-					background-color: rgba(255,255,255,0.2);
-//					border: 1px solid red;
-					border: 1px solid rgba(255,255,255,0.3);
-					@include border-radius(3px);
-*/
 
 					position: relative;
 
@@ -179,14 +76,7 @@ form {
 
 					color: $white;
 
-//					padding: 16px;
 					width: 100%;
-
-//					@include rem(padding, 15px 80px 15px 15px);
-
-//					@include rem(font-size, 14px);
-
-//					cursor: default;
 
 					&::-webkit-input-placeholder {
 						color: $white;
@@ -227,8 +117,6 @@ form {
 
 			select {
 
-//				background-color: rgba(0,0,255,0.2);
-
 				position: relative;
 
 				z-index: 1;
@@ -238,11 +126,6 @@ form {
 
 				cursor: pointer;
 
-				
-
-//				@include rem(padding, 15px 20px 15px 15px);
-
-//				@include rem(font-size, 14px);
 
 				option {
 					color: $font-color;
@@ -257,8 +140,7 @@ form {
 
 		input[type="submit"] {
 
-			display: block;
-//			
+			display: block;			
 
 			cursor: pointer;
 
@@ -269,35 +151,12 @@ form {
 
 			font-family: "Open-Sans-Semibold", sans-serif;
 
-//			@include rem(font-size, 14px);
-
-//			color: $blue;
-//			background-color: $white;
-
 			border: 0;
 
-//			@include rem(padding, 15px 0);
-//			@include rem(margin-top, 42px);
-
-
-
 			width: 100%;
-//			@include rem(max-width, 220px);
 
 			@include border-radius(3px);
 			@include transition(all 0.25s ease-in-out);
-
-/*
-			&:hover {
-
-				background-color: lighten($blue, 45%);
-				color: darken($blue, 15%);
-
-			}
-*/
-
-
-
 
 		}
 

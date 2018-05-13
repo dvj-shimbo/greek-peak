@@ -15,43 +15,12 @@
 
 			$top: $i + $top-min;
 
-//			$top: $top-max - $i;
 
 			top: $top;
 
-//			top: 50%;
-
-
-
-//			@include rem(top, $top);
-
 		}
 	}
 }
-
-
-
-
-/*
-@mixin banner-padding-bottom ($media-min, $media-max, $padding-bottom-min, $padding-bottom-max) {
-
-	$d: ($padding-bottom-max - $padding-bottom-min) / 1px;
-
-	@for $i from 0 through $d {
-		$step: ($media-max - $media-min) / ($d + 1);
-		$min: $i * $step + $media-min;
-		$max: $min + $step;
-
-		@include media('>=' + round($min), '<' + round($max)) {
-
-			$padding-bottom: $i + $padding-bottom-min;
-
-			@include rem(padding-bottom, $padding-bottom);
-
-		}
-	}
-}
-*/
 
 
 @mixin banner-margin-bottom ($media-min, $media-max, $margin-bottom-min, $margin-bottom-max) {
@@ -75,10 +44,6 @@
 
 
 
-
-
-
-//@mixin banner-font-size ($media-min, $media-max, $font-size-min, $font-size-max, $font-size-vw) {
 @mixin banner-font-size ($media-min, $media-max, $font-size-min, $font-size-max) {
 	$d: ($font-size-max - $font-size-min) / 1px;
 	@for $i from 0 through $d {
@@ -88,15 +53,6 @@
 		@include media('>=' + round($min), '<' + round($max)) {
 			$font-size: $i + $font-size-min;
 			@include rem(font-size, $font-size);
-
-/*
-			@if $font-size-vw != -1 {
-				font-size: $font-size-vw;	
-			}
-*/
-
-//			font-size: $font-size-vw;	
-
 
 		}
 	}
@@ -121,43 +77,14 @@
 	}
 }
 
-/*
-@mixin banner-bottom ($media-min, $media-max, $bottom-min, $bottom-max) {
-
-	$d: ($bottom-max - $bottom-min) / 1px;
-
-	@for $i from 0 through $d {
-		$step: ($media-max - $media-min) / ($d + 1);
-		$min: $i * $step + $media-min;
-		$max: $min + $step;
-
-		@include media('>=' + round($min), '<' + round($max)) {
-
-			$bottom: $i + $bottom-min;
-
-			@include rem(bottom, $bottom);
-
-		}
-	}
-}
-*/
-
-
 
 
 
 .banner {
 
-//	background-color: red;
-
-//	padding: 0;
-
-//	max-height: 840px;
 
 	@include rem(max-height, 840px);
 
-
-//	min-height: 300px;
 	overflow: hidden;
 	position: relative;
 
@@ -165,8 +92,6 @@
 	img {
 
 		width: 100%;
-//		width: auto;
-//		height: 100%;
 		vertical-align: top;
 	}
 
@@ -175,19 +100,7 @@
 		content: "";
 		position: absolute;
 
-
-
-//		@include banner-top (320px, 992px, 40, 100);
-
-
-
-//		@include linear-gradient(rgba(51,51,51,0), rgba(51,51,51,0.85));
-		@include linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.75)); // <---------------------------------------------------RESTORE IT
-
-
-//		top: 50%;
-
-//		top: 0;
+		@include linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.75));
 
 		right: 0;
 		bottom: 0;
@@ -213,42 +126,15 @@
 		position: relative;
 		z-index: 1;
 
-//		border: 1px solid blue;
-//		background-color: rgba(255,255,0,0.3);
 
 		position: absolute;
-//		top: 0;
 		right: 0;
 
 		bottom: 0;
-//		bottom: 6%;
-//		bottom: 77px;
 
 		left: 0;
 		margin: auto;
 
-		
-
-//		padding-bottom: 5%;
-//		padding-left: 5%;
-
-//		padding-bottom: 72px;
-
-/*
-		@include media('screen', '<320px') {
-			@include rem(padding-bottom, 26px);
-		}
-
-//		@include banner-padding-bottom (320px, 1300px, 32px, 72px);
-		@include banner-padding-bottom (320px, 992px, 27px, 71px);
-
-		@include media('screen', '>=992px') {
-			@include rem(padding-bottom, 72px);
-		}
-*/
-
-//		display: inline-block;
-//		vertical-align: bottom;
 
 		
 
@@ -256,52 +142,16 @@
 		
 
 		h1 {
-//			background-color: rgba(0,0,255,0.2);
 
 			font-family: "Open-Sans-Semibold", sans-serif;
 			text-transform: uppercase;
 
-//			max-width: 650px;
 			@include rem(max-width, 650px);
-//			width: 51%;
 	
 			color: $white;
-//			color: rgba(0,255,255,0.8);
-	
-//			margin-bottom: 14px;
-//			padding-bottom: 14px;
-
-			
-
-			//margin: 0 5%;
 			margin-left: 2%;
 			margin-right: 2%;
 
-
-	
-//			font-size: 60px;
-//			font-size: 43px;
-//			font-size: 4.3vw;
-
-/*
-			@include banner-font-size (992px, 1300px, 45px, 59px, 4.55vw);
-
-			@include media('screen', '>=1300px') {
-				@include rem(font-size, 60px);
-			}
-*/
-
-/*
-			@include media('screen', '<320px') {
-				@include rem(padding-bottom, 6px);
-			}
-
-			@include banner-padding-bottom (320px, 992px, 7px, 15px);
-
-			@include media('screen', '>=992px') {
-				@include rem(padding-bottom, 16px);
-			}
-*/
 			@include media('screen', '<320px') {
 				@include rem(margin-bottom, 7px);
 			}
@@ -312,70 +162,38 @@
 				@include rem(margin-bottom, 16px);
 			}
 
-
-
-//			font-size: 4.55vw;
-
-//			@include banner-font-size (320px, 1300px, 20px, 59px);
-
 			@include media('screen', '<320px') {
 				@include rem(font-size, 16px);
 			}
 
 			@include banner-font-size (320px, 1024px, 17px, 59px);
-//			@include banner-font-size (320px, 992px, 16px, 59px);
-//			@include banner-font-size (320px, 768px, 16px, 59px);
 
 			
 			@include media('screen', '>=1024px') {
-//			@include media('screen', '>=992px') {
-//			@include media('screen', '>=768px') {
-				@include rem(font-size, 60px);
-			}
 
-/*
-			@include media('screen', '>=1300px') {
 				@include rem(font-size, 60px);
 			}
-*/
 			
-
-
 
 		}
 
 		h4 {
-//			background-color: rgba(255,0,255,0.2);
 
 			font-family: "Open-Sans-Semibold", sans-serif;
 
-//			width: 90%;
-	
-//			max-width: 650px;
 			@include rem(max-width, 650px);
-//			width: 51%;
-
-
 
 	 		color: $white;
-//			color: rgba(255,255,0,0.8);
 
 			margin-left: 2%;
 			margin-right: 2%;
-	
-//			font-size: 16px;
-//			line-height: 25px;
 			
 			@include media('screen', '<320px') {
 				@include rem(line-height, 13px);
 			}
 
-//			@include banner-line-height (320px, 1024px, 16px, 25px);
 			@include banner-line-height (320px, 992px, 14px, 24px);
-//			@include banner-line-height (320px, 768px, 14px, 24px);
 
-
-//			@include media('screen', '>=768px') {
 			@include media('screen', '>=992px') {
 				@include rem(line-height, 25px);
 			}
@@ -390,38 +208,18 @@
 				@include rem(font-size, 11px);
 			}
 
-//			@include banner-font-size (320px, 1024px, 12px, 16px);
-//			@include banner-font-size (320px, 992px, 12px, 15px);
-//			@include banner-font-size (320px, 768px, 12px, 15px);
 			@include banner-font-size (320px, 640px, 12px, 15px);
 
-//			@include media('screen', '>=992px') {
-//			@include media('screen', '>=768px') {
 			@include media('screen', '>=640px') {
 				@include rem(font-size, 16px);
 			}
 
-
-/*
-
-			@include media('screen', '<320px') {
-				@include rem(padding-bottom, 26px);
-			}
-	
-//			@include banner-padding-bottom (320px, 1300px, 32px, 72px);
-			@include banner-padding-bottom (320px, 992px, 27px, 71px);
-	
-			@include media('screen', '>=992px') {
-				@include rem(padding-bottom, 72px);
-			}
-*/
 
 
 			@include media('screen', '<320px') {
 				@include rem(margin-bottom, 7px);
 			}
 	
-//			@include banner-padding-bottom (320px, 1300px, 32px, 72px);
 			@include banner-margin-bottom (320px, 992px, 8px, 12px);
 	
 
@@ -430,14 +228,8 @@
 			}
 
 
-//			@include rem(margin-bottom, 12px);
-//			@include rem(margin-bottom, 8px);
-
 	
 		}
-
-
-
 
 
 
@@ -445,24 +237,10 @@
 		form {
 			&.book-accommodation {
 
-//				background-color: rgba(0,0,255,0.5);
 				background-color: rgba(0,0,0,0.55);
 
-//				[class*="col"] {
-//					border: 1px solid red;
-//				}
-
-//				margin-bottom: 32px;
-				
-
-//				max-width: 840px;
 				@include rem(max-width, 960px);
 
-//				margin-left: 2%;
-//				margin-right: 2%;
-
-//				margin-left: 0;
-//				margin-right: 0;
 
 				@include media('screen', '<phablet') {
 					margin-left: 0;
@@ -561,11 +339,11 @@
 					&:before {
 
 						@include media('screen', '<phone-wide') {
-//							color: #0000ff;
+
 							@include rem(right, 20px);
 							@include rem(width, 20px);
 							@include rem(padding, 3px 0 0 0);
-//							@include rem(font-size, 17px);
+
 							@include rem(font-size, 15px);
 						}
 
@@ -574,7 +352,7 @@
 							@include rem(right, 30px);
 							@include rem(width, 22px);
 							@include rem(padding, 4px 0 0 2px);
-//							@include rem(font-size, 20px);
+
 							@include rem(font-size, 18px);
 						}
 
@@ -586,15 +364,14 @@
 							
 							@include rem(width, 26px);
 							@include rem(padding, 5px 0 0 2px);
-//							@include rem(font-size, 23px);
+
 							@include rem(font-size, 21px);
 						}
 
 						@include media('screen', '>=tablet') {
 							
 							@include rem(width, 30px);
-//							@include rem(padding, 7px 0 0 2px);
-//							@include rem(font-size, 27px);
+
 							@include rem(padding, 7px 0 0 2px);
 							@include rem(font-size, 25px);
 						}
@@ -657,8 +434,7 @@
 					background-color: $blue;
 
 					&:hover {
-//						background-color: lighten($blue, 15%);
-//						color: darken($blue, 15%);
+
 						color: $dark-blue;
 						background-color: lighten($blue, 15%);
 					}
@@ -669,7 +445,7 @@
 					
 					@include media('screen', '<phone-wide') {
 						@include rem(font-size, 11px);
-//						@include rem(max-width, 150px);
+
 						@include rem(padding, 4px 0);
 						@include rem(margin-top, 10px);
 					}
@@ -704,8 +480,7 @@
 
 					@include media('screen', '<desktop-wide') {
 						float: right;
-//						margin-left: auto;
-//						margin-right: auto;
+
 					}
 
 				}
@@ -718,33 +493,16 @@
 
 
 
-
-
-
-
-
-
-
-//		a:last-child {
 		a {
 			&:last-child {
-//			h1 + a,
-//			h4 + a {
-	
-//				background-color: rgba(255,0,0,0.2);
-	
-//				position: absolute;
+
 				display: block;
 	
 	
 				margin-left: 2%;
 				margin-right: 2%;
 	
-//				bottom: 38px;
-	
-	
-	
-	
+
 	
 				font-family: "Open-Sans-Semibold", sans-serif;
 				font-style: italic;
@@ -752,7 +510,6 @@
 				text-decoration: none;
 	
 				color: $blue;
-//				color: rgba(255,255,0,0.8);
 	
 				&:hover {
 					color: lighten($blue, 15%);
@@ -762,8 +519,7 @@
 				@include media('screen', '<320px') {
 					@include rem(margin-bottom, 11px);
 				}
-	
-//				@include banner-bottom (320px, 1300px, 12px, 38px);
+
 				@include banner-margin-bottom (320px, 992px, 12px, 39px);
 	
 				@include media('screen', '>=992px') {
@@ -775,10 +531,8 @@
 					@include rem(font-size, 10px);
 				}
 				
-//				@include banner-font-size (320px, 1300px, 9px, 19px);
-	
+
 				@include banner-font-size (320px, 992px, 11px, 19px);
-//				@include banner-font-size (992px, 1300px, 14px, 19px);
 	
 				@include media('screen', '>=992px') {
 					@include rem(font-size, 20px);

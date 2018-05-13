@@ -6,27 +6,8 @@
 
 
 	.container {
-//		border: 1px solid blue;
-
-//		background-color: rgba(255,0,0,0.2);
 
 		max-width: 1000px;
-
-//		padding: 32px 5%;
-//		@include rem(padding, 34px 2%);
-
-//		padding-left: 5%;
-//		padding-right: 5%;
-
-//		@include rem(padding-top, 34px);
-//		@include rem(padding-bottom, 34px);
-
-//		@include rem(padding-top, 15px);
-//		@include rem(padding-bottom, 34px);
-//
-//		@include rem(padding-left, 34px);
-//		@include rem(padding-right, 34px);
-
 
 		@include media('screen', '<phone') {
 			@include rem(padding, 8px 22px 22px);
@@ -61,8 +42,6 @@
 		.nav {
 			&.nav-tabs {
 
-//				background-color: rgba(255,0,0,0.1);
-
 				border: 0;
 
 				.nav-link {
@@ -70,23 +49,14 @@
 					position: relative;
 		
 					background-color: transparent;
-//					background-color: rgba(0,0,255,0.2);
 		
 					color: $white;
 		
 					text-decoration: none;
 					text-transform: uppercase;
-
-					
-		
 					
 		
 					border: 0;
-		
-		//			padding: 0 0 20px;
-//					@include rem(padding, 0 0 15px);
-					
-//					@include rem(padding-top, 19px);
 		
 		
 					@include media('screen', '<phone') {
@@ -115,37 +85,6 @@
 						@include rem(font-size, 15px);
 					}
 
-/*
-
-					@include media('screen', '<phone') {
-						@include rem(font-size, 9px);
-					}
-
-					@include media('>=phone', '<phone-wide') {
-						@include rem(font-size, 10px);
-					}
-
-					@include media('>=phone-wide', '<phablet') {
-						@include rem(font-size, 11px);
-					}
-
-					@include media('>=phablet', '<tablet-small') {
-						@include rem(font-size, 12px);
-					}
-
-					@include media('>=tablet-small', '<tablet') {
-						@include rem(font-size, 13px);
-					}
-
-					@include media('>=tablet', '<tablet-wide') {
-						@include rem(font-size, 14px);
-					}
-
-					@include media('screen', '>=tablet-wide') {
-						@include rem(font-size, 15px);
-					}
-
-*/
 					@include media('screen', '>=tablet-wide') {
 						@include rem(padding, 19px 0 15px);
 						@include rem(font-size, 16px);
@@ -157,8 +96,6 @@
 						font-family: "Open-Sans-Semibold", sans-serif;
 					}
 		
-//					&.active,
-//					&:not(.active):hover {
 					&.active {
 		
 						
@@ -171,7 +108,6 @@
 							right: 0;
 			
 							bottom: 0;
-//							height: 5px;
 
 							@include media('screen', '<phone-wide') {
 								@include rem(height, 1px);
@@ -190,13 +126,11 @@
 								@include rem(height, 5px);
 							}
 			
-		//					background-color: $white;
 						}
 		
 					}
 		
 					&.active {
-		//				font-family: "Open-Sans-Semibold", sans-serif;
 						cursor: default;
 						&:after {
 							background-color: $white;
@@ -208,12 +142,7 @@
 						float: left;
 
 						&:hover {
-//							color: lighten($blue, 45%);
 							color: lighten($blue, 40%);
-
-//							&:after {
-//								background-color: lighten($blue, 45%);
-//							}
 
 						}
 					}
@@ -226,31 +155,6 @@
 
 
 		.tab-content {
-//			background-color: rgba(255,255,0,0.2);
-
-//			@include rem(padding-top, 37px);
-
-
-
-/*
-			@include media('>=phablet', '<tablet') {
-				@include rem(padding-top, 14px);
-			}
-			
-			@include media('>=tablet', '<tablet-wide') {
-				@include rem(padding-top, 16px);
-			}
-*/
-
-/*
-			@include media('screen', '<phone') {}
-			@include media('>=phone', '<phone-wide') {}
-			@include media('>=phone-wide', '<phablet') {}
-			@include media('>=phablet', '<tablet-small') {}
-			@include media('>=tablet-small', '<tablet') {}
-			@include media('>=tablet', '<tablet-wide') {}
-			@include media('screen', '>=tablet-wide') {}
-*/
 
 			@include media('screen', '<phone') {
 				@include rem(padding-top, 10px);
@@ -277,12 +181,6 @@
 			}
 
 			.tab-pane {
-
-//				background-color: rgba(0,0,255,0.2);
-
-//				[class*="col"] {
-//					border: 1px solid red;
-//				}
 				
 				form {
 					&.book-accommodation {
@@ -353,11 +251,8 @@
 							&:before {
 
 								@include media('screen', '<phone-wide') {
-//									color: #0000ff;
 									@include rem(right, 20px);
 									@include rem(width, 20px);
-//									@include rem(padding, 3px 0 0 2px);
-//									@include rem(font-size, 17px);
 									@include rem(padding, 4px 0 0 0px);
 									@include rem(font-size, 16px);
 								}
@@ -366,8 +261,6 @@
 									
 									@include rem(right, 30px);
 									@include rem(width, 22px);
-//									@include rem(padding, 5px 0 0 2px);
-//									@include rem(font-size, 20px);
 									@include rem(padding, 6px 0 0 1px);
 									@include rem(font-size, 18px);
 								}
@@ -379,16 +272,12 @@
 								@include media('>=phablet', '<tablet') {
 									
 									@include rem(width, 26px);
-//									@include rem(padding, 6px 0 0 2px);
-//									@include rem(font-size, 23px);
 									@include rem(padding, 6px 0 0 2px);
 									@include rem(font-size, 22px);
 								}
 
 								@include media('screen', '>=tablet') {
 									@include rem(width, 34px);
-//									@include rem(padding, 9px 0 0 3px);
-//									@include rem(font-size, 31px);
 									@include rem(padding, 10px 0 0 4px);
 									@include rem(font-size, 26px);
 								}
@@ -458,8 +347,6 @@
 							&:hover {
 								color: $dark-blue;
 								background-color: lighten($blue, 45%);
-//								color: darken($blue, 15%);
-
 
 							}
 
@@ -469,7 +356,6 @@
 
 							@include media('screen', '<phone-wide') {
 								@include rem(font-size, 11px);
-//								@include rem(max-width, 150px);
 								@include rem(padding, 6px 0);
 								@include rem(margin-top, 14px);
 							}
@@ -502,13 +388,9 @@
 								@include rem(margin-top, 42px);
 							}
 
-//							@include media('screen', '<desktop-wide') {
 							@include media('>=phone', '<desktop-wide') {
 
 								float: right;
-
-//								margin-left: auto;
-//								margin-right: auto;
 
 							}
 
@@ -522,18 +404,6 @@
 
 		}
 		
-
-
-
-
-
-
-
-//		[class*="col"] {
-//			border: 1px solid red;
-//		}
-
-
 
 	}
 

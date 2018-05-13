@@ -12,26 +12,6 @@ header {
 	&:after {
 		position: absolute;
 	}
-
-//	z-index: 10000;
-
-/*	
-	&.menu-displayed {
-		& ~ * {
-			position: relative;
-			z-index: -1;
-		}
-	}
-*/
-
-/*
-	& ~ * {
-		position: relative;
-		z-index: -1;
-	}
-*/
-
-
 	
 
 
@@ -122,9 +102,6 @@ header {
 									cursor: default;
 
 
-//									background-color: red;
-
-
 
 									font-family: "Open-Sans-Light", sans-serif;
 									color: $font-color;
@@ -137,13 +114,9 @@ header {
 									}
 									a {
 
-//										background-color: blue;
-
 										color: $font-color;
 										text-decoration: none;
 										&:hover {
-
-//											color: lighten($font-color, 15%);
 											color: darken($blue, 15%);
 
 										}
@@ -182,9 +155,6 @@ header {
 		@include rem(font-size, 18px);
 	}
 	form {
-
-//		background-color: rgba(255,255,0,0.6);
-
 
 		display: inline-block;
 		position: relative;
@@ -264,21 +234,11 @@ header {
 			right: 0;
 
 
-//			@include rem(top, -1px);
-
-
 			@include rem(width, 18px);
 
 			@include rem(height, 22px);
-//			@include rem(height, 21px);
-			
 
 			background-color: transparent;
-//			background-color: rgba(255,255,0,0.6);
-
-			
-
-
 
 			border: 0;
 			padding: 0;
@@ -289,9 +249,6 @@ header {
 			}
 
 			.icon-search {
-
-//				background-color: rgba(255,0,0,0.3);
-
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -397,14 +354,6 @@ header {
 	@include media('screen', '<tablet-wide') {
 
 
-//		&.menu-displayed {
-//			& ~ * {
-//				position: relative;
-//				z-index: -1;
-//			}
-//		}
-
-
 		&.menu-displayed {
 			&:before,
 			&:after {
@@ -424,13 +373,6 @@ header {
 				@include rem(width, 260px);
 			}
 
-/*
-			& ~ * {
-				position: relative;
-				z-index: -1;
-			}
-*/
-
 
 		}
 		&:not(.menu-displayed) {
@@ -439,7 +381,6 @@ header {
 
 
 				@include linear-gradient(rgba(51,51,51,0.15), rgba(51,51,51,0));
-//				@include linear-gradient(red, yellow);
 
 				@include rem(top, 48px);
 				@include rem(height, 4px);
@@ -497,7 +438,6 @@ header {
 			position: absolute;
 
 			@include linear-gradient(rgba(51,51,51,0.15), rgba(51,51,51,0));
-//			@include linear-gradient(red, yellow);
 
 			@include rem(top, 48px);
 			@include rem(height, 4px);
@@ -539,7 +479,6 @@ header {
 							@include rem(height, 4px);
 
 							@include linear-gradient(rgba(239,239,239,1), rgba(239,239,239,0));
-//							@include linear-gradient(red, yellow);
 
 						}
 						.container {
@@ -616,7 +555,6 @@ header {
 					position: absolute;
 
 					@include linear-gradient(rgba(51,51,51,0.15), rgba(51,51,51,0));
-//					@include linear-gradient(red, yellow);
 
 
 					@include rem(height, 4px);
@@ -638,15 +576,6 @@ header {
 	@include media('screen', '<desktop-wide') {
 		background-color: $white;
 		@include rem(height, 48px);
-
-/*
-		&.menu-displayed {
-			& ~ * {
-				position: relative;
-				z-index: -1;
-			}
-		}
-*/
 
 
 
@@ -727,8 +656,6 @@ header {
 		}
 		ul:first-child + .button + .button + a {
 			margin-left: 2.3%;
-
-//			@include rem(top, 10px);
 			@include rem(top, 8px);
 
 		}
@@ -771,8 +698,7 @@ header {
 		&:before {
 			position: absolute;
 			@include rem(top, 120px);
-
-//			z-index: 0;
+			
 			z-index: 1;
 
 		}

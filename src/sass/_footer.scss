@@ -1,7 +1,126 @@
 /*************************** Footer Styles ****************************/
 
+
+@mixin footer-height ($media-min, $media-max, $height-min, $height-max) {
+	$d: ($height-max - $height-min) / 1px;
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+
+		@include media('>=' + round($min), '<' + round($max)) {
+			
+			$height: $i + $height-min;
+			@include rem(height, $height);
+
+		}
+	}
+}
+
+
+
+@mixin footer-font-size ($media-min, $media-max, $font-size-min, $font-size-max) {
+	$d: ($font-size-max - $font-size-min) / 1px;
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+
+		@include media('>=' + round($min), '<' + round($max)) {
+
+			$font-size: $i + $font-size-min;
+			@include rem(font-size, $font-size);
+
+		}
+
+	}
+}
+
+
+@mixin footer-margin-top ($media-min, $media-max, $margin-top-min, $margin-top-max) {
+
+	$d: ($margin-top-max - $margin-top-min) / 1px;
+
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+
+		@include media('>=' + round($min), '<' + round($max)) {
+
+			$margin-top: $i + $margin-top-min;
+
+			@include rem(margin-top, $margin-top);
+
+		}
+	}
+}
+
+
+@mixin footer-margin-bottom ($media-min, $media-max, $margin-bottom-min, $margin-bottom-max) {
+
+	$d: ($margin-bottom-max - $margin-bottom-min) / 1px;
+
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+
+		@include media('>=' + round($min), '<' + round($max)) {
+
+			$margin-bottom: $i + $margin-bottom-min;
+
+			@include rem(margin-bottom, $margin-bottom);
+
+		}
+	}
+}
+
+
+
+@mixin footer-margin-left ($media-min, $media-max, $margin-left-min, $margin-left-max) {
+
+	$d: ($margin-left-max - $margin-left-min) / 1px;
+
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+
+		@include media('>=' + round($min), '<' + round($max)) {
+
+			$margin-left: $i + $margin-left-min;
+
+			@include rem(margin-left, $margin-left);
+
+		}
+	}
+}
+
+@mixin footer-margin-right ($media-min, $media-max, $margin-right-min, $margin-right-max) {
+
+	$d: ($margin-right-max - $margin-right-min) / 1px;
+
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+
+		@include media('>=' + round($min), '<' + round($max)) {
+
+			$margin-right: $i + $margin-right-min;
+
+			@include rem(margin-right, $margin-right);
+
+		}
+	}
+}
+
+
+
+
 footer {
-	background-color: rgba(255,255,0,0.2);
+//	background-color: rgba(255,255,0,0.2);
 
 	position: relative;
 
@@ -22,12 +141,22 @@ footer {
 		top: 0;
 		left: 0;
 		right: 0;
-		height: 73px;
+//		height: 73px;
 
 		z-index: -1;
 
 //		background-color: rgba(0,0,255,0.5);
 		background-color: $blue;
+
+		@include media('screen', '<320px') {
+			@include rem(height, 47px);
+		}
+
+		@include footer-height (320px, 992px, 48px, 72px);
+
+		@include media('screen', '>=992px') {
+			@include rem(height, 73px);
+		}
 
 
 	}
@@ -42,7 +171,32 @@ footer {
 
 		display: inline-block;
 
-		@include rem(margin, 19px 88px);
+//		@include rem(margin, 19px 88px);
+
+		@include media('screen', '<320px') {
+			@include rem(margin-top, 11px);
+			@include rem(margin-bottom, 11px);
+			@include rem(margin-left, 23px);
+			@include rem(margin-right, 23px);
+		}
+		
+
+
+		@include footer-margin-top (320px, 992px, 12px, 18px);
+		@include footer-margin-bottom (320px, 992px, 12px, 18px);
+		@include footer-margin-left (320px, 992px, 24px, 87px);
+		@include footer-margin-right (320px, 992px, 24px, 87px);
+		
+
+		
+
+		@include media('screen', '>=992px') {
+			@include rem(margin-top, 19px);
+			@include rem(margin-bottom, 19px);
+			@include rem(margin-left, 88px);
+			@include rem(margin-right, 88px);
+		}
+		
 
 		
 
@@ -52,7 +206,15 @@ footer {
 
 			color: $white;
 
-			@include rem(font-size, 35px);
+			@include media('screen', '<320px') {
+				@include rem(font-size, 23px);
+			}	
+
+			@include footer-font-size (320px, 992px, 24px, 34px);
+
+			@include media('screen', '>=992px') {
+				@include rem(font-size, 35px);
+			}
 
 			@include transition(all 0.2s ease-in-out);
 		}
@@ -68,12 +230,149 @@ footer {
 
 	
 
+	ul.row {
 
+//		background-color: rgba(255,0,0,0.1);
+
+
+		@include rem(padding-top, 34px);
+		@include rem(padding-bottom, 26px);
+
+
+		@include media('>=420px', '<768px') {
+			@include rem(width, 380px);
+		}
+
+		
+		@include media('>=768px', '<992px') {
+//			@include rem(padding, 34px 0);
+			@include rem(width, 700px);
+		}
+
+
+		li {
+//			background-color: blue;
+
+
+			
+			text-transform: uppercase;
+//			text-align: center;
+
+			@include rem(font-size, 13px);
+
+//			@include rem(padding, 13px 5%);
+//			@include rem(padding, 34px 0);
+//			@include rem(padding-top, 34px);
+//			@include rem(padding-bottom, 34px);
+
+//			margin: 34px auto;
+//			@include rem(margin, 34px auto);
+
+			margin-left: auto;
+			margin-right: auto;
+
+			@include media('screen', '<420px') {
+				@include rem(margin-bottom, 24px);
+				margin-left: 5%;
+			}
+
+			@include media('>=420px', '<768px') {
+				&:nth-child(n+3) {
+//					background-color: blue;
+					@include rem(margin-top, 24px);
+				}
+			}
+
+			@include media('>=768px', '<992px') {
+				&:nth-child(n+5) {
+//					background-color: blue;
+					@include rem(margin-top, 24px);
+				}
+			}
+			
+
+//			@include media('screen', '>=992px') {
+//				@include rem(margin-top, 34px);
+//				@include rem(margin-bottom, 26px);
+//			}
+
+			a {
+				margin: 0;
+				color: $font-color;
+			}
+
+			.dropdown {
+	
+				[data-toggle="dropdown"] {
+					
+
+					&:after {
+//						background-color: rgba(0,0,255,0.3);
+
+						content: "\f103";
+						font-family: icons;
+						font-style: normal;
+						font-weight: normal;
+						vertical-align: top;
+						line-height: 1;
+
+						@include rem(font-size, 8px);
+						
+//						position: absolute;
+						position: relative;
+//						@include rem(right, -20px);
+
+						@include rem(margin-left, 12px);
+
+						@include rem(top, 2px);
+
+					}
+				}
+	
+				.dropdown-menu {
+	
+//					padding: 0;
+//					width: 120px;
+	
+	
+	
+					a {
+	
+	
+	
+//						color: $font-color;
+	
+						display: block;
+//						border: 1px solid blue;
+//						width: 100px;
+//						float: left;
+						@include rem(font-size, 13px);
+						@include rem(padding, 10px);
+	
+	
+	
+						&:hover {
+//							background-color: rgba(0,0,0,0.1);
+							background-color: lighten($blue, 50%);
+//							background-color: $blue;
+//							color: $white;
+						}
+	
+					}
+				}
+	
+			}
+
+		}
+
+	}
 
 	
 
 
 	.row {
+
+//		border: 1px solid blue;
 
 //		background-color: rgba(255,0,0,0.1);
 
@@ -82,7 +381,7 @@ footer {
 //		color: $font-color;
 
 
-//		border: 1px solid blue;
+		
 
 //		max-width: 1248px;
 		@include rem(max-width, 1024px);
@@ -101,45 +400,143 @@ footer {
 			padding: 0;
 
 			.logo {
+//				background-color: rgba(0,0,255,0.1);
+				
 				width: 90%;
+				@include rem(max-width, 180px);
 //				margin: 18px 5%;
 				margin-left: 5%;
 				margin-right: 5%;
-				@include rem(margin-top, 24px);
-				@include rem(margin-bottom, 24px);
+
+				@include media('screen', '<420px') {
+					display: block;
+//					margin: 0 auto;
+					@include rem(margin, 0 auto 16px);
+				}
+
+				@include media('screen', '>=420px') {
+					float: right;
+					@include rem(margin-top, 24px);
+					@include rem(margin-bottom, 24px);
+				}
+
+
+//				@include media('screen', '>=768px') {
+//					@include rem(margin-top, 24px);
+//					@include rem(margin-bottom, 24px);
+//				}
+
+
 			}
 
 			h5 {
 
-				background-color: rgba(0,0,255,0.1);
+//				background-color: rgba(0,0,255,0.1);
 
 				@include rem(font-size, 13px);
 
-				@include rem(line-height, 24px);
+//				@include rem(line-height, 24px);
 
 //				margin: 36px 5%;
 				margin-left: 5%;
 				margin-right: 5%;
-				@include rem(margin-top, 36px);
-				@include rem(margin-bottom, 36px);
+//				@include rem(margin-top, 36px);
+//				@include rem(margin-bottom, 36px);
+
+				@include media('screen', '<420px') {
+					@include rem(margin-top, 18px);
+					@include rem(margin-bottom, 18px);
+					@include rem(line-height, 20px);
+				}
+
+				@include media('>=420px', '<768px') {
+					@include rem(margin-top, 24px);
+					@include rem(margin-bottom, 24px);
+					@include rem(line-height, 22px);
+				}
+
+				@include media('screen', '>=768px') {
+					@include rem(margin-top, 36px);
+					@include rem(margin-bottom, 36px);
+					@include rem(line-height, 24px);
+				}
 
 
 			}
 
 			.row {
+
+
 //				padding: 0 5%;
 				padding: 0;
 
+				[class*="col"] {
+
+
+					h5 {
+//						margin: 0 38px;
+
+						@include media('screen', '<992px') {
+							margin: 0 5%;
+						}
+	
+//						@include media('screen', '<576px') {
+//							margin: 0;
+//						}
+	
+//						@include media('>=576px', '<992px') {
+//							margin: 0 5%;
+//						}
+	
+//						@include media('screen', '<992') {
+//							margin: 0 5%;
+//						}
+	
+						@include media('screen', '>=992px') {
+							margin: 0 10%;
+						}
+						
+					}
+
+
+
+//					width: 50%;
+					@include media('screen', '<576px') {
+						@include rem(padding, 12px 0);
+					}
+
+				}
+
+
+/*
 				h5 {
 //					margin: 0 38px;
-					margin: 0 10%;
+
+//					@include media('screen', '<576px') {
+//						margin: 0;
+//					}
+//
+//					@include media('>=576px', '<992px') {
+//						margin: 0 5%;
+//					}
+
+					@include media('screen', '<992') {
+						margin: 0 5%;
+					}
+
+					@include media('screen', '>=992px') {
+						margin: 0 10%;
+					}
+					
 				}
+*/
+
 
 			}
 
 			&[class*="offset"]:last-child {
 
-				background-color: rgba(0,255,0,0.1);
+//				background-color: rgba(0,255,0,0.1);
 
 				font-family: "Open-Sans-Light", sans-serif;
 
@@ -153,6 +550,8 @@ footer {
 		}
 
 
+
+/*
 		li {
 //			background-color: blue;
 
@@ -244,6 +643,11 @@ footer {
 			}
 
 		}
+*/
+
+
+
+
 
 
 	}

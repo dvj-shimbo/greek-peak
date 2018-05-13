@@ -50,7 +50,7 @@
 		@include rem(padding-top, 7px);
 		@include rem(padding-bottom, 7px);
 	}
-	@include banners-padding (420px, 992px, 7px, 51px);
+	@include banners-padding (420px, 992px, 8px, 51px);
 
 
 	@include banners-padding (992px, 1248px, 52px, 64px);
@@ -129,7 +129,7 @@
 //				@include banners-font-size (992px, 1300px, 14px, 19px, 1.5vw);
 
 				@include media('screen', '>=1300px') {
-					@include rem(font-size, 18px);
+					@include rem(font-size, 20px);
 				}
 			}
 		}

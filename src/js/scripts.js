@@ -63,18 +63,13 @@ $(window).on("load", function() {
 	});
 
 	$("header ul:last-child p").click(function() {
-
-		
-
 		if ($(this).next().hasClass("container-fluid")) {
 			var li = $(this).parent();
 			if (li.hasClass("selected")) {
 				$("header ul:last-child li.selected").removeClass("selected");
-
-
-				console.log("AAA");
-
-				
+				if (isBreakpoint("desktop-wide")) {
+					$("header").removeClass("menu-displayed");
+				}
 			} else {
 				$("header ul:last-child li.selected").removeClass("selected");
 				if (!$("header").hasClass("menu-displayed")) {

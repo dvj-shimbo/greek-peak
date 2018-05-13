@@ -174,7 +174,8 @@ $paragraph-margin-bottom:   1rem !default;
 //) !default;
 
 $grid-breakpoints: (
-  xs: 420px,
+  xs: 0,
+  ms: 420px,
   sm: 576px,
   md: 768px,
   lg: 992px,
@@ -198,6 +199,7 @@ $grid-breakpoints: (
 //) !default;
 
 $container-max-widths: (
+  ms: 576px,
   sm: 768px,
   md: 992px,
   lg: 1248px,

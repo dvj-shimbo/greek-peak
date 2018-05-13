@@ -63,10 +63,18 @@ $(window).on("load", function() {
 	});
 
 	$("header ul:last-child p").click(function() {
+
+		
+
 		if ($(this).next().hasClass("container-fluid")) {
 			var li = $(this).parent();
 			if (li.hasClass("selected")) {
 				$("header ul:last-child li.selected").removeClass("selected");
+
+
+				console.log("AAA");
+
+				
 			} else {
 				$("header ul:last-child li.selected").removeClass("selected");
 				if (!$("header").hasClass("menu-displayed")) {

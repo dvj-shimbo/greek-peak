@@ -239,6 +239,11 @@ footer {
 		@include rem(padding-bottom, 26px);
 
 
+//		@include media('screen', '<768px') {
+//			padding-left: 5%;
+//			padding-right: 5%;
+//		}
+
 		@include media('>=420px', '<768px') {
 			@include rem(width, 380px);
 		}

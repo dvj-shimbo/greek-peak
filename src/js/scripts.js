@@ -1,10 +1,6 @@
 $(window).on("load", function() {
 	"use strict";
 
-	// User's functions
-
-//	console.log("scripts.js is loaded");
-
 	var  isBreakpoint = function(alias) {
 		return $(".device-" + alias).is(":visible");
 	};
@@ -103,40 +99,6 @@ $(window).on("load", function() {
 		}	
 	});
 
-
-	
 	$('.book-accommodation input[type="text"]').datepicker();
-
-/*
-	$(".book-accommodation .input-wrapper").click(function() {
-		$('.book-accommodation input[type="text"]').datepicker("show");
-	});
-*/
-
-
-
-
-
-
-
-
-
-/*
-	function redraw() {
-//		console.log("REDRAW");
-//		console.log(isBreakpoint("desktop-wide"));
-//		console.log($("header ul:first-child ~ .button").css("left"));
-//		$("header ul:first-child ~ .button").css("left", 18);
-	}
-
-	$(window).resize(function(){
-		redraw();
-	});
-
-	redraw();
-*/
-	
-
-
 
 });

@@ -9109,7 +9109,6 @@ header form + a:hover .icon-cart {
 /* line 122, src/sass/_footer.scss */
 footer {
   position: relative;
-  z-index: 0;
   cursor: default;
   text-align: center;
 }

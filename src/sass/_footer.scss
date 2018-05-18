@@ -269,7 +269,7 @@ footer {
 				color: $font-color;
 			}
 
-			.dropdown {
+			.dropdown {				
 	
 				[data-toggle="dropdown"] {
 					
@@ -311,7 +311,6 @@ footer {
 			}
 
 		}
-
 	}
 
 	
@@ -329,6 +328,16 @@ footer {
 		[class*="col"] {
 
 			padding: 0;
+
+			// Logo container:
+			&:not(li) {
+				a {
+					margin: 0 auto;
+					display: block;
+					@include rem(max-width, 200px);
+				}
+			}
+			
 
 			.logo {
 				

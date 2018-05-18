@@ -10725,7 +10725,7 @@ footer ul.row li .dropdown .dropdown-menu a:hover {
   background-color: #e6f7fd;
 }
 
-/* line 320, src/sass/_footer.scss */
+/* line 319, src/sass/_footer.scss */
 footer .row {
   text-align: left;
   max-width: 1024px;
@@ -10735,12 +10735,20 @@ footer .row {
   padding: 0 0.875rem;
 }
 
-/* line 329, src/sass/_footer.scss */
+/* line 328, src/sass/_footer.scss */
 footer .row [class*="col"] {
   padding: 0;
 }
 
-/* line 333, src/sass/_footer.scss */
+/* line 334, src/sass/_footer.scss */
+footer .row [class*="col"]:not(li) a {
+  margin: 0 auto;
+  display: block;
+  max-width: 200px;
+  max-width: 12.5rem;
+}
+
+/* line 342, src/sass/_footer.scss */
 footer .row [class*="col"] .logo {
   width: 90%;
   max-width: 180px;
@@ -10750,7 +10758,7 @@ footer .row [class*="col"] .logo {
 }
 
 @media screen and (max-width: 419px) {
-  /* line 333, src/sass/_footer.scss */
+  /* line 342, src/sass/_footer.scss */
   footer .row [class*="col"] .logo {
     display: block;
     margin: 0 auto 16px;
@@ -10759,7 +10767,7 @@ footer .row [class*="col"] .logo {
 }
 
 @media screen and (min-width: 420px) {
-  /* line 333, src/sass/_footer.scss */
+  /* line 342, src/sass/_footer.scss */
   footer .row [class*="col"] .logo {
     float: right;
     margin-top: 24px;
@@ -10769,7 +10777,7 @@ footer .row [class*="col"] .logo {
   }
 }
 
-/* line 354, src/sass/_footer.scss */
+/* line 363, src/sass/_footer.scss */
 footer .row [class*="col"] h5 {
   font-size: 13px;
   font-size: 0.8125rem;
@@ -10778,7 +10786,7 @@ footer .row [class*="col"] h5 {
 }
 
 @media screen and (max-width: 419px) {
-  /* line 354, src/sass/_footer.scss */
+  /* line 363, src/sass/_footer.scss */
   footer .row [class*="col"] h5 {
     margin-top: 18px;
     margin-top: 1.125rem;
@@ -10790,7 +10798,7 @@ footer .row [class*="col"] h5 {
 }
 
 @media (min-width: 420px) and (max-width: 767px) {
-  /* line 354, src/sass/_footer.scss */
+  /* line 363, src/sass/_footer.scss */
   footer .row [class*="col"] h5 {
     margin-top: 24px;
     margin-top: 1.5rem;
@@ -10802,7 +10810,7 @@ footer .row [class*="col"] h5 {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 354, src/sass/_footer.scss */
+  /* line 363, src/sass/_footer.scss */
   footer .row [class*="col"] h5 {
     margin-top: 36px;
     margin-top: 2.25rem;
@@ -10813,34 +10821,34 @@ footer .row [class*="col"] h5 {
   }
 }
 
-/* line 382, src/sass/_footer.scss */
+/* line 391, src/sass/_footer.scss */
 footer .row [class*="col"] .row {
   padding: 0;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 388, src/sass/_footer.scss */
+  /* line 397, src/sass/_footer.scss */
   footer .row [class*="col"] .row [class*="col"] h5 {
     margin: 0 5%;
   }
 }
 
 @media screen and (min-width: 992px) {
-  /* line 388, src/sass/_footer.scss */
+  /* line 397, src/sass/_footer.scss */
   footer .row [class*="col"] .row [class*="col"] h5 {
     margin: 0 10%;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 385, src/sass/_footer.scss */
+  /* line 394, src/sass/_footer.scss */
   footer .row [class*="col"] .row [class*="col"] {
     padding: 12px 0;
     padding: 0.75rem 0;
   }
 }
 
-/* line 408, src/sass/_footer.scss */
+/* line 417, src/sass/_footer.scss */
 footer .row [class*="col"][class*="offset"]:last-child {
   font-family: "Open-Sans-Light", sans-serif;
   padding-top: 18px;

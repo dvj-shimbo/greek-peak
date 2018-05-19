@@ -1,0 +1,94 @@
+/*************************** Nav Styles ****************************/
+
+
+@mixin nav-font ($media-min, $media-max, $font-size-min, $font-size-max) {
+
+	$d: ($font-size-max - $font-size-min) / 1px;
+
+	@for $i from 0 through $d {
+
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+
+		@include media('>=' + round($min), '<' + round($max)) {
+
+			$font-size: $i + $font-size-min;
+			@include rem(font-size, $font-size);
+
+			$line-height: 20px - ($d - $i) * 2;
+			@include rem(line-height, $line-height);
+
+			$margin: 14px - ($d - $i) * 2;
+			@include rem(margin, $margin auto);
+
+		}
+	}
+}
+
+
+
+
+nav {
+
+
+	text-transform: uppercase;
+	color: #9e9c9c;
+	cursor: default;
+
+	@include rem(max-width, 1300px);
+
+
+	@include media('screen', '<desktop-wide') {
+		@include rem(padding, 0 16px);
+	}
+	
+	@include media('screen', '>=desktop-wide') {
+		@include rem(padding, 0 40px);
+	}
+
+
+	@include media('screen', '<320px') {
+		@include rem(font-size, 10px);
+		@include rem(line-height, 16px);
+		@include rem(margin, 10px auto);
+	}
+
+
+	@include nav-font (320px, 640px, 11px, 13px);
+
+	@include media('screen', '>=640px') {
+		@include rem(font-size, 13px);
+		@include rem(line-height, 22px);
+		@include rem(margin, 16px auto);
+	}
+
+	
+
+
+
+	a {
+
+		color: $font-color;
+		text-decoration: none;
+		position: relative;
+
+		@include rem(margin-right, 32px);
+
+
+		&:after {
+			content: ">>";
+			position: absolute;
+			pointer-events: none;
+
+			@include rem(right, -27px);
+			
+		}
+
+		&:hover {
+			color: lighten($font-color, 25%);
+		}
+
+	}
+	
+}

@@ -115,6 +115,27 @@
 		}
 	}
 
+	.row + h3 {
+
+//		background-color: rgba(0,255,0,0.2);
+
+		color: $blue;
+		text-transform: uppercase;
+		text-align: center;
+		font-family: "Open-Sans-Semibold", sans-serif;
+		@include rem(font-size, 16px);
+		@include rem(line-height, 22px);
+
+//		@include rem(margin, 92px 0);
+		
+
+		b,
+		strong {
+			font-family: "Open-Sans-ExtraBold", sans-serif;
+		}
+
+	}
+
 
 //	[class*="col"] {
 //

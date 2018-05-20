@@ -50,6 +50,71 @@
 
 
 
+
+
+//@mixin cards-h3 ($media-min, $media-max, $font-size-min, $font-size-max) {
+//
+//	$d: ($font-size-max - $font-size-min) / 1px;
+//
+//	@for $i from 0 through $d {
+//
+//		$step: ($media-max - $media-min) / ($d + 1);
+//		$min: $i * $step + $media-min;
+//		$max: $min + $step;
+//
+//		@include media('>=' + round($min), '<' + round($max)) {
+//
+//			$font-size: $i + $font-size-min;
+//			@include rem(font-size, $font-size);
+//
+//			$line-height: 21px - ($d - $i);
+//			@include rem(line-height, $line-height);
+//
+////			$margin: 14px - ($d - $i) * 2;
+////			@include rem(margin, $margin auto);
+//
+////			$padding: 18px - ($d - $i) * 2;
+////			@include rem(padding, $padding 2%);
+//
+//		}
+//	}
+//}
+
+
+
+@mixin cards-h3-margin ($media-min, $media-max, $margin-min, $margin-max) {
+
+	$d: ($margin-max - $margin-min) / 1px;
+
+	@for $i from 0 through $d {
+
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+
+		@include media('>=' + round($min), '<' + round($max)) {
+
+			$margin: $i + $margin-min;
+			@include rem(margin, $margin 0 $margin - 42px);
+
+//			$line-height: 20px - ($d - $i) * 2;
+//			@include rem(line-height, $line-height);
+//
+//			$margin: 14px - ($d - $i) * 2;
+//			@include rem(margin, $margin auto);
+
+//			$padding: 18px - ($d - $i) * 2;
+//			@include rem(padding, $padding 2%);
+
+		}
+	}
+}
+
+
+
+
+
+
 .cards {
 
 //	background-color: rgba(255,0,0,0.2);
@@ -63,7 +128,8 @@
 	}
 
 	@include media('>=phone', '<tablet') {
-		@include rem(max-width, 466px);
+//		@include rem(max-width, 466px);
+		@include rem(max-width, 480px);
 	}
 
 
@@ -110,6 +176,30 @@
 
 		}
 
+	}
+
+	.row + h3 {
+
+
+		
+
+
+		
+		@include media('screen', '<320px') {
+			@include rem(margin, 46px 0 4px);
+
+//			@include rem(font-size, 12px);
+//			@include rem(line-height, 18px);
+		}
+
+//		@include cards-h3 (320px, 490px, 13px, 15px);
+
+		@include cards-h3-margin (320px, 768px, 47px, 86px);
+
+
+		@include media('screen', '>=768px') {
+			@include rem(margin, 87px 0 45px);
+		}
 	}
 
 

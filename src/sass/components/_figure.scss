@@ -31,6 +31,7 @@ figure {
 		font-weight: bold;	
 		@include rem(font-size, 21px);
 		z-index: 1;
+		cursor: default;
 	}
 
 }

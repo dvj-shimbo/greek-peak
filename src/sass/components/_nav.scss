@@ -1,5 +1,4 @@
-/*************************** Nav Styles ****************************/
-
+/*************************** Nav Component Styles ****************************/
 
 @mixin nav-font ($media-min, $media-max, $font-size-min, $font-size-max) {
 
@@ -31,13 +30,11 @@
 
 nav {
 
-
 	text-transform: uppercase;
 	color: #9e9c9c;
 	cursor: default;
 
 	@include rem(max-width, 1300px);
-
 
 	@include media('screen', '<desktop-wide') {
 		@include rem(padding, 0 16px);
@@ -54,7 +51,6 @@ nav {
 		@include rem(margin, 10px auto);
 	}
 
-
 	@include nav-font (320px, 640px, 11px, 13px);
 
 	@include media('screen', '>=640px') {
@@ -62,9 +58,6 @@ nav {
 		@include rem(line-height, 22px);
 		@include rem(margin, 16px auto);
 	}
-
-	
-
 
 
 	a {

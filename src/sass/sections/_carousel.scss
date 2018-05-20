@@ -1,4 +1,4 @@
-/*************************** Carousel Styles ****************************/
+/*************************** Carousel Section Styles ****************************/
 
 
 @mixin carousel-top ($media-min, $media-max, $top-min, $top-max) {
@@ -83,9 +83,6 @@
 	.carousel-inner {
 
 		.carousel-item {
-
-
-
 
 
 			@include rem(max-height, 840px);

@@ -1,0 +1,121 @@
+/*************************** Sales Section Styles ****************************/
+
+@mixin sales-font-size ($media-min, $media-max, $font-size-min, $font-size-max) {
+
+	$d: ($font-size-max - $font-size-min) / 1px;
+
+	@for $i from 0 through $d {
+
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+
+		@include media('>=' + round($min), '<' + round($max)) {
+			$font-size: $i + $font-size-min;
+			@include rem(font-size, $font-size);
+
+		}
+	}
+}
+
+
+@mixin sales-h4 ($media-min, $media-max, $font-size-min, $font-size-max) {
+
+	$d: ($font-size-max - $font-size-min) / 1px;
+
+	@for $i from 0 through $d {
+
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+
+		@include media('>=' + round($min), '<' + round($max)) {
+
+			$font-size: $i + $font-size-min;
+			@include rem(font-size, $font-size);
+
+//			$line-height: 20px - ($d - $i) * 2;
+//			@include rem(line-height, $line-height);
+//
+//			$margin: 14px - ($d - $i) * 2;
+//			@include rem(margin, $margin auto);
+
+			$padding: 18px - ($d - $i) * 2;
+			@include rem(padding, $padding 2%);
+
+		}
+	}
+}
+
+
+
+
+.sales {
+
+//	background-color: rgba(255,0,0,0.2);
+
+
+	@include rem(padding-bottom, 50px);
+
+
+	@include media('screen', '<phone') {
+		@include rem(max-width, 320px);
+	}
+
+	@include media('>=phone', '<tablet') {
+		@include rem(max-width, 466px);
+	}
+
+
+	@include media('>=tablet', '<tablet-wide') {
+		@include rem(max-width, 698px);
+	}
+
+	
+
+	@include media('screen', '>=tablet-wide') {
+		@include rem(max-width, 930px);
+	}
+
+
+
+	.row {
+
+		@include media('screen', '<tablet') {
+			@include rem(padding, 0 8px);
+		}
+
+
+		[class*="col"] {
+
+			figure {
+
+				figcaption {
+
+//					@include rem(font-size, 18px);
+					@include sales-font-size (420px, 490px, 17px, 20px);
+				}
+			}
+
+			figure + h4 {
+
+//				@include rem(font-size, 11px);
+//				@include rem(padding, 12px 2%);
+
+				@include sales-h4 (420px, 490px, 11px, 13px);
+
+
+			}
+
+
+		}
+
+	}
+
+
+
+
+
+
+
+}

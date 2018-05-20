@@ -1,0 +1,57 @@
+/*************************** Figure Component Styles ****************************/
+
+figure {
+
+//	background-color: rgba(0,0,255,0.4);
+	
+	position: relative;
+
+	&:after {
+		content: "";
+		position: absolute;
+
+//		background-color: rgba(255,255,0,0.6);
+
+//		@include linear-gradient(red, yellow);
+		@include linear-gradient(rgba(35,35,35,0), rgba(35,35,35,0.75));
+
+		top: 30%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 0;
+
+	}
+
+	img {
+		width: 100%;
+		vertical-align: top;
+	}
+
+	figcaption {
+
+//		background-color: rgba(255,255,0,0.3);
+
+		position: absolute;
+
+//		top: 80%;
+//		bottom: 0;
+//		left: 0;
+//		right: 0;
+
+		left: 2%;
+		right: 2%;
+		bottom: 10%;
+
+		color: $white;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+		
+		@include rem(font-size, 21px);
+//		@include rem(padding, 0 16px);
+		z-index: 1;
+
+	}
+
+}

@@ -1,0 +1,178 @@
+/*************************** Content Styles ****************************/
+
+
+.content {
+
+//	background-color: rgba(255,255,0,0.3);
+
+//	@include rem(padding-bottom, 50px);
+
+//	&.container {
+//
+////		background-color: rgba(255,0,0,0.2);
+////		@include rem(max-width, 944px);
+//		@include rem(max-width, 930px);
+//
+//	}
+
+//	@include rem(max-width, 940px);
+
+//	margin: 0 auto;
+
+////	position: relative;
+//
+//	&:before {
+//		background-color: rgba(0,255,0,0.2);
+//		content: "A";
+//		position: absolute;
+//		left: 0;
+//		right: 0;
+////		top: 0;
+////		height: 100%;
+//		
+//
+//	}
+
+	.row {
+
+//		border: 1px solid blue;
+
+//		.col {
+		[class*="col"] {
+
+//			background-color: rgba(0,255,0,0.4);
+
+//			border: 1px solid red;
+			@include rem(padding, 8px);
+//			padding: 0;
+
+//			figure {
+//
+////				background-color: rgba(0,0,255,0.4);
+//
+//				@include rem(margin, 8px);
+//
+////				img {
+////					width: 100%;
+////					vertical-align: top;
+////				}
+//			}
+
+			figure + h4 {
+
+				background-color: $gray;
+
+				text-transform: uppercase;
+				text-align: center;
+
+				font-family: "Open-Sans-Semibold", sans-serif;
+				@include rem(font-size, 14px);
+
+				@include rem(padding, 20px 2%);
+//				height: 55px;
+//				@include rem(height, 55px);
+
+				a {
+					color: $blue;
+					text-decoration: none;
+					&:hover {
+						color: darken($blue, 15%);
+					}
+				}
+
+			}
+
+
+
+//			figure {
+//
+//				& + h4 {
+//	
+//					background-color: $gray;
+//	
+//					text-transform: uppercase;
+//					text-align: center;
+//	
+//					font-family: "Open-Sans-Semibold", sans-serif;
+//					@include rem(font-size, 14px);
+//	
+//					@include rem(padding, 20px 2%);
+////					height: 55px;
+////					@include rem(height, 55px);
+//	
+//					a {
+//						color: $blue;
+//						text-decoration: none;
+//						&:hover {
+//							color: darken($blue, 15%);
+//						}
+//					}
+//				}
+//
+//			}
+
+
+		}
+	}
+
+
+//	[class*="col"] {
+//
+//		@include rem(padding, 8px);
+//
+//		figure + h4 {
+//
+//			background-color: $gray;
+//			text-transform: uppercase;
+//			text-align: center;
+//			font-family: "Open-Sans-Semibold", sans-serif;
+//
+//			@include rem(font-size, 14px);
+//			@include rem(padding, 20px 2%);
+//
+//			a {
+//
+//				color: $blue;
+//				text-decoration: none;
+//
+//				&:hover {
+//					color: darken($blue, 15%);
+//				}
+//			}
+//		}
+//	}
+
+	
+//	[class*="col"] {
+//		@include rem(padding, 8px);
+//	}
+//
+//
+//	figure + h4 {
+//
+//		background-color: $gray;
+//		text-transform: uppercase;
+//		text-align: center;
+//		font-family: "Open-Sans-Semibold", sans-serif;
+//
+//		@include rem(font-size, 14px);
+//		@include rem(padding, 20px 2%);
+//
+//		a {
+//
+//			color: $blue;
+//			text-decoration: none;
+//
+//			&:hover {
+//				color: darken($blue, 15%);
+//			}
+//		}
+//	}
+	
+
+
+
+
+
+
+}

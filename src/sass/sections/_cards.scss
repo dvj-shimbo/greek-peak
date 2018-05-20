@@ -1,6 +1,6 @@
-/*************************** Sales Section Styles ****************************/
+/*************************** Cards Section Styles ****************************/
 
-@mixin sales-font-size ($media-min, $media-max, $font-size-min, $font-size-max) {
+@mixin cards-font-size ($media-min, $media-max, $font-size-min, $font-size-max) {
 
 	$d: ($font-size-max - $font-size-min) / 1px;
 
@@ -19,7 +19,7 @@
 }
 
 
-@mixin sales-h4 ($media-min, $media-max, $font-size-min, $font-size-max) {
+@mixin cards-h4 ($media-min, $media-max, $font-size-min, $font-size-max) {
 
 	$d: ($font-size-max - $font-size-min) / 1px;
 
@@ -50,7 +50,7 @@
 
 
 
-.sales {
+.cards {
 
 //	background-color: rgba(255,0,0,0.2);
 
@@ -93,7 +93,7 @@
 				figcaption {
 
 //					@include rem(font-size, 18px);
-					@include sales-font-size (420px, 490px, 17px, 20px);
+					@include cards-font-size (420px, 490px, 17px, 20px);
 				}
 			}
 
@@ -102,7 +102,7 @@
 //				@include rem(font-size, 11px);
 //				@include rem(padding, 12px 2%);
 
-				@include sales-h4 (420px, 490px, 11px, 13px);
+				@include cards-h4 (420px, 490px, 11px, 13px);
 
 
 			}

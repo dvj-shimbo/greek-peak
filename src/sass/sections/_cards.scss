@@ -19,7 +19,7 @@
 }
 
 
-@mixin cards-h4 ($media-min, $media-max, $font-size-min, $font-size-max) {
+@mixin cards-header ($media-min, $media-max, $font-size-min, $font-size-max) {
 
 	$d: ($font-size-max - $font-size-min) / 1px;
 
@@ -46,6 +46,9 @@
 		}
 	}
 }
+
+
+
 
 
 
@@ -120,7 +123,7 @@
 //	background-color: rgba(255,0,0,0.2);
 
 
-	@include rem(padding-bottom, 50px);
+//	@include rem(padding-bottom, 50px);
 
 
 	@include media('screen', '<phone') {
@@ -138,9 +141,30 @@
 	}
 
 	
+	&:not(.wide) {
 
-	@include media('screen', '>=tablet-wide') {
-		@include rem(max-width, 930px);
+//		background-color: rgba(0,255,0,0.2);
+
+		@include media('screen', '>=tablet-wide') {
+			@include rem(max-width, 930px);
+		}
+	}
+
+	&.wide {
+//		background-color: rgba(0,255,0,0.2);
+
+		@include media('>=tablet-wide', '<desktop-wide') {
+			@include rem(max-width, 930px);
+		}
+
+		@include media('screen', '>=desktop-wide') {
+//			@include rem(max-width, 930px);
+			@include rem(max-width, 1160px);
+		}
+
+//		@include rem(max-width, 1160px);
+
+
 	}
 
 
@@ -168,9 +192,13 @@
 //				@include rem(font-size, 11px);
 //				@include rem(padding, 12px 2%);
 
-				@include cards-h4 (420px, 490px, 11px, 13px);
+				@include cards-header (420px, 490px, 11px, 13px);
 
 
+			}
+
+			figure + h4 + h3 {
+				@include cards-header (420px, 490px, 13px, 15px);
 			}
 
 
@@ -178,34 +206,55 @@
 
 	}
 
-	.row + h3 {
+//	.row + h3,
+//	.gray + h3 {
+//
+//		background-color: rgba(0,0,255,0.2);
+//
+//
+//		
+//
+//
+//		
+//		@include media('screen', '<320px') {
+//			@include rem(margin, 46px 0 4px);
+//
+////			@include rem(font-size, 12px);
+////			@include rem(line-height, 18px);
+//		}
+//
+////		@include cards-h3 (320px, 490px, 13px, 15px);
+//
+//		@include cards-h3-margin (320px, 768px, 47px, 86px);
+//
+//
+//		@include media('screen', '>=768px') {
+//			@include rem(margin, 87px 0 45px);
+//		}
+//
+//
+//	}
 
 
-		
 
 
-		
-		@include media('screen', '<320px') {
-			@include rem(margin, 46px 0 4px);
-
-//			@include rem(font-size, 12px);
-//			@include rem(line-height, 18px);
-		}
-
-//		@include cards-h3 (320px, 490px, 13px, 15px);
-
-		@include cards-h3-margin (320px, 768px, 47px, 86px);
 
 
-		@include media('screen', '>=768px') {
-			@include rem(margin, 87px 0 45px);
-		}
+
+}
+
+.cards .row + h3,
+.content .gray + h3 {
+
+//	background-color: rgba(0,0,255,0.2);
+	
+	
+	@include media('screen', '<320px') {
+		@include rem(margin, 46px 0 4px);
 	}
-
-
-
-
-
-
+	@include cards-h3-margin (320px, 768px, 47px, 86px);
+	@include media('screen', '>=768px') {
+		@include rem(margin, 87px 0 45px);
+	}
 
 }

@@ -1,11 +1,36 @@
 /*************************** Content Styles ****************************/
 
+@mixin content-gray ($media-min, $media-max, $padding-min, $padding-max) {
+
+	$d: ($padding-max - $padding-min) / 1px;
+
+	@for $i from 0 through $d {
+
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+
+		@include media('>=' + round($min), '<' + round($max)) {
+
+			$padding-top: $i + $padding-min;
+			@include rem(padding-top, $padding-top);
+
+			@include rem(margin-top, $padding-top * -1);
+
+			
+
+		}
+	}
+
+}
+
+
 
 .content {
 
 //	background-color: rgba(255,255,0,0.3);
 
-//	@include rem(padding-bottom, 50px);
+	@include rem(padding-bottom, 50px);
 
 //	&.container {
 //
@@ -32,6 +57,8 @@
 //		
 //
 //	}
+
+
 
 	.row {
 
@@ -82,6 +109,19 @@
 
 			}
 
+			figure + h4 + h3 {
+//				background-color: rgba(0,0,255,0.2);
+
+				color: #4d4e4e;
+
+				text-align: center;
+
+				font-family: "Open-Sans-Semibold", sans-serif;
+				@include rem(font-size, 16px);
+
+				@include rem(padding, 20px 2%);
+			}
+
 
 
 //			figure {
@@ -113,9 +153,55 @@
 
 
 		}
+
+		[class^="d-"] {
+//			background-color: rgba(0,0,255,0.2);
+			width: 100%;
+			height: 0;
+		}
+
+//		.w-100 {
+//			background-color: rgba(0,0,255,0.2);
+//		}
+
+
 	}
 
-	.row + h3 {
+
+
+	.gray {
+
+//		background-color: rgba(255,0,0,0.1);
+		background-color: $gray;
+
+		@include media('screen', '<320px') {
+			@include rem(padding-top, 7px);
+			@include rem(margin-top, -7px);
+		}
+
+
+		@include content-gray (320px, 640px, 8px, 23px);
+
+		@include media('screen', '>=640px') {
+			@include rem(padding-top, 24px);
+			@include rem(margin-top, -24px);
+		}
+
+
+		.row {
+			figure + h4 {
+				background-color: $white;
+			}
+		}
+
+	}
+
+
+
+
+
+	.row + h3,
+	.gray + h3 {
 
 //		background-color: rgba(0,255,0,0.2);
 
@@ -133,6 +219,22 @@
 		strong {
 			font-family: "Open-Sans-ExtraBold", sans-serif;
 		}
+
+	}
+
+	.gray + h3 {
+		padding: 0 10%;
+	}
+
+
+	.row + h5 {
+
+//		background-color: rgba(0,0,255,0.1);
+
+		color: $pink;
+		text-align: center;
+		@include rem(font-size, 13px);
+		@include rem(padding, 36px 0);
 
 	}
 

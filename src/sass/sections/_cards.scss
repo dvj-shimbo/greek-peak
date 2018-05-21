@@ -206,44 +206,12 @@
 
 	}
 
-//	.row + h3,
-//	.gray + h3 {
-//
-//		background-color: rgba(0,0,255,0.2);
-//
-//
-//		
-//
-//
-//		
-//		@include media('screen', '<320px') {
-//			@include rem(margin, 46px 0 4px);
-//
-////			@include rem(font-size, 12px);
-////			@include rem(line-height, 18px);
-//		}
-//
-////		@include cards-h3 (320px, 490px, 13px, 15px);
-//
-//		@include cards-h3-margin (320px, 768px, 47px, 86px);
-//
-//
-//		@include media('screen', '>=768px') {
-//			@include rem(margin, 87px 0 45px);
-//		}
-//
-//
-//	}
-
-
-
-
-
-
-
 }
 
+
+
 .cards .row + h3,
+.cards .row + h5 + h3,
 .content .gray + h3 {
 
 //	background-color: rgba(0,0,255,0.2);

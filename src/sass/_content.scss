@@ -201,6 +201,7 @@
 
 
 	.row + h3,
+	.row + h5 + h3,
 	.gray + h3 {
 
 //		background-color: rgba(0,255,0,0.2);
@@ -237,63 +238,6 @@
 		@include rem(padding, 36px 0);
 
 	}
-
-
-//	[class*="col"] {
-//
-//		@include rem(padding, 8px);
-//
-//		figure + h4 {
-//
-//			background-color: $gray;
-//			text-transform: uppercase;
-//			text-align: center;
-//			font-family: "Open-Sans-Semibold", sans-serif;
-//
-//			@include rem(font-size, 14px);
-//			@include rem(padding, 20px 2%);
-//
-//			a {
-//
-//				color: $blue;
-//				text-decoration: none;
-//
-//				&:hover {
-//					color: darken($blue, 15%);
-//				}
-//			}
-//		}
-//	}
-
-	
-//	[class*="col"] {
-//		@include rem(padding, 8px);
-//	}
-//
-//
-//	figure + h4 {
-//
-//		background-color: $gray;
-//		text-transform: uppercase;
-//		text-align: center;
-//		font-family: "Open-Sans-Semibold", sans-serif;
-//
-//		@include rem(font-size, 14px);
-//		@include rem(padding, 20px 2%);
-//
-//		a {
-//
-//			color: $blue;
-//			text-decoration: none;
-//
-//			&:hover {
-//				color: darken($blue, 15%);
-//			}
-//		}
-//	}
-	
-
-
 
 
 
